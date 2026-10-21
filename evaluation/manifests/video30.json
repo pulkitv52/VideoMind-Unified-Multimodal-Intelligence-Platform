@@ -1,0 +1,1474 @@
+{
+  "scope": "Small local academic intake sample pack; not a retrieval or clinical benchmark",
+  "items": [
+    {
+      "id": "caviar-OneLeaveShop1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "shop_exit",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShop1cor/OneLeaveShop1cor.mpg",
+      "original_filename": "OneLeaveShop1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShop1cor/cols1gt.xml",
+      "annotation_filename": "cols1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShop1cor/OneLeaveShop1cor.mpg",
+        "bytes": 1744340,
+        "sha256": "283b4abe464feea871d06dee6fd7b2248dc6f967ce30cd89480d9603c00254a8",
+        "path": ".local/datasets/video30/originals/caviar-OneLeaveShop1cor/OneLeaveShop1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShop1cor/cols1gt.xml",
+        "bytes": 1163865,
+        "sha256": "a602c75bd854c5075dd717da956956e5b5c8e57b725b414b0c85cb3c16b66765",
+        "path": ".local/datasets/video30/originals/caviar-OneLeaveShop1cor/cols1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-OneLeaveShop1cor__derived.mp4",
+        "bytes": 471447,
+        "sha256": "d81607cec28e5ddb84aa6fe2e57acc1c8807042b78adc7e4933be62ee22c057d",
+        "frames": 295,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "283b4abe464feea871d06dee6fd7b2248dc6f967ce30cd89480d9603c00254a8",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-OneLeaveShop1cor__derived.mapping.json",
+        "mapping_sha256": "975b30e4eea552a912e0c49a20308939e668e11a08c71349337d83a3095311a8"
+      }
+    },
+    {
+      "id": "caviar-EnterExitCrossingPaths1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "shop_entry_crossing",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1cor/EnterExitCrossingPaths1cor.mpg",
+      "original_filename": "EnterExitCrossingPaths1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1cor/ceecp1gt.xml",
+      "annotation_filename": "ceecp1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1cor/EnterExitCrossingPaths1cor.mpg",
+        "bytes": 2257192,
+        "sha256": "f8363a5492e57787647c0e9e525b749a864e3bcbaee48a7353060525428a1367",
+        "path": ".local/datasets/video30/originals/caviar-EnterExitCrossingPaths1cor/EnterExitCrossingPaths1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/EnterExitCrossingPaths1cor/ceecp1gt.xml",
+        "bytes": 1227399,
+        "sha256": "3525985d2ee60fdd91a584a1c6fd8b70f335c19c9bc26280d785b1c4e8ae123f",
+        "path": ".local/datasets/video30/originals/caviar-EnterExitCrossingPaths1cor/ceecp1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-EnterExitCrossingPaths1cor__derived.mp4",
+        "bytes": 612768,
+        "sha256": "a1cbb22eec512cf1ca4015d42ab56268c89809b49b6d55746ae17ef6d7bac2bd",
+        "frames": 383,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "f8363a5492e57787647c0e9e525b749a864e3bcbaee48a7353060525428a1367",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-EnterExitCrossingPaths1cor__derived.mapping.json",
+        "mapping_sha256": "46a94c1d79674a4fb11b1771ba67d544355212a5a80864d37c8bf87e8f5cbe80"
+      }
+    },
+    {
+      "id": "caviar-OneLeaveShopReenter1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "shop_reentry",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShopReenter1cor/OneLeaveShopReenter1cor.mpg",
+      "original_filename": "OneLeaveShopReenter1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShopReenter1cor/colsr1gt.xml",
+      "annotation_filename": "colsr1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShopReenter1cor/OneLeaveShopReenter1cor.mpg",
+        "bytes": 2301827,
+        "sha256": "14d55141103159aedfaf9f2be798396536cdc00a4e5113f99063276181edf937",
+        "path": ".local/datasets/video30/originals/caviar-OneLeaveShopReenter1cor/OneLeaveShopReenter1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneLeaveShopReenter1cor/colsr1gt.xml",
+        "bytes": 311783,
+        "sha256": "fc97f3a9168869a6f380b5491ab91dba1dd6f3f241e97a34a021836cbd73fe88",
+        "path": ".local/datasets/video30/originals/caviar-OneLeaveShopReenter1cor/colsr1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-OneLeaveShopReenter1cor__derived.mp4",
+        "bytes": 570114,
+        "sha256": "1be4e6b1208c23965455ad87d9308b71b32d496fb9255dd56dde632f7e25fdf8",
+        "frames": 390,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "14d55141103159aedfaf9f2be798396536cdc00a4e5113f99063276181edf937",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-OneLeaveShopReenter1cor__derived.mapping.json",
+        "mapping_sha256": "8cbff553f27f674e5149a9671d91ce4167cfbe3a28caabd8362e310c7f7109fa"
+      }
+    },
+    {
+      "id": "caviar-OneShopOneWait1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "waiting_outside_shop",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneShopOneWait1cor/OneShopOneWait1cor.mpg",
+      "original_filename": "OneShopOneWait1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneShopOneWait1cor/cosow1gt.xml",
+      "annotation_filename": "cosow1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneShopOneWait1cor/OneShopOneWait1cor.mpg",
+        "bytes": 7966849,
+        "sha256": "ffa3caf85910d40938755c6417c7ee123f746e2a101909132bb690c143099ff0",
+        "path": ".local/datasets/video30/originals/caviar-OneShopOneWait1cor/OneShopOneWait1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneShopOneWait1cor/cosow1gt.xml",
+        "bytes": 3584661,
+        "sha256": "6f0b3e687a59f3a824f54f9d0deaf051205a0ec5bb6aece5b6b2048b933bc706",
+        "path": ".local/datasets/video30/originals/caviar-OneShopOneWait1cor/cosow1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-OneShopOneWait1cor__derived.mp4",
+        "bytes": 2248441,
+        "sha256": "ff98f36413b6c4c4b1394b7a1730c0d21073f2e52cf441bc6ec1d79911a0afa2",
+        "frames": 1377,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "ffa3caf85910d40938755c6417c7ee123f746e2a101909132bb690c143099ff0",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-OneShopOneWait1cor__derived.mapping.json",
+        "mapping_sha256": "65d809c8f2bfffd6e5f7292093f3327eb8ac4bd708fabd9b35eba13182a1df99"
+      }
+    },
+    {
+      "id": "caviar-OneStopEnter1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "shop_entry",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopEnter1cor/OneStopEnter1cor.mpg",
+      "original_filename": "OneStopEnter1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopEnter1cor/cose1gt.xml",
+      "annotation_filename": "cose1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopEnter1cor/OneStopEnter1cor.mpg",
+        "bytes": 8688786,
+        "sha256": "05340115b48889f344f45c05593322b0c3cb9852081092226833f8e73d3ffb83",
+        "path": ".local/datasets/video30/originals/caviar-OneStopEnter1cor/OneStopEnter1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopEnter1cor/cose1gt.xml",
+        "bytes": 1746002,
+        "sha256": "9d688b022c50d5cb44306a6fb60aca2cdeb9d315c7a20907d43f02b37b6622ef",
+        "path": ".local/datasets/video30/originals/caviar-OneStopEnter1cor/cose1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-OneStopEnter1cor__derived.mp4",
+        "bytes": 2124372,
+        "sha256": "284e331ee9f60c555ce51ec4e7b30317ee37c214e22b84e1d0c3dde655cb7a1f",
+        "frames": 1500,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "05340115b48889f344f45c05593322b0c3cb9852081092226833f8e73d3ffb83",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-OneStopEnter1cor__derived.mapping.json",
+        "mapping_sha256": "dea9960b7a3d0c27ed6a4e393710235ecdfabd7e7ba68b185d267bbf406b0221"
+      }
+    },
+    {
+      "id": "caviar-ShopAssistant1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "people_browsing_together",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ShopAssistant1cor/ShopAssistant1cor.mpg",
+      "original_filename": "ShopAssistant1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ShopAssistant1cor/csa1gt.xml",
+      "annotation_filename": "csa1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ShopAssistant1cor/ShopAssistant1cor.mpg",
+        "bytes": 9650882,
+        "sha256": "504caed65c426688f1002426dbabdf9513ff78a6bfde6b971e6a6866198eba8a",
+        "path": ".local/datasets/video30/originals/caviar-ShopAssistant1cor/ShopAssistant1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ShopAssistant1cor/csa1gt.xml",
+        "bytes": 2906193,
+        "sha256": "9e053fc7a7460ddfd6049eafdee5fd718789967f34b6b21d27110f9c83c25b7c",
+        "path": ".local/datasets/video30/originals/caviar-ShopAssistant1cor/csa1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-ShopAssistant1cor__derived.mp4",
+        "bytes": 2310246,
+        "sha256": "69d69e27058f221baa40b7987210eb96fac0e7c1f5bad20ec5bcdfb4bfc2f75c",
+        "frames": 1675,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "504caed65c426688f1002426dbabdf9513ff78a6bfde6b971e6a6866198eba8a",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-ShopAssistant1cor__derived.mapping.json",
+        "mapping_sha256": "981842ccb0e20826652d736ed125523ee64e93c4da21c1ea1305804298a0110e"
+      }
+    },
+    {
+      "id": "caviar-OneStopMoveEnter1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "browsing_and_entering_shop",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopMoveEnter1cor/OneStopMoveEnter1cor.mpg",
+      "original_filename": "OneStopMoveEnter1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopMoveEnter1cor/cosme1gt.xml",
+      "annotation_filename": "cosme1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopMoveEnter1cor/OneStopMoveEnter1cor.mpg",
+        "bytes": 9192598,
+        "sha256": "c9743f99f30002d7817fdfc10b599ef4b8ccb738477a00bae8e98175a98157ef",
+        "path": ".local/datasets/video30/originals/caviar-OneStopMoveEnter1cor/OneStopMoveEnter1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/OneStopMoveEnter1cor/cosme1gt.xml",
+        "bytes": 12288028,
+        "sha256": "7c897c9c15d48f82b348d60c83220b988c4ba63e85b446c42a47418e07d4eb21",
+        "path": ".local/datasets/video30/originals/caviar-OneStopMoveEnter1cor/cosme1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-OneStopMoveEnter1cor__derived.mp4",
+        "bytes": 3408969,
+        "sha256": "73d612f6eb86c2ee8dec6942b09a910710148f9a576f2846eccb55f556c5b6e2",
+        "frames": 1590,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "c9743f99f30002d7817fdfc10b599ef4b8ccb738477a00bae8e98175a98157ef",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-OneStopMoveEnter1cor__derived.mapping.json",
+        "mapping_sha256": "4ce6b810ee823504cfc24e51e7bc2f29b9bedac6bf99646a2c1b6dad499da64e"
+      }
+    },
+    {
+      "id": "caviar-Walk1",
+      "dataset": "CAVIAR",
+      "class_hint": "walking",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Walk1/Walk1.mpg",
+      "original_filename": "Walk1.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Walk1/wk1gt.xml",
+      "annotation_filename": "wk1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Walk1/Walk1.mpg",
+        "bytes": 7208095,
+        "sha256": "a5d6dc7d7def01c1bdaeea8ff620195c148b366e1a52589bf4e46f15b6daa0c2",
+        "path": ".local/datasets/video30/originals/caviar-Walk1/Walk1.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Walk1/wk1gt.xml",
+        "bytes": 1490491,
+        "sha256": "dfcb8135fe46e7fbbcb7616d93f4f16aee040570185227ecd8c81aaa87de06cd",
+        "path": ".local/datasets/video30/originals/caviar-Walk1/wk1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-Walk1__derived.mp4",
+        "bytes": 3127165,
+        "sha256": "6f0d7edc011376f12a02c9b27cb393f33ac5e3bd14d992b5738e1dcf509d4f6c",
+        "frames": 612,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 2,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "a5d6dc7d7def01c1bdaeea8ff620195c148b366e1a52589bf4e46f15b6daa0c2",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-Walk1__derived.mapping.json",
+        "mapping_sha256": "b49897304fdee9dbc2d66a17bac8adc381de98235ecf28ae4f327c3e46325f42"
+      }
+    },
+    {
+      "id": "caviar-Browse1",
+      "dataset": "CAVIAR",
+      "class_hint": "browsing",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Browse1/Browse1.mpg",
+      "original_filename": "Browse1.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Browse1/br1gt.xml",
+      "annotation_filename": "br1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Browse1/Browse1.mpg",
+        "bytes": 12405350,
+        "sha256": "fafff382d83c7f091dc47396dee82159fb88c0d951b649b6f17afc2b0a914380",
+        "path": ".local/datasets/video30/originals/caviar-Browse1/Browse1.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Browse1/br1gt.xml",
+        "bytes": 1593009,
+        "sha256": "4970dc26d3302f12d673c6df33d0dc92760016175f8bb4294fc219b0fe62f753",
+        "path": ".local/datasets/video30/originals/caviar-Browse1/br1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-Browse1__derived.mp4",
+        "bytes": 5394457,
+        "sha256": "ae6eb54e31cc218507283f745fc194f51794e37e94d32cc2c656f59c8ee29b4b",
+        "frames": 1044,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 4,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "fafff382d83c7f091dc47396dee82159fb88c0d951b649b6f17afc2b0a914380",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-Browse1__derived.mapping.json",
+        "mapping_sha256": "0280a61cf3c9c822623548d36f0ae0c334d3eade4444e40c1fa85299b6d14813"
+      }
+    },
+    {
+      "id": "caviar-ThreePastShop1cor",
+      "dataset": "CAVIAR",
+      "class_hint": "group_walking",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ThreePastShop1cor/ThreePastShop1cor.mpg",
+      "original_filename": "ThreePastShop1cor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ThreePastShop1cor/c3ps1gt.xml",
+      "annotation_filename": "c3ps1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ThreePastShop1cor/ThreePastShop1cor.mpg",
+        "bytes": 9541534,
+        "sha256": "8a2aabaaf1b10234a1ab806006d37f78784c688bff809f661b7f0c617de02a88",
+        "path": ".local/datasets/video30/originals/caviar-ThreePastShop1cor/ThreePastShop1cor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA2/ThreePastShop1cor/c3ps1gt.xml",
+        "bytes": 14046260,
+        "sha256": "0c1e26e11ec5023eb9e1472b97a93b854765fe5085b1dd16f4481aa78d8d532d",
+        "path": ".local/datasets/video30/originals/caviar-ThreePastShop1cor/c3ps1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-ThreePastShop1cor__derived.mp4",
+        "bytes": 2911743,
+        "sha256": "2305dd62f10bae5452df2d0d6a60b82777c884938c310a106ea2a37baefb971a",
+        "frames": 1650,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "8a2aabaaf1b10234a1ab806006d37f78784c688bff809f661b7f0c617de02a88",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-ThreePastShop1cor__derived.mapping.json",
+        "mapping_sha256": "b76b959fce7336dd86f4f93fa7c30161b125f93b958d014e8f4d052fe23a6562"
+      }
+    },
+    {
+      "id": "caviar-Rest_FallOnFloor",
+      "dataset": "CAVIAR",
+      "class_hint": "staged_fall",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_FallOnFloor/Rest_FallOnFloor.mpg",
+      "original_filename": "Rest_FallOnFloor.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_FallOnFloor/rffgt.xml",
+      "annotation_filename": "rffgt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_FallOnFloor/Rest_FallOnFloor.mpg",
+        "bytes": 11531109,
+        "sha256": "06bc1d99e6766fd755adc215b3b5753f26d099f45c6578eee9c318e5c9637546",
+        "path": ".local/datasets/video30/originals/caviar-Rest_FallOnFloor/Rest_FallOnFloor.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_FallOnFloor/rffgt.xml",
+        "bytes": 963962,
+        "sha256": "6a172e14453ce9e74e841b67af2d93c7a6c46a2b8d96b20e36264f9d8cd0f7ea",
+        "path": ".local/datasets/video30/originals/caviar-Rest_FallOnFloor/rffgt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-Rest_FallOnFloor__derived.mp4",
+        "bytes": 5080439,
+        "sha256": "a704c67a4057897066e133af1065a382fba43a2df3506c390d2816f2c5f476db",
+        "frames": 1008,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 4,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "06bc1d99e6766fd755adc215b3b5753f26d099f45c6578eee9c318e5c9637546",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-Rest_FallOnFloor__derived.mapping.json",
+        "mapping_sha256": "7828e66cacb7f5eb318c68a2d4d776aacc4cc0d4e6cdd4056ffeb54a8477564d"
+      }
+    },
+    {
+      "id": "caviar-LeftBag",
+      "dataset": "CAVIAR",
+      "class_hint": "leaving_bag",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/LeftBag/LeftBag.mpg",
+      "original_filename": "LeftBag.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/LeftBag/lb1gt.xml",
+      "annotation_filename": "lb1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/LeftBag/LeftBag.mpg",
+        "bytes": 17201025,
+        "sha256": "8f5d1dbf43d58da1bce57ca1b3f9491b8467773cfd66d2846f62f7d38d4a45e7",
+        "path": ".local/datasets/video30/originals/caviar-LeftBag/LeftBag.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/LeftBag/lb1gt.xml",
+        "bytes": 2079826,
+        "sha256": "9599de02b41369065f1c718ec9c934bf1d58b65dc969b88e36c08ca54ab52bb7",
+        "path": ".local/datasets/video30/originals/caviar-LeftBag/lb1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-LeftBag__derived.mp4",
+        "bytes": 7474914,
+        "sha256": "ee002f556203a1ae70bfeeb10783b7d8923d08b24d49bcbd991c0843f5d60ed5",
+        "frames": 1440,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 5,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "8f5d1dbf43d58da1bce57ca1b3f9491b8467773cfd66d2846f62f7d38d4a45e7",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-LeftBag__derived.mapping.json",
+        "mapping_sha256": "efa244f05b57af16e84d0af2323fb7fe4c0b742b3afdfd3c6221644c910fb1d8"
+      }
+    },
+    {
+      "id": "caviar-Meet_WalkSplit",
+      "dataset": "CAVIAR",
+      "class_hint": "meeting_and_separating",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Meet_WalkSplit/Meet_WalkSplit.mpg",
+      "original_filename": "Meet_WalkSplit.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Meet_WalkSplit/mws1gt.xml",
+      "annotation_filename": "mws1gt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Meet_WalkSplit/Meet_WalkSplit.mpg",
+        "bytes": 7333343,
+        "sha256": "91a5b5c2a3060a02ebd1ee4264ab78ae7681e02d17d16c2546fcc7751c91805e",
+        "path": ".local/datasets/video30/originals/caviar-Meet_WalkSplit/Meet_WalkSplit.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Meet_WalkSplit/mws1gt.xml",
+        "bytes": 2714967,
+        "sha256": "a3f76c5f9539d9bff4730863d503ce979c5dfe5e9595689578eedd4d6bbd790b",
+        "path": ".local/datasets/video30/originals/caviar-Meet_WalkSplit/mws1gt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-Meet_WalkSplit__derived.mp4",
+        "bytes": 3163410,
+        "sha256": "9ffe5db52e9efbb8276356a9084f6238dd7de88a24d5852a1e0616e6c67d0b4a",
+        "frames": 624,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 2,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "91a5b5c2a3060a02ebd1ee4264ab78ae7681e02d17d16c2546fcc7751c91805e",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-Meet_WalkSplit__derived.mapping.json",
+        "mapping_sha256": "399a97f4c430aacd5489e65f0a1f26ceaf7676acfe89a3bd7ebd8af0daa6c3fa"
+      }
+    },
+    {
+      "id": "caviar-Rest_InChair",
+      "dataset": "CAVIAR",
+      "class_hint": "resting_in_chair",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_InChair/Rest_InChair.mpg",
+      "original_filename": "Rest_InChair.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_InChair/ricgt.xml",
+      "annotation_filename": "ricgt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_InChair/Rest_InChair.mpg",
+        "bytes": 11700215,
+        "sha256": "19b32edd0fe6ad0c0243f3c94adc787ffee28d8a74cb8ca73473fdfb996c423a",
+        "path": ".local/datasets/video30/originals/caviar-Rest_InChair/Rest_InChair.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Rest_InChair/ricgt.xml",
+        "bytes": 1019250,
+        "sha256": "15be1e83afe70162e6a2e14464918c5e267e3b12d9d6463eaa0f57a10d8be96f",
+        "path": ".local/datasets/video30/originals/caviar-Rest_InChair/ricgt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-Rest_InChair__derived.mp4",
+        "bytes": 5110164,
+        "sha256": "9d29de8e99514a9dd42f133d24ba2e9aa5204124d99d0b7f4a9f259d1bf21a2d",
+        "frames": 1008,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 1,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "19b32edd0fe6ad0c0243f3c94adc787ffee28d8a74cb8ca73473fdfb996c423a",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-Rest_InChair__derived.mapping.json",
+        "mapping_sha256": "90bd30e6b3174088d2c214c3af0bec034d35a92ce4334cd173a48df53ec98eb9"
+      }
+    },
+    {
+      "id": "caviar-Fight_Chase",
+      "dataset": "CAVIAR",
+      "class_hint": "staged_fight_and_chase",
+      "label_kind": "publisher_sequence_description",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "credit": "EC Funded CAVIAR project / IST 2001 37540; INRIA and Lisbon shopping-centre sequences",
+      "original_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Fight_Chase/Fight_Chase.mpg",
+      "original_filename": "Fight_Chase.mpg",
+      "annotation_url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Fight_Chase/fcgt.xml",
+      "annotation_filename": "fcgt.xml",
+      "original": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Fight_Chase/Fight_Chase.mpg",
+        "bytes": 5087190,
+        "sha256": "f8cd06377f1b5e821cf6f397bf8caf0f8173e82f988947fe90a4e33c059f8f4f",
+        "path": ".local/datasets/video30/originals/caviar-Fight_Chase/Fight_Chase.mpg"
+      },
+      "annotation": {
+        "url": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/Fight_Chase/fcgt.xml",
+        "bytes": 2207120,
+        "sha256": "2b5c07c9eaa668deba11304105ed935060b5fb3021e606820559884e4d6ebe25",
+        "path": ".local/datasets/video30/originals/caviar-Fight_Chase/fcgt.xml"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/caviar-Fight_Chase__derived.mp4",
+        "bytes": 2186783,
+        "sha256": "2c4361842a1a2130101171ff42ad5a911352f6b50816bf7e9d875cd2e4e40470",
+        "frames": 432,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 4,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "f8cd06377f1b5e821cf6f397bf8caf0f8173e82f988947fe90a4e33c059f8f4f",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/caviar-Fight_Chase__derived.mapping.json",
+        "mapping_sha256": "fc9aa5e53226dee5b8a5753bdce97f7859e5409a7695c54aeceff6cd188613d0"
+      }
+    },
+    {
+      "id": "urfall-fall-01",
+      "dataset": "UR Fall",
+      "class_hint": "staged_fall",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-01-cam0-rgb.zip",
+      "original_filename": "fall-01-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-01-data.csv",
+      "annotation_filename": "fall-01-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-01-cam0-rgb.zip",
+        "bytes": 57727213,
+        "sha256": "e5ff96108d322d7fe5ba6871a4c50d9c26c59e74abea03d2b69b6be56521736f",
+        "path": ".local/datasets/video30/originals/urfall-fall-01/fall-01-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-01-data.csv",
+        "bytes": 2466,
+        "sha256": "60e156223725e401155b4fd25a672c498ed5b4e17897337c6971d90041818bcc",
+        "path": ".local/datasets/video30/originals/urfall-fall-01/fall-01-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-fall-01__derived.mp4",
+        "bytes": 411866,
+        "sha256": "c73845dbabc1437499b8e00840b1547b53a6b5566251f4c054d32338cb09570f",
+        "frames": 160,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "e5ff96108d322d7fe5ba6871a4c50d9c26c59e74abea03d2b69b6be56521736f",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-fall-01__derived.mapping.json",
+        "mapping_sha256": "8b333225154b60a7a3a11fd1d2c3a15de728141164a48a1c3fd4949d4dbdfb8d"
+      }
+    },
+    {
+      "id": "urfall-fall-02",
+      "dataset": "UR Fall",
+      "class_hint": "staged_fall",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-02-cam0-rgb.zip",
+      "original_filename": "fall-02-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-02-data.csv",
+      "annotation_filename": "fall-02-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-02-cam0-rgb.zip",
+        "bytes": 41132305,
+        "sha256": "8918e078c85f821ae897b8041ae789bdec7ba2f264a3e83b4fb22cf9443180e7",
+        "path": ".local/datasets/video30/originals/urfall-fall-02/fall-02-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-02-data.csv",
+        "bytes": 1631,
+        "sha256": "a254fe2a53402149db758c9048a971eaa5149772fda9992bcb835f4edcb069fa",
+        "path": ".local/datasets/video30/originals/urfall-fall-02/fall-02-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-fall-02__derived.mp4",
+        "bytes": 343018,
+        "sha256": "43b59ffc50e4236b154c15bc4a0bbd015e728b4e1f10818c9eee51a1e87bffe8",
+        "frames": 110,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "8918e078c85f821ae897b8041ae789bdec7ba2f264a3e83b4fb22cf9443180e7",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-fall-02__derived.mapping.json",
+        "mapping_sha256": "01cad6fad185034db9311a6e59e56b3ef165af5088c4113ed932e2ef132fda4a"
+      }
+    },
+    {
+      "id": "urfall-fall-04",
+      "dataset": "UR Fall",
+      "class_hint": "staged_fall",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-04-cam0-rgb.zip",
+      "original_filename": "fall-04-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-04-data.csv",
+      "annotation_filename": "fall-04-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-04-cam0-rgb.zip",
+        "bytes": 35816205,
+        "sha256": "032be8d9424e99d58a16067d2e6363c2aa3904753b485aca3daecf7541d59e52",
+        "path": ".local/datasets/video30/originals/urfall-fall-04/fall-04-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-04-data.csv",
+        "bytes": 1412,
+        "sha256": "bc37f51337f9aa68777c96b873517565fc1245393d42ce735e37db5083abbebb",
+        "path": ".local/datasets/video30/originals/urfall-fall-04/fall-04-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-fall-04__derived.mp4",
+        "bytes": 308098,
+        "sha256": "e2636935d1f7e049abb47a4d1572d3de2a10891ad9bf461b6915c5bb18dc438d",
+        "frames": 96,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "032be8d9424e99d58a16067d2e6363c2aa3904753b485aca3daecf7541d59e52",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-fall-04__derived.mapping.json",
+        "mapping_sha256": "b1e160e589dcda1c965db355d743251a8678f1de7475435b2e67b0ef0aa570e8"
+      }
+    },
+    {
+      "id": "urfall-fall-03",
+      "dataset": "UR Fall",
+      "class_hint": "staged_fall",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-03-cam0-rgb.zip",
+      "original_filename": "fall-03-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-03-data.csv",
+      "annotation_filename": "fall-03-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-03-cam0-rgb.zip",
+        "bytes": 81909306,
+        "sha256": "aab255558971c870f3f7d9b0fd85c681100f1b90d94640535ea0919915b1ef3b",
+        "path": ".local/datasets/video30/originals/urfall-fall-03/fall-03-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-03-data.csv",
+        "bytes": 3348,
+        "sha256": "ae908cb5bd084a65126570a1a4d276218dc8751f30c51cafc4ad2ebf87369d22",
+        "path": ".local/datasets/video30/originals/urfall-fall-03/fall-03-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-fall-03__derived.mp4",
+        "bytes": 863881,
+        "sha256": "5619e480ae7faa9f79068ce46d62916c438aecdcd2b6053571bf439029320092",
+        "frames": 215,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "aab255558971c870f3f7d9b0fd85c681100f1b90d94640535ea0919915b1ef3b",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-fall-03__derived.mapping.json",
+        "mapping_sha256": "2bc441f4508ff76a4a27aa521beb5b5daf8ea0e14bd9e1df448adabb1dcb8b50"
+      }
+    },
+    {
+      "id": "urfall-adl-01",
+      "dataset": "UR Fall",
+      "class_hint": "daily_activity",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-01-cam0-rgb.zip",
+      "original_filename": "adl-01-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-01-data.csv",
+      "annotation_filename": "adl-01-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-01-cam0-rgb.zip",
+        "bytes": 69079050,
+        "sha256": "a3d51bbc71cfd06899f541f46277699d72503465f02397f91b705cf36aa2c627",
+        "path": ".local/datasets/video30/originals/urfall-adl-01/adl-01-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-01-data.csv",
+        "bytes": 1358,
+        "sha256": "218bedf426ee8434a05999f1c0f8b718f493a14ccc95dda429278b471b211dc9",
+        "path": ".local/datasets/video30/originals/urfall-adl-01/adl-01-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-adl-01__derived.mp4",
+        "bytes": 434362,
+        "sha256": "87116a38ba3b80002651bab6b70c434b8657e2abc7d4645bf90ba0c7560da969",
+        "frames": 150,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "a3d51bbc71cfd06899f541f46277699d72503465f02397f91b705cf36aa2c627",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-adl-01__derived.mapping.json",
+        "mapping_sha256": "e8eca1906253b7afb2043ca03e63c6699a5f88e860cdf4ff6be727e1f5c41e9a"
+      }
+    },
+    {
+      "id": "urfall-fall-05",
+      "dataset": "UR Fall",
+      "class_hint": "staged_fall",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-05-cam0-rgb.zip",
+      "original_filename": "fall-05-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-05-data.csv",
+      "annotation_filename": "fall-05-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-05-cam0-rgb.zip",
+        "bytes": 54362110,
+        "sha256": "a9c993a0407db55d322a156acd3e6c31f0e8be3a59db4a55514bb2278aba1d3f",
+        "path": ".local/datasets/video30/originals/urfall-fall-05/fall-05-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/fall-05-data.csv",
+        "bytes": 2321,
+        "sha256": "447f004b51e3b84f803f52e9eac5eb30064ef4008dc49472ba3592b44f28c130",
+        "path": ".local/datasets/video30/originals/urfall-fall-05/fall-05-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-fall-05__derived.mp4",
+        "bytes": 401220,
+        "sha256": "45674c7097b396025e39b0bac29a17458f0cdd3e312d47022bef6f5b42effeb5",
+        "frames": 151,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "a9c993a0407db55d322a156acd3e6c31f0e8be3a59db4a55514bb2278aba1d3f",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-fall-05__derived.mapping.json",
+        "mapping_sha256": "7dd47bdc7c11aeb168e5f515a4f976b4ed7517195010329cd3671822f079f931"
+      }
+    },
+    {
+      "id": "urfall-adl-02",
+      "dataset": "UR Fall",
+      "class_hint": "daily_activity",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-02-cam0-rgb.zip",
+      "original_filename": "adl-02-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-02-data.csv",
+      "annotation_filename": "adl-02-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-02-cam0-rgb.zip",
+        "bytes": 83484438,
+        "sha256": "e66e837f4d685a02243798eaac7d4bd75fb1c2bf4a57cb18df8c1e4b8366550e",
+        "path": ".local/datasets/video30/originals/urfall-adl-02/adl-02-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-02-data.csv",
+        "bytes": 1658,
+        "sha256": "057b27faf6545d5545caa8298db1d005093bb8b81a89d82d5ac6ddda68ca3f05",
+        "path": ".local/datasets/video30/originals/urfall-adl-02/adl-02-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-adl-02__derived.mp4",
+        "bytes": 506253,
+        "sha256": "e96a24cb7badc70937fb1e8ae78104d84b054b5d9b582a30a7a7e3d2b97d1aad",
+        "frames": 180,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "e66e837f4d685a02243798eaac7d4bd75fb1c2bf4a57cb18df8c1e4b8366550e",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-adl-02__derived.mapping.json",
+        "mapping_sha256": "b7fd05d93283bb809eb56f56af82de8291cb1a6a3148979b08db1b4a696a55e4"
+      }
+    },
+    {
+      "id": "urfall-adl-03",
+      "dataset": "UR Fall",
+      "class_hint": "daily_activity",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-03-cam0-rgb.zip",
+      "original_filename": "adl-03-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-03-data.csv",
+      "annotation_filename": "adl-03-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-03-cam0-rgb.zip",
+        "bytes": 84403484,
+        "sha256": "d1fb6a98ea0121c58a05563035b5f25d21774c4a755a0f5b78b86867ee098b00",
+        "path": ".local/datasets/video30/originals/urfall-adl-03/adl-03-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-03-data.csv",
+        "bytes": 1658,
+        "sha256": "057b27faf6545d5545caa8298db1d005093bb8b81a89d82d5ac6ddda68ca3f05",
+        "path": ".local/datasets/video30/originals/urfall-adl-03/adl-03-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-adl-03__derived.mp4",
+        "bytes": 561543,
+        "sha256": "65647dca89b308862fd073d19d4b609a92095bf7885f7dfa79169403849fe13c",
+        "frames": 180,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "d1fb6a98ea0121c58a05563035b5f25d21774c4a755a0f5b78b86867ee098b00",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-adl-03__derived.mapping.json",
+        "mapping_sha256": "5ac8d9f927d55f957f78cc2208f973e023020b5c64dc7110d64be6430089b024"
+      }
+    },
+    {
+      "id": "urfall-adl-24",
+      "dataset": "UR Fall",
+      "class_hint": "daily_activity",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-24-cam0-rgb.zip",
+      "original_filename": "adl-24-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-24-data.csv",
+      "annotation_filename": "adl-24-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-24-cam0-rgb.zip",
+        "bytes": 15370322,
+        "sha256": "4d5670fbe4e35410fc84fc16fc5612b2197b7d2fd9ceea69b61c3373a571f615",
+        "path": ".local/datasets/video30/originals/urfall-adl-24/adl-24-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-24-data.csv",
+        "bytes": 587,
+        "sha256": "622743b2c29ec4f3f26cb7c2e3a5c4d12efa8e41f4d8274d732de09c4c179e88",
+        "path": ".local/datasets/video30/originals/urfall-adl-24/adl-24-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-adl-24__derived.mp4",
+        "bytes": 100167,
+        "sha256": "7c0aaa8f34705b181783954ac8cfeeaead8f162e745c1e2b71cd433aa6d4fc17",
+        "frames": 70,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "4d5670fbe4e35410fc84fc16fc5612b2197b7d2fd9ceea69b61c3373a571f615",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-adl-24__derived.mapping.json",
+        "mapping_sha256": "d40b51f3a2a5f9c77018bdefdded00c5a317d7da385847d5f88804194fd31d81"
+      }
+    },
+    {
+      "id": "urfall-adl-28",
+      "dataset": "UR Fall",
+      "class_hint": "daily_activity",
+      "label_kind": "publisher_fall_vs_adl_sequence_label",
+      "homepage": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "credit": "Bogdan Kwolek and Michal Kepski; University of Rzeszow; cite Kwolek & Kepski (2014)",
+      "original_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-28-cam0-rgb.zip",
+      "original_filename": "adl-28-cam0-rgb.zip",
+      "annotation_url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-28-data.csv",
+      "annotation_filename": "adl-28-data.csv",
+      "original": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-28-cam0-rgb.zip",
+        "bytes": 19374661,
+        "sha256": "22e6a8bb9364a484879d34433a4c7ebe6a3d0d7c46be26dcabe448ddbffccfe6",
+        "path": ".local/datasets/video30/originals/urfall-adl-28/adl-28-cam0-rgb.zip"
+      },
+      "annotation": {
+        "url": "https://fenix.ur.edu.pl/mkepski/ds/data/adl-28-data.csv",
+        "bytes": 722,
+        "sha256": "e8231be158f360571ca3c45014c32ed0b7bb2cfdd404eee60290c123fb12f1d9",
+        "path": ".local/datasets/video30/originals/urfall-adl-28/adl-28-data.csv"
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/urfall-adl-28__derived.mp4",
+        "bytes": 131311,
+        "sha256": "3a7e65cc477403151df8ab7f21cf5ba6b46e159bc91cf8b622d897b87db76daa",
+        "frames": 85,
+        "producer": "videomind-video30-pyav-v2",
+        "timestamp_policy": "Preserve source PTS; separate duplicate playback timestamps by one 1/90000-second tick; reject backwards timestamps",
+        "adjusted_frames": 0,
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "22e6a8bb9364a484879d34433a4c7ebe6a3d0d7c46be26dcabe448ddbffccfe6",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/urfall-adl-28__derived.mapping.json",
+        "mapping_sha256": "b2438978db94538b4109714db0f3bbf2f791809ad92527967cb20ecc2ca750e5"
+      }
+    },
+    {
+      "id": "roadscapes-day_11",
+      "dataset": "Roadscapes",
+      "class_hint": "Sequence_Day_11_clip1.mp4",
+      "label_kind": "publisher_sequence_name; AI annotations unverified",
+      "homepage": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "credit": "vijpandaturtle",
+      "original": {
+        "url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_11/Sequence_Day_11_clip1.mp4",
+        "bytes": 2960705,
+        "sha256": "81ff211cada1f3939b940b98c8b477b56049b00e00a44deeb2347f25925d4c79",
+        "path": ".local/datasets/video30/originals/roadscapes-day_11/Sequence_Day_11_clip1.mp4"
+      },
+      "annotation": null,
+      "source_metadata": {
+        "id": "roadscapes-day_11",
+        "title": "Sequence_Day_11_clip1.mp4",
+        "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_11/Sequence_Day_11_clip1.mp4",
+        "bytes": 2960705,
+        "sha256": "81ff211cada1f3939b940b98c8b477b56049b00e00a44deeb2347f25925d4c79",
+        "creator": "vijpandaturtle",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+        "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+        "annotation": {
+          "What is the action being performed by the ego vehicle? Answer in a single sentence.": "The ego vehicle is currently stationary in a traffic jam.",
+          "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "The traffic ahead is stationary, so the ego vehicle cannot move forward.",
+          "What should be driver be doing now ? Provide me a definite action.": "Maintain a safe distance from the car in front and be prepared to move when the traffic starts flowing.",
+          "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It appears to be early morning or late evening with overcast conditions. The ego vehicle is on a two-lane asphalt road in a suburban or semi-rural setting with moderate traffic congestion.",
+          "Video File Name": "Sequence_Day_11_clip1.mp4"
+        }
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/roadscapes-day_11__derived.mp4",
+        "bytes": 497501,
+        "sha256": "56fa74e6e50fd14a55ea1b2b1bf5e63feb2cd00b0cce5bc08056a2e5463c9816",
+        "frames": 150,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "81ff211cada1f3939b940b98c8b477b56049b00e00a44deeb2347f25925d4c79",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/roadscapes-day_11__derived.mapping.json",
+        "mapping_sha256": "c7e6dbe61254da830cda2686cc1c2449dbb6cec25df71e4fed891bd7d085c6a3"
+      }
+    },
+    {
+      "id": "roadscapes-day_12",
+      "dataset": "Roadscapes",
+      "class_hint": "Sequence_Day_12_clip1.mp4",
+      "label_kind": "publisher_sequence_name; AI annotations unverified",
+      "homepage": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "credit": "vijpandaturtle",
+      "original": {
+        "url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_12/Sequence_Day_12_clip1.mp4",
+        "bytes": 5513499,
+        "sha256": "30dd1b31e98371585fc1bdcec01b2c3cd315292774a78a27035b9913b0a2e52b",
+        "path": ".local/datasets/video30/originals/roadscapes-day_12/Sequence_Day_12_clip1.mp4"
+      },
+      "annotation": null,
+      "source_metadata": {
+        "id": "roadscapes-day_12",
+        "title": "Sequence_Day_12_clip1.mp4",
+        "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_12/Sequence_Day_12_clip1.mp4",
+        "bytes": 5513499,
+        "sha256": "30dd1b31e98371585fc1bdcec01b2c3cd315292774a78a27035b9913b0a2e52b",
+        "creator": "vijpandaturtle",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+        "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+        "annotation": {
+          "What is the action being performed by the ego vehicle? Answer in a single sentence.": "I am driving straight on the road.",
+          "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "I am driving straight because there is no obstacle or turn ahead.",
+          "What should be driver be doing now ? Provide me a definite action.": "You should reduce your speed and maintain a safe distance from the scooter ahead.",
+          "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It seems to be early morning or late evening as there is some sunlight present. The weather is dry and I am driving on a two-lane paved road within city limits with trees and buildings on either side.",
+          "Video File Name": "Sequence_Day_12_clip1.mp4"
+        }
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/roadscapes-day_12__derived.mp4",
+        "bytes": 766738,
+        "sha256": "202664d98e828d86a22d650062522853321bb9335822b5d952a34bc4c0f33d52",
+        "frames": 150,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "30dd1b31e98371585fc1bdcec01b2c3cd315292774a78a27035b9913b0a2e52b",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/roadscapes-day_12__derived.mapping.json",
+        "mapping_sha256": "bdc8bb6c3ebaa4c7b94e9dc0ed2b3b8b7fa1361e444f3c2fb32e968618d75f69"
+      }
+    },
+    {
+      "id": "roadscapes-day_13",
+      "dataset": "Roadscapes",
+      "class_hint": "Sequence_Day_13_clip1.mp4",
+      "label_kind": "publisher_sequence_name; AI annotations unverified",
+      "homepage": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "credit": "vijpandaturtle",
+      "original": {
+        "url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_13/Sequence_Day_13_clip1.mp4",
+        "bytes": 3069468,
+        "sha256": "7726df9216ac24cbbae17d3edcb8f0f600c04ecc5a172213cc5ac63b008d0ea6",
+        "path": ".local/datasets/video30/originals/roadscapes-day_13/Sequence_Day_13_clip1.mp4"
+      },
+      "annotation": null,
+      "source_metadata": {
+        "id": "roadscapes-day_13",
+        "title": "Sequence_Day_13_clip1.mp4",
+        "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_13/Sequence_Day_13_clip1.mp4",
+        "bytes": 3069468,
+        "sha256": "7726df9216ac24cbbae17d3edcb8f0f600c04ecc5a172213cc5ac63b008d0ea6",
+        "creator": "vijpandaturtle",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+        "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+        "annotation": {
+          "What is the action being performed by the ego vehicle? Answer in a single sentence.": "The ego vehicle is at a standstill in traffic.",
+          "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "The ego vehicle is stationary because there are vehicles in front and the traffic signal seems to be red.",
+          "What should be driver be doing now ? Provide me a definite action.": "The driver should remain stopped and alert, keeping a safe distance from the vehicle in front.",
+          "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It appears to be daytime with clear weather. The ego vehicle is on a paved road, possibly approaching an intersection with a traffic signal.",
+          "Video File Name": "Sequence_Day_13_clip1.mp4"
+        }
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/roadscapes-day_13__derived.mp4",
+        "bytes": 459728,
+        "sha256": "da99ef3896e595bc5b4a2835d032b0a7e8f04dfc4f49557a9b62bca633405088",
+        "frames": 150,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "7726df9216ac24cbbae17d3edcb8f0f600c04ecc5a172213cc5ac63b008d0ea6",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/roadscapes-day_13__derived.mapping.json",
+        "mapping_sha256": "b3bd81767d04202ad49d1dd7059cc7d0f96168e030cf69ec3aa5d306cf602e18"
+      }
+    },
+    {
+      "id": "roadscapes-night_12",
+      "dataset": "Roadscapes",
+      "class_hint": "Sequence_Night_12_clip1.mp4",
+      "label_kind": "publisher_sequence_name; AI annotations unverified",
+      "homepage": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "credit": "vijpandaturtle",
+      "original": {
+        "url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Night_12/Sequence_Night_12_clip1.mp4",
+        "bytes": 3433974,
+        "sha256": "b6820a4626b78a44080efdb8ce761f7521dac6932dc1f7c0b38e9dab28728820",
+        "path": ".local/datasets/video30/originals/roadscapes-night_12/Sequence_Night_12_clip1.mp4"
+      },
+      "annotation": null,
+      "source_metadata": {
+        "id": "roadscapes-night_12",
+        "title": "Sequence_Night_12_clip1.mp4",
+        "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Night_12/Sequence_Night_12_clip1.mp4",
+        "bytes": 3433974,
+        "sha256": "b6820a4626b78a44080efdb8ce761f7521dac6932dc1f7c0b38e9dab28728820",
+        "creator": "vijpandaturtle",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+        "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+        "annotation": {
+          "What is the action being performed by the ego vehicle? Answer in a single sentence.": "I am driving on a multi lane road, following the vehicles ahead of me.",
+          "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "I am maintaining a safe following distance behind the vehicles ahead of me to avoid any collisions.",
+          "What should be driver be doing now ? Provide me a definite action.": "Continue driving straight while maintaining a safe distance from other vehicles.",
+          "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It is nighttime and the road is wet, suggesting it might have rained earlier. The road is illuminated by streetlights and there is moderate traffic.",
+          "Video File Name": "Sequence_Night_12_clip1.mp4"
+        }
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/roadscapes-night_12__derived.mp4",
+        "bytes": 590069,
+        "sha256": "a2bd5fb260748a1cef8b28796045c86afe0a418b83591c52c8a026b94717bb0a",
+        "frames": 150,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "b6820a4626b78a44080efdb8ce761f7521dac6932dc1f7c0b38e9dab28728820",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/roadscapes-night_12__derived.mapping.json",
+        "mapping_sha256": "b485b29ad7e2fd391f9ad152aa03ac4bf94845d0da4217e64b11855de25999da"
+      }
+    },
+    {
+      "id": "roadscapes-night_13",
+      "dataset": "Roadscapes",
+      "class_hint": "Sequence_Night_13_clip1.mp4",
+      "label_kind": "publisher_sequence_name; AI annotations unverified",
+      "homepage": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "credit": "vijpandaturtle",
+      "original": {
+        "url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Night_13/Sequence_Night_13_clip1.mp4",
+        "bytes": 3029329,
+        "sha256": "a9b63e0df265dce8703165cf0f809c9961ed1ad5957597e40d9b667c5e8eb4d2",
+        "path": ".local/datasets/video30/originals/roadscapes-night_13/Sequence_Night_13_clip1.mp4"
+      },
+      "annotation": null,
+      "source_metadata": {
+        "id": "roadscapes-night_13",
+        "title": "Sequence_Night_13_clip1.mp4",
+        "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Night_13/Sequence_Night_13_clip1.mp4",
+        "bytes": 3029329,
+        "sha256": "a9b63e0df265dce8703165cf0f809c9961ed1ad5957597e40d9b667c5e8eb4d2",
+        "creator": "vijpandaturtle",
+        "license": "CC BY-NC 4.0",
+        "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+        "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+        "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+        "annotation": {
+          "What is the action being performed by the ego vehicle? Answer in a single sentence.": "I am driving forward on a two-lane road at night.",
+          "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "I am driving forward to reach my destination.",
+          "What should be driver be doing now ? Provide me a definite action.": "Maintain a safe following distance from the yellow van in front.",
+          "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It is nighttime with clear weather and low visibility. The road is a two-lane asphalt road with moderate traffic and trees and vegetation on either side.",
+          "Video File Name": "Sequence_Night_13_clip1.mp4"
+        }
+      },
+      "derivative": {
+        "path": ".local/datasets/video30/derived/roadscapes-night_13__derived.mp4",
+        "bytes": 515703,
+        "sha256": "b5e9adb16ac3d6894fd258cb1e231c248fd137a99a7225ff4a30ca450a7213ea",
+        "frames": 150,
+        "producer": "videomind-video30-pyav-v1",
+        "pyav_version": "16.1.0",
+        "encoding": {
+          "codec": "libx264",
+          "crf": 23,
+          "preset": "veryfast",
+          "max_width": 640,
+          "threads": 2,
+          "max_b_frames": 0
+        },
+        "original_sha256": "a9b63e0df265dce8703165cf0f809c9961ed1ad5957597e40d9b667c5e8eb4d2",
+        "audio_policy": "video-only preview derivative; originals retained",
+        "original_audio_streams": 0,
+        "mapping_path": ".local/datasets/video30/derived/roadscapes-night_13__derived.mapping.json",
+        "mapping_sha256": "c550eecdd6120b1bb857133ffae180f061421640494ba736e0f4fa45152b570e"
+      }
+    }
+  ]
+}

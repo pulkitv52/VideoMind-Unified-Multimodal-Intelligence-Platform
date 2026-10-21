@@ -1,0 +1,328 @@
+{
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "assets": [
+    {
+      "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "sha256": "5619e480ae7faa9f79068ce46d62916c438aecdcd2b6053571bf439029320092",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "03b50ea9-9fe5-43ba-a596-44c9b0b4a9ac",
+      "sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "license": "CC-BY-3.0 (ESC-10 subset); source recording CC0",
+      "source": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-100032-A-0.wav",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "046135c4-ef67-455d-b5a1-f7f0109e4655",
+      "sha256": "61b920089cc13832bb4b6ae3f656735207cb013e25cbc5f91a7f8405b4c46b76",
+      "license": "Project attribution notice; referenced dataset terms apply",
+      "source": null,
+      "status": "attribution_notice"
+    },
+    {
+      "asset_id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "sha256": "65647dca89b308862fd073d19d4b609a92095bf7885f7dfa79169403849fe13c",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "182495e9-8cc6-4913-b5b2-5ed9a232db40",
+      "sha256": "f59f0f21606a5f56a6e362125bc29a53685c3ad7cd5d28aa6e35bb36ea7eb8b8",
+      "license": "Project attribution notice; referenced dataset terms apply",
+      "source": null,
+      "status": "attribution_notice"
+    },
+    {
+      "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "sha256": "87116a38ba3b80002651bab6b70c434b8657e2abc7d4645bf90ba0c7560da969",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "218a6dc5-7c9b-41c6-9b74-4021e5270aff",
+      "sha256": "69d69e27058f221baa40b7987210eb96fac0e7c1f5bad20ec5bcdfb4bfc2f75c",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+      "sha256": "a704c67a4057897066e133af1065a382fba43a2df3506c390d2816f2c5f476db",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+      "sha256": "da99ef3896e595bc5b4a2835d032b0a7e8f04dfc4f49557a9b62bca633405088",
+      "license": "CC BY-NC 4.0",
+      "source": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "33fee373-ff1f-4070-bb95-f4d649f078a9",
+      "sha256": "ae6eb54e31cc218507283f745fc194f51794e37e94d32cc2c656f59c8ee29b4b",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "468ad7f4-f4d2-48e1-9e5e-c8cd80eb2073",
+      "sha256": "f0da3dea308638c4f4d8b2fdd39b615d68ac320ad558b87b651e843f621c5377",
+      "license": "Project attribution notice; referenced dataset terms apply",
+      "source": null,
+      "status": "attribution_notice"
+    },
+    {
+      "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+      "sha256": "56fa74e6e50fd14a55ea1b2b1bf5e63feb2cd00b0cce5bc08056a2e5463c9816",
+      "license": "CC BY-NC 4.0",
+      "source": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "5d26ac15-0c21-4d92-ba69-99a1b298ed71",
+      "sha256": "f46c5d64b7a69e29133de988397430da27a6c7808d60e1a328f00847fdf3e911",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "5f8291ee-de0c-46db-a60e-886d3063f6a2",
+      "sha256": "d81607cec28e5ddb84aa6fe2e57acc1c8807042b78adc7e4933be62ee22c057d",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "6462afb0-a85e-41a7-b137-f2c3c2d5901c",
+      "sha256": "7a77905b1ba9dab6f3330db5b5d36e0590682087a4fe7dd87595e8d631174ff7",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "sha256": "c73845dbabc1437499b8e00840b1547b53a6b5566251f4c054d32338cb09570f",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+      "sha256": "202664d98e828d86a22d650062522853321bb9335822b5d952a34bc4c0f33d52",
+      "license": "CC BY-NC 4.0",
+      "source": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+      "sha256": "b5e9adb16ac3d6894fd258cb1e231c248fd137a99a7225ff4a30ca450a7213ea",
+      "license": "CC BY-NC 4.0",
+      "source": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+      "sha256": "43b59ffc50e4236b154c15bc4a0bbd015e728b4e1f10818c9eee51a1e87bffe8",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "71c9efc3-b819-4183-847b-5637eaa82530",
+      "sha256": "505e66d571defab7868b7c39627b680629a4ff314cc0ee87858e63a9180ee64d",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "75f12e38-6e42-4ffd-91de-460adcc96ef9",
+      "sha256": "d70c0e7eba41d26829790ca242dab08c9d717d67b3c9dd12009ed29979dc2f9a",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+      "sha256": "45674c7097b396025e39b0bac29a17458f0cdd3e312d47022bef6f5b42effeb5",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "7bc4eab6-4e28-446a-9a4f-6e754f401eb4",
+      "sha256": "ee002f556203a1ae70bfeeb10783b7d8923d08b24d49bcbd991c0843f5d60ed5",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "85b46705-57f0-4f53-8426-28ca7c2fae41",
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "license": "CC0-1.0",
+      "source": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "890d879d-fa02-46cc-96ef-41dd7b7cf2d7",
+      "sha256": "1be4e6b1208c23965455ad87d9308b71b32d496fb9255dd56dde632f7e25fdf8",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "8e111b44-3a38-4bd1-aad9-9412591a5472",
+      "sha256": "73d612f6eb86c2ee8dec6942b09a910710148f9a576f2846eccb55f556c5b6e2",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "8eb8dc74-1483-4a70-a382-930a48417b83",
+      "sha256": "9ffe5db52e9efbb8276356a9084f6238dd7de88a24d5852a1e0616e6c67d0b4a",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "8f99b0ea-3d03-435f-891e-665ae5b02c05",
+      "sha256": "f59f0f21606a5f56a6e362125bc29a53685c3ad7cd5d28aa6e35bb36ea7eb8b8",
+      "license": "Project attribution notice; referenced dataset terms apply",
+      "source": null,
+      "status": "attribution_notice"
+    },
+    {
+      "asset_id": "914bfe5c-6752-4d6f-9945-18b86598c120",
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "license": "CC0-1.0",
+      "source": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "966e79e8-a321-4797-aaea-35146257aa06",
+      "sha256": "2305dd62f10bae5452df2d0d6a60b82777c884938c310a106ea2a37baefb971a",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "98b1ec74-3203-4d42-82d8-5ea74525108e",
+      "sha256": "6919639cdc00eb78e1d800641feadd450b7fd185d74504b4eced7e1267fdf9e6",
+      "license": "Project attribution notice; referenced dataset terms apply",
+      "source": null,
+      "status": "attribution_notice"
+    },
+    {
+      "asset_id": "9f92e8f2-e8a9-4b11-9744-b5fa4c68aef4",
+      "sha256": "a1cbb22eec512cf1ca4015d42ab56268c89809b49b6d55746ae17ef6d7bac2bd",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "a78c0684-d13f-4d13-b42c-413881462520",
+      "sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "license": "CC-BY-3.0 (ESC-10 subset); source recording CC0",
+      "source": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-100032-A-0.wav",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "b186f3ae-a039-4fb2-a32d-63d90f1d9067",
+      "sha256": "bbf0d6713c0bbc141d5dc8db791062984f03e117d1a00a32ea72a5e0431d178a",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "b28d1915-2510-4158-9705-498550ebdaf9",
+      "sha256": "3a7e65cc477403151df8ab7f21cf5ba6b46e159bc91cf8b622d897b87db76daa",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+      "sha256": "7c0aaa8f34705b181783954ac8cfeeaead8f162e745c1e2b71cd433aa6d4fc17",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+      "sha256": "2c4361842a1a2130101171ff42ad5a911352f6b50816bf7e9d875cd2e4e40470",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+      "sha256": "6f0d7edc011376f12a02c9b27cb393f33ac5e3bd14d992b5738e1dcf509d4f6c",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "d1f2f63c-36cf-4f93-8eb9-13963cd8bb91",
+      "sha256": "ff98f36413b6c4c4b1394b7a1730c0d21073f2e52cf441bc6ec1d79911a0afa2",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "sha256": "e2636935d1f7e049abb47a4d1572d3de2a10891ad9bf461b6915c5bb18dc438d",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "e176aae0-2d6d-4f97-8000-e215b4cc99fa",
+      "sha256": "66587e5597b73de77a6a4527831ccde748098ac5c9d087967a13d2480df1cd97",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "ee190776-cd93-48a0-84f0-dc1cba089274",
+      "sha256": "b1515e86e68c26b3a28b9c39e1f36773cb87c8f37d29b6b2d222389bc3329025",
+      "license": "Project-generated development fixture; not independent gold",
+      "source": null,
+      "status": "owned_fixture_requires_release_review"
+    },
+    {
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "sha256": "e96a24cb7badc70937fb1e8ae78104d84b054b5d9b582a30a7a7e3d2b97d1aad",
+      "license": "CC BY-NC-SA 4.0; noncommercial academic use",
+      "source": "https://fenix.ur.edu.pl/mkepski/ds/uf.html",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "f527ae38-65b8-4bac-87c4-54d6374351e0",
+      "sha256": "284e331ee9f60c555ce51ec4e7b30317ee37c214e22b84e1d0c3dde655cb7a1f",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+      "sha256": "a2bd5fb260748a1cef8b28796045c86afe0a418b83591c52c8a026b94717bb0a",
+      "license": "CC BY-NC 4.0",
+      "source": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "status": "upstream_terms_recorded"
+    },
+    {
+      "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+      "sha256": "9d29de8e99514a9dd42f133d24ba2e9aa5204124d99d0b7f4a9f259d1bf21a2d",
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "source": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/",
+      "status": "upstream_terms_recorded"
+    }
+  ],
+  "redistribution_authorized": false
+}

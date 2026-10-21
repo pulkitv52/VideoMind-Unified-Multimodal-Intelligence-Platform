@@ -1,0 +1,90 @@
+{
+  "phase": 6,
+  "status": "complete",
+  "completed_at": "2026-10-20T08:04:52.789044+00:00",
+  "client_date": "2026-10-20",
+  "scope": "CPU text-query hybrid retrieval, filters, grouped evidence, citations and UI; Phase 7 release evaluation deferred",
+  "verification": {
+    "command": "python3 scripts/dev.py verify",
+    "passed": 188,
+    "seconds": 151.01,
+    "warnings": [
+      "Upstream Starlette/httpx TestClient deprecation"
+    ],
+    "frontend": "Strict TypeScript and Vite production build passed",
+    "model": "Real pinned CPU EmbeddingGemma 2; deterministic API fixtures tested separately"
+  },
+  "exit_criteria": {
+    "F1_F2_F7": "Existing connector/ingestion/lifecycle tests remain passing; search exposes authorized processing counts and links to file status",
+    "F3": "Real native silent-video, non-speech audio, transcript and OCR filtered queries find expected retained fixtures",
+    "F4": "Dense exact cosine + PostgreSQL FTS + literal identifier candidates; common filters; evidence grouping; one vote per group/branch; RRF and asset diversity",
+    "F5_F6": "Every returned match/context citation resolves to its immutable revision; every top result has a valid document/media viewer descriptor; browser checks include loaded native audio/video and original document/image evidence",
+    "F8": "Runtime-role source/workspace isolation, guessed IDs, facets, context, tombstones and revocation during inference/ranking tested; no shared query cache",
+    "F9": "HTTP trace request ID, generation/profile pin, configuration SHA, filters and branch provenance persisted in response; generation cutover during inference tested",
+    "nontext_retention": "No text reranker; native-only audio/video/image results remain valid without OCR/transcription/captions",
+    "experiment": "Unified versus per-modality dense candidate budgets available with same 150-candidate total ceiling; actual fixed queries checked in both modes",
+    "abstention": "Versioned 0.70 dense floor calibrated on four positive and six negative local development queries; all six development negatives abstain in hybrid search"
+  },
+  "adopted_changes": {
+    "dense_backend": "Exact cosine for this small CPU corpus; HNSW preserved, filtered ANN activation/scale evaluation deferred",
+    "query_chars": 2000,
+    "top_k_max": 30,
+    "dense_candidates": 150,
+    "lexical_candidates": 150,
+    "identifier_candidates": 50,
+    "rrf_k": 60,
+    "dense_floor": 0.7,
+    "group_iou": 0.5,
+    "max_matching_citations": 8,
+    "neighbors": 2,
+    "cpu_busy": "Immediate retryable 503 while shared heavy gate is held",
+    "per_modality_budgets": {
+      "document": 38,
+      "image": 38,
+      "video": 37,
+      "audio": 37
+    }
+  },
+  "active_generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "retained_assets": 46,
+  "vectors": 197,
+  "corpus_report": "evaluation/reports/phase6-corpus.json",
+  "calibration_report": "evaluation/reports/phase6-calibration.json",
+  "browser_report": "evaluation/reports/phase6-browser.json",
+  "runtime_report": "evaluation/reports/phase6-runtime.json",
+  "screenshots": [
+    "evaluation/reports/phase6-image-evidence.jpg",
+    "evaluation/reports/phase6-search.jpg",
+    "evaluation/reports/phase6-audio-evidence.jpg",
+    "evaluation/reports/phase6-video-evidence.jpg",
+    "evaluation/reports/phase6-document-evidence.jpg"
+  ],
+  "limitations": [
+    "Development smoke is not independent gold relevance evaluation or the Phase 7 release gate",
+    "Global dense floor may reject useful matches after corpus changes; lexical matches independently qualify",
+    "No filtered ANN/scaling/latency percentile or peak-memory benchmark in Phase 6",
+    "CPU producers are non-preemptive; busy search is retryable and does not silently return lexical-only results",
+    "No generated answers, image/audio query uploads, caption generation, GPU or external connectors",
+    "Tags filter stored metadata; tag editor and general language detection are not implemented"
+  ],
+  "source_sha256": {
+    "backend/src/videomind/main.py": "592aff1e2441c37570462650c5ccb005bc81ad1463c790be326663e2409f1cdf",
+    "backend/src/videomind/retrieval/__init__.py": "3f436b6be4764bee3f1be1c2ff77e813684daa6feb4bf898af68df19b6efd7d8",
+    "backend/src/videomind/retrieval/config.py": "c4c9ec624494180f1ec39a72c4e703466b5952dba9abdf0291aededf6d8a80f7",
+    "backend/src/videomind/retrieval/contracts.py": "2cea48d4e12a1eb22cd74d2f316b5263715f25b076e2bbe3d822f8ffd44f01c3",
+    "backend/src/videomind/retrieval/ranking.py": "0cf8986c9c7d9542a488bbabbd79c6e24c1eb699dabc428aa436362d8e1ae86c",
+    "backend/src/videomind/retrieval/repository.py": "b25d2169834e7319361117590a1cf4150651b0beb26fa5b44728a873710bbb54",
+    "backend/src/videomind/retrieval/routes.py": "f4f50ce001a6e799478e24ef306b78958e594f3b3eb1c1558b4b97212354dec4",
+    "backend/tests/integration/test_search.py": "38edffc905af3d501ea71ca5568794379c9aad696aff4e90b4308bc98c10abaf",
+    "backend/tests/test_retrieval.py": "009364ce37b78f6ec07a453cf1ddf0a2dc947e8092ba18c56b4785879f993ac9",
+    "backend/uv.lock": "c18c8004b73797edf6f915584db9d2f8f056ad7d2a2de0fdbce2769ade67a179",
+    "frontend/pnpm-lock.yaml": "21174af8bb5bc6cf9096e3504b8d55d038d912d926c24d8c08bc1f948b6910ca",
+    "frontend/src/app/App.tsx": "0422c80d6c4f07e11d174173ad2533976874d27ad36b9ba25dc5d9d145b3a388",
+    "frontend/src/app/styles.css": "523d111995aa88a94cc7cd0b194c58ea49fada6951bb173ef5073bcb2c258004",
+    "frontend/src/features/indexes/IndexStatus.tsx": "c1bed350dd6eabaace60418299827e82cbead7ac894a5f5443c0be9064f88e0e",
+    "frontend/src/features/search/Search.tsx": "65d2bce75c39560267eef825a432d890de4967036ab7d482f671e41452c5dd81",
+    "frontend/src/features/sources/SourceList.tsx": "6fa45c290737d00985b85585f54fe56bced95ebb27a4fb7e7d798475b5c834d4",
+    "scripts/check_search_evidence.py": "d874893becfc6931e9c565aed5748097e577e4c62a4998a8189552ab4fb5dbd9"
+  }
+}

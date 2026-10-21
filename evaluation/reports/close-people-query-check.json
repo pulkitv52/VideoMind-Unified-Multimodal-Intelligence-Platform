@@ -1,0 +1,39 @@
+{
+  "query": "two people very close to each other",
+  "previous_query": "two person fighting",
+  "previous_score_same_window": 0.6308406059430958,
+  "fight_windows": [
+    {
+      "title": "caviar-Fight_Chase__derived.mp4",
+      "start_ms": 10000,
+      "end_ms": 17480,
+      "score": 0.5834903617512749
+    },
+    {
+      "title": "caviar-Fight_Chase__derived.mp4",
+      "start_ms": 0,
+      "end_ms": 12000,
+      "score": 0.5785187389232231
+    }
+  ],
+  "top_native": [
+    {
+      "title": "caviar-OneShopOneWait1cor__derived.mp4",
+      "start_ms": 0,
+      "end_ms": 12000,
+      "score": 0.6168733467535181
+    },
+    {
+      "title": "caviar-OneShopOneWait1cor__derived.mp4",
+      "start_ms": 40000,
+      "end_ms": 52000,
+      "score": 0.6162193646300229
+    },
+    {
+      "title": "caviar-ThreePastShop1cor__derived.mp4",
+      "start_ms": 0,
+      "end_ms": 12000,
+      "score": 0.6159216027353284
+    }
+  ]
+}

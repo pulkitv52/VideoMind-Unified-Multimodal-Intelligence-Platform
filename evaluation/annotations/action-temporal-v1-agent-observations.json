@@ -1,0 +1,231 @@
+{
+  "protocol_sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9",
+  "provenance": "agent_observation",
+  "gold_eligible": false,
+  "independent_human_reviewers": [],
+  "reviewer": "Codex visual inspection",
+  "limitations": "Post-hoc development-only observations after seeing scores. Contact sheets can miss between-frame motion. No intent, medical condition or absence gold inferred. Human worksheet remains untouched. Boundary ranges are visual proposals and need independent review.",
+  "assets": [
+    {
+      "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+      "asset_key": "caviar-Fight_Chase",
+      "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+      "sha256": "2c4361842a1a2130101171ff42ad5a911352f6b50816bf7e9d875cd2e4e40470",
+      "mapping_sha256": "fc9aa5e53226dee5b8a5753bdce97f7859e5409a7695c54aeceff6cd188613d0",
+      "observation": "Two people move through lobby and approach/contact near left furniture around 11-14 s. Proximity/contact is visible; fighting intent and exact action boundaries remain unresolved.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+      "sha256": "a704c67a4057897066e133af1065a382fba43a2df3506c390d2816f2c5f476db",
+      "mapping_sha256": "7828e66cacb7f5eb318c68a2d4d776aacc4cc0d4e6cdd4056ffeb54a8477564d",
+      "observation": "Person returns into view around 24 s, descends around 26-28 s, remains on floor until about 35 s, then rises. Current 30-40.56 s window starts after the proposed descent. Distant overhead view limits onset precision.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [
+        {
+          "action": "falling",
+          "start_range_ms": [
+            25920,
+            26400
+          ],
+          "end_range_ms": [
+            27840,
+            28320
+          ],
+          "visibility": "uncertain",
+          "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+        }
+      ],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+      "asset_key": "caviar-Rest_InChair",
+      "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+      "sha256": "9d29de8e99514a9dd42f133d24ba2e9aa5204124d99d0b7f4a9f259d1bf21a2d",
+      "mapping_sha256": "90bd30e6b3174088d2c214c3af0bec034d35a92ce4334cd173a48df53ec98eb9",
+      "observation": "Indoor lobby with walking and a person resting near the furniture. Distant people and furniture occlusion prevent reliable chair-action boundaries from this sheet.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+      "asset_key": "caviar-Walk1",
+      "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+      "sha256": "6f0d7edc011376f12a02c9b27cb393f33ac5e3bd14d992b5738e1dcf509d4f6c",
+      "mapping_sha256": "b49897304fdee9dbc2d66a17bac8adc381de98235ecf28ae4f327c3e46325f42",
+      "observation": "People traverse an indoor lobby; sampled frames support indoor walking context. No temporal walking labels assigned.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+      "asset_key": "roadscapes-day_11",
+      "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+      "sha256": "56fa74e6e50fd14a55ea1b2b1bf5e63feb2cd00b0cce5bc08056a2e5463c9816",
+      "mapping_sha256": "c7e6dbe61254da830cda2686cc1c2449dbb6cec25df71e4fed891bd7d085c6a3",
+      "observation": "Road traffic and motorcyclists. Small distant figures cannot be confidently classified as walking pedestrians at sheet resolution.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+      "asset_key": "roadscapes-day_12",
+      "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+      "sha256": "202664d98e828d86a22d650062522853321bb9335822b5d952a34bc4c0f33d52",
+      "mapping_sha256": "bdc8bb6c3ebaa4c7b94e9dc0ed2b3b8b7fa1361e444f3c2fb32e968618d75f69",
+      "observation": "Road traffic, motorcyclists and roadside buildings. Pedestrian walking remains unknown at sheet resolution.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+      "asset_key": "roadscapes-day_13",
+      "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+      "sha256": "da99ef3896e595bc5b4a2835d032b0a7e8f04dfc4f49557a9b62bca633405088",
+      "mapping_sha256": "b3bd81767d04202ad49d1dd7059cc7d0f96168e030cf69ec3aa5d306cf602e18",
+      "observation": "Stopped road traffic and people on motorcycles/bicycles. Visible people alone do not establish walking.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+      "asset_key": "roadscapes-night_12",
+      "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+      "sha256": "a2bd5fb260748a1cef8b28796045c86afe0a418b83591c52c8a026b94717bb0a",
+      "mapping_sha256": "b485b29ad7e2fd391f9ad152aa03ac4bf94845d0da4217e64b11855de25999da",
+      "observation": "Night road traffic; glare and small subjects limit pedestrian visibility. Walking status unknown.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+      "asset_key": "roadscapes-night_13",
+      "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+      "sha256": "b5e9adb16ac3d6894fd258cb1e231c248fd137a99a7225ff4a30ca450a7213ea",
+      "mapping_sha256": "c550eecdd6120b1bb857133ffae180f061421640494ba736e0f4fa45152b570e",
+      "observation": "Night road with truck and motorcycles; low light limits pedestrian visibility. Walking status unknown.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "asset_key": "urfall-adl-01",
+      "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+      "sha256": "87116a38ba3b80002651bab6b70c434b8657e2abc7d4645bf90ba0c7560da969",
+      "mapping_sha256": "e8eca1906253b7afb2043ca03e63c6699a5f88e860cdf4ff6be727e1f5c41e9a",
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "asset_key": "urfall-adl-02",
+      "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+      "sha256": "e96a24cb7badc70937fb1e8ae78104d84b054b5d9b582a30a7a7e3d2b97d1aad",
+      "mapping_sha256": "b7fd05d93283bb809eb56f56af82de8291cb1a6a3148979b08db1b4a696a55e4",
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+      "asset_key": "urfall-adl-24",
+      "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+      "sha256": "7c0aaa8f34705b181783954ac8cfeeaead8f162e745c1e2b71cd433aa6d4fc17",
+      "mapping_sha256": "d40b51f3a2a5f9c77018bdefdded00c5a317d7da385847d5f88804194fd31d81",
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "asset_key": "urfall-fall-01",
+      "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+      "sha256": "c73845dbabc1437499b8e00840b1547b53a6b5566251f4c054d32338cb09570f",
+      "mapping_sha256": "8b333225154b60a7a3a11fd1d2c3a15de728141164a48a1c3fd4949d4dbdfb8d",
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [
+        {
+          "action": "falling",
+          "start_range_ms": [
+            2936,
+            3203
+          ],
+          "end_range_ms": [
+            4004,
+            4271
+          ],
+          "visibility": "clear",
+          "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+        }
+      ],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+      "asset_key": "urfall-fall-02",
+      "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+      "sha256": "43b59ffc50e4236b154c15bc4a0bbd015e728b4e1f10818c9eee51a1e87bffe8",
+      "mapping_sha256": "01cad6fad185034db9311a6e59e56b3ef165af5088c4113ed932e2ef132fda4a",
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [
+        {
+          "action": "falling",
+          "start_range_ms": [
+            1334,
+            1601
+          ],
+          "end_range_ms": [
+            2699,
+            2936
+          ],
+          "visibility": "clear",
+          "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+        }
+      ],
+      "absence_labels": []
+    },
+    {
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "sha256": "e2636935d1f7e049abb47a4d1572d3de2a10891ad9bf461b6915c5bb18dc438d",
+      "mapping_sha256": "b1e160e589dcda1c965db355d743251a8678f1de7475435b2e67b0ef0aa570e8",
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold.",
+      "status": "provisional_agent_inspection",
+      "fall_proposals": [
+        {
+          "action": "falling",
+          "start_range_ms": [
+            266,
+            533
+          ],
+          "end_range_ms": [
+            1868,
+            2135
+          ],
+          "visibility": "clear",
+          "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+        }
+      ],
+      "absence_labels": []
+    }
+  ]
+}

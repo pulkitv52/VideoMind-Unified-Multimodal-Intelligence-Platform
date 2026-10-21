@@ -1,0 +1,2718 @@
+{
+  "protocol_sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9",
+  "recipe": "short4",
+  "input_recipe_sha256": "a1f513b12e7389bf1a60e796d8d65966a38d2d5c63e49e41d98006c08de8dfd1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "scope": "Ten complete UR Fall clips; development scoring only; one result per asset for provisional floor metrics; no production publication",
+  "complete": true,
+  "metric_eligible": true,
+  "gold_eligible": false,
+  "expected_windows": 19,
+  "encoded_windows": 19,
+  "window_inputs": [
+    {
+      "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "asset_key": "urfall-adl-01",
+      "title": "urfall-adl-01__derived.mp4",
+      "interval": [
+        0,
+        4000
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 21.19344161800109,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "44539b9ade4cadbb508ed1710c58d282ed2b4cb2f0e35871392c09670798660c"
+    },
+    {
+      "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "asset_key": "urfall-adl-01",
+      "title": "urfall-adl-01__derived.mp4",
+      "interval": [
+        2000,
+        5030
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 398,
+      "encode_seconds_observed": 13.095642087002489,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "b960dc607567326f523890b30ca93e9fa10ab9a7cceb68f442f5c765994b642c"
+    },
+    {
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "asset_key": "urfall-adl-02",
+      "title": "urfall-adl-02__derived.mp4",
+      "interval": [
+        0,
+        4000
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 19.318550669002434,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "bfd377909f298cc59954873005a05d81acb4caecf5b9a8820044185885cc7952"
+    },
+    {
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "asset_key": "urfall-adl-02",
+      "title": "urfall-adl-02__derived.mp4",
+      "interval": [
+        2000,
+        6000
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.790200831997936,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "3271327e6979812a462ef5789b379a37a26f52469ce70fe516a2f7d78225fa6e"
+    },
+    {
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "asset_key": "urfall-adl-02",
+      "title": "urfall-adl-02__derived.mp4",
+      "interval": [
+        4000,
+        6050
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 266,
+      "encode_seconds_observed": 9.25839321499734,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "0aea2e007d369bec6ecec7532d6fd3df201708d19ebbdd48ffc02a01ffbf6bb4"
+    },
+    {
+      "asset_id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "asset_key": "urfall-adl-03",
+      "title": "urfall-adl-03__derived.mp4",
+      "interval": [
+        0,
+        4000
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.54864914800055,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "64c1bc8a640aab86d07a27b2a0b43d8efd51127eacacd77828f2f319f05878ff"
+    },
+    {
+      "asset_id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "asset_key": "urfall-adl-03",
+      "title": "urfall-adl-03__derived.mp4",
+      "interval": [
+        2000,
+        6000
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.720229743001255,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "5c6026f2c1a224fddf5a5fb1481cefa077106ca0f8f3c11aa1ab4ff6f3bbe1f2"
+    },
+    {
+      "asset_id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "asset_key": "urfall-adl-03",
+      "title": "urfall-adl-03__derived.mp4",
+      "interval": [
+        4000,
+        6050
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 266,
+      "encode_seconds_observed": 8.885203812998952,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "82bb071273d6e74e7a5bf0bc5fa73c8304078ec169c550d1998c609ff5cc0124"
+    },
+    {
+      "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+      "asset_key": "urfall-adl-24",
+      "title": "urfall-adl-24__derived.mp4",
+      "interval": [
+        0,
+        2335
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 398,
+      "encode_seconds_observed": 0.0005681440015905537,
+      "cache_hit_on_first_record": true,
+      "input_sha256": "925cada1ed6f0089ad9c1d417a3e72c331cb8ca8d2bafc11cb2817a2c8096a3e"
+    },
+    {
+      "asset_id": "b28d1915-2510-4158-9705-498550ebdaf9",
+      "asset_key": "urfall-adl-28",
+      "title": "urfall-adl-28__derived.mp4",
+      "interval": [
+        0,
+        2841
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1009,
+          "pts": 90810,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2009,
+          "pts": 180810,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 398,
+      "encode_seconds_observed": 0.0011541550011315849,
+      "cache_hit_on_first_record": true,
+      "input_sha256": "5c0c5c77f4d8598b0a60a478bfb45ae774665f4065c980ec1b7f827dc4279d9a"
+    },
+    {
+      "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "asset_key": "urfall-fall-01",
+      "title": "urfall-fall-01__derived.mp4",
+      "interval": [
+        0,
+        4000
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.411314805001894,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "70936aa286b0f6d610dba2a5b9ddfa4fbeba73317b279772690a330c50ec757a"
+    },
+    {
+      "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "asset_key": "urfall-fall-01",
+      "title": "urfall-fall-01__derived.mp4",
+      "interval": [
+        2000,
+        5338
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 4004,
+          "pts": 360360,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5005,
+          "pts": 450450,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.547289248999732,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "c332f980b92dae7732edfc82ad1eaf1f5f3e4c414dd7e7872ac7cdbcd90a2e5d"
+    },
+    {
+      "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+      "asset_key": "urfall-fall-02",
+      "title": "urfall-fall-02__derived.mp4",
+      "interval": [
+        0,
+        3670
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 0.0008063760033110157,
+      "cache_hit_on_first_record": true,
+      "input_sha256": "0439ee1aa6f55a46b00e06c7e6568a43c8c3f31465292de8029a2b59267e5be1"
+    },
+    {
+      "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "asset_key": "urfall-fall-03",
+      "title": "urfall-fall-03__derived.mp4",
+      "interval": [
+        0,
+        4000
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.81543780100037,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "8cf178a870973345a8e7b6d1abfb4cb02c38dff98bc20202ac400ca460053fbd"
+    },
+    {
+      "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "asset_key": "urfall-fall-03",
+      "title": "urfall-fall-03__derived.mp4",
+      "interval": [
+        2000,
+        6000
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 18.613747662002424,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "b155897cc5c6a55eb6523ead02bcdc9a296bad5119c928907df61182aaa8cb57"
+    },
+    {
+      "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "asset_key": "urfall-fall-03",
+      "title": "urfall-fall-03__derived.mp4",
+      "interval": [
+        4000,
+        7240
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 6051,
+          "pts": 544590,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 7071,
+          "pts": 636390,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 19.170085567999195,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "0d022d903b201fa2def27c92076f9d044cf3e93d7bf4049f773a0159aff818f8"
+    },
+    {
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "split": "development",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 0.0007663920005143154,
+      "cache_hit_on_first_record": true,
+      "input_sha256": "a4665ab453b3feb8e055df3bf8a5248d89c2dd5e4a7068638aea64914ba2afec"
+    },
+    {
+      "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+      "asset_key": "urfall-fall-05",
+      "title": "urfall-fall-05__derived.mp4",
+      "interval": [
+        0,
+        4000
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 0,
+          "pts": 0,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 1001,
+          "pts": 90090,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 19.373407719998795,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "1f75051c2395694b7482b6d1bb460b20e107411a4800779df92efddd232793ec"
+    },
+    {
+      "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+      "asset_key": "urfall-fall-05",
+      "title": "urfall-fall-05__derived.mp4",
+      "interval": [
+        2000,
+        5064
+      ],
+      "split": "reserved_diagnostic",
+      "frames": [
+        {
+          "ms": 2002,
+          "pts": 180180,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 3003,
+          "pts": 270270,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 4011,
+          "pts": 360990,
+          "time_base": "1/90000"
+        },
+        {
+          "ms": 5031,
+          "pts": 452790,
+          "time_base": "1/90000"
+        }
+      ],
+      "tokens": 530,
+      "encode_seconds_observed": 19.431006457998592,
+      "cache_hit_on_first_record": false,
+      "input_sha256": "57224f53c8fb91c1b5185662af45efda56d27e4b832ebf5bf6814d3f5558a9c9"
+    }
+  ],
+  "runs": [
+    {
+      "seconds": 273.56971337300274,
+      "new_encodes": 15,
+      "cache_hits": 4,
+      "batch_max_new": 32,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.141MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "114.7MiB / 384MiB",
+              "CPUPerc": "1.78%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.62MiB / 3GiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.22MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.703GiB / 6.5GiB",
+              "CPUPerc": "0.29%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.13%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.262MiB / 128MiB",
+              "CPUPerc": "0.60%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "77.43MiB / 512MiB",
+              "CPUPerc": "0.08%"
+            }
+          ],
+          "total_observed_mib": 3353.305,
+          "host": {
+            "MemAvailable_kib": 3142944,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 337720
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.672MiB / 64MiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.7MiB / 384MiB",
+              "CPUPerc": "26.79%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.07MiB / 3GiB",
+              "CPUPerc": "0.03%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.18%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.4MiB / 512MiB",
+              "CPUPerc": "0.01%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.488MiB / 128MiB",
+              "CPUPerc": "0.55%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "83.9MiB / 512MiB",
+              "CPUPerc": "16.07%"
+            }
+          ],
+          "total_observed_mib": 3415.0519999999997,
+          "host": {
+            "MemAvailable_kib": 2943908,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 305800
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.836MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.4MiB / 384MiB",
+              "CPUPerc": "22.93%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.32MiB / 3GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.61MiB / 128MiB",
+              "CPUPerc": "2.44%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225MiB / 512MiB",
+              "CPUPerc": "2.69%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.551MiB / 128MiB",
+              "CPUPerc": "0.58%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.7MiB / 512MiB",
+              "CPUPerc": "0.02%"
+            }
+          ],
+          "total_observed_mib": 3412.879,
+          "host": {
+            "MemAvailable_kib": 2825616,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 306272
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.078MiB / 64MiB",
+              "CPUPerc": "0.37%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "179.3MiB / 384MiB",
+              "CPUPerc": "1.82%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.32MiB / 3GiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.31MiB / 256MiB",
+              "CPUPerc": "0.01%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.12%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.602MiB / 128MiB",
+              "CPUPerc": "0.64%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.44MiB / 512MiB",
+              "CPUPerc": "0.19%"
+            }
+          ],
+          "total_observed_mib": 3399.602,
+          "host": {
+            "MemAvailable_kib": 3024144,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 306332
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.828MiB / 64MiB",
+              "CPUPerc": "2.54%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178MiB / 384MiB",
+              "CPUPerc": "7.99%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.26MiB / 3GiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.91%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "3.46%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.14%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.6MiB / 512MiB",
+              "CPUPerc": "4.26%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.023MiB / 128MiB",
+              "CPUPerc": "0.49%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.47MiB / 512MiB",
+              "CPUPerc": "0.16%"
+            }
+          ],
+          "total_observed_mib": 3397.0029999999997,
+          "host": {
+            "MemAvailable_kib": 2941104,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 306692
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.59MiB / 64MiB",
+              "CPUPerc": "2.47%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "177.6MiB / 384MiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.75MiB / 3GiB",
+              "CPUPerc": "0.23%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.5MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.27MiB / 128MiB",
+              "CPUPerc": "0.53%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.2MiB / 512MiB",
+              "CPUPerc": "20.35%"
+            }
+          ],
+          "total_observed_mib": 3376.5919999999996,
+          "host": {
+            "MemAvailable_kib": 2861272,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 268024
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "seconds": 3.365834055999585,
+      "new_encodes": 0,
+      "cache_hits": 0,
+      "batch_max_new": 1,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.348MiB / 64MiB",
+              "CPUPerc": "0.02%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "114.8MiB / 384MiB",
+              "CPUPerc": "0.72%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.5MiB / 3GiB",
+              "CPUPerc": "0.22%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.24MiB / 256MiB",
+              "CPUPerc": "0.07%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.63GiB / 6.5GiB",
+              "CPUPerc": "0.36%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.1MiB / 512MiB",
+              "CPUPerc": "0.12%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "6.453MiB / 128MiB",
+              "CPUPerc": "0.64%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.85MiB / 512MiB",
+              "CPUPerc": "5.41%"
+            }
+          ],
+          "total_observed_mib": 3281.7709999999997,
+          "host": {
+            "MemAvailable_kib": 3126360,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206452
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.539MiB / 64MiB",
+              "CPUPerc": "0.30%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "127.6MiB / 384MiB",
+              "CPUPerc": "33.86%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.75MiB / 3GiB",
+              "CPUPerc": "0.30%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.49MiB / 256MiB",
+              "CPUPerc": "0.31%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.742MiB / 128MiB",
+              "CPUPerc": "3.02%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "81.89MiB / 512MiB",
+              "CPUPerc": "12.99%"
+            }
+          ],
+          "total_observed_mib": 3294.267,
+          "host": {
+            "MemAvailable_kib": 3139476,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206456
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "query_id": "fall-1",
+      "family": "fall",
+      "development_candidates": [
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.6920423540617537
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.6912369866505884
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.6739452011722857
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6720286739139256
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.6619202475212645
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.6568507867029523
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6479924105735607
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6431193709279439
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6239456071563471
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.5919899447038756
+        }
+      ],
+      "fall_floor_sweep": {
+        "0.65": {
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.6666666666666666,
+          "accepted_precision": 0.6,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.6920423540617537
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.6912369866505884
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.6739452011722857
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.6720286739139256
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6568507867029523
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        "0.675": {
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.6920423540617537
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.6912369866505884
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        "0.7": {
+          "ndcg_at_10": 0.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": null,
+          "accepted": [],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      }
+    },
+    {
+      "query_id": "fall-2",
+      "family": "fall",
+      "development_candidates": [
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.7231045708800199
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.7221834751326331
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.7194879130752103
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.7076936988736362
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.7040201672322569
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.6977076906225412
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6894497810360385
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6786893742466531
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6517400470957966
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6183221912566526
+        }
+      ],
+      "fall_floor_sweep": {
+        "0.65": {
+          "ndcg_at_10": 0.9060254355346823,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7231045708800199
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.7221834751326331
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6977076906225412
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6894497810360385
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        "0.675": {
+          "ndcg_at_10": 0.9060254355346823,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7231045708800199
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.7221834751326331
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6977076906225412
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6894497810360385
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        "0.7": {
+          "ndcg_at_10": 0.9060254355346823,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.3333333333333333,
+          "accepted_precision": 0.75,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7231045708800199
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.7221834751326331
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      }
+    },
+    {
+      "query_id": "fall-3",
+      "family": "fall",
+      "development_candidates": [
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.7035028467804845
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.7032331511197238
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.7001807228354322
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.69456308150616
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.6827110611757166
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6811190603650256
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.6804420202189382
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6699577208178715
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6458324943116855
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6080398731217364
+        }
+      ],
+      "fall_floor_sweep": {
+        "0.65": {
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7032331511197238
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.69456308150616
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6811190603650256
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6804420202189382
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        "0.675": {
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7032331511197238
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.69456308150616
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6811190603650256
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6804420202189382
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        "0.7": {
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7032331511197238
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      }
+    },
+    {
+      "query_id": "street-1",
+      "family": "street",
+      "development_candidates": [
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6312316900688627
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.621129206083963
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.6179588685339793
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6177467319082205
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.614517860502039
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6091676030997398
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6017344282452071
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.5982498243772727
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.5881233997168706
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.5817722420589366
+        }
+      ],
+      "fall_floor_sweep": null
+    },
+    {
+      "query_id": "sit-1",
+      "family": "sit",
+      "development_candidates": [
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.7055898494521952
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.701979920652328
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.6970182663452499
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6915583843217924
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.6546876661775324
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6517718679239618
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.649779472868709
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6478246352466334
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.645892238207141
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6288810475841853
+        }
+      ],
+      "fall_floor_sweep": null
+    },
+    {
+      "query_id": "bend-1",
+      "family": "bend",
+      "development_candidates": [
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.7181123618366965
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6996081129334492
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.69700465956035
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.6852079338340403
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.6776789394092814
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.6775672852851553
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.671976612032283
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.6548476386884107
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6317351333911558
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6045295031819314
+        }
+      ],
+      "fall_floor_sweep": null
+    },
+    {
+      "query_id": "lie-1",
+      "family": "lie",
+      "development_candidates": [
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6988604744775563
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.6952378084914053
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.6836656474396745
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.6820065792229377
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.671319036363802
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.6679301772811318
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6673093343381065
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6635172464694927
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6286778306952321
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6246392669331552
+        }
+      ],
+      "fall_floor_sweep": null
+    },
+    {
+      "query_id": "walk-1",
+      "family": "walk",
+      "development_candidates": [
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6605878367869498
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6584988458591913
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.657814436548184
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.6523294531608789
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.6491291037789074
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6490054985496572
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6488280372784904
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6442027895627187
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.6192220642140701
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.6172170020357312
+        }
+      ],
+      "fall_floor_sweep": null
+    },
+    {
+      "query_id": "fight-1",
+      "family": "fight",
+      "development_candidates": [
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.6527586376471758
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.6424059519660513
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.639018036852752
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6376198475069632
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.6257593925841393
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6217159506797146
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6163379410461105
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6122146114767311
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.6120752607733876
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.5975353265762522
+        }
+      ],
+      "fall_floor_sweep": null
+    },
+    {
+      "query_id": "close-1",
+      "family": "close",
+      "development_candidates": [
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            2000,
+            5030
+          ],
+          "score": 0.6355360201078449
+        },
+        {
+          "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+          "asset_key": "urfall-adl-01",
+          "title": "urfall-adl-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6346854520286311
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            4000,
+            6050
+          ],
+          "score": 0.6179417035368203
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            2000,
+            6000
+          ],
+          "score": 0.6116352819217533
+        },
+        {
+          "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+          "asset_key": "urfall-adl-02",
+          "title": "urfall-adl-02__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.6097136309851221
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "asset_key": "urfall-fall-02",
+          "title": "urfall-fall-02__derived.mp4",
+          "interval": [
+            0,
+            3670
+          ],
+          "score": 0.6072171600485162
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            0,
+            4000
+          ],
+          "score": 0.5997162771032539
+        },
+        {
+          "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+          "asset_key": "urfall-adl-24",
+          "title": "urfall-adl-24__derived.mp4",
+          "interval": [
+            0,
+            2335
+          ],
+          "score": 0.599034932464354
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "asset_key": "urfall-fall-01",
+          "title": "urfall-fall-01__derived.mp4",
+          "interval": [
+            2000,
+            5338
+          ],
+          "score": 0.5924538663489799
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "asset_key": "urfall-fall-04",
+          "title": "urfall-fall-04__derived.mp4",
+          "interval": [
+            0,
+            3203
+          ],
+          "score": 0.5870044593931155
+        }
+      ],
+      "fall_floor_sweep": null
+    }
+  ],
+  "partial_scores_withheld": false,
+  "reserved_groups_scored": false,
+  "temporal_metrics_status": "unmeasured: no adjudicated event boundaries",
+  "active_model_unchanged": true,
+  "published_vectors": 0
+}

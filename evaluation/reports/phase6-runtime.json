@@ -1,0 +1,67 @@
+{
+  "vectors": 197,
+  "published_assets": 46,
+  "migration": "0018_embedding_invariants",
+  "role": "videomind_app",
+  "model_loaded": true,
+  "resources": {
+    "kind": "Post-validation idle snapshot with CPU model loaded; not peak inference memory",
+    "total_mib": 4438.89,
+    "containers": [
+      {
+        "Name": "videomind-frontend-1",
+        "MemUsage": "3.164MiB / 64MiB",
+        "CPUPerc": "0.31%",
+        "PIDs": "2"
+      },
+      {
+        "Name": "videomind-api-1",
+        "MemUsage": "111.3MiB / 384MiB",
+        "CPUPerc": "33.57%",
+        "PIDs": "9"
+      },
+      {
+        "Name": "videomind-worker-1",
+        "MemUsage": "89.35MiB / 3GiB",
+        "CPUPerc": "0.33%",
+        "PIDs": "1"
+      },
+      {
+        "Name": "videomind-indexer-1",
+        "MemUsage": "61.64MiB / 256MiB",
+        "CPUPerc": "0.74%",
+        "PIDs": "1"
+      },
+      {
+        "Name": "videomind-dispatcher-1",
+        "MemUsage": "73.42MiB / 128MiB",
+        "CPUPerc": "1.88%",
+        "PIDs": "1"
+      },
+      {
+        "Name": "videomind-embedding-1",
+        "MemUsage": "3.721GiB / 6.5GiB",
+        "CPUPerc": "0.20%",
+        "PIDs": "9"
+      },
+      {
+        "Name": "videomind-minio-1",
+        "MemUsage": "204MiB / 512MiB",
+        "CPUPerc": "0.01%",
+        "PIDs": "9"
+      },
+      {
+        "Name": "videomind-redis-1",
+        "MemUsage": "6.266MiB / 128MiB",
+        "CPUPerc": "0.60%",
+        "PIDs": "6"
+      },
+      {
+        "Name": "videomind-postgres-1",
+        "MemUsage": "79.45MiB / 512MiB",
+        "CPUPerc": "19.01%",
+        "PIDs": "11"
+      }
+    ]
+  }
+}

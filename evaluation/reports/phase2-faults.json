@@ -1,0 +1,8 @@
+{
+  "folder_changed_bytes_new_revision": true,
+  "folder_removed_file_tombstoned": true,
+  "symlink_rejected": true,
+  "worker_restart_queued_upload_recovered": true,
+  "redis_restart_no_job_loss": true,
+  "expired_lease_reclaimed_and_stale_finish_rejected": true
+}

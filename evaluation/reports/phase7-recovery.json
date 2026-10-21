@@ -1,0 +1,58 @@
+{
+  "scope": "Isolated restore drill; primary never restored; tombstone replay uses clone-only fixture journal",
+  "scheduled_backups": false,
+  "durable_primary_tombstone_journal": false,
+  "backup_private": true,
+  "objects_restored_and_verified": 924,
+  "initial_restore": {
+    "counts": {
+      "objects": 924,
+      "assets": 46,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "active_assets": 46,
+    "probe_asset_memberships": 1,
+    "dangling_citations": 0,
+    "runtime_isolation": true,
+    "http_citations": 197
+  },
+  "deleted_clone": {
+    "counts": {
+      "objects": 924,
+      "assets": 46,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "active_assets": 45,
+    "probe_asset_memberships": 0,
+    "dangling_citations": 0,
+    "runtime_isolation": true,
+    "http_citations": 0
+  },
+  "fixture_tombstone_replay": {
+    "counts": {
+      "objects": 924,
+      "assets": 46,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "active_assets": 45,
+    "probe_asset_memberships": 0,
+    "dangling_citations": 0,
+    "runtime_isolation": true,
+    "http_citations": 0
+  },
+  "dump_sha256": "2d984b5dedf3570d41362d0855dab525163ae98400d431647b05923af25dc216",
+  "bytes": 104215414,
+  "seconds": 52.57009764599934
+}

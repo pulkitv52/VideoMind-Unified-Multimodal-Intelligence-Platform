@@ -1,0 +1,514 @@
+{
+  "version": 1,
+  "scope": "AT0/AT1 development pilot; not independent release gold",
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "workspace_id": "3d58c020-d4e3-4ecb-bb75-c17de45f6b3b",
+  "assets": [
+    {
+      "asset_key": "caviar-Fight_Chase",
+      "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+      "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "title": "caviar-Fight_Chase__derived.mp4",
+      "sha256": "2c4361842a1a2130101171ff42ad5a911352f6b50816bf7e9d875cd2e4e40470",
+      "path": ".local/datasets/video30/derived/caviar-Fight_Chase__derived.mp4",
+      "duration_ms": 17480,
+      "mapping_path": ".local/datasets/video30/derived/caviar-Fight_Chase__derived.mapping.json",
+      "mapping_sha256": "fc9aa5e53226dee5b8a5753bdce97f7859e5409a7695c54aeceff6cd188613d0",
+      "group": "caviar-Fight_Chase",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_description",
+      "publisher_context_intervals": [
+        {
+          "start_frame": 284,
+          "last_inclusive_frame": 416,
+          "interval": [
+            11560,
+            16880
+          ],
+          "label": "fighting",
+          "provenance": "publisher_frame_hypotheses"
+        }
+      ]
+    },
+    {
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+      "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "title": "caviar-Rest_FallOnFloor__derived.mp4",
+      "sha256": "a704c67a4057897066e133af1065a382fba43a2df3506c390d2816f2c5f476db",
+      "path": ".local/datasets/video30/derived/caviar-Rest_FallOnFloor__derived.mp4",
+      "duration_ms": 40560,
+      "mapping_path": ".local/datasets/video30/derived/caviar-Rest_FallOnFloor__derived.mapping.json",
+      "mapping_sha256": "7828e66cacb7f5eb318c68a2d4d776aacc4cc0d4e6cdd4056ffeb54a8477564d",
+      "group": "caviar-Rest_FallOnFloor",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_description",
+      "publisher_context_intervals": [
+        {
+          "start_frame": 480,
+          "last_inclusive_frame": 1006,
+          "interval": [
+            19440,
+            40520
+          ],
+          "label": "drop down",
+          "provenance": "publisher_frame_hypotheses"
+        },
+        {
+          "start_frame": 0,
+          "last_inclusive_frame": 491,
+          "interval": [
+            0,
+            19920
+          ],
+          "label": "immobile",
+          "provenance": "publisher_frame_hypotheses"
+        }
+      ]
+    },
+    {
+      "asset_key": "caviar-Rest_InChair",
+      "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+      "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "title": "caviar-Rest_InChair__derived.mp4",
+      "sha256": "9d29de8e99514a9dd42f133d24ba2e9aa5204124d99d0b7f4a9f259d1bf21a2d",
+      "path": ".local/datasets/video30/derived/caviar-Rest_InChair__derived.mp4",
+      "duration_ms": 40560,
+      "mapping_path": ".local/datasets/video30/derived/caviar-Rest_InChair__derived.mapping.json",
+      "mapping_sha256": "90bd30e6b3174088d2c214c3af0bec034d35a92ce4334cd173a48df53ec98eb9",
+      "group": "caviar-Rest_InChair",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_description",
+      "publisher_context_intervals": [
+        {
+          "start_frame": 39,
+          "last_inclusive_frame": 225,
+          "interval": [
+            1800,
+            9280
+          ],
+          "label": "immobile",
+          "provenance": "publisher_frame_hypotheses"
+        },
+        {
+          "start_frame": 249,
+          "last_inclusive_frame": 1006,
+          "interval": [
+            10200,
+            40520
+          ],
+          "label": "immobile",
+          "provenance": "publisher_frame_hypotheses"
+        }
+      ]
+    },
+    {
+      "asset_key": "caviar-Walk1",
+      "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+      "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "title": "caviar-Walk1__derived.mp4",
+      "sha256": "6f0d7edc011376f12a02c9b27cb393f33ac5e3bd14d992b5738e1dcf509d4f6c",
+      "path": ".local/datasets/video30/derived/caviar-Walk1__derived.mp4",
+      "duration_ms": 24720,
+      "mapping_path": ".local/datasets/video30/derived/caviar-Walk1__derived.mapping.json",
+      "mapping_sha256": "b49897304fdee9dbc2d66a17bac8adc381de98235ecf28ae4f327c3e46325f42",
+      "group": "caviar-Walk1",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_description",
+      "publisher_context_intervals": [
+        {
+          "start_frame": 17,
+          "last_inclusive_frame": 179,
+          "interval": [
+            920,
+            7440
+          ],
+          "label": "walking",
+          "provenance": "publisher_frame_hypotheses"
+        },
+        {
+          "start_frame": 236,
+          "last_inclusive_frame": 511,
+          "interval": [
+            9680,
+            20720
+          ],
+          "label": "walking",
+          "provenance": "publisher_frame_hypotheses"
+        }
+      ]
+    },
+    {
+      "asset_key": "roadscapes-day_11",
+      "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+      "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "title": "roadscapes-day_11__derived.mp4",
+      "sha256": "56fa74e6e50fd14a55ea1b2b1bf5e63feb2cd00b0cce5bc08056a2e5463c9816",
+      "path": ".local/datasets/video30/derived/roadscapes-day_11__derived.mp4",
+      "duration_ms": 5000,
+      "mapping_path": ".local/datasets/video30/derived/roadscapes-day_11__derived.mapping.json",
+      "mapping_sha256": "c7e6dbe61254da830cda2686cc1c2449dbb6cec25df71e4fed891bd7d085c6a3",
+      "group": "roadscapes-day_11",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_name; AI annotations unverified",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "roadscapes-day_12",
+      "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+      "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "title": "roadscapes-day_12__derived.mp4",
+      "sha256": "202664d98e828d86a22d650062522853321bb9335822b5d952a34bc4c0f33d52",
+      "path": ".local/datasets/video30/derived/roadscapes-day_12__derived.mp4",
+      "duration_ms": 5000,
+      "mapping_path": ".local/datasets/video30/derived/roadscapes-day_12__derived.mapping.json",
+      "mapping_sha256": "bdc8bb6c3ebaa4c7b94e9dc0ed2b3b8b7fa1361e444f3c2fb32e968618d75f69",
+      "group": "roadscapes-day_12",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_name; AI annotations unverified",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "roadscapes-day_13",
+      "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+      "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "title": "roadscapes-day_13__derived.mp4",
+      "sha256": "da99ef3896e595bc5b4a2835d032b0a7e8f04dfc4f49557a9b62bca633405088",
+      "path": ".local/datasets/video30/derived/roadscapes-day_13__derived.mp4",
+      "duration_ms": 5000,
+      "mapping_path": ".local/datasets/video30/derived/roadscapes-day_13__derived.mapping.json",
+      "mapping_sha256": "b3bd81767d04202ad49d1dd7059cc7d0f96168e030cf69ec3aa5d306cf602e18",
+      "group": "roadscapes-day_13",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_name; AI annotations unverified",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "roadscapes-night_12",
+      "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+      "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "title": "roadscapes-night_12__derived.mp4",
+      "sha256": "a2bd5fb260748a1cef8b28796045c86afe0a418b83591c52c8a026b94717bb0a",
+      "path": ".local/datasets/video30/derived/roadscapes-night_12__derived.mp4",
+      "duration_ms": 5000,
+      "mapping_path": ".local/datasets/video30/derived/roadscapes-night_12__derived.mapping.json",
+      "mapping_sha256": "b485b29ad7e2fd391f9ad152aa03ac4bf94845d0da4217e64b11855de25999da",
+      "group": "roadscapes-night_12",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_name; AI annotations unverified",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "roadscapes-night_13",
+      "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+      "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "title": "roadscapes-night_13__derived.mp4",
+      "sha256": "b5e9adb16ac3d6894fd258cb1e231c248fd137a99a7225ff4a30ca450a7213ea",
+      "path": ".local/datasets/video30/derived/roadscapes-night_13__derived.mp4",
+      "duration_ms": 5000,
+      "mapping_path": ".local/datasets/video30/derived/roadscapes-night_13__derived.mapping.json",
+      "mapping_sha256": "c550eecdd6120b1bb857133ffae180f061421640494ba736e0f4fa45152b570e",
+      "group": "roadscapes-night_13",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": null,
+      "sequence_label_provenance": "publisher_sequence_name; AI annotations unverified",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-adl-01",
+      "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-adl-01__derived.mp4",
+      "sha256": "87116a38ba3b80002651bab6b70c434b8657e2abc7d4645bf90ba0c7560da969",
+      "path": ".local/datasets/video30/derived/urfall-adl-01__derived.mp4",
+      "duration_ms": 5030,
+      "mapping_path": ".local/datasets/video30/derived/urfall-adl-01__derived.mapping.json",
+      "mapping_sha256": "e8eca1906253b7afb2043ca03e63c6699a5f88e860cdf4ff6be727e1f5c41e9a",
+      "group": "urfall-adl-01",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": "adl",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-adl-02",
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-adl-02__derived.mp4",
+      "sha256": "e96a24cb7badc70937fb1e8ae78104d84b054b5d9b582a30a7a7e3d2b97d1aad",
+      "path": ".local/datasets/video30/derived/urfall-adl-02__derived.mp4",
+      "duration_ms": 6050,
+      "mapping_path": ".local/datasets/video30/derived/urfall-adl-02__derived.mapping.json",
+      "mapping_sha256": "b7fd05d93283bb809eb56f56af82de8291cb1a6a3148979b08db1b4a696a55e4",
+      "group": "urfall-adl-02",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": "adl",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-adl-03",
+      "asset_id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "revision_id": "c30be808-1f19-41db-a77d-38f01be9fe55",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-adl-03__derived.mp4",
+      "sha256": "65647dca89b308862fd073d19d4b609a92095bf7885f7dfa79169403849fe13c",
+      "path": ".local/datasets/video30/derived/urfall-adl-03__derived.mp4",
+      "duration_ms": 6050,
+      "mapping_path": ".local/datasets/video30/derived/urfall-adl-03__derived.mapping.json",
+      "mapping_sha256": "5ac8d9f927d55f957f78cc2208f973e023020b5c64dc7110d64be6430089b024",
+      "group": "urfall-adl-03",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "reserved_diagnostic",
+      "sequence_class": "adl",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-adl-24",
+      "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+      "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-adl-24__derived.mp4",
+      "sha256": "7c0aaa8f34705b181783954ac8cfeeaead8f162e745c1e2b71cd433aa6d4fc17",
+      "path": ".local/datasets/video30/derived/urfall-adl-24__derived.mp4",
+      "duration_ms": 2335,
+      "mapping_path": ".local/datasets/video30/derived/urfall-adl-24__derived.mapping.json",
+      "mapping_sha256": "d40b51f3a2a5f9c77018bdefdded00c5a317d7da385847d5f88804194fd31d81",
+      "group": "urfall-adl-24",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": "adl",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-adl-28",
+      "asset_id": "b28d1915-2510-4158-9705-498550ebdaf9",
+      "revision_id": "99a4d954-2050-4878-b2de-2e43648064a1",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-adl-28__derived.mp4",
+      "sha256": "3a7e65cc477403151df8ab7f21cf5ba6b46e159bc91cf8b622d897b87db76daa",
+      "path": ".local/datasets/video30/derived/urfall-adl-28__derived.mp4",
+      "duration_ms": 2841,
+      "mapping_path": ".local/datasets/video30/derived/urfall-adl-28__derived.mapping.json",
+      "mapping_sha256": "b2438978db94538b4109714db0f3bbf2f791809ad92527967cb20ecc2ca750e5",
+      "group": "urfall-adl-28",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "reserved_diagnostic",
+      "sequence_class": "adl",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-fall-01",
+      "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-fall-01__derived.mp4",
+      "sha256": "c73845dbabc1437499b8e00840b1547b53a6b5566251f4c054d32338cb09570f",
+      "path": ".local/datasets/video30/derived/urfall-fall-01__derived.mp4",
+      "duration_ms": 5338,
+      "mapping_path": ".local/datasets/video30/derived/urfall-fall-01__derived.mapping.json",
+      "mapping_sha256": "8b333225154b60a7a3a11fd1d2c3a15de728141164a48a1c3fd4949d4dbdfb8d",
+      "group": "urfall-fall-01",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": "fall",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-fall-02",
+      "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+      "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-fall-02__derived.mp4",
+      "sha256": "43b59ffc50e4236b154c15bc4a0bbd015e728b4e1f10818c9eee51a1e87bffe8",
+      "path": ".local/datasets/video30/derived/urfall-fall-02__derived.mp4",
+      "duration_ms": 3670,
+      "mapping_path": ".local/datasets/video30/derived/urfall-fall-02__derived.mapping.json",
+      "mapping_sha256": "01cad6fad185034db9311a6e59e56b3ef165af5088c4113ed932e2ef132fda4a",
+      "group": "urfall-fall-02",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": "fall",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-fall-03",
+      "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "revision_id": "a1855590-f340-4f9b-b5b7-ebe94788688c",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-fall-03__derived.mp4",
+      "sha256": "5619e480ae7faa9f79068ce46d62916c438aecdcd2b6053571bf439029320092",
+      "path": ".local/datasets/video30/derived/urfall-fall-03__derived.mp4",
+      "duration_ms": 7240,
+      "mapping_path": ".local/datasets/video30/derived/urfall-fall-03__derived.mapping.json",
+      "mapping_sha256": "2bc441f4508ff76a4a27aa521beb5b5daf8ea0e14bd9e1df448adabb1dcb8b50",
+      "group": "urfall-fall-03",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "reserved_diagnostic",
+      "sequence_class": "fall",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-fall-04",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-fall-04__derived.mp4",
+      "sha256": "e2636935d1f7e049abb47a4d1572d3de2a10891ad9bf461b6915c5bb18dc438d",
+      "path": ".local/datasets/video30/derived/urfall-fall-04__derived.mp4",
+      "duration_ms": 3203,
+      "mapping_path": ".local/datasets/video30/derived/urfall-fall-04__derived.mapping.json",
+      "mapping_sha256": "b1e160e589dcda1c965db355d743251a8678f1de7475435b2e67b0ef0aa570e8",
+      "group": "urfall-fall-04",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "development",
+      "sequence_class": "fall",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    },
+    {
+      "asset_key": "urfall-fall-05",
+      "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+      "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "title": "urfall-fall-05__derived.mp4",
+      "sha256": "45674c7097b396025e39b0bac29a17458f0cdd3e312d47022bef6f5b42effeb5",
+      "path": ".local/datasets/video30/derived/urfall-fall-05__derived.mp4",
+      "duration_ms": 5064,
+      "mapping_path": ".local/datasets/video30/derived/urfall-fall-05__derived.mapping.json",
+      "mapping_sha256": "7dd47bdc7c11aeb168e5f515a4f976b4ed7517195010329cd3671822f079f931",
+      "group": "urfall-fall-05",
+      "actor_session_identity": "unknown; no actor-independent claim",
+      "split": "reserved_diagnostic",
+      "sequence_class": "fall",
+      "sequence_label_provenance": "publisher_fall_vs_adl_sequence_label",
+      "publisher_context_intervals": []
+    }
+  ],
+  "queries": [
+    {
+      "id": "fall-1",
+      "family": "fall",
+      "text": "person falling"
+    },
+    {
+      "id": "fall-2",
+      "family": "fall",
+      "text": "A person falling to the floor"
+    },
+    {
+      "id": "fall-3",
+      "family": "fall",
+      "text": "Someone loses balance and falls down"
+    },
+    {
+      "id": "street-1",
+      "family": "street",
+      "text": "person walking on streets"
+    },
+    {
+      "id": "sit-1",
+      "family": "sit",
+      "text": "A person sitting down in a chair"
+    },
+    {
+      "id": "bend-1",
+      "family": "bend",
+      "text": "A person bending down"
+    },
+    {
+      "id": "lie-1",
+      "family": "lie",
+      "text": "A person lying still on the floor"
+    },
+    {
+      "id": "walk-1",
+      "family": "walk",
+      "text": "A person walking through an indoor lobby"
+    },
+    {
+      "id": "fight-1",
+      "family": "fight",
+      "text": "two person fighting"
+    },
+    {
+      "id": "close-1",
+      "family": "close",
+      "text": "Two people standing close to each other"
+    }
+  ],
+  "recipes": {
+    "uniform12": {
+      "window_ms": 12000,
+      "overlap_ms": 2000,
+      "fps": 1
+    },
+    "short4": {
+      "window_ms": 4000,
+      "overlap_ms": 2000,
+      "fps": 1
+    },
+    "fine2": {
+      "window_ms": 2000,
+      "overlap_ms": 1000,
+      "fps": 1
+    }
+  },
+  "floors": [
+    0.65,
+    0.675,
+    0.7
+  ],
+  "candidate_budget": 150,
+  "result_budget": 10,
+  "asset_cap": 1,
+  "preprocessing": {
+    "jpeg_quality": 85,
+    "max_edge": 640,
+    "sampling": "Rounded original PTS; next sample = selected PTS + 1000ms; no temporal oracle"
+  },
+  "max_new_windows_per_batch": 32,
+  "batch_wall_seconds": 1200,
+  "reserved_policy": "Do not score reserved groups or choose policy from them; split is sequence-level diagnostic only, not unseen actor/session data",
+  "gold_eligible": false,
+  "human_reviewers": [],
+  "sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9"
+}

@@ -1,0 +1,107 @@
+{
+  "scope": "One search client during a bounded offline CPU video encoder producer, not a corpus-ingestion throughput benchmark",
+  "requests": [
+    {
+      "status": 503,
+      "elapsed_ms": 16.359195999029907,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.744511000870261,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.597479000556632,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.730215999705251,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 10.694280001189327,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 13.765203999355435,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 13.631446001454606,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 13.44337800037465,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.779181999576394,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.012045001029037,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.018548000924056,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.541321000753669,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.815774000046076,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.883809999038931,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.097014999904786,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 13.195351999456761,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.398508000638685,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.18587300152285,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 11.510987998917699,
+      "retryable_busy": true
+    },
+    {
+      "status": 503,
+      "elapsed_ms": 12.233775001732283,
+      "retryable_busy": true
+    }
+  ],
+  "successful": 0,
+  "retryable_busy": 20
+}

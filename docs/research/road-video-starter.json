@@ -1,0 +1,73 @@
+{
+  "checked_on": "2026-10-18",
+  "type": "curated demonstration samples, not an annotated benchmark",
+  "metadata_authority": "https://commons.wikimedia.org/w/api.php (imageinfo url,size,sha1,extmetadata)",
+  "total_original_bytes": 99342611,
+  "samples": [
+    {
+      "id": "cow-cattle-grid",
+      "title": "Cow crosses cattle grid.webm",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Cow_crosses_cattle_grid.webm",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Cow_crosses_cattle_grid.webm",
+      "bytes": 752664,
+      "sha1": "f77792a9e28dd65dc610cd4d05f82d850cbb4196",
+      "creator": "Luke Byers",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "description": "Cow crossing cattle grid in vehicle lights; rural nighttime road.",
+      "original_source_url": "https://www.youtube.com/watch?v=9xnLHnWziFg"
+    },
+    {
+      "id": "oldenburg-bridge",
+      "title": "Cäcilienbrücke Oldenburg (Dashcam).webm",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/8/81/C%C3%A4cilienbr%C3%BCcke_Oldenburg_%28Dashcam%29.webm",
+      "page_url": "https://commons.wikimedia.org/wiki/File:C%C3%A4cilienbr%C3%BCcke_Oldenburg_%28Dashcam%29.webm",
+      "bytes": 2738200,
+      "sha1": "a8fb62e3bb927aa88efe994b00ba102acee195ff",
+      "creator": "Jacek Rużyczka",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Daytime car crossing Cecilia Bridge in Oldenburg, Germany.",
+      "original_source_url": "https://commons.wikimedia.org/wiki/User:Jacek79"
+    },
+    {
+      "id": "madeira-driving",
+      "title": "ILHA DA MADEIRA, PORTUGAL.webm",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/ILHA_DA_MADEIRA%2C_PORTUGAL.webm",
+      "page_url": "https://commons.wikimedia.org/wiki/File:ILHA_DA_MADEIRA%2C_PORTUGAL.webm",
+      "bytes": 7660946,
+      "sha1": "9de23c7816e621db8da134cfec80cfefb9b1a7ba",
+      "creator": "Valci Barreto , TV RUA, Jabutis Vagarosos BARRETO",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0/",
+      "description": "Vehicle-camera road footage from Madeira, Portugal; provisional category from Commons page.",
+      "original_source_url": "https://www.youtube.com/watch?v=BhXia4f1nm0"
+    },
+    {
+      "id": "deer-road-crossing",
+      "title": "Metskitsed autoteel.webm",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Metskitsed_autoteel.webm",
+      "page_url": "https://commons.wikimedia.org/wiki/File:Metskitsed_autoteel.webm",
+      "bytes": 22921414,
+      "sha1": "14df220bb9957b234ef8edfb0ee87161b78d384d",
+      "creator": "Virgo Siil",
+      "license": "CC0 1.0",
+      "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "description": "Roe deer sprinting in front of a car, Kõrvemaa, Estonia.",
+      "original_source_url": "https://vimeo.com/501413683"
+    },
+    {
+      "id": "i235-highway-timelapse",
+      "title": "I-235 North OKC Full Timelapse.webm",
+      "media_url": "https://upload.wikimedia.org/wikipedia/commons/8/80/I-235_North_OKC_Full_Timelapse.webm",
+      "page_url": "https://commons.wikimedia.org/wiki/File:I-235_North_OKC_Full_Timelapse.webm",
+      "bytes": 65269387,
+      "sha1": "fe9578cd304b0f3d049f22b10bf6aa1d9329ce35",
+      "creator": "TheDoctorWho",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "description": "Northbound I-235, Oklahoma City. Timelapse: not normal-speed event evidence.",
+      "original_source_url": "https://commons.wikimedia.org/wiki/User:TheDoctorWho"
+    }
+  ]
+}

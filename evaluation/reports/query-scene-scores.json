@@ -1,0 +1,96 @@
+[
+  {
+    "query": "person falling",
+    "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+    "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+    "candidates": [
+      {
+        "title": "caviar-Rest_FallOnFloor__derived.mp4",
+        "score": 0.7003530859947205,
+        "start_ms": 30000,
+        "end_ms": 40560,
+        "citation_id": "a3dd0bb2-abba-4812-b0c7-031643cf3b12",
+        "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+        "preview": "evaluation/reports/query-scenes/caviar-Rest_FallOnFloor__derived-30000-40560.jpg",
+        "clip": "evaluation/reports/query-scenes/caviar-Rest_FallOnFloor__derived-30000-40560.mp4",
+        "frames_ms": [
+          31599.7,
+          35319.71111111111,
+          38999.7
+        ],
+        "original_sha256_verified": true
+      },
+      {
+        "title": "urfall-fall-04__derived.mp4",
+        "score": 0.6912369500116219,
+        "start_ms": 0,
+        "end_ms": 3203,
+        "citation_id": "b85b353c-b7ab-45f9-a30a-e12309a4a623",
+        "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+        "preview": "evaluation/reports/query-scenes/urfall-fall-04__derived-0-3203.jpg",
+        "clip": "evaluation/reports/query-scenes/urfall-fall-04__derived-0-3203.mp4",
+        "frames_ms": [
+          500.0,
+          1635.0,
+          2736.0
+        ],
+        "original_sha256_verified": true
+      },
+      {
+        "title": "caviar-Browse1__derived.mp4",
+        "score": 0.6846976280212402,
+        "start_ms": 0,
+        "end_ms": 12000,
+        "citation_id": "c6b5af17-453e-4b2c-912c-cda55e26013a",
+        "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67"
+      }
+    ]
+  },
+  {
+    "query": "person walking on streets",
+    "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+    "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+    "candidates": [
+      {
+        "title": "caviar-Rest_FallOnFloor__derived.mp4",
+        "score": 0.6640687584877014,
+        "start_ms": 30000,
+        "end_ms": 40560,
+        "citation_id": "a3dd0bb2-abba-4812-b0c7-031643cf3b12",
+        "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+        "preview": "evaluation/reports/query-scenes/caviar-Rest_FallOnFloor__derived-30000-40560.jpg",
+        "clip": "evaluation/reports/query-scenes/caviar-Rest_FallOnFloor__derived-30000-40560.mp4",
+        "frames_ms": [
+          31599.7,
+          35319.71111111111,
+          38999.7
+        ],
+        "original_sha256_verified": true
+      },
+      {
+        "title": "caviar-LeftBag__derived.mp4",
+        "score": 0.6602310740810005,
+        "start_ms": 20000,
+        "end_ms": 32000,
+        "citation_id": "74220483-b082-4143-bf80-77a4eee5bedc",
+        "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+        "preview": "evaluation/reports/query-scenes/caviar-LeftBag__derived-20000-32000.jpg",
+        "clip": "evaluation/reports/query-scenes/caviar-LeftBag__derived-20000-32000.mp4",
+        "frames_ms": [
+          21839.7,
+          26039.7,
+          30239.7
+        ],
+        "original_sha256_verified": true
+      },
+      {
+        "title": "caviar-OneStopMoveEnter1cor__derived.mp4",
+        "score": 0.6577829922567027,
+        "start_ms": 60000,
+        "end_ms": 63640,
+        "citation_id": "55c3ce28-8c71-45ca-875a-6ce1fc7419d8",
+        "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67"
+      }
+    ]
+  }
+]

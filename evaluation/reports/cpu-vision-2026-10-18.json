@@ -1,0 +1,333 @@
+{
+  "timestamp_utc": "2026-10-18T13:35:14.529562+00:00",
+  "status": "smoke_passed",
+  "hardware": {
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "python": "3.12.3",
+    "cpu": "AMD Ryzen 7 7730U with Radeon Graphics",
+    "logical_cpus": 16,
+    "memory_kib": {
+      "MemTotal": 15683900,
+      "MemFree": 1404360,
+      "MemAvailable": 6104180,
+      "Buffers": 223188,
+      "Cached": 4539740,
+      "SwapCached": 192,
+      "Active": 4734848,
+      "Inactive": 7627156,
+      "Active(anon)": 3126292,
+      "Inactive(anon)": 4591540,
+      "Active(file)": 1608556,
+      "Inactive(file)": 3035616,
+      "Unevictable": 32,
+      "Mlocked": 32,
+      "SwapTotal": 4194300,
+      "SwapFree": 4193980,
+      "Zswap": 0,
+      "Zswapped": 0,
+      "Dirty": 101172,
+      "Writeback": 0,
+      "AnonPages": 7599436,
+      "Mapped": 1713752,
+      "Shmem": 118764,
+      "KReclaimable": 390220,
+      "Slab": 711192,
+      "SReclaimable": 390220,
+      "SUnreclaim": 320972,
+      "KernelStack": 41488,
+      "PageTables": 134320,
+      "SecPageTables": 3480,
+      "NFS_Unstable": 0,
+      "Bounce": 0,
+      "WritebackTmp": 0,
+      "CommitLimit": 12036248,
+      "Committed_AS": 59503820,
+      "VmallocTotal": 34359738367,
+      "VmallocUsed": 107900,
+      "VmallocChunk": 0,
+      "Percpu": 18304,
+      "HardwareCorrupted": 0,
+      "AnonHugePages": 0,
+      "ShmemHugePages": 0,
+      "ShmemPmdMapped": 0,
+      "FileHugePages": 45056,
+      "FilePmdMapped": 0,
+      "CmaTotal": 0,
+      "CmaFree": 226336,
+      "Unaccepted": 0,
+      "Balloon": 0,
+      "GPUActive": 789860,
+      "GPUReclaim": 0,
+      "HugePages_Total": 0,
+      "HugePages_Free": 0,
+      "HugePages_Rsvd": 0,
+      "HugePages_Surp": 0,
+      "Hugepagesize": 2048,
+      "Hugetlb": 0,
+      "DirectMap4k": 1409484,
+      "DirectMap2M": 13627392,
+      "DirectMap1G": 2097152
+    },
+    "disk_free_bytes": 177981267968,
+    "cuda_available": false,
+    "torch_cpu_threads": 4,
+    "gpus": [],
+    "packages": {
+      "torch": "2.14.1+cpu",
+      "transformers": "5.20.0",
+      "sentence-transformers": "6.1.0",
+      "huggingface-hub": "1.33.0",
+      "pydantic": "2.14.1",
+      "numpy": "2.5.4",
+      "pillow": "12.3.0",
+      "av": "16.1.0",
+      "soundfile": "0.14.0"
+    },
+    "tools": {
+      "ffmpeg": {
+        "path": null
+      },
+      "tesseract": {
+        "path": null
+      },
+      "libreoffice": {
+        "path": null
+      },
+      "pdftoppm": {
+        "path": "<HOME>/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/pdftoppm",
+        "version_output": "pdftoppm version 26.05.0\nCopyright 2005-2026 The Poppler Developers - http://poppler.freedesktop.org\nCopyright 1996-2011, 2022 Glyph & Cog, LLC\n"
+      }
+    },
+    "pyav_linked_libraries": {
+      "libavutil": [
+        60,
+        8,
+        100
+      ],
+      "libavcodec": [
+        62,
+        11,
+        100
+      ],
+      "libavformat": [
+        62,
+        3,
+        100
+      ],
+      "libavdevice": [
+        62,
+        1,
+        100
+      ],
+      "libavfilter": [
+        11,
+        4,
+        100
+      ],
+      "libswscale": [
+        9,
+        1,
+        100
+      ],
+      "libswresample": [
+        6,
+        1,
+        100
+      ]
+    }
+  },
+  "blockers": [
+    "Only selected encoders validated; full multimodal gate remains open"
+  ],
+  "gpu_validation": "not_run",
+  "release_benchmark": false,
+  "arguments": {
+    "encoders": "vision",
+    "device": "cpu",
+    "repeats": 3
+  },
+  "source_sha256": {
+    "backend/src/videomind/__init__.py": "b805d62e0b02f7031b8f8297260fcf5ee0d5fc1d3bd8e507829f2688130cb5df",
+    "backend/src/videomind/connectors/__init__.py": "86ec2b5f5a417efa89136567b2962eb8f6d83c63d616a4e50ac2ba1a31d2843e",
+    "backend/src/videomind/connectors/contracts.py": "1dac85f2b54a3ef179aabbffa364f0d6bc166a62db2f4385c91fd27240f43fc8",
+    "backend/src/videomind/contracts.py": "b906b1b1d2794136fae80dd75e2d58cc892122c493a0a1c41e66c2bc81a4284b",
+    "backend/src/videomind/embeddings/__init__.py": "016f48d2248f1aa409667718dabe0bb72832002b90cc17170edd28a5fe1fb465",
+    "backend/src/videomind/embeddings/budget.py": "0145db264b9dc08495ad41955bda64f8b234d043d6cefa7d44a5dff9dd7638c9",
+    "backend/src/videomind/embeddings/contracts.py": "b495e75927fabc99833d436841973586da42db34f2a7d3874751294b5a5fecab",
+    "backend/src/videomind/evidence/__init__.py": "f9065f41d11aef4c51de3d58d44386e7646a0b520b972adad4099f5dabd18bc7",
+    "backend/src/videomind/evidence/contracts.py": "598d6efa14f9ad67e414757bd5ef89d4ae84a28c0d791f788ca735015a23585d",
+    "backend/src/videomind/ingestion/__init__.py": "396c064b7612f0c90c24e5e38e59f7c941ebbae59c4644f66e630a96d96618ca",
+    "backend/src/videomind/ingestion/contracts.py": "1aadf3935a8c45c4eead2b77a7f25875b216ed28022b76fd6c55d0ee5a3f1a65",
+    "backend/src/videomind/preprocessing/__init__.py": "85e2ed6d9a2e198f138f2dee6aefe3d50adf1316a68143bf62a6db6bb50fb78c",
+    "backend/src/videomind/preprocessing/contracts.py": "0ea8ced55efb42bb6a1445a412bbcaabbb66822a75965d8b76c2fa945c138faa",
+    "backend/src/videomind/retrieval/__init__.py": "3f436b6be4764bee3f1be1c2ff77e813684daa6feb4bf898af68df19b6efd7d8",
+    "backend/src/videomind/retrieval/contracts.py": "873d8407a3ede0e8691705cca098e9f6831e7f795c50f30afb3f9551d965242a",
+    "evaluation/runners/__init__.py": "025c253c9fcc6f28f02516a51e48769796b640f15bdcdab935c4e66007ea5265",
+    "evaluation/runners/auxiliary.py": "0f477ef44235aea5a18098cad3218faf60648f61e6aa164aff4fb88f8edf7ef2",
+    "evaluation/runners/cache_models.py": "1535f522582e32933d3561b8e2088cc81c5b93c48cca406f21cc6ba8acf9a5dc",
+    "evaluation/runners/fixtures.py": "590ce80e881679b1ef7862231c16edbc17fd3c5bcce4cc6fdd6bedb42b40c32e",
+    "evaluation/runners/hardware.py": "68d10f4309f9ed47f650f621dc9e757022cab9eba3c78b79df0126c4e0af8742",
+    "evaluation/runners/phase0.py": "84183f495fdad102fce613db17251e2e7d70576adf914d6c066f4aff213ebc99",
+    "evaluation/runners/renderer.py": "9c1d552dc3abf04fc7315085f9d7451046fc97154e262cd86a3d5bad60a76c1f"
+  },
+  "profile": {
+    "model_id": "google/embeddinggemma-2",
+    "model_revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "processor_revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "runtime_lock_sha256": "cd7cfe24b97d88e31479a4b2ce391ec12b0bdcc694c814f8558af500ff2c8d23",
+    "dimension": 768,
+    "precision": "float32",
+    "normalize": true,
+    "pooling": "model_default_mean",
+    "query_prompt": "task: search result | query: {query}",
+    "document_prompt": "title: {title} | text: {content}",
+    "video_fps": 1.0,
+    "audio_sample_rate": 16000,
+    "input_adapter": "phase0-explicit-media-v1",
+    "preprocessing_hash": "590ce80e881679b1ef7862231c16edbc17fd3c5bcce4cc6fdd6bedb42b40c32e",
+    "active_encoders": [
+      "text",
+      "vision"
+    ]
+  },
+  "profile_sha256": "7b61a02373a805f9f7de7bf163f0eeb48b7cbcbe4d50d95fc20268953c68d556",
+  "fixtures": {
+    "generator_sha256": "590ce80e881679b1ef7862231c16edbc17fd3c5bcce4cc6fdd6bedb42b40c32e",
+    "packages": {
+      "av": "16.1.0",
+      "numpy": "2.5.4",
+      "pillow": "12.3.0",
+      "scipy": "1.18.1"
+    },
+    "provenance": "Locally generated synthetic fixtures; no user content",
+    "speech_engine": "system libespeak-ng, en-us voice; record system version in report",
+    "speech_text": "Switch off the power before opening the safety panel.",
+    "files": {
+      "beeps.wav": "b1515e86e68c26b3a28b9c39e1f36773cb87c8f37d29b6b2d222389bc3329025",
+      "procedure.txt": "d70c0e7eba41d26829790ca242dab08c9d717d67b3c9dd12009ed29979dc2f9a",
+      "scanned-page.pdf": "7a77905b1ba9dab6f3330db5b5d36e0590682087a4fe7dd87595e8d631174ff7",
+      "scanned-page.png": "922d9cae2f989a5c8bf08c30a5b8f09119ee36c8cd9c7db29c22d9664ff236f1",
+      "silent.mp4": "505e66d571defab7868b7c39627b680629a4ff314cc0ee87858e63a9180ee64d",
+      "speech.wav": "66587e5597b73de77a6a4527831ccde748098ac5c9d087967a13d2480df1cd97",
+      "spoken.mp4": "f46c5d64b7a69e29133de988397430da27a6c7808d60e1a328f00847fdf3e911"
+    }
+  },
+  "processor": {
+    "document": {
+      "tokens": 16,
+      "fields": [
+        "attention_mask",
+        "input_ids"
+      ]
+    },
+    "scanned_page": {
+      "tokens": 270,
+      "fields": [
+        "attention_mask",
+        "image_position_ids",
+        "input_ids",
+        "pixel_values"
+      ]
+    },
+    "silent_video": {
+      "tokens": 514,
+      "fields": [
+        "attention_mask",
+        "input_ids",
+        "num_frames_per_video",
+        "pixel_values_videos",
+        "video_position_ids"
+      ]
+    },
+    "track_probe": {
+      "silent": [
+        "video"
+      ],
+      "spoken": [
+        "video",
+        "audio"
+      ]
+    },
+    "speech": {
+      "tokens": 68,
+      "fields": [
+        "attention_mask",
+        "input_features",
+        "input_features_mask",
+        "input_ids"
+      ]
+    },
+    "beeps": {
+      "tokens": 79,
+      "fields": [
+        "attention_mask",
+        "input_features",
+        "input_features_mask",
+        "input_ids"
+      ]
+    },
+    "overflow": {
+      "input_frames": 60,
+      "output_frames": 60,
+      "chunks": [
+        30,
+        30
+      ],
+      "measurements": [
+        {
+          "frames": 60,
+          "tokens": 7682
+        },
+        {
+          "frames": 30,
+          "tokens": 3842
+        },
+        {
+          "frames": 30,
+          "tokens": 3842
+        }
+      ],
+      "passed": true
+    }
+  },
+  "memory_admission": {
+    "available_gib": 5.551002502441406,
+    "minimum_gib": 3.5
+  },
+  "inference": {
+    "load_seconds": 3.5570129120001184,
+    "text_batch_size": 2,
+    "text_batch_seconds": 0.1984850449998703,
+    "text_items_per_second": 10.076325901537352,
+    "warm_query_seconds": [
+      0.13057552899999791,
+      0.1388377700000092,
+      0.11578389699980107
+    ],
+    "warm_query_median_seconds": 0.13057552899999791,
+    "text_scores": [
+      0.7828865051269531,
+      0.5386731624603271
+    ],
+    "text_sanity_passed": true,
+    "native_media": {
+      "scanned_page": {
+        "seconds": 10.027092623999579,
+        "scores": [
+          0.7310738563537598,
+          0.5161802768707275
+        ],
+        "sanity_passed": true
+      },
+      "silent_video": {
+        "seconds": 18.57337154700008,
+        "scores": [
+          0.8089570999145508,
+          0.5854077935218811
+        ],
+        "sanity_passed": true
+      }
+    },
+    "peak_process_rss_kib": 3142172
+  }
+}

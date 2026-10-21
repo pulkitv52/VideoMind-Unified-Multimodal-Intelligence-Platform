@@ -1,0 +1,130 @@
+{
+  "status": "local_checks_passed_with_documented_limits",
+  "verified_at_unix": 1792518330.7102242,
+  "backend_tests": {
+    "passed": 193,
+    "seconds": 154.02,
+    "warning": "Existing Starlette/httpx deprecation"
+  },
+  "focused_host_tests": 5,
+  "automation": {
+    "id": "videomind-daily-backup",
+    "status": "ACTIVE",
+    "daily_local_hour": 10,
+    "first_scheduled_run_observed": false
+  },
+  "restore": {
+    "snapshot_verified": {
+      "probe": {
+        "asset_deleted": false,
+        "source_deleted": false,
+        "source_access": true
+      },
+      "counts": {
+        "objects": 924,
+        "assets": 47,
+        "asset_revisions": 46,
+        "segments": 197,
+        "embeddings": 197,
+        "citation_records": 197,
+        "generation_assets": 46
+      },
+      "journal_events_replayed": 0,
+      "dangling_citations": 0,
+      "deleted_assets_published": 0,
+      "runtime_isolation": true
+    },
+    "saved_journal_replay": {
+      "probe": {
+        "asset_deleted": false,
+        "source_deleted": false,
+        "source_access": true
+      },
+      "counts": {
+        "objects": 924,
+        "assets": 47,
+        "asset_revisions": 46,
+        "segments": 197,
+        "embeddings": 197,
+        "citation_records": 197,
+        "generation_assets": 46
+      },
+      "journal_events_replayed": 0,
+      "dangling_citations": 0,
+      "deleted_assets_published": 0,
+      "runtime_isolation": true
+    },
+    "repeated_replay_events": 0,
+    "after_journal_replay": {
+      "probe": {
+        "asset_deleted": true,
+        "source_deleted": true,
+        "source_access": false
+      },
+      "counts": {
+        "objects": 924,
+        "assets": 47,
+        "asset_revisions": 46,
+        "segments": 197,
+        "embeddings": 197,
+        "citation_records": 197,
+        "generation_assets": 46
+      },
+      "journal_events_replayed": 2,
+      "dangling_citations": 0,
+      "deleted_assets_published": 0,
+      "runtime_isolation": true
+    },
+    "objects_restored_and_verified": 924,
+    "primary_restored": false,
+    "backup_id": "b3bbd81be435",
+    "journal_age_seconds": 3.438443899154663
+  },
+  "journal_restart": {
+    "restart_persistence": true,
+    "events_before": 486,
+    "events_after": 523,
+    "last_export_age_seconds": 1.1962339878082275
+  },
+  "original_corpus_preserved": {
+    "assets": 46,
+    "frozen_snapshot_verified": true,
+    "labels_preserved": true
+  },
+  "live_search_policy_changed": false,
+  "primary_restored": false,
+  "remaining_limits": [
+    "Asynchronous journal export gap; two-second polling is not a zero-loss acknowledgement guarantee",
+    "Same-disk backups; no off-device copy",
+    "Schedule depends on laptop, Docker and Codex availability",
+    "No automatic backup expiry; four-GiB admission limit",
+    "Post-backup authorization/credential changes are not journalled",
+    "Real primary cutover and original RPO/RTO not established"
+  ],
+  "source_sha256": {
+    "operations/recovery.py": "5bca9216eac140dc08433db7712e3cc89b16f6cf7521e94336a7ba2793037cb9",
+    "scripts/backup.py": "5f6b996d7bbb03ffac0cade0a6f217133c0237d00241a05216990961856bdbf0",
+    "backend/src/videomind/recovery/journal.py": "04e086d6411f53cdf763ff99ca43938bbe663852b9d08750f1675cbecc778f9b",
+    "backend/migrations/versions/0019_recovery_journal.py": "f08eb414607d44a0938237f25ccc62832e063ad92050907141d67fe7f2addf0f",
+    "infra/compose/compose.yaml": "2901651790f4d58f7b2b20c8f626642206f1bbebec70f35c7258c98f482ae78b",
+    "backend/tests/integration/test_recovery_journal.py": "8229ce884e684579985ca7e27a21d7a462d546ca1b68eb228f38b18dd5a5da6f",
+    "backend/tests/test_recovery.py": "702898359d711e4352529de05570d12819572892b3a17e3d62a9392e1515ba76",
+    "evaluation/tests/test_local_backup.py": "03e1c0f644ac9a88590fffab29a45c9ec318ae7fd27ac6c975bd5afc5bad1da5",
+    "docs/local-recovery.md": "a706e26a4781046b9457e1fb004cee381a098d1d672e904461cfc7bc96e5e62f"
+  },
+  "latest_verified_backup": {
+    "id": "7aa68c8de720",
+    "counts": {
+      "objects": 924,
+      "assets": 46,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "objects": 924,
+    "bytes": 104215414,
+    "dump_sha256": "df17e0f14e1ad7b630cb515f9251566ed680e16bfb7f8e22e0bd1e24da238c72"
+  }
+}

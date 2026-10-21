@@ -1,0 +1,26 @@
+{
+  "audio": {
+    "duration_seconds": 3,
+    "current_time_seconds": 0,
+    "ready_state": 4
+  },
+  "silent_video": {
+    "duration_seconds": 4,
+    "current_time_seconds": 0,
+    "ready_state": 4
+  },
+  "ocr": {
+    "page": 1,
+    "image_loaded": true,
+    "width": 2400,
+    "height": 1800,
+    "evidence_region_visible": true
+  },
+  "native_image": {
+    "image_loaded": true,
+    "width": 451,
+    "height": 300,
+    "stable_citation_restored": true
+  },
+  "source_and_type_filters_verified": true
+}

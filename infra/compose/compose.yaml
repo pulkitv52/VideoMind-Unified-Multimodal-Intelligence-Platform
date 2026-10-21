@@ -1,0 +1,269 @@
+name: videomind
+
+x-backend: &backend
+  image: videomind-backend:phase1
+  build:
+    context: ../..
+    dockerfile: infra/docker/backend.Dockerfile
+    target: app
+    network: host
+
+x-runtime: &runtime
+  VM_DATABASE_URL: postgresql+psycopg://videomind_app:${APP_DB_PASSWORD:?run setup}@postgres:5432/videomind
+  VM_REDIS_URL: redis://:${REDIS_PASSWORD:?run setup}@redis:6379/0
+  VM_MINIO_ENDPOINT: minio:9000
+  VM_MINIO_ACCESS_KEY: videomind-app
+  VM_MINIO_SECRET_KEY: ${MINIO_APP_PASSWORD:?run setup}
+  VM_MINIO_BUCKET: videomind
+  VM_WORKSPACE_STORAGE_BYTES: ${VM_WORKSPACE_STORAGE_BYTES:-5368709120}
+  VM_WORKSPACE_STORAGE_OBJECTS: ${VM_WORKSPACE_STORAGE_OBJECTS:-10000}
+
+services:
+  postgres:
+    image: pgvector/pgvector@sha256:7b822b0aac60967beb1ea5e576b8602c94c300a157d187f385ae3e0da199b90a
+    environment:
+      POSTGRES_USER: videomind_owner
+      POSTGRES_DB: videomind
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?run setup}
+      APP_DB_PASSWORD: ${APP_DB_PASSWORD:?run setup}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ../docker/postgres-init.sh:/docker-entrypoint-initdb.d/10-app-role.sh:ro
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U videomind_owner -d videomind"]
+      interval: 3s
+      timeout: 3s
+      retries: 20
+    command: [postgres, -c, shared_buffers=128MB, -c, max_connections=30, -c, work_mem=4MB]
+    mem_limit: 512m
+    cpus: 1.0
+    restart: unless-stopped
+
+  redis:
+    image: redis@sha256:858f009f9709ce576febc734aa78b8f6d624b82571f9ddb6bda4377c833b3499
+    environment:
+      REDIS_PASSWORD: ${REDIS_PASSWORD:?run setup}
+    command: [sh, -c, 'exec redis-server --appendonly yes --maxmemory 96mb --maxmemory-policy noeviction --requirepass "$$REDIS_PASSWORD"']
+    volumes: [redis-data:/data]
+    healthcheck:
+      test: [CMD-SHELL, 'REDISCLI_AUTH="$$REDIS_PASSWORD" redis-cli ping | grep -q PONG']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    mem_limit: 128m
+    cpus: 0.25
+    restart: unless-stopped
+
+  data-init:
+    <<: *backend
+    user: '0:0'
+    command: [python, -c, "import os; os.chown('/data',65532,65532)"]
+    volumes: [object-data:/data]
+    mem_limit: 128m
+
+  minio:
+    image: cgr.dev/chainguard/minio@sha256:f74600a1a46330cdbda1ef760d17a96bd6e0f4a6f0a2c49792ca3ee7e4c6fa18
+    command: [server, /data, --console-address, ':9001']
+    environment:
+      MINIO_ROOT_USER: videomind-root
+      MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?run setup}
+    volumes: [object-data:/data]
+    depends_on:
+      data-init: {condition: service_completed_successfully}
+    mem_limit: 512m
+    cpus: 1.0
+    restart: unless-stopped
+
+  storage-init:
+    <<: *backend
+    command: [python, -m, videomind.infrastructure.storage_init]
+    environment:
+      VM_MINIO_ENDPOINT: minio:9000
+      VM_MINIO_ROOT_USER: videomind-root
+      VM_MINIO_ROOT_PASSWORD: ${MINIO_ROOT_PASSWORD:?run setup}
+      VM_MINIO_ACCESS_KEY: videomind-app
+      VM_MINIO_SECRET_KEY: ${MINIO_APP_PASSWORD:?run setup}
+    depends_on:
+      minio: {condition: service_started}
+    mem_limit: 256m
+
+  migrate:
+    <<: *backend
+    command: [alembic, upgrade, head]
+    environment:
+      VM_MIGRATION_DATABASE_URL: postgresql+psycopg://videomind_owner:${POSTGRES_PASSWORD:?run setup}@postgres:5432/videomind
+    depends_on:
+      postgres: {condition: service_healthy}
+    mem_limit: 256m
+
+  recovery-init:
+    <<: *backend
+    user: '0:0'
+    command: [python, -c, "import os; os.chown('/recovery',10001,10001); os.chmod('/recovery',0o700)"]
+    volumes: [recovery-data:/recovery]
+    mem_limit: 128m
+
+  recovery-journal:
+    <<: *backend
+    command: [python, -m, videomind.recovery.journal, serve]
+    environment:
+      VM_RECOVERY_DATABASE_URL: postgresql+psycopg://videomind_owner:${POSTGRES_PASSWORD:?run setup}@postgres:5432/videomind
+    volumes: [recovery-data:/recovery]
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      recovery-init: {condition: service_completed_successfully}
+    healthcheck:
+      test: [CMD, python, -m, videomind.recovery.journal, health]
+      interval: 10s
+      timeout: 5s
+      retries: 3
+    read_only: true
+    tmpfs: ['/tmp:size=8m']
+    mem_limit: 128m
+    cpus: 0.25
+    restart: unless-stopped
+
+  api:
+    <<: *backend
+    environment: *runtime
+    ports: ['127.0.0.1:8000:8000']
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      storage-init: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/ready',timeout=9)"]
+      interval: 5s
+      timeout: 10s
+      retries: 20
+    read_only: true
+    tmpfs: ['/tmp:size=160m']
+    volumes: ['../../.local/imports:/imports:ro', '../../.local/embedding_token:/run/secrets/embedding_token:ro']
+    mem_limit: 384m
+    cpus: 1.0
+    pids_limit: 128
+    restart: unless-stopped
+
+  worker:
+    <<: *backend
+    command: [celery, -A, videomind.workers.celery_app:app, worker, --pool=solo, --concurrency=1, --loglevel=INFO]
+    environment:
+      <<: *runtime
+      TMPDIR: /scratch
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, python, -c, "from videomind.workers.celery_app import app; from videomind.main import _worker_ready; from videomind.config import get_settings; from videomind.infrastructure.database import database; assert _worker_ready(app,database(get_settings().database_url.get_secret_value()))"]
+      interval: 30s
+      timeout: 12s
+      retries: 6
+    read_only: true
+    tmpfs: ['/scratch:size=512m,uid=10001,gid=10001,mode=0700']
+    volumes: ['../../.local/imports:/imports:ro', '../../.local/models/asr:/models/asr:ro']
+    mem_limit: 3072m
+    cpus: 1.0
+    pids_limit: 64
+    restart: unless-stopped
+
+  dispatcher:
+    <<: *backend
+    command: [python, -m, videomind.ingestion.dispatcher]
+    environment: *runtime
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    read_only: true
+    tmpfs: ['/tmp:size=8m']
+    mem_limit: 128m
+    cpus: 0.25
+    restart: unless-stopped
+
+  embedding:
+    image: videomind-embedding:phase5
+    build:
+      context: ../..
+      dockerfile: infra/docker/backend.Dockerfile
+      target: embedding
+      network: host
+    volumes: ['../../.local/models/embedding:/models/embedding:ro', '../../.local/embedding_token:/run/secrets/embedding_token:ro']
+    read_only: true
+    tmpfs: ['/tmp:size=128m,uid=10001,gid=10001,mode=0700']
+    mem_limit: 6656m
+    cpus: 2.0
+    pids_limit: 128
+    healthcheck:
+      test: [CMD, python, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8090/health',timeout=3)"]
+      interval: 15s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  indexer:
+    <<: *backend
+    command: [python, -m, videomind.embeddings.indexer]
+    environment: *runtime
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+      embedding: {condition: service_healthy}
+    volumes: ['../../.local/embedding_token:/run/secrets/embedding_token:ro']
+    read_only: true
+    tmpfs: ['/tmp:size=8m']
+    mem_limit: 256m
+    cpus: 0.5
+    restart: unless-stopped
+
+  frontend:
+    image: videomind-frontend:phase1
+    build:
+      context: ../..
+      dockerfile: infra/docker/frontend.Dockerfile
+    ports: ['127.0.0.1:8080:8080']
+    depends_on:
+      api: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, wget, -q, -O, /dev/null, 'http://127.0.0.1:8080/health']
+      interval: 5s
+      timeout: 3s
+      retries: 10
+    read_only: true
+    tmpfs: ['/tmp:size=32m']
+    mem_limit: 64m
+    cpus: 0.25
+    restart: unless-stopped
+
+  bootstrap:
+    <<: *backend
+    profiles: [tools]
+    command: [python, -m, videomind.identity.bootstrap, --credential-file, /bootstrap/owner.json]
+    environment:
+      VM_MIGRATION_DATABASE_URL: postgresql+psycopg://videomind_owner:${POSTGRES_PASSWORD:?run setup}@postgres:5432/videomind
+    volumes: ['../../.local:/bootstrap']
+    depends_on:
+      migrate: {condition: service_completed_successfully}
+    mem_limit: 384m
+
+  verify:
+    image: videomind-verify:phase1
+    build:
+      context: ../..
+      dockerfile: infra/docker/backend.Dockerfile
+      target: verify
+      network: host
+    profiles: [tools]
+    volumes: ['../../.local/models/asr:/models/asr:ro']
+    read_only: true
+    tmpfs: ['/scratch:size=512m,uid=10001,gid=10001,mode=0700']
+    environment:
+      <<: *runtime
+      TMPDIR: /scratch
+      VM_MIGRATION_DATABASE_URL: postgresql+psycopg://videomind_owner:${POSTGRES_PASSWORD:?run setup}@postgres:5432/videomind
+    depends_on:
+      api: {condition: service_healthy}
+    mem_limit: 3072m
+    cpus: 1.0
+
+volumes:
+  recovery-data:
+  postgres-data:
+  object-data:
+  redis-data:

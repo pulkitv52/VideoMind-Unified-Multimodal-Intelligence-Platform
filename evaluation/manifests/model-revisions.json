@@ -1,0 +1,10 @@
+{
+  "google/embeddinggemma-2": {
+    "revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "gated": false
+  },
+  "Systran/faster-whisper-small.en": {
+    "revision": "d1d751a5f8271d482d14ca55d9e2deeebbae577f",
+    "gated": false
+  }
+}

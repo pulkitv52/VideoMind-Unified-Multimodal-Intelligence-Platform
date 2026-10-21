@@ -1,0 +1,33 @@
+{
+  "protocol_sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9",
+  "recipes": [
+    "current_native",
+    "uniform12",
+    "short4",
+    "fine2"
+  ],
+  "floors": [
+    0.65,
+    0.675,
+    0.7
+  ],
+  "gates": {
+    "asset_recall": 0.85,
+    "adl_admission": 0.1,
+    "temporal_recall_iou_050": 0.8
+  },
+  "selection": "Every paraphrase must pass every pilot gate. If none pass, select no policy and do not score reserved groups. If several pass, choose fewer encoded windows, then higher floor, then recipe name. Human gold is separately required for promotion.",
+  "cohort": "Three URFall development falls and three publisher ADL proxy negatives; three paraphrases of one family; not whole-platform retrieval or confirmed negative labels",
+  "temporal": "Conservative overlap across uncertain agent boundary ranges; top-10, one highest-scoring accepted window per asset; unaccepted positives are temporal misses",
+  "development_feedback": "User said everything looks fine about the review pack. Retained as development feedback, not independent annotations or resolved absence labels.",
+  "provenance": "Post-hoc exploratory calibration on previously inspected development results",
+  "gold_eligible": false,
+  "inputs": {
+    "evaluation/annotations/action-temporal-v1-agent-observations.json": "414908010d60eb52ac35502c2624958212995798d250c3ab5256fc195de9d8d2",
+    "evaluation/manifests/action-temporal-v1.json": "98b15649411fa4e10fc093090aa23ec90646e1afae1a4170c05716bf3aba2511",
+    "evaluation/reports/action-temporal-v1-baseline.json": "0597d1b192a00733b04e5f4d430ac020e2fd080637353e18cd51f0038222b51d",
+    "evaluation/reports/action-temporal-v1-uniform12.json": "6d2518a33eff4fb3ac7b8f88b7104677fd64476d05d72b6cce0373cc72566b9d",
+    "evaluation/reports/action-temporal-v1-short4.json": "52bd5d224b72131929cc9b675e16e4ed2471ba86546eea2a8a9cbe5156698b68",
+    "evaluation/reports/action-temporal-v1-fine2.json": "3623ba49b5336423b2b90654bbd6d9abaa12a868d135ec709f9032094c706a99"
+  }
+}

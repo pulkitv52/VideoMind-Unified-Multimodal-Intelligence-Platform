@@ -1,0 +1,177 @@
+{
+  "phase": 2,
+  "status": "complete",
+  "validated_date": "2026-10-19",
+  "scope": "Local CPU-only upload and read-only folder intake; later extraction/embedding/search phases remain unimplemented",
+  "tests": {
+    "command": "python3 scripts/dev.py verify",
+    "passed": 82,
+    "failed": 0,
+    "elapsed_seconds": 76.49,
+    "warnings": [
+      "Upstream Starlette TestClient/httpx deprecation"
+    ],
+    "release_configuration_reverified": true,
+    "previous_full_runs": [
+      {
+        "passed": 79,
+        "seconds": 82.68
+      },
+      {
+        "passed": 79,
+        "seconds": 69.61
+      }
+    ]
+  },
+  "frontend": {
+    "typescript_strict_check": "passed",
+    "production_build": "passed",
+    "browser_pagination_50_to_51": "passed",
+    "storage_usage_display": "passed",
+    "ready_state": "passed"
+  },
+  "exit_criteria": {
+    "shared_connector_protocol_and_config_validation": "passed: upload receipt and paged full-manifest folder adapters",
+    "revision_checked_streaming_fetch": "passed: source mutation rejected",
+    "unchanged_sync_noop": "passed",
+    "changed_bytes_new_immutable_revision": "passed",
+    "successful_manifest_cursor_commit_and_partial_failure_fencing": "passed",
+    "durable_progress_across_failure_and_retry": "passed",
+    "malicious_paths_symlinks_hardlinks_and_limits": "passed: traversal, symlink, hardlink, FIFO, directory bounds, declared-size and streamed HTTP overflow; no intake side effects",
+    "actual_sigkill_recovery": "passed: isolated processes before PUT, after PUT, after DB commit, after claim, after fetch, after probe, after completion",
+    "duplicate_delivery_and_stale_token_fencing": "passed",
+    "lost_broker_message_reconstructed": "passed: real Redis delivery removed only from a unique fixture queue",
+    "live_worker_and_redis_restart": "passed",
+    "tombstoned_source_cannot_be_resurrected": "passed",
+    "quota_reservations_and_gc_writer_exclusion": "passed",
+    "orphan_reclamation_and_aged_tombstone_retirement": "passed using isolated aged fixtures; live referenced originals preserved",
+    "pagination_past_200_and_access_control": "passed with 205 synthetic metadata rows",
+    "runtime_role_and_fresh_migrations": "passed",
+    "source_timestamp_provenance": "passed: local observed mtime preserved; unknown original upload timestamps remain unset",
+    "gc_busy_lock_retry": "passed: cleanup safely skips active writers; completed-batch tests retry background-sweeper contention"
+  },
+  "preservation": {
+    "all_existing_file_checksums_match": true,
+    "files_verified": 46,
+    "video_pack_verified": 30,
+    "collections": [
+      {
+        "name": "CAVIAR - Stores and lobby",
+        "validated_files": 16
+      },
+      {
+        "name": "Local starter folder",
+        "validated_files": 3
+      },
+      {
+        "name": "Roadscapes - Day and night driving",
+        "validated_files": 6
+      },
+      {
+        "name": "Starter dataset",
+        "validated_files": 10
+      },
+      {
+        "name": "UR Fall - Falls and daily activities",
+        "validated_files": 11
+      }
+    ],
+    "ui_pagination": {
+      "fixture_files": 51,
+      "initially_rendered": 50,
+      "after_load_more": 51,
+      "all_validated": true,
+      "fixture_disconnected": true
+    },
+    "storage": {
+      "bytes": 54713293,
+      "objects": 105,
+      "limit_bytes": 5368709120,
+      "limit_objects": 10000
+    },
+    "scope": "Authenticated original preservation and UI pagination, not retrieval evaluation"
+  },
+  "operational_faults": {
+    "folder_changed_bytes_new_revision": true,
+    "folder_removed_file_tombstoned": true,
+    "symlink_rejected": true,
+    "worker_restart_queued_upload_recovered": true,
+    "redis_restart_no_job_loss": true,
+    "expired_lease_reclaimed_and_stale_finish_rejected": true
+  },
+  "readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  },
+  "database": {
+    "migration": "0007_intake_indexes",
+    "app_tables": 26,
+    "runtime_role": {
+      "superuser": false,
+      "bypass_rls": false
+    }
+  },
+  "resources": {
+    "gpu_used": false,
+    "inference_models_loaded": false,
+    "post_verification_memory_snapshot": [
+      {
+        "service": "videomind-api-1",
+        "memory_usage_and_limit": "88.38MiB / 384MiB"
+      },
+      {
+        "service": "videomind-worker-1",
+        "memory_usage_and_limit": "81.15MiB / 384MiB"
+      },
+      {
+        "service": "videomind-dispatcher-1",
+        "memory_usage_and_limit": "72.88MiB / 128MiB"
+      },
+      {
+        "service": "videomind-frontend-1",
+        "memory_usage_and_limit": "3.293MiB / 64MiB"
+      },
+      {
+        "service": "videomind-minio-1",
+        "memory_usage_and_limit": "143.9MiB / 512MiB"
+      },
+      {
+        "service": "videomind-redis-1",
+        "memory_usage_and_limit": "6.383MiB / 128MiB"
+      },
+      {
+        "service": "videomind-postgres-1",
+        "memory_usage_and_limit": "59.09MiB / 512MiB"
+      }
+    ],
+    "note": "Snapshot only; not peak memory or combined inference load",
+    "post_verification_total_mib": 455.08
+  },
+  "limitations": [
+    "Folder sync is a bounded full scan, not a filesystem watcher or atomic filesystem snapshot.",
+    "Retention tests advance only fixture timestamps; no 24-hour wall-clock soak or outage SLA is claimed.",
+    "Cleanup requires available services and the small local corpus; backup retention/restore is Phase 7.",
+    "Maintenance functions assume database credentials and arbitrary SQL are trusted server privileges.",
+    "Fault tests cover the listed application boundaries, not every kernel/provider failure.",
+    "No extraction, embeddings, search, generated answers or media playback are delivered by Phase 2."
+  ],
+  "evidence": [
+    "evaluation/reports/phase2-completion-ui.jpg",
+    "evaluation/reports/phase2-preservation.json",
+    "evaluation/reports/phase2-faults.json"
+  ],
+  "code_and_lockfiles_sha256": "9306236e7cdf1f032266afeba0b48327a7a87d7039b9dd660be615d98d6f4c25",
+  "fingerprint_note": "Sorted relative paths and bytes of source, migrations, tests, infrastructure and listed dependency/lifecycle files; excludes credentials and local data.",
+  "issues_resolved": [
+    "Removed an unnecessary reservation FOR UPDATE without granting runtime UPDATE privileges.",
+    "Replaced a quadratic RLS join plan with separately authorized bounded batch lookups.",
+    "Busy maintenance locks are retried by the test harness without weakening production coordination.",
+    "Upload receipt timestamps are not represented as original source modification times."
+  ]
+}

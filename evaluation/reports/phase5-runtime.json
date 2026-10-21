@@ -1,0 +1,143 @@
+{
+  "migration_head": "0018_embedding_invariants",
+  "runtime_role": {
+    "rolsuper": false,
+    "rolbypassrls": false
+  },
+  "counts": [
+    {
+      "representation": "audio",
+      "vectors": 5
+    },
+    {
+      "representation": "image",
+      "vectors": 16
+    },
+    {
+      "representation": "ocr",
+      "vectors": 3
+    },
+    {
+      "representation": "text",
+      "vectors": 90
+    },
+    {
+      "representation": "transcript",
+      "vectors": 2
+    },
+    {
+      "representation": "video",
+      "vectors": 81
+    }
+  ],
+  "norm_bounds": {
+    "minimum": 0.9999998720620302,
+    "maximum": 1.0000001653524486,
+    "count": 197
+  },
+  "missing_citations": 0,
+  "manifest_count": 197,
+  "maximum_processor_tokens": 1586,
+  "ann_plan_nodes": [
+    {
+      "Node Type": "Limit"
+    },
+    {
+      "Node Type": "Limit"
+    },
+    {
+      "Node Type": "Index Scan",
+      "Index Name": "embedding_hnsw_f1a908fc847445b9aa0ee6ab0e7370c4",
+      "Relation Name": "embeddings"
+    },
+    {
+      "Node Type": "Nested Loop"
+    },
+    {
+      "Node Type": "Nested Loop"
+    },
+    {
+      "Node Type": "Nested Loop"
+    },
+    {
+      "Node Type": "Index Scan",
+      "Index Name": "segments_workspace_id_source_id_id_revision_id_key",
+      "Relation Name": "segments"
+    },
+    {
+      "Node Type": "Index Only Scan",
+      "Index Name": "assets_page",
+      "Relation Name": "assets"
+    },
+    {
+      "Node Type": "Index Only Scan",
+      "Index Name": "asset_revisions_workspace_id_source_id_asset_id_id_key",
+      "Relation Name": "asset_revisions"
+    },
+    {
+      "Node Type": "Index Scan",
+      "Index Name": "generation_assets_pkey",
+      "Relation Name": "generation_assets"
+    },
+    {
+      "Node Type": "Sort"
+    },
+    {
+      "Node Type": "Nested Loop"
+    },
+    {
+      "Node Type": "Nested Loop"
+    },
+    {
+      "Node Type": "CTE Scan"
+    },
+    {
+      "Node Type": "Index Scan",
+      "Index Name": "segments_pkey",
+      "Relation Name": "segments"
+    },
+    {
+      "Node Type": "Limit"
+    },
+    {
+      "Node Type": "Index Scan",
+      "Index Name": "citation_records_pkey",
+      "Relation Name": "citation_records"
+    }
+  ],
+  "real_prompt_profiles": [
+    {
+      "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+      "parts": 1,
+      "tokens": 19
+    },
+    {
+      "profile": "ba92aae131abfba2645a271b92e2ce28711ff03386b30c6d92b885a04d70dc88",
+      "parts": 1,
+      "tokens": 20
+    }
+  ],
+  "oversized_query_rejected": true,
+  "model_loaded": true,
+  "profile": {
+    "model_id": "google/embeddinggemma-2",
+    "model_revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "processor_revision": "914f7f89142e33e77833254d9c9b90c3cef7303b",
+    "runtime_lock_sha256": "c18c8004b73797edf6f915584db9d2f8f056ad7d2a2de0fdbce2769ade67a179",
+    "dimension": 768,
+    "precision": "float32",
+    "normalize": true,
+    "pooling": "model_default_mean",
+    "query_prompt": "task: search result | query: {query}",
+    "document_prompt": "title: {title} | text: {content}",
+    "video_fps": 1.0,
+    "audio_sample_rate": 16000,
+    "input_adapter": "native-v1",
+    "preprocessing_hash": "11d2ba156e0b1109d69fb68edfa683e822d4b1fa107d510599486e3b429aa804",
+    "active_encoders": [
+      "text",
+      "vision",
+      "audio"
+    ]
+  }
+}

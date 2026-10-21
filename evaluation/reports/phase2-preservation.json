@@ -1,0 +1,41 @@
+{
+  "all_existing_file_checksums_match": true,
+  "files_verified": 46,
+  "video_pack_verified": 30,
+  "collections": [
+    {
+      "name": "CAVIAR - Stores and lobby",
+      "validated_files": 16
+    },
+    {
+      "name": "Local starter folder",
+      "validated_files": 3
+    },
+    {
+      "name": "Roadscapes - Day and night driving",
+      "validated_files": 6
+    },
+    {
+      "name": "Starter dataset",
+      "validated_files": 10
+    },
+    {
+      "name": "UR Fall - Falls and daily activities",
+      "validated_files": 11
+    }
+  ],
+  "ui_pagination": {
+    "fixture_files": 51,
+    "initially_rendered": 50,
+    "after_load_more": 51,
+    "all_validated": true,
+    "fixture_disconnected": true
+  },
+  "storage": {
+    "bytes": 54713293,
+    "objects": 105,
+    "limit_bytes": 5368709120,
+    "limit_objects": 10000
+  },
+  "scope": "Authenticated original preservation and UI pagination, not retrieval evaluation"
+}

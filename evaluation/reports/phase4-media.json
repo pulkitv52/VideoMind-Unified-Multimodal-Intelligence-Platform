@@ -1,0 +1,55 @@
+{
+  "scope": "Existing demo corpus, CPU processing and evidence; not retrieval evaluation",
+  "files_verified": 46,
+  "media_ready": 36,
+  "citations_verified": 88,
+  "native_video_windows": 81,
+  "native_audio_windows": 5,
+  "transcript_segments": 2,
+  "decoded_video_frames": 17183,
+  "max_frame_mapping_error_ms": 0,
+  "collections": [
+    {
+      "name": "CAVIAR - Stores and lobby",
+      "originals": 16,
+      "media_ready": 15
+    },
+    {
+      "name": "Local starter folder",
+      "originals": 3,
+      "media_ready": 1
+    },
+    {
+      "name": "Roadscapes - Day and night driving",
+      "originals": 6,
+      "media_ready": 5
+    },
+    {
+      "name": "Starter dataset",
+      "originals": 10,
+      "media_ready": 5
+    },
+    {
+      "name": "UR Fall - Falls and daily activities",
+      "originals": 11,
+      "media_ready": 10
+    }
+  ],
+  "warnings": [],
+  "readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  },
+  "storage": {
+    "bytes": 140759161,
+    "objects": 1699,
+    "limit_bytes": 5368709120,
+    "limit_objects": 10000
+  }
+}

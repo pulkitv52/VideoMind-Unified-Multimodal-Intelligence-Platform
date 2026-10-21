@@ -1,0 +1,67 @@
+{
+  "snapshot_verified": {
+    "probe": {
+      "asset_deleted": false,
+      "source_deleted": false,
+      "source_access": true
+    },
+    "counts": {
+      "objects": 924,
+      "assets": 47,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "journal_events_replayed": 0,
+    "dangling_citations": 0,
+    "deleted_assets_published": 0,
+    "runtime_isolation": true
+  },
+  "saved_journal_replay": {
+    "probe": {
+      "asset_deleted": false,
+      "source_deleted": false,
+      "source_access": true
+    },
+    "counts": {
+      "objects": 924,
+      "assets": 47,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "journal_events_replayed": 0,
+    "dangling_citations": 0,
+    "deleted_assets_published": 0,
+    "runtime_isolation": true
+  },
+  "repeated_replay_events": 0,
+  "after_journal_replay": {
+    "probe": {
+      "asset_deleted": true,
+      "source_deleted": true,
+      "source_access": false
+    },
+    "counts": {
+      "objects": 924,
+      "assets": 47,
+      "asset_revisions": 46,
+      "segments": 197,
+      "embeddings": 197,
+      "citation_records": 197,
+      "generation_assets": 46
+    },
+    "journal_events_replayed": 2,
+    "dangling_citations": 0,
+    "deleted_assets_published": 0,
+    "runtime_isolation": true
+  },
+  "objects_restored_and_verified": 924,
+  "primary_restored": false,
+  "backup_id": "b3bbd81be435",
+  "journal_age_seconds": 3.438443899154663
+}

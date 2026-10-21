@@ -1,0 +1,626 @@
+{
+  "scope": "Single client, retained 46-asset/197-vector corpus; explicit model process restart for cold run; not ingestion throughput or scale",
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "os_file_cache_controlled": false,
+  "cold": {
+    "query": "Repeated electronic beeping tones",
+    "status": 200,
+    "elapsed_ms": 32832.60455399977,
+    "timings_ms": {
+      "embedding": 31527.95,
+      "retrieval": 1291.81,
+      "total": 32819.76
+    }
+  },
+  "restart_to_cold_response_seconds": 41.0620205310006,
+  "warm": [
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1721.102535000682,
+      "timings_ms": {
+        "embedding": 225.7,
+        "retrieval": 1487.1,
+        "total": 1712.8
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 2070.3335130001506,
+      "timings_ms": {
+        "embedding": 185.85,
+        "retrieval": 1871.42,
+        "total": 2057.27
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 4033.9157640009944,
+      "timings_ms": {
+        "embedding": 270.36,
+        "retrieval": 3746.85,
+        "total": 4017.21
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 4953.680482998607,
+      "timings_ms": {
+        "embedding": 385.53,
+        "retrieval": 4553.01,
+        "total": 4938.54
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1603.3390079992387,
+      "timings_ms": {
+        "embedding": 243.57,
+        "retrieval": 1349.3,
+        "total": 1592.88
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 2003.9426860003005,
+      "timings_ms": {
+        "embedding": 218.44,
+        "retrieval": 1775.43,
+        "total": 1993.87
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1493.3234870004526,
+      "timings_ms": {
+        "embedding": 242.05,
+        "retrieval": 1227.36,
+        "total": 1469.42
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1648.3380330009823,
+      "timings_ms": {
+        "embedding": 198.2,
+        "retrieval": 1441.03,
+        "total": 1639.23
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1597.507135998967,
+      "timings_ms": {
+        "embedding": 165.13,
+        "retrieval": 1424.01,
+        "total": 1589.14
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1627.0647990004363,
+      "timings_ms": {
+        "embedding": 286.82,
+        "retrieval": 1331.75,
+        "total": 1618.56
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1312.0512280002004,
+      "timings_ms": {
+        "embedding": 185.84,
+        "retrieval": 1115.72,
+        "total": 1301.57
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1655.280720000519,
+      "timings_ms": {
+        "embedding": 354.09,
+        "retrieval": 1283.26,
+        "total": 1637.35
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1531.87498799889,
+      "timings_ms": {
+        "embedding": 170.43,
+        "retrieval": 1353.22,
+        "total": 1523.64
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1803.8323769997078,
+      "timings_ms": {
+        "embedding": 178.21,
+        "retrieval": 1616.63,
+        "total": 1794.84
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1290.2655899997626,
+      "timings_ms": {
+        "embedding": 164.67,
+        "retrieval": 1117.38,
+        "total": 1282.05
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 2062.2602379989985,
+      "timings_ms": {
+        "embedding": 188.71,
+        "retrieval": 1863.85,
+        "total": 2052.56
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 2767.961112998819,
+      "timings_ms": {
+        "embedding": 225.11,
+        "retrieval": 2530.66,
+        "total": 2755.77
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 4401.997582999684,
+      "timings_ms": {
+        "embedding": 354.08,
+        "retrieval": 4031.37,
+        "total": 4385.44
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 4922.877813000014,
+      "timings_ms": {
+        "embedding": 310.8,
+        "retrieval": 4590.39,
+        "total": 4901.19
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 5532.78660199976,
+      "timings_ms": {
+        "embedding": 422.23,
+        "retrieval": 5003.42,
+        "total": 5425.64
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 2372.82857900027,
+      "timings_ms": {
+        "embedding": 306.66,
+        "retrieval": 2052.57,
+        "total": 2359.22
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1637.2415379992162,
+      "timings_ms": {
+        "embedding": 188.3,
+        "retrieval": 1440.0,
+        "total": 1628.3
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1748.9495329991769,
+      "timings_ms": {
+        "embedding": 257.57,
+        "retrieval": 1482.3,
+        "total": 1739.87
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1698.2174050008325,
+      "timings_ms": {
+        "embedding": 200.54,
+        "retrieval": 1490.08,
+        "total": 1690.62
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1742.4085740003648,
+      "timings_ms": {
+        "embedding": 237.87,
+        "retrieval": 1495.15,
+        "total": 1733.02
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1564.1347949986084,
+      "timings_ms": {
+        "embedding": 166.69,
+        "retrieval": 1386.4,
+        "total": 1553.09
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 2204.4405750002625,
+      "timings_ms": {
+        "embedding": 243.47,
+        "retrieval": 1922.96,
+        "total": 2166.43
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1814.0769500005263,
+      "timings_ms": {
+        "embedding": 287.84,
+        "retrieval": 1512.81,
+        "total": 1800.65
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1618.7464220001857,
+      "timings_ms": {
+        "embedding": 214.35,
+        "retrieval": 1330.32,
+        "total": 1544.68
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1389.3081189999066,
+      "timings_ms": {
+        "embedding": 183.82,
+        "retrieval": 1196.4,
+        "total": 1380.22
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1510.4680620006548,
+      "timings_ms": {
+        "embedding": 167.35,
+        "retrieval": 1334.86,
+        "total": 1502.21
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1178.9100719997805,
+      "timings_ms": {
+        "embedding": 135.54,
+        "retrieval": 1035.21,
+        "total": 1170.75
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1124.2512809985783,
+      "timings_ms": {
+        "embedding": 159.85,
+        "retrieval": 957.61,
+        "total": 1117.46
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1498.8416970008984,
+      "timings_ms": {
+        "embedding": 192.59,
+        "retrieval": 1298.75,
+        "total": 1491.33
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1131.0725519997504,
+      "timings_ms": {
+        "embedding": 186.05,
+        "retrieval": 937.62,
+        "total": 1123.67
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1182.6775690005888,
+      "timings_ms": {
+        "embedding": 141.72,
+        "retrieval": 1032.5,
+        "total": 1174.22
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1140.938354001264,
+      "timings_ms": {
+        "embedding": 126.83,
+        "retrieval": 1006.84,
+        "total": 1133.67
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1544.443279000916,
+      "timings_ms": {
+        "embedding": 143.16,
+        "retrieval": 1392.6,
+        "total": 1535.76
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1141.4629600003536,
+      "timings_ms": {
+        "embedding": 135.64,
+        "retrieval": 999.0,
+        "total": 1134.64
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1154.784505999487,
+      "timings_ms": {
+        "embedding": 144.41,
+        "retrieval": 1001.87,
+        "total": 1146.28
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1332.12192999963,
+      "timings_ms": {
+        "embedding": 144.37,
+        "retrieval": 1180.72,
+        "total": 1325.09
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1068.932558000597,
+      "timings_ms": {
+        "embedding": 143.35,
+        "retrieval": 919.22,
+        "total": 1062.56
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1151.9617379999545,
+      "timings_ms": {
+        "embedding": 131.96,
+        "retrieval": 1012.11,
+        "total": 1144.08
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1502.6894969996647,
+      "timings_ms": {
+        "embedding": 146.98,
+        "retrieval": 1346.03,
+        "total": 1493.01
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1129.3472460001794,
+      "timings_ms": {
+        "embedding": 140.8,
+        "retrieval": 978.36,
+        "total": 1119.16
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1366.6562430007616,
+      "timings_ms": {
+        "embedding": 153.53,
+        "retrieval": 1204.42,
+        "total": 1357.94
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1208.9233650003735,
+      "timings_ms": {
+        "embedding": 143.7,
+        "retrieval": 1057.56,
+        "total": 1201.26
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1070.9913119990233,
+      "timings_ms": {
+        "embedding": 141.11,
+        "retrieval": 923.27,
+        "total": 1064.38
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1251.7630820002523,
+      "timings_ms": {
+        "embedding": 123.83,
+        "retrieval": 1119.61,
+        "total": 1243.44
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1514.2994440011535,
+      "timings_ms": {
+        "embedding": 135.27,
+        "retrieval": 1369.87,
+        "total": 1505.15
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1215.5674290006573,
+      "timings_ms": {
+        "embedding": 139.04,
+        "retrieval": 1068.15,
+        "total": 1207.18
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1150.9706639990327,
+      "timings_ms": {
+        "embedding": 138.18,
+        "retrieval": 1006.0,
+        "total": 1144.18
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1089.642325998284,
+      "timings_ms": {
+        "embedding": 143.79,
+        "retrieval": 937.69,
+        "total": 1081.49
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1480.2649329994892,
+      "timings_ms": {
+        "embedding": 151.24,
+        "retrieval": 1322.15,
+        "total": 1473.39
+      }
+    },
+    {
+      "query": "two person fighting",
+      "status": 200,
+      "elapsed_ms": 1195.0300839998818,
+      "timings_ms": {
+        "embedding": 130.37,
+        "retrieval": 1057.38,
+        "total": 1187.75
+      }
+    },
+    {
+      "query": "A person falling to the floor",
+      "status": 200,
+      "elapsed_ms": 1327.8673799995886,
+      "timings_ms": {
+        "embedding": 137.16,
+        "retrieval": 1181.46,
+        "total": 1318.61
+      }
+    },
+    {
+      "query": "Repeated electronic beeping tones",
+      "status": 200,
+      "elapsed_ms": 1193.665108001369,
+      "timings_ms": {
+        "embedding": 148.71,
+        "retrieval": 1036.55,
+        "total": 1185.26
+      }
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "status": 200,
+      "elapsed_ms": 1205.4943000002822,
+      "timings_ms": {
+        "embedding": 140.69,
+        "retrieval": 1057.52,
+        "total": 1198.2
+      }
+    },
+    {
+      "query": "A red square moving across a white background",
+      "status": 200,
+      "elapsed_ms": 1184.4061289993988,
+      "timings_ms": {
+        "embedding": 135.82,
+        "retrieval": 1041.53,
+        "total": 1177.34
+      }
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "status": 200,
+      "elapsed_ms": 1208.1930020012805,
+      "timings_ms": {
+        "embedding": 141.41,
+        "retrieval": 1059.25,
+        "total": 1200.67
+      }
+    }
+  ],
+  "warm_failed_requests": 0,
+  "warm_success_latency_ms": {
+    "p50": 1500.7655970002816,
+    "p95": 4428.0415944996985,
+    "p99": 5191.113991789078
+  }
+}

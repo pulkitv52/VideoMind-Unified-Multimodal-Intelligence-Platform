@@ -1,0 +1,44 @@
+{
+  "passed": true,
+  "originals_verified": 46,
+  "local_protocol_assets_verified": 19,
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "review_file_preserved": true,
+  "serving_floor": 0.7,
+  "live_policy_unchanged": true,
+  "published_experimental_vectors": 0,
+  "evaluation_tests": {
+    "passed": 21,
+    "seconds": 0.3,
+    "command": "backend/.venv/bin/python -m pytest evaluation/tests/test_action_temporal.py evaluation/tests/test_quality.py -q"
+  },
+  "cache_replay": {
+    "passed": true,
+    "checks": [
+      {
+        "recipe": "uniform12",
+        "complete_windows": 10,
+        "new_encodes": 0,
+        "raw_scores_unchanged": true,
+        "exact_input_cache_validated": true
+      },
+      {
+        "recipe": "short4",
+        "complete_windows": 19,
+        "new_encodes": 0,
+        "raw_scores_unchanged": true,
+        "exact_input_cache_validated": true
+      },
+      {
+        "recipe": "fine2",
+        "complete_windows": 44,
+        "new_encodes": 0,
+        "raw_scores_unchanged": true,
+        "exact_input_cache_validated": true
+      }
+    ]
+  },
+  "test_log_sha256": "b0c9a4a2df507052d22f8d23cbdfc680ad0fe7c1b48c2992c06f0e4abb82e30a"
+}

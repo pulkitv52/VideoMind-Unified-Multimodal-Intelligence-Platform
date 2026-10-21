@@ -1,0 +1,131 @@
+[
+  {
+    "jit": "on",
+    "timings_ms": {
+      "embedding": 408.73,
+      "retrieval": 10491.44,
+      "total": 10900.16
+    },
+    "statement_categories": {
+      "identifier": {
+        "count": 1,
+        "ms": 283.63395599990326
+      },
+      "progress": {
+        "count": 1,
+        "ms": 177.8024909999658
+      },
+      "other": {
+        "count": 8,
+        "ms": 10.937778000879916
+      },
+      "facets": {
+        "count": 1,
+        "ms": 309.92330399931234
+      },
+      "dense": {
+        "count": 1,
+        "ms": 360.82730800080753
+      },
+      "context_ids": {
+        "count": 10,
+        "ms": 4059.3656609999016
+      },
+      "hydrate": {
+        "count": 12,
+        "ms": 4882.228384001792
+      },
+      "lexical": {
+        "count": 1,
+        "ms": 333.67751100013265
+      }
+    },
+    "result_signature": "57ebb2cd35f3f817cc5828ae8ae3c9d4f9c16b1c7321239b279477f7964c0a92"
+  },
+  {
+    "jit": "off",
+    "timings_ms": {
+      "embedding": 409.96,
+      "retrieval": 7581.59,
+      "total": 7991.55
+    },
+    "statement_categories": {
+      "identifier": {
+        "count": 1,
+        "ms": 407.0540449993132
+      },
+      "progress": {
+        "count": 1,
+        "ms": 76.27457800117554
+      },
+      "other": {
+        "count": 8,
+        "ms": 11.19193200065638
+      },
+      "facets": {
+        "count": 1,
+        "ms": 202.15549200111127
+      },
+      "dense": {
+        "count": 1,
+        "ms": 595.619298001111
+      },
+      "context_ids": {
+        "count": 10,
+        "ms": 2717.9230539968557
+      },
+      "hydrate": {
+        "count": 12,
+        "ms": 3019.989363001514
+      },
+      "lexical": {
+        "count": 1,
+        "ms": 490.7657420008036
+      }
+    },
+    "result_signature": "57ebb2cd35f3f817cc5828ae8ae3c9d4f9c16b1c7321239b279477f7964c0a92"
+  },
+  {
+    "jit": "on",
+    "timings_ms": {
+      "embedding": 183.59,
+      "retrieval": 3018.05,
+      "total": 3201.64
+    },
+    "statement_categories": {
+      "identifier": {
+        "count": 1,
+        "ms": 183.6624320003466
+      },
+      "progress": {
+        "count": 1,
+        "ms": 13.171657999919262
+      },
+      "other": {
+        "count": 8,
+        "ms": 5.3669040025852155
+      },
+      "facets": {
+        "count": 1,
+        "ms": 89.79482200084021
+      },
+      "dense": {
+        "count": 1,
+        "ms": 127.42105799952697
+      },
+      "context_ids": {
+        "count": 10,
+        "ms": 1015.7126570011314
+      },
+      "hydrate": {
+        "count": 12,
+        "ms": 1428.8929599952098
+      },
+      "lexical": {
+        "count": 1,
+        "ms": 128.9884220004751
+      }
+    },
+    "result_signature": "57ebb2cd35f3f817cc5828ae8ae3c9d4f9c16b1c7321239b279477f7964c0a92"
+  }
+]

@@ -1,0 +1,104 @@
+{
+  "checked_on": "2026-10-18",
+  "dataset": "vijpandaturtle/roadscapes-video",
+  "revision": "be701e244d6d4a83b83723db4142463413484899",
+  "metadata_authority": "https://huggingface.co/api/datasets/vijpandaturtle/roadscapes-video",
+  "total_original_bytes": 18006975,
+  "samples": [
+    {
+      "id": "roadscapes-day_11",
+      "title": "Sequence_Day_11_clip1.mp4",
+      "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_11/Sequence_Day_11_clip1.mp4",
+      "bytes": 2960705,
+      "sha256": "81ff211cada1f3939b940b98c8b477b56049b00e00a44deeb2347f25925d4c79",
+      "creator": "vijpandaturtle",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+      "annotation": {
+        "What is the action being performed by the ego vehicle? Answer in a single sentence.": "The ego vehicle is currently stationary in a traffic jam.",
+        "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "The traffic ahead is stationary, so the ego vehicle cannot move forward.",
+        "What should be driver be doing now ? Provide me a definite action.": "Maintain a safe distance from the car in front and be prepared to move when the traffic starts flowing.",
+        "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It appears to be early morning or late evening with overcast conditions. The ego vehicle is on a two-lane asphalt road in a suburban or semi-rural setting with moderate traffic congestion.",
+        "Video File Name": "Sequence_Day_11_clip1.mp4"
+      }
+    },
+    {
+      "id": "roadscapes-day_12",
+      "title": "Sequence_Day_12_clip1.mp4",
+      "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_12/Sequence_Day_12_clip1.mp4",
+      "bytes": 5513499,
+      "sha256": "30dd1b31e98371585fc1bdcec01b2c3cd315292774a78a27035b9913b0a2e52b",
+      "creator": "vijpandaturtle",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+      "annotation": {
+        "What is the action being performed by the ego vehicle? Answer in a single sentence.": "I am driving straight on the road.",
+        "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "I am driving straight because there is no obstacle or turn ahead.",
+        "What should be driver be doing now ? Provide me a definite action.": "You should reduce your speed and maintain a safe distance from the scooter ahead.",
+        "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It seems to be early morning or late evening as there is some sunlight present. The weather is dry and I am driving on a two-lane paved road within city limits with trees and buildings on either side.",
+        "Video File Name": "Sequence_Day_12_clip1.mp4"
+      }
+    },
+    {
+      "id": "roadscapes-day_13",
+      "title": "Sequence_Day_13_clip1.mp4",
+      "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Day_13/Sequence_Day_13_clip1.mp4",
+      "bytes": 3069468,
+      "sha256": "7726df9216ac24cbbae17d3edcb8f0f600c04ecc5a172213cc5ac63b008d0ea6",
+      "creator": "vijpandaturtle",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+      "annotation": {
+        "What is the action being performed by the ego vehicle? Answer in a single sentence.": "The ego vehicle is at a standstill in traffic.",
+        "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "The ego vehicle is stationary because there are vehicles in front and the traffic signal seems to be red.",
+        "What should be driver be doing now ? Provide me a definite action.": "The driver should remain stopped and alert, keeping a safe distance from the vehicle in front.",
+        "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It appears to be daytime with clear weather. The ego vehicle is on a paved road, possibly approaching an intersection with a traffic signal.",
+        "Video File Name": "Sequence_Day_13_clip1.mp4"
+      }
+    },
+    {
+      "id": "roadscapes-night_12",
+      "title": "Sequence_Night_12_clip1.mp4",
+      "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Night_12/Sequence_Night_12_clip1.mp4",
+      "bytes": 3433974,
+      "sha256": "b6820a4626b78a44080efdb8ce761f7521dac6932dc1f7c0b38e9dab28728820",
+      "creator": "vijpandaturtle",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+      "annotation": {
+        "What is the action being performed by the ego vehicle? Answer in a single sentence.": "I am driving on a multi lane road, following the vehicles ahead of me.",
+        "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "I am maintaining a safe following distance behind the vehicles ahead of me to avoid any collisions.",
+        "What should be driver be doing now ? Provide me a definite action.": "Continue driving straight while maintaining a safe distance from other vehicles.",
+        "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It is nighttime and the road is wet, suggesting it might have rained earlier. The road is illuminated by streetlights and there is moderate traffic.",
+        "Video File Name": "Sequence_Night_12_clip1.mp4"
+      }
+    },
+    {
+      "id": "roadscapes-night_13",
+      "title": "Sequence_Night_13_clip1.mp4",
+      "media_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video/resolve/be701e244d6d4a83b83723db4142463413484899/test/Sequence_Night_13/Sequence_Night_13_clip1.mp4",
+      "bytes": 3029329,
+      "sha256": "a9b63e0df265dce8703165cf0f809c9961ed1ad5957597e40d9b667c5e8eb4d2",
+      "creator": "vijpandaturtle",
+      "license": "CC BY-NC 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "page_url": "https://huggingface.co/datasets/vijpandaturtle/roadscapes-video",
+      "annotation_producer": "Gemini 1.5 Pro API; publisher states not manually verified",
+      "annotation": {
+        "What is the action being performed by the ego vehicle? Answer in a single sentence.": "I am driving forward on a two-lane road at night.",
+        "What is the justification for the current action being performed by the ego vehicle? Answer in a single sentence.": "I am driving forward to reach my destination.",
+        "What should be driver be doing now ? Provide me a definite action.": "Maintain a safe following distance from the yellow van in front.",
+        "Tell me about the surroundings such as the weather type, road type, time of day and scenario in two sentences.": "It is nighttime with clear weather and low visibility. The road is a two-lane asphalt road with moderate traffic and trees and vegetation on either side.",
+        "Video File Name": "Sequence_Night_13_clip1.mp4"
+      }
+    }
+  ]
+}

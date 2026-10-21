@@ -1,0 +1,198 @@
+{
+  "protocol_sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9",
+  "adjudicated": false,
+  "independent_reviewers": [],
+  "boundary_definition": "First transition toward floor through first settled floor posture; lying afterward is separate",
+  "assets": [
+    {
+      "asset_key": "caviar-Fight_Chase",
+      "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+      "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+      "duration_ms": 17480,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+      "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+      "duration_ms": 40560,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "caviar-Rest_InChair",
+      "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+      "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+      "duration_ms": 40560,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "caviar-Walk1",
+      "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+      "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+      "duration_ms": 24720,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "roadscapes-day_11",
+      "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+      "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+      "duration_ms": 5000,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "roadscapes-day_12",
+      "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+      "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+      "duration_ms": 5000,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "roadscapes-day_13",
+      "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+      "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+      "duration_ms": 5000,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "roadscapes-night_12",
+      "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+      "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+      "duration_ms": 5000,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "roadscapes-night_13",
+      "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+      "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+      "duration_ms": 5000,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-adl-01",
+      "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+      "duration_ms": 5030,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-adl-02",
+      "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+      "duration_ms": 6050,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-adl-03",
+      "asset_id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "revision_id": "c30be808-1f19-41db-a77d-38f01be9fe55",
+      "duration_ms": 6050,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-adl-24",
+      "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+      "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+      "duration_ms": 2335,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-adl-28",
+      "asset_id": "b28d1915-2510-4158-9705-498550ebdaf9",
+      "revision_id": "99a4d954-2050-4878-b2de-2e43648064a1",
+      "duration_ms": 2841,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-fall-01",
+      "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+      "duration_ms": 5338,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-fall-02",
+      "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+      "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+      "duration_ms": 3670,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-fall-03",
+      "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "revision_id": "a1855590-f340-4f9b-b5b7-ebe94788688c",
+      "duration_ms": 7240,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    },
+    {
+      "asset_key": "urfall-fall-04",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "duration_ms": 3203,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": "User identified visible fall; exact interval still needs review"
+    },
+    {
+      "asset_key": "urfall-fall-05",
+      "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+      "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+      "duration_ms": 5064,
+      "events": [],
+      "absence_labels": [],
+      "status": "needs_human_review",
+      "development_feedback": ""
+    }
+  ]
+}

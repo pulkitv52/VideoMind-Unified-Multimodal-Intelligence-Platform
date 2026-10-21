@@ -1,0 +1,523 @@
+{
+  "version": 1,
+  "scope": "Authorized retained development corpus; not release gold",
+  "workspace_id": "3d58c020-d4e3-4ecb-bb75-c17de45f6b3b",
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "assets": [
+    {
+      "id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+      "title": "urfall-fall-03__derived.mp4",
+      "revision_id": "a1855590-f340-4f9b-b5b7-ebe94788688c",
+      "sha256": "5619e480ae7faa9f79068ce46d62916c438aecdcd2b6053571bf439029320092",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 863881
+    },
+    {
+      "id": "03b50ea9-9fe5-43ba-a596-44c9b0b4a9ac",
+      "title": "dog.wav",
+      "revision_id": "670bdfa0-b455-4da8-b977-fde7849c447c",
+      "sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "modality": "audio",
+      "source_id": "a33f67df-6bb3-4a44-a875-ea64198cee82",
+      "source_name": "Local starter folder",
+      "bytes": 441044
+    },
+    {
+      "id": "046135c4-ef67-455d-b5a1-f7f0109e4655",
+      "title": "video30-roadscapes-ATTRIBUTION.md",
+      "revision_id": "3a7f08bc-9683-4a5c-8c1a-9737d5af9833",
+      "sha256": "61b920089cc13832bb4b6ae3f656735207cb013e25cbc5f91a7f8405b4c46b76",
+      "modality": "document",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "source_name": "Roadscapes - Day and night driving",
+      "bytes": 4924
+    },
+    {
+      "id": "10a4dc1b-11ef-4291-914c-6d810f500098",
+      "title": "urfall-adl-03__derived.mp4",
+      "revision_id": "c30be808-1f19-41db-a77d-38f01be9fe55",
+      "sha256": "65647dca89b308862fd073d19d4b609a92095bf7885f7dfa79169403849fe13c",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 561543
+    },
+    {
+      "id": "182495e9-8cc6-4913-b5b2-5ed9a232db40",
+      "title": "public-starter-ATTRIBUTION.md",
+      "revision_id": "670e6f1c-9818-4b82-a8cc-c91a67f84701",
+      "sha256": "f59f0f21606a5f56a6e362125bc29a53685c3ad7cd5d28aa6e35bb36ea7eb8b8",
+      "modality": "document",
+      "source_id": "a33f67df-6bb3-4a44-a875-ea64198cee82",
+      "source_name": "Local starter folder",
+      "bytes": 823
+    },
+    {
+      "id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+      "title": "urfall-adl-01__derived.mp4",
+      "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+      "sha256": "87116a38ba3b80002651bab6b70c434b8657e2abc7d4645bf90ba0c7560da969",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 434362
+    },
+    {
+      "id": "218a6dc5-7c9b-41c6-9b74-4021e5270aff",
+      "title": "caviar-ShopAssistant1cor__derived.mp4",
+      "revision_id": "1b00a1d7-3265-4bf0-945c-537047a00019",
+      "sha256": "69d69e27058f221baa40b7987210eb96fac0e7c1f5bad20ec5bcdfb4bfc2f75c",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 2310246
+    },
+    {
+      "id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+      "title": "caviar-Rest_FallOnFloor__derived.mp4",
+      "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+      "sha256": "a704c67a4057897066e133af1065a382fba43a2df3506c390d2816f2c5f476db",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 5080439
+    },
+    {
+      "id": "29361752-998c-4735-bf51-09b4b678d609",
+      "title": "roadscapes-day_13__derived.mp4",
+      "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+      "sha256": "da99ef3896e595bc5b4a2835d032b0a7e8f04dfc4f49557a9b62bca633405088",
+      "modality": "video",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "source_name": "Roadscapes - Day and night driving",
+      "bytes": 459728
+    },
+    {
+      "id": "33fee373-ff1f-4070-bb95-f4d649f078a9",
+      "title": "caviar-Browse1__derived.mp4",
+      "revision_id": "330dca1f-bdf6-4740-a842-287d1c59f7f0",
+      "sha256": "ae6eb54e31cc218507283f745fc194f51794e37e94d32cc2c656f59c8ee29b4b",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 5394457
+    },
+    {
+      "id": "468ad7f4-f4d2-48e1-9e5e-c8cd80eb2073",
+      "title": "video30-caviar-ATTRIBUTION.md",
+      "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+      "sha256": "f0da3dea308638c4f4d8b2fdd39b615d68ac320ad558b87b651e843f621c5377",
+      "modality": "document",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 13127
+    },
+    {
+      "id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+      "title": "roadscapes-day_11__derived.mp4",
+      "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+      "sha256": "56fa74e6e50fd14a55ea1b2b1bf5e63feb2cd00b0cce5bc08056a2e5463c9816",
+      "modality": "video",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "source_name": "Roadscapes - Day and night driving",
+      "bytes": 497501
+    },
+    {
+      "id": "5d26ac15-0c21-4d92-ba69-99a1b298ed71",
+      "title": "spoken.mp4",
+      "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+      "sha256": "f46c5d64b7a69e29133de988397430da27a6c7808d60e1a328f00847fdf3e911",
+      "modality": "video",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 36645
+    },
+    {
+      "id": "5f8291ee-de0c-46db-a60e-886d3063f6a2",
+      "title": "caviar-OneLeaveShop1cor__derived.mp4",
+      "revision_id": "63f3cc96-a3af-4b55-8cce-8b1b6065467d",
+      "sha256": "d81607cec28e5ddb84aa6fe2e57acc1c8807042b78adc7e4933be62ee22c057d",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 471447
+    },
+    {
+      "id": "6462afb0-a85e-41a7-b137-f2c3c2d5901c",
+      "title": "scanned-page.pdf",
+      "revision_id": "547038ac-c8d8-4dea-a57c-e95b9b2ed7a1",
+      "sha256": "7a77905b1ba9dab6f3330db5b5d36e0590682087a4fe7dd87595e8d631174ff7",
+      "modality": "document",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 15435
+    },
+    {
+      "id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+      "title": "urfall-fall-01__derived.mp4",
+      "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+      "sha256": "c73845dbabc1437499b8e00840b1547b53a6b5566251f4c054d32338cb09570f",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 411866
+    },
+    {
+      "id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+      "title": "roadscapes-day_12__derived.mp4",
+      "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+      "sha256": "202664d98e828d86a22d650062522853321bb9335822b5d952a34bc4c0f33d52",
+      "modality": "video",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "source_name": "Roadscapes - Day and night driving",
+      "bytes": 766738
+    },
+    {
+      "id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+      "title": "roadscapes-night_13__derived.mp4",
+      "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+      "sha256": "b5e9adb16ac3d6894fd258cb1e231c248fd137a99a7225ff4a30ca450a7213ea",
+      "modality": "video",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "source_name": "Roadscapes - Day and night driving",
+      "bytes": 515703
+    },
+    {
+      "id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+      "title": "urfall-fall-02__derived.mp4",
+      "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+      "sha256": "43b59ffc50e4236b154c15bc4a0bbd015e728b4e1f10818c9eee51a1e87bffe8",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 343018
+    },
+    {
+      "id": "71c9efc3-b819-4183-847b-5637eaa82530",
+      "title": "silent.mp4",
+      "revision_id": "5ef1b098-2153-44d1-af68-65ac46684318",
+      "sha256": "505e66d571defab7868b7c39627b680629a4ff314cc0ee87858e63a9180ee64d",
+      "modality": "video",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 2329
+    },
+    {
+      "id": "75f12e38-6e42-4ffd-91de-460adcc96ef9",
+      "title": "procedure.txt",
+      "revision_id": "0b4df431-5af3-4add-b4f2-1a06aff286da",
+      "sha256": "d70c0e7eba41d26829790ca242dab08c9d717d67b3c9dd12009ed29979dc2f9a",
+      "modality": "document",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 75
+    },
+    {
+      "id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+      "title": "urfall-fall-05__derived.mp4",
+      "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+      "sha256": "45674c7097b396025e39b0bac29a17458f0cdd3e312d47022bef6f5b42effeb5",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 401220
+    },
+    {
+      "id": "7bc4eab6-4e28-446a-9a4f-6e754f401eb4",
+      "title": "caviar-LeftBag__derived.mp4",
+      "revision_id": "3b47a685-b0fd-4373-87a0-be1cce8b0156",
+      "sha256": "ee002f556203a1ae70bfeeb10783b7d8923d08b24d49bcbd991c0843f5d60ed5",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 7474914
+    },
+    {
+      "id": "85b46705-57f0-4f53-8426-28ca7c2fae41",
+      "title": "chelsea.png",
+      "revision_id": "92cae5d2-80e6-4a22-bb81-90606922d173",
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "modality": "image",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 240512
+    },
+    {
+      "id": "890d879d-fa02-46cc-96ef-41dd7b7cf2d7",
+      "title": "caviar-OneLeaveShopReenter1cor__derived.mp4",
+      "revision_id": "fd2f1261-06bd-446c-ac06-9e25e2c5ef93",
+      "sha256": "1be4e6b1208c23965455ad87d9308b71b32d496fb9255dd56dde632f7e25fdf8",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 570114
+    },
+    {
+      "id": "8e111b44-3a38-4bd1-aad9-9412591a5472",
+      "title": "caviar-OneStopMoveEnter1cor__derived.mp4",
+      "revision_id": "84c8ec10-049c-409c-8033-bb133cf4109c",
+      "sha256": "73d612f6eb86c2ee8dec6942b09a910710148f9a576f2846eccb55f556c5b6e2",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 3408969
+    },
+    {
+      "id": "8eb8dc74-1483-4a70-a382-930a48417b83",
+      "title": "caviar-Meet_WalkSplit__derived.mp4",
+      "revision_id": "d79baee8-c18c-447f-91a9-042f52608e6e",
+      "sha256": "9ffe5db52e9efbb8276356a9084f6238dd7de88a24d5852a1e0616e6c67d0b4a",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 3163410
+    },
+    {
+      "id": "8f99b0ea-3d03-435f-891e-665ae5b02c05",
+      "title": "public-starter-ATTRIBUTION.md",
+      "revision_id": "b094b858-4ad4-4033-b881-045c5d6bc424",
+      "sha256": "f59f0f21606a5f56a6e362125bc29a53685c3ad7cd5d28aa6e35bb36ea7eb8b8",
+      "modality": "document",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 823
+    },
+    {
+      "id": "914bfe5c-6752-4d6f-9945-18b86598c120",
+      "title": "chelsea.png",
+      "revision_id": "a510a09d-662a-47ea-b91e-a0f877eeee3d",
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "modality": "image",
+      "source_id": "a33f67df-6bb3-4a44-a875-ea64198cee82",
+      "source_name": "Local starter folder",
+      "bytes": 240512
+    },
+    {
+      "id": "966e79e8-a321-4797-aaea-35146257aa06",
+      "title": "caviar-ThreePastShop1cor__derived.mp4",
+      "revision_id": "74f247b6-0891-4cdd-8621-d830d6b6a025",
+      "sha256": "2305dd62f10bae5452df2d0d6a60b82777c884938c310a106ea2a37baefb971a",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 2911743
+    },
+    {
+      "id": "98b1ec74-3203-4d42-82d8-5ea74525108e",
+      "title": "video30-ur-fall-ATTRIBUTION.md",
+      "revision_id": "7f22b9dc-c9f2-43e0-9dad-a93751620167",
+      "sha256": "6919639cdc00eb78e1d800641feadd450b7fd185d74504b4eced7e1267fdf9e6",
+      "modality": "document",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 8138
+    },
+    {
+      "id": "9f92e8f2-e8a9-4b11-9744-b5fa4c68aef4",
+      "title": "caviar-EnterExitCrossingPaths1cor__derived.mp4",
+      "revision_id": "d2f0e0cc-8561-4b57-a963-732cda63eb03",
+      "sha256": "a1cbb22eec512cf1ca4015d42ab56268c89809b49b6d55746ae17ef6d7bac2bd",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 612768
+    },
+    {
+      "id": "a78c0684-d13f-4d13-b42c-413881462520",
+      "title": "dog.wav",
+      "revision_id": "c3a5d452-20f7-4f46-bbfc-19e2cf530896",
+      "sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "modality": "audio",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 441044
+    },
+    {
+      "id": "b186f3ae-a039-4fb2-a32d-63d90f1d9067",
+      "title": "renderer-smoke.docx",
+      "revision_id": "993bb011-ef0e-4bd5-ad69-8647cf70d5b9",
+      "sha256": "bbf0d6713c0bbc141d5dc8db791062984f03e117d1a00a32ea72a5e0431d178a",
+      "modality": "document",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 912
+    },
+    {
+      "id": "b28d1915-2510-4158-9705-498550ebdaf9",
+      "title": "urfall-adl-28__derived.mp4",
+      "revision_id": "99a4d954-2050-4878-b2de-2e43648064a1",
+      "sha256": "3a7e65cc477403151df8ab7f21cf5ba6b46e159bc91cf8b622d897b87db76daa",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 131311
+    },
+    {
+      "id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+      "title": "urfall-adl-24__derived.mp4",
+      "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+      "sha256": "7c0aaa8f34705b181783954ac8cfeeaead8f162e745c1e2b71cd433aa6d4fc17",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 100167
+    },
+    {
+      "id": "bda3094f-da08-423b-a752-f9684fc01ade",
+      "title": "caviar-Fight_Chase__derived.mp4",
+      "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+      "sha256": "2c4361842a1a2130101171ff42ad5a911352f6b50816bf7e9d875cd2e4e40470",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 2186783
+    },
+    {
+      "id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+      "title": "caviar-Walk1__derived.mp4",
+      "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+      "sha256": "6f0d7edc011376f12a02c9b27cb393f33ac5e3bd14d992b5738e1dcf509d4f6c",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 3127165
+    },
+    {
+      "id": "d1f2f63c-36cf-4f93-8eb9-13963cd8bb91",
+      "title": "caviar-OneShopOneWait1cor__derived.mp4",
+      "revision_id": "75eb9486-8eca-4564-9c68-886b790e230e",
+      "sha256": "ff98f36413b6c4c4b1394b7a1730c0d21073f2e52cf441bc6ec1d79911a0afa2",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 2248441
+    },
+    {
+      "id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "title": "urfall-fall-04__derived.mp4",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "sha256": "e2636935d1f7e049abb47a4d1572d3de2a10891ad9bf461b6915c5bb18dc438d",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 308098
+    },
+    {
+      "id": "e176aae0-2d6d-4f97-8000-e215b4cc99fa",
+      "title": "speech.wav",
+      "revision_id": "dcebad70-5fc3-432d-b2ff-62a4a6397e05",
+      "sha256": "66587e5597b73de77a6a4527831ccde748098ac5c9d087967a13d2480df1cd97",
+      "modality": "audio",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 82160
+    },
+    {
+      "id": "ee190776-cd93-48a0-84f0-dc1cba089274",
+      "title": "beeps.wav",
+      "revision_id": "4721dac1-2269-4743-a6e1-6643431e29ff",
+      "sha256": "b1515e86e68c26b3a28b9c39e1f36773cb87c8f37d29b6b2d222389bc3329025",
+      "modality": "audio",
+      "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+      "source_name": "Starter dataset",
+      "bytes": 96044
+    },
+    {
+      "id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+      "title": "urfall-adl-02__derived.mp4",
+      "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+      "sha256": "e96a24cb7badc70937fb1e8ae78104d84b054b5d9b582a30a7a7e3d2b97d1aad",
+      "modality": "video",
+      "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+      "source_name": "UR Fall - Falls and daily activities",
+      "bytes": 506253
+    },
+    {
+      "id": "f527ae38-65b8-4bac-87c4-54d6374351e0",
+      "title": "caviar-OneStopEnter1cor__derived.mp4",
+      "revision_id": "f14b7ff6-0868-4a93-a2fa-27179900ff71",
+      "sha256": "284e331ee9f60c555ce51ec4e7b30317ee37c214e22b84e1d0c3dde655cb7a1f",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 2124372
+    },
+    {
+      "id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+      "title": "roadscapes-night_12__derived.mp4",
+      "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+      "sha256": "a2bd5fb260748a1cef8b28796045c86afe0a418b83591c52c8a026b94717bb0a",
+      "modality": "video",
+      "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+      "source_name": "Roadscapes - Day and night driving",
+      "bytes": 590069
+    },
+    {
+      "id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+      "title": "caviar-Rest_InChair__derived.mp4",
+      "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+      "sha256": "9d29de8e99514a9dd42f133d24ba2e9aa5204124d99d0b7f4a9f259d1bf21a2d",
+      "modality": "video",
+      "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+      "source_name": "CAVIAR - Stores and lobby",
+      "bytes": 5110164
+    }
+  ],
+  "publisher_annotations": [
+    {
+      "asset_key": "caviar-Walk1",
+      "annotation_sha256": "dfcb8135fe46e7fbbcb7616d93f4f16aee040570185227ecd8c81aaa87de06cd",
+      "mapping_sha256": "b49897304fdee9dbc2d66a17bac8adc381de98235ecf28ae4f327c3e46325f42",
+      "intervals": [
+        {
+          "start_frame": 17,
+          "last_inclusive_frame": 179,
+          "interval": [
+            920,
+            7440
+          ],
+          "label": "walking",
+          "provenance": "publisher_frame_hypotheses"
+        },
+        {
+          "start_frame": 236,
+          "last_inclusive_frame": 511,
+          "interval": [
+            9680,
+            20720
+          ],
+          "label": "walking",
+          "provenance": "publisher_frame_hypotheses"
+        }
+      ],
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/"
+    },
+    {
+      "asset_key": "caviar-Fight_Chase",
+      "annotation_sha256": "2b5c07c9eaa668deba11304105ed935060b5fb3021e606820559884e4d6ebe25",
+      "mapping_sha256": "fc9aa5e53226dee5b8a5753bdce97f7859e5409a7695c54aeceff6cd188613d0",
+      "intervals": [
+        {
+          "start_frame": 284,
+          "last_inclusive_frame": 416,
+          "interval": [
+            11560,
+            16880
+          ],
+          "label": "fighting",
+          "provenance": "publisher_frame_hypotheses"
+        }
+      ],
+      "license": "CC BY-SA (publisher page does not identify version)",
+      "homepage": "https://groups.inf.ed.ac.uk/vision/DATASETS/CAVIAR/CAVIARDATA1/"
+    }
+  ],
+  "human_reviewers": [],
+  "adjudicated": false,
+  "training_contamination": "Unknown; no model-training exclusion claim",
+  "sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852"
+}

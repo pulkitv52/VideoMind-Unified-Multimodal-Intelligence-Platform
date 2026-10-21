@@ -1,0 +1,48 @@
+{
+  "scope": "Dataset preparation, authenticated intake and original-download verification only; no search evaluation",
+  "collections": [
+    {
+      "dataset": "CAVIAR",
+      "collection": "CAVIAR - Stores and lobby",
+      "videos": 15,
+      "attribution_files": 1,
+      "assets": 16,
+      "all_jobs_stored": true,
+      "all_download_checksums_match": true,
+      "duplicate_upload_noop": true,
+      "new_uploads_in_this_run": 0,
+      "unchanged_uploads_in_this_run": 16
+    },
+    {
+      "dataset": "UR Fall",
+      "collection": "UR Fall - Falls and daily activities",
+      "videos": 10,
+      "attribution_files": 1,
+      "assets": 11,
+      "all_jobs_stored": true,
+      "all_download_checksums_match": true,
+      "duplicate_upload_noop": true,
+      "new_uploads_in_this_run": 3,
+      "unchanged_uploads_in_this_run": 8
+    },
+    {
+      "dataset": "Roadscapes",
+      "collection": "Roadscapes - Day and night driving",
+      "videos": 5,
+      "attribution_files": 1,
+      "assets": 6,
+      "all_jobs_stored": true,
+      "all_download_checksums_match": true,
+      "duplicate_upload_noop": true,
+      "new_uploads_in_this_run": 0,
+      "unchanged_uploads_in_this_run": 6
+    }
+  ],
+  "videos": 30,
+  "upstream_bytes": 684476404,
+  "derived_video_bytes": 53086890,
+  "frames": 17175,
+  "elapsed_import_seconds": 15.73,
+  "gpu_used": false,
+  "timing_scope": "Final verification pass: 30 unchanged uploads and 3 new uploads (2 videos plus attribution). Excludes earlier uploads, downloads and conversion; not an ingestion throughput benchmark."
+}

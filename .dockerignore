@@ -1,0 +1,9 @@
+.git
+.env
+.local
+.cache
+**/.venv
+**/__pycache__
+**/node_modules
+**/dist
+evaluation/fixtures/generated

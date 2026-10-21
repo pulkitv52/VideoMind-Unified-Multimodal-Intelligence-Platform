@@ -1,0 +1,66 @@
+{
+  "scope": "Two known-input CPU smoke cases, not independent relevance or latency evaluation",
+  "originals_preserved": 46,
+  "corpus_unchanged": true,
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "generation": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "query_images_persisted_as_assets": false,
+  "cases": [
+    {
+      "case": "known-cat",
+      "input_sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "milliseconds": 45304.51,
+      "results": [
+        {
+          "title": "chelsea.png",
+          "score": 1.0,
+          "citations": [
+            "55b95994-fc18-4694-a3f0-a783bd992f9b"
+          ]
+        },
+        {
+          "title": "chelsea.png",
+          "score": 1.0,
+          "citations": [
+            "c1b4cdc4-22e8-458e-bfda-a69f3fd507f0"
+          ]
+        }
+      ]
+    },
+    {
+      "case": "known-video-frame",
+      "input_sha256": "45f14df16134ae8252109063f24f99042e5fec350525c8c414264b35e8d3ed93",
+      "milliseconds": 15548.91,
+      "results": [
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.9503151804020911,
+          "citations": [
+            "a3dd0bb2-abba-4812-b0c7-031643cf3b12"
+          ]
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.9380822255513399,
+          "citations": [
+            "9b5d5800-cdb8-4e79-97bf-baf2b766d339"
+          ]
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.9253428026829496,
+          "citations": [
+            "b7a3065a-50bb-4e55-9615-fa3c87fa7476"
+          ]
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.8904503053158356,
+          "citations": [
+            "67c8f147-aafa-48fe-98c2-be2a99b703ea"
+          ]
+        }
+      ]
+    }
+  ]
+}

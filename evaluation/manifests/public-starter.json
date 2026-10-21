@@ -1,0 +1,21 @@
+{
+  "downloaded_on": "2026-10-18",
+  "assets": [
+    {
+      "filename": "dog.wav",
+      "url": "https://raw.githubusercontent.com/karolpiczak/ESC-50/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-100032-A-0.wav",
+      "bytes": 441044,
+      "sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "license": "CC-BY-3.0 (ESC-10 subset); source recording CC0",
+      "credit": "K. J. Piczak / ESC-10; source rose_bark.wav by nfrae"
+    },
+    {
+      "filename": "chelsea.png",
+      "url": "https://raw.githubusercontent.com/scikit-image/scikit-image/v0.25.2/skimage/data/chelsea.png",
+      "bytes": 240512,
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "license": "CC0-1.0",
+      "credit": "Stefan van der Walt / scikit-image"
+    }
+  ]
+}

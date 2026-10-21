@@ -1,0 +1,126 @@
+{
+  "scope": "Phase 1 CPU-only foundation; no inference model loaded",
+  "initial_readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  },
+  "post_restart_readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  },
+  "versions": {
+    "postgres": "PostgreSQL 16.15 (Debian 16.15-1.pgdg12+2) on x86_64-pc-linux-gnu, compiled by gcc (Debian 12.2.0-14+deb12u1) 12.2.0, 64-bit",
+    "pgvector": "0.8.7",
+    "migration": "0003_citation_cleanup"
+  },
+  "persistence": {
+    "existing_http_session": true,
+    "workspace_rows": true,
+    "redis_value": true,
+    "object_bytes": true
+  },
+  "redis_failure_returns_503": true,
+  "recovered_readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  },
+  "idle_container_stats": [
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "4.15%",
+      "Container": "02361fda0f1e4fe8f213a7ab404563fe0d7ca0462582969adc10fb9ba1772981",
+      "ID": "02361fda0f1e",
+      "MemPerc": "24.68%",
+      "MemUsage": "94.79MiB / 384MiB",
+      "Name": "videomind-api-1",
+      "NetIO": "51.1kB / 75.8kB",
+      "PIDs": "5"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "4.34%",
+      "Container": "796c3af2c60b83799272890099b3be9f68f9c24d52230c5d8d731ce550c5fcc2",
+      "ID": "796c3af2c60b",
+      "MemPerc": "6.60%",
+      "MemUsage": "4.223MiB / 64MiB",
+      "Name": "videomind-frontend-1",
+      "NetIO": "15.7kB / 15.1kB",
+      "PIDs": "2"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.04%",
+      "Container": "5825fa98c0c7ab2a6ee98aa6e50370362045b6266faf1660b5bbb46eb303a111",
+      "ID": "5825fa98c0c7",
+      "MemPerc": "11.75%",
+      "MemUsage": "60.17MiB / 512MiB",
+      "Name": "videomind-minio-1",
+      "NetIO": "19.9kB / 13.1kB",
+      "PIDs": "8"
+    },
+    {
+      "BlockIO": "610kB / 258kB",
+      "CPUPerc": "9.96%",
+      "Container": "811701c18363a97c54505de362d45914adec91d662cf63e48f659ad7a3bb6e19",
+      "ID": "811701c18363",
+      "MemPerc": "4.35%",
+      "MemUsage": "22.27MiB / 512MiB",
+      "Name": "videomind-postgres-1",
+      "NetIO": "17.5kB / 13.3kB",
+      "PIDs": "7"
+    },
+    {
+      "BlockIO": "131kB / 28.7kB",
+      "CPUPerc": "0.91%",
+      "Container": "f7806f989b73f13df946ce9156cec34449f5a1cd73593025e3fac7bc18a4163c",
+      "ID": "f7806f989b73",
+      "MemPerc": "3.02%",
+      "MemUsage": "3.859MiB / 128MiB",
+      "Name": "videomind-redis-1",
+      "NetIO": "48.7kB / 27.2kB",
+      "PIDs": "6"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.31%",
+      "Container": "83e5b6110e541bc01eb3ccee0dd7caeba0cf3dfc10f475e9d001fdc507953579",
+      "ID": "83e5b6110e54",
+      "MemPerc": "23.11%",
+      "MemUsage": "59.17MiB / 256MiB",
+      "Name": "videomind-worker-1",
+      "NetIO": "38.9kB / 41.7kB",
+      "PIDs": "1"
+    }
+  ],
+  "host_meminfo_kib": {
+    "MemTotal": 15683900,
+    "MemAvailable": 7216000,
+    "SwapTotal": 4194300,
+    "SwapFree": 2430756
+  },
+  "validation": {
+    "backend_and_integration_tests": 54,
+    "frontend_typecheck_and_build": "passed",
+    "browser_sign_in_workspace_sign_out": "passed",
+    "generated_secrets_in_source_or_current_application_logs": false,
+    "test_warning": "Upstream TestClient/httpx deprecation"
+  }
+}

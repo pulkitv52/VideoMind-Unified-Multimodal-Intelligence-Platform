@@ -1,0 +1,52 @@
+[
+  {
+    "kind": "document",
+    "query": "How do I safely open the electrical panel?",
+    "top_score": 0.8239210598492339
+  },
+  {
+    "kind": "visual",
+    "query": "A red square moving across a white background",
+    "top_score": 0.814496360481225
+  },
+  {
+    "kind": "sound",
+    "query": "Repeated electronic beeping tones",
+    "top_score": 0.724617497645767
+  },
+  {
+    "kind": "image",
+    "query": "A close-up photograph of an orange cat",
+    "top_score": 0.7363389291561301
+  },
+  {
+    "kind": "negative",
+    "query": "The molecular sequence of a Martian microorganism",
+    "top_score": 0.6795122623443604
+  },
+  {
+    "kind": "negative",
+    "query": "A submarine navigating under Arctic sea ice",
+    "top_score": 0.6240547299385071
+  },
+  {
+    "kind": "negative",
+    "query": "Instructions for tuning a grand piano",
+    "top_score": 0.6104786577963431
+  },
+  {
+    "kind": "negative",
+    "query": "An elephant painting a portrait with its trunk",
+    "top_score": 0.6074181795120239
+  },
+  {
+    "kind": "negative",
+    "query": "A volcano erupting beside a glacier",
+    "top_score": 0.6314237305946273
+  },
+  {
+    "kind": "negative",
+    "query": "A recipe for strawberry cheesecake",
+    "top_score": 0.6033384913196888
+  }
+]

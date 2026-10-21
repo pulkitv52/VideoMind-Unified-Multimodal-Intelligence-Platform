@@ -1,0 +1,30 @@
+{
+  "scope": "Query wording comparison for the same 10-17.48s CAVIAR Fight_Chase window; not action confidence",
+  "citation": "5ceb7614-7859-48a7-986c-31301ae5997a",
+  "results": [
+    {
+      "query": "Surveillance footage of people walking across a tiled lobby near large windows",
+      "score": 0.7808421515414534
+    },
+    {
+      "query": "An overhead CCTV view of people walking through an indoor lobby",
+      "score": 0.7796486878813877
+    },
+    {
+      "query": "People moving through a lobby with chairs and large windows",
+      "score": 0.7522768525912267
+    },
+    {
+      "query": "Several people standing and walking in a building entrance hall",
+      "score": 0.7368876934051566
+    },
+    {
+      "query": "An overhead view of two people fighting in a lobby",
+      "score": 0.7311058800753439
+    },
+    {
+      "query": "Two people standing close together in a building lobby",
+      "score": 0.686181940295465
+    }
+  ]
+}

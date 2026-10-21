@@ -1,0 +1,1463 @@
+{
+  "scope": "User screenshot queries; read-only real model tests, no retrieval settings changed",
+  "queries": [
+    {
+      "query": "Repeated electronic beeping tones",
+      "no_useful_evidence": false,
+      "results": [
+        {
+          "title": "beeps.wav",
+          "representation": "audio",
+          "score": 0.724617497645767,
+          "locator": {
+            "kind": "temporal",
+            "start_ms": 0,
+            "end_ms": 3000,
+            "track": "audio:0",
+            "transform_id": null
+          },
+          "citation": "25492471-0290-4314-b17c-188c5e6b0754",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        }
+      ],
+      "raw_top5": [
+        {
+          "title": "beeps.wav",
+          "representation": "audio",
+          "score": 0.724617497645767,
+          "citation": "25492471-0290-4314-b17c-188c5e6b0754",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "4721dac1-2269-4743-a6e1-6643431e29ff",
+          "start_ms": 0,
+          "end_ms": 3000,
+          "transform": {
+            "words": [],
+            "frames": [],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "audio",
+            "mapping_object_id": "7137a7ba-484a-4cbd-a087-c6f5fd006089",
+            "playback_object_id": "716aa04f-7825-448b-bf68-3d4f4f92b7d7",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6593088710720032,
+          "citation": "fbe33f8b-5651-48cc-82b3-1e808e236d12",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 2535,
+            "structure": "paragraph-16",
+            "text_start": 2502,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-ur-fall-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6567802037727724,
+          "citation": "891b154b-1fe6-41a6-8de5-5cee9b7b78c9",
+          "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+          "revision_id": "7f22b9dc-c9f2-43e0-9dad-a93751620167",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 867,
+            "structure": "paragraph-6",
+            "text_start": 631,
+            "text_object_id": "050353a0-c339-459a-a868-322f8fb4985c",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6531801223754929,
+          "citation": "787087cf-7b7d-4c92-bd28-6aa2b278b2d2",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 9119,
+            "structure": "paragraph-48",
+            "text_start": 9093,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "scanned-page.pdf",
+          "representation": "ocr",
+          "score": 0.652806083774388,
+          "citation": "8075ab9c-7f31-4f88-86ae-bd99cf66571b",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "547038ac-c8d8-4dea-a57c-e95b9b2ed7a1",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": [
+              0.04791666666666667,
+              0.32222222222222224,
+              0.5233333333333333,
+              0.3705555555555556
+            ],
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 73,
+            "structure": "ocr-3-1",
+            "text_start": 48,
+            "text_object_id": "140c970e-6c15-42d5-b244-246352f15aab",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        }
+      ]
+    },
+    {
+      "query": "A red square moving across a white background",
+      "no_useful_evidence": false,
+      "results": [
+        {
+          "title": "spoken.mp4",
+          "representation": "video",
+          "score": 0.814496360481225,
+          "locator": {
+            "kind": "temporal",
+            "start_ms": 0,
+            "end_ms": 4000,
+            "track": "video:0",
+            "transform_id": null
+          },
+          "citation": "eb10b756-a15b-4818-b77d-a5e45e552e81",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        },
+        {
+          "title": "silent.mp4",
+          "representation": "video",
+          "score": 0.814496360481225,
+          "locator": {
+            "kind": "temporal",
+            "start_ms": 0,
+            "end_ms": 4000,
+            "track": "video:0",
+            "transform_id": null
+          },
+          "citation": "d5982781-779e-43c0-aadd-ee7fde7e2b10",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        }
+      ],
+      "raw_top5": [
+        {
+          "title": "silent.mp4",
+          "representation": "video",
+          "score": 0.814496360481225,
+          "citation": "d5982781-779e-43c0-aadd-ee7fde7e2b10",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "5ef1b098-2153-44d1-af68-65ac46684318",
+          "start_ms": 0,
+          "end_ms": 4000,
+          "transform": {
+            "words": [],
+            "frames": [
+              {
+                "pts": 0,
+                "file": "frame-0.jpg",
+                "object_id": "ab07a0f5-0496-4bbc-a18f-01d6de518aa2",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 0
+              },
+              {
+                "pts": 16384,
+                "file": "frame-1.jpg",
+                "object_id": "3227ec5a-4002-4e7c-b283-4eec3dcab96d",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 1000
+              },
+              {
+                "pts": 32768,
+                "file": "frame-2.jpg",
+                "object_id": "43f2b6cf-a284-4312-a435-7b49134f5127",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 2000
+              },
+              {
+                "pts": 49152,
+                "file": "frame-3.jpg",
+                "object_id": "6ed85ff4-c1a6-4895-9548-a1ab145e2f35",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 3000
+              }
+            ],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "video",
+            "mapping_object_id": "7fa5e64c-712d-4493-8f0f-f8793594eb46",
+            "playback_object_id": "dffbd8a4-488a-4e5c-a703-00b279f0e47f",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "spoken.mp4",
+          "representation": "video",
+          "score": 0.814496360481225,
+          "citation": "eb10b756-a15b-4818-b77d-a5e45e552e81",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "start_ms": 0,
+          "end_ms": 4000,
+          "transform": {
+            "words": [],
+            "frames": [
+              {
+                "pts": 0,
+                "file": "frame-0.jpg",
+                "object_id": "1a4832d9-8321-4df4-98c2-2c43aa7cd147",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 0
+              },
+              {
+                "pts": 16384,
+                "file": "frame-1.jpg",
+                "object_id": "50284d63-8912-4bc3-80a5-1db420c8cbaa",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 1000
+              },
+              {
+                "pts": 32768,
+                "file": "frame-2.jpg",
+                "object_id": "ad26b4a4-8b3f-45fe-a374-ddbf3629f29d",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 2000
+              },
+              {
+                "pts": 49152,
+                "file": "frame-3.jpg",
+                "object_id": "3427445c-56f2-429f-b496-a15ff63566d6",
+                "time_base": [
+                  1,
+                  16384
+                ],
+                "original_ms": 3000
+              }
+            ],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "video",
+            "mapping_object_id": "921357b2-3c70-4a0d-8fa8-43592d96275a",
+            "playback_object_id": "def2604f-4377-4713-902e-65f0ace7518b",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6974757078318994,
+          "citation": "9bd001e8-2f91-4062-a70f-4014fc3bf688",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 5890,
+            "structure": "paragraph-32",
+            "text_start": 5860,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6894054783099368,
+          "citation": "bedca3bf-630f-4a5f-8df1-f7197ffc803b",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 6722,
+            "structure": "paragraph-36",
+            "text_start": 6707,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.687226690384549,
+          "citation": "f14f5148-ca6f-4f41-80ba-5ff629ea3e5d",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 1661,
+            "structure": "paragraph-12",
+            "text_start": 1625,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        }
+      ]
+    },
+    {
+      "query": "two person fighting",
+      "no_useful_evidence": false,
+      "results": [
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.724191774572414,
+          "locator": {
+            "kind": "text",
+            "text_artifact_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "start_char": 12326,
+            "end_char": 12347
+          },
+          "citation": "dd55762a-d808-47d9-80de-74a42c00b31c",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67"
+        }
+      ],
+      "raw_top5": [
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.724191774572414,
+          "citation": "dd55762a-d808-47d9-80de-74a42c00b31c",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 12347,
+            "structure": "paragraph-64",
+            "text_start": 12326,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6691485840589759,
+          "citation": "787087cf-7b7d-4c92-bd28-6aa2b278b2d2",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 9119,
+            "structure": "paragraph-48",
+            "text_start": 9093,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "urfall-fall-05__derived.mp4",
+          "representation": "video",
+          "score": 0.6683328547080976,
+          "citation": "d08309ad-bbdd-40ea-acec-931eca21e60f",
+          "source_id": "ab45d329-6b0a-4a9b-a0ca-c7cb375f174e",
+          "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+          "start_ms": 0,
+          "end_ms": 5065,
+          "transform": {
+            "words": [],
+            "frames": [
+              {
+                "pts": 0,
+                "file": "frame-0.jpg",
+                "object_id": "b87fab06-dfbc-4fc2-9892-43e56236c8e7",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 0
+              },
+              {
+                "pts": 90090,
+                "file": "frame-1.jpg",
+                "object_id": "eb889391-5211-476c-a107-1ec5fef12605",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 1001
+              },
+              {
+                "pts": 180180,
+                "file": "frame-2.jpg",
+                "object_id": "6c874251-283a-4697-9d34-440753730b8d",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 2002
+              },
+              {
+                "pts": 270270,
+                "file": "frame-3.jpg",
+                "object_id": "eae20ca5-36a5-4051-a9cf-b0ecac616581",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 3003
+              },
+              {
+                "pts": 360990,
+                "file": "frame-4.jpg",
+                "object_id": "0db6a185-027d-467b-b8e5-5aa0db87a9ab",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 4011
+              },
+              {
+                "pts": 452790,
+                "file": "frame-5.jpg",
+                "object_id": "f566fa0b-07de-495a-b84a-4e7fad961b9e",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 5031
+              }
+            ],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "video",
+            "mapping_object_id": "7116dc23-26c2-422b-bcf0-d85644936787",
+            "playback_object_id": "012a3851-4f4d-4003-8c4b-e33f5f294dce",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6641053957813554,
+          "citation": "8ee6a897-8b68-4a29-bd9a-7ea5b7475a8c",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 10726,
+            "structure": "paragraph-56",
+            "text_start": 10702,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "representation": "video",
+          "score": 0.6621359393434644,
+          "citation": "67c8f147-aafa-48fe-98c2-be2a99b703ea",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+          "start_ms": 0,
+          "end_ms": 12000,
+          "transform": {
+            "words": [],
+            "frames": [
+              {
+                "pts": 0,
+                "file": "frame-0.jpg",
+                "object_id": "619b80eb-d0ef-46c0-b1ae-04ad2e18f964",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 0
+              },
+              {
+                "pts": 89973,
+                "file": "frame-1.jpg",
+                "object_id": "5cb26dd9-415d-44f3-ba87-9d713557267f",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 1000
+              },
+              {
+                "pts": 179973,
+                "file": "frame-2.jpg",
+                "object_id": "9d4040db-b0af-4b80-8494-2ea87792d97c",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 2000
+              },
+              {
+                "pts": 269973,
+                "file": "frame-3.jpg",
+                "object_id": "9cdfbf93-3be1-4452-b776-7154ecc42855",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 3000
+              },
+              {
+                "pts": 359973,
+                "file": "frame-4.jpg",
+                "object_id": "c1aa9d92-18b2-4582-9d4a-7f5240bb2438",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 4000
+              },
+              {
+                "pts": 449973,
+                "file": "frame-5.jpg",
+                "object_id": "58a9247f-fb4a-47c8-b52c-788a5f0860f6",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 5000
+              },
+              {
+                "pts": 539973,
+                "file": "frame-6.jpg",
+                "object_id": "7633646e-c1f3-4d25-b104-66f5400863fe",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 6000
+              },
+              {
+                "pts": 629973,
+                "file": "frame-7.jpg",
+                "object_id": "72b0c8e9-bc25-4ef4-8e1f-6e438deb3999",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 7000
+              },
+              {
+                "pts": 719973,
+                "file": "frame-8.jpg",
+                "object_id": "0089792e-b04e-4c37-a168-a7b305237f59",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 8000
+              },
+              {
+                "pts": 809973,
+                "file": "frame-9.jpg",
+                "object_id": "cdc37575-2262-4134-bf60-7b309f0810bd",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 9000
+              },
+              {
+                "pts": 899973,
+                "file": "frame-10.jpg",
+                "object_id": "b3ba7e4a-0ab6-409a-a85c-e4961f7703c5",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 10000
+              },
+              {
+                "pts": 989973,
+                "file": "frame-11.jpg",
+                "object_id": "fcafbfef-135c-4478-a779-10daf2994105",
+                "time_base": [
+                  1,
+                  90000
+                ],
+                "original_ms": 11000
+              }
+            ],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "video",
+            "mapping_object_id": "b2cdc7f5-171e-447e-a830-75b823b97d7a",
+            "playback_object_id": "76f85ced-e57f-40e7-8227-d776bd53b226",
+            "playback_origin_ms": 0
+          }
+        }
+      ]
+    },
+    {
+      "query": "How do I safely open the electrical panel?",
+      "no_useful_evidence": false,
+      "results": [
+        {
+          "title": "scanned-page.pdf",
+          "representation": "ocr",
+          "score": 0.8239210598492339,
+          "locator": {
+            "kind": "page",
+            "page": 1,
+            "box": [
+              0.04791666666666667,
+              0.32222222222222224,
+              0.5233333333333333,
+              0.3705555555555556
+            ],
+            "rotation": 0,
+            "rendering_object_id": null,
+            "transform_id": null
+          },
+          "citation": "8075ab9c-7f31-4f88-86ae-bd99cf66571b",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        },
+        {
+          "title": "spoken.mp4",
+          "representation": "audio",
+          "score": 0.8089377511813938,
+          "locator": {
+            "kind": "temporal",
+            "start_ms": 0,
+            "end_ms": 2624,
+            "track": "audio:1",
+            "transform_id": null
+          },
+          "citation": "3e0e156b-4c19-4ac2-b0d7-fd8721b4b1e7",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        },
+        {
+          "title": "speech.wav",
+          "representation": "audio",
+          "score": 0.7947573188091936,
+          "locator": {
+            "kind": "temporal",
+            "start_ms": 0,
+            "end_ms": 2566,
+            "track": "audio:0",
+            "transform_id": null
+          },
+          "citation": "f1e8e45f-fa07-4056-992e-eea0600609fe",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        },
+        {
+          "title": "procedure.txt",
+          "representation": "text",
+          "score": 0.7435247454926537,
+          "locator": {
+            "kind": "text",
+            "text_artifact_id": "7e643470-1219-48e4-b2b5-e68bc3c6c54e",
+            "start_char": 0,
+            "end_char": 74
+          },
+          "citation": "5eb36c52-f917-4334-b02c-367b6e43b198",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        },
+        {
+          "title": "scanned-page.pdf",
+          "representation": "image",
+          "score": 0.7198338079551586,
+          "locator": {
+            "kind": "page",
+            "page": 1,
+            "box": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "rotation": 0,
+            "rendering_object_id": null,
+            "transform_id": null
+          },
+          "citation": "3ab3d03e-8730-44eb-80d3-5c04f909e188",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        },
+        {
+          "title": "scanned-page.pdf",
+          "representation": "image",
+          "score": 0.709987061620531,
+          "locator": {
+            "kind": "page",
+            "page": 1,
+            "box": [
+              0.0,
+              0.0,
+              0.5,
+              0.6666666666666666
+            ],
+            "rotation": 0,
+            "rendering_object_id": null,
+            "transform_id": null
+          },
+          "citation": "27c96be0-4cb1-4f08-b156-d4a226fda96a",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        }
+      ],
+      "raw_top5": [
+        {
+          "title": "scanned-page.pdf",
+          "representation": "ocr",
+          "score": 0.8239210598492339,
+          "citation": "8075ab9c-7f31-4f88-86ae-bd99cf66571b",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "547038ac-c8d8-4dea-a57c-e95b9b2ed7a1",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": [
+              0.04791666666666667,
+              0.32222222222222224,
+              0.5233333333333333,
+              0.3705555555555556
+            ],
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 73,
+            "structure": "ocr-3-1",
+            "text_start": 48,
+            "text_object_id": "140c970e-6c15-42d5-b244-246352f15aab",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "spoken.mp4",
+          "representation": "audio",
+          "score": 0.8089377511813938,
+          "citation": "3e0e156b-4c19-4ac2-b0d7-fd8721b4b1e7",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "start_ms": 0,
+          "end_ms": 2624,
+          "transform": {
+            "words": [],
+            "frames": [],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "video",
+            "mapping_object_id": "921357b2-3c70-4a0d-8fa8-43592d96275a",
+            "playback_object_id": "def2604f-4377-4713-902e-65f0ace7518b",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "speech.wav",
+          "representation": "audio",
+          "score": 0.7947573188091936,
+          "citation": "f1e8e45f-fa07-4056-992e-eea0600609fe",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "dcebad70-5fc3-432d-b2ff-62a4a6397e05",
+          "start_ms": 0,
+          "end_ms": 2566,
+          "transform": {
+            "words": [],
+            "frames": [],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "audio",
+            "mapping_object_id": "caeda53a-145e-4a9c-b3aa-a6cd23151973",
+            "playback_object_id": "cdaecce9-2be3-4173-8230-7670eac49332",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "spoken.mp4",
+          "representation": "transcript",
+          "score": 0.754214361058811,
+          "citation": "232fb27f-8bd6-41f6-bfbe-08eff654a266",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "start_ms": 0,
+          "end_ms": 2440,
+          "transform": {
+            "words": [
+              {
+                "word": " Switch",
+                "end_ms": 300,
+                "start_ms": 0
+              },
+              {
+                "word": " off",
+                "end_ms": 540,
+                "start_ms": 300
+              },
+              {
+                "word": " the",
+                "end_ms": 680,
+                "start_ms": 540
+              },
+              {
+                "word": " power",
+                "end_ms": 920,
+                "start_ms": 680
+              },
+              {
+                "word": " before",
+                "end_ms": 1220,
+                "start_ms": 920
+              },
+              {
+                "word": " opening",
+                "end_ms": 1560,
+                "start_ms": 1220
+              },
+              {
+                "word": " the",
+                "end_ms": 1820,
+                "start_ms": 1560
+              },
+              {
+                "word": " safety",
+                "end_ms": 2060,
+                "start_ms": 1820
+              },
+              {
+                "word": " panel.",
+                "end_ms": 2440,
+                "start_ms": 2060
+              }
+            ],
+            "frames": [],
+            "profile": "5f918a0027223d7aa51aea72620cc0d5c5c15898275f5d09b17f8d09af877317",
+            "playback_kind": "video",
+            "mapping_object_id": "921357b2-3c70-4a0d-8fa8-43592d96275a",
+            "playback_object_id": "def2604f-4377-4713-902e-65f0ace7518b",
+            "playback_origin_ms": 0
+          }
+        },
+        {
+          "title": "procedure.txt",
+          "representation": "text",
+          "score": 0.7435247454926537,
+          "citation": "5eb36c52-f917-4334-b02c-367b6e43b198",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "0b4df431-5af3-4add-b4f2-1a06aff286da",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 74,
+            "structure": "paragraph-0",
+            "text_start": 0,
+            "text_object_id": "7e643470-1219-48e4-b2b5-e68bc3c6c54e",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        }
+      ]
+    },
+    {
+      "query": "A close-up photograph of an orange cat",
+      "no_useful_evidence": false,
+      "results": [
+        {
+          "title": "chelsea.png",
+          "representation": "image",
+          "score": 0.7363389291561301,
+          "locator": {
+            "kind": "page",
+            "page": 1,
+            "box": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "rotation": 0,
+            "rendering_object_id": null,
+            "transform_id": null
+          },
+          "citation": "55b95994-fc18-4694-a3f0-a783bd992f9b",
+          "source_id": "a33f67df-6bb3-4a44-a875-ea64198cee82"
+        },
+        {
+          "title": "chelsea.png",
+          "representation": "image",
+          "score": 0.7363389291561301,
+          "locator": {
+            "kind": "page",
+            "page": 1,
+            "box": [
+              0.0,
+              0.0,
+              1.0,
+              1.0
+            ],
+            "rotation": 0,
+            "rendering_object_id": null,
+            "transform_id": null
+          },
+          "citation": "c1b4cdc4-22e8-458e-bfda-a69f3fd507f0",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3"
+        }
+      ],
+      "raw_top5": [
+        {
+          "title": "chelsea.png",
+          "representation": "image",
+          "score": 0.7363389291561301,
+          "citation": "c1b4cdc4-22e8-458e-bfda-a69f3fd507f0",
+          "source_id": "d7e8a1cc-747c-4f9c-8a31-72425f2c0fd3",
+          "revision_id": "92cae5d2-80e6-4a22-bb81-90606922d173",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "kind": "image",
+            "profile": "0625f0336287ba505a95c44b63d907e1e18903d550f613751d818699bff197f6",
+            "orientation": "decoded-pixels-before-exif-rotation",
+            "original_width": 451,
+            "original_height": 300
+          }
+        },
+        {
+          "title": "chelsea.png",
+          "representation": "image",
+          "score": 0.7363389291561301,
+          "citation": "55b95994-fc18-4694-a3f0-a783bd992f9b",
+          "source_id": "a33f67df-6bb3-4a44-a875-ea64198cee82",
+          "revision_id": "a510a09d-662a-47ea-b91e-a0f877eeee3d",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": [
+              0,
+              0,
+              1,
+              1
+            ],
+            "kind": "image",
+            "profile": "0625f0336287ba505a95c44b63d907e1e18903d550f613751d818699bff197f6",
+            "orientation": "decoded-pixels-before-exif-rotation",
+            "original_width": 451,
+            "original_height": 300
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6508365481593293,
+          "citation": "76cac87e-0d8f-4c61-99e1-f32af0e58453",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 824,
+            "structure": "paragraph-8",
+            "text_start": 798,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6507542729377747,
+          "citation": "d88cddc5-e8c7-47f0-aa39-193a33494378",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 7496,
+            "structure": "paragraph-40",
+            "text_start": 7479,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.649806460749719,
+          "citation": "0f49b245-a7ec-4482-a531-daf0c6f501f0",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 9937,
+            "structure": "paragraph-52",
+            "text_start": 9920,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        }
+      ]
+    },
+    {
+      "query": "person walking on roof",
+      "no_useful_evidence": true,
+      "results": [],
+      "raw_top5": [
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6971066774662341,
+          "citation": "bedca3bf-630f-4a5f-8df1-f7197ffc803b",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 6722,
+            "structure": "paragraph-36",
+            "text_start": 6707,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-caviar-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.69597858190537,
+          "citation": "787087cf-7b7d-4c92-bd28-6aa2b278b2d2",
+          "source_id": "2d008bad-7dbc-4a73-88aa-b87090366e67",
+          "revision_id": "ecb0c6ca-49bc-4aad-a7ab-abb61995c7ae",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 9119,
+            "structure": "paragraph-48",
+            "text_start": 9093,
+            "text_object_id": "22b0b1b4-efab-46fa-b1c8-ae7beb48f268",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-roadscapes-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6946053686973245,
+          "citation": "6106858e-5207-427c-93e0-bf638795c5c9",
+          "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+          "revision_id": "3a7f08bc-9683-4a5c-8c1a-9737d5af9833",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 2459,
+            "structure": "paragraph-18",
+            "text_start": 2439,
+            "text_object_id": "ec0694f5-181d-4308-838a-e18b4fa88a95",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-roadscapes-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6875984035256392,
+          "citation": "ec3da95c-7cec-41f3-9a7c-13ac5959c231",
+          "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+          "revision_id": "3a7f08bc-9683-4a5c-8c1a-9737d5af9833",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 815,
+            "structure": "paragraph-8",
+            "text_start": 795,
+            "text_object_id": "ec0694f5-181d-4308-838a-e18b4fa88a95",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        },
+        {
+          "title": "video30-roadscapes-ATTRIBUTION.md",
+          "representation": "text",
+          "score": 0.6858212539064149,
+          "citation": "4cd88c0d-b693-440c-904f-995a4b03f27f",
+          "source_id": "5e37f4c3-a5c2-40d5-92ce-f236fab7028b",
+          "revision_id": "3a7f08bc-9683-4a5c-8c1a-9737d5af9833",
+          "start_ms": null,
+          "end_ms": null,
+          "transform": {
+            "box": null,
+            "profile": "a284c8f919c8f99352e1c2bf2b28646ef7a514430089f41e4eb7b351fff885b6",
+            "text_end": 1637,
+            "structure": "paragraph-13",
+            "text_start": 1617,
+            "text_object_id": "ec0694f5-181d-4308-838a-e18b4fa88a95",
+            "coordinate_space": "display-page-normalized-top-left",
+            "rotation_applied": true,
+            "rendering_object_id": null
+          }
+        }
+      ]
+    }
+  ],
+  "action_diagnostics": [
+    {
+      "query": "two person fighting",
+      "video_results": [],
+      "caviar_native_top5": [
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.6621359393434644,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "67c8f147-aafa-48fe-98c2-be2a99b703ea"
+        },
+        {
+          "title": "caviar-Rest_InChair__derived.mp4",
+          "score": 0.6511391429056281,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "873ee1e6-ce07-4c34-a0cc-346562f8175d"
+        },
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.649902227538427,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "16c51a81-bfd2-40f2-9163-f8b4e674c3b7"
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.649108770649058,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "c0881a38-e5bb-4e50-8790-f38846c1de52"
+        },
+        {
+          "title": "caviar-Walk1__derived.mp4",
+          "score": 0.6448991721988757,
+          "start_ms": 10000,
+          "end_ms": 22000,
+          "citation": "774f2196-fe26-4b86-a0ff-ac6df6328b89"
+        }
+      ],
+      "fight_windows": [
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.6308406059430958,
+          "start_ms": 10000,
+          "end_ms": 17480,
+          "citation": "5ceb7614-7859-48a7-986c-31301ae5997a"
+        },
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.626847155061874,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "5008b01a-6f85-4e62-b979-f3a7deb5b8d2"
+        }
+      ]
+    },
+    {
+      "query": "two people fighting",
+      "video_results": [],
+      "caviar_native_top5": [
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.6663534840134702,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "67c8f147-aafa-48fe-98c2-be2a99b703ea"
+        },
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.6592480946483499,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "16c51a81-bfd2-40f2-9163-f8b4e674c3b7"
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.656405609082507,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "c0881a38-e5bb-4e50-8790-f38846c1de52"
+        },
+        {
+          "title": "caviar-Rest_InChair__derived.mp4",
+          "score": 0.6558604650663775,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "873ee1e6-ce07-4c34-a0cc-346562f8175d"
+        },
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.6500867217727481,
+          "start_ms": 10000,
+          "end_ms": 22000,
+          "citation": "8205bbc1-1546-41f2-bf53-f7ddf72c5129"
+        }
+      ],
+      "fight_windows": [
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.6370531753238231,
+          "start_ms": 10000,
+          "end_ms": 17480,
+          "citation": "5ceb7614-7859-48a7-986c-31301ae5997a"
+        },
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.6330867251054376,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "5008b01a-6f85-4e62-b979-f3a7deb5b8d2"
+        }
+      ]
+    },
+    {
+      "query": "Two people fighting in a lobby",
+      "video_results": [
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.7403900336754282
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.7381437136955602
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.7378884114093548
+        },
+        {
+          "title": "caviar-Rest_InChair__derived.mp4",
+          "score": 0.7355627732798131
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.7322301428180861
+        },
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.729265646382235
+        },
+        {
+          "title": "caviar-Browse1__derived.mp4",
+          "score": 0.7292385262704787
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.7260260149225001
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.7252385780073073
+        },
+        {
+          "title": "caviar-Walk1__derived.mp4",
+          "score": 0.7243620917581278
+        }
+      ],
+      "caviar_native_top5": [
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.7403900336754282,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "16c51a81-bfd2-40f2-9163-f8b4e674c3b7"
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.7381437136955602,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "c0881a38-e5bb-4e50-8790-f38846c1de52"
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.7378884114093548,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "67c8f147-aafa-48fe-98c2-be2a99b703ea"
+        },
+        {
+          "title": "caviar-Rest_InChair__derived.mp4",
+          "score": 0.7355627732798131,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "873ee1e6-ce07-4c34-a0cc-346562f8175d"
+        },
+        {
+          "title": "caviar-Meet_WalkSplit__derived.mp4",
+          "score": 0.7322301428180861,
+          "start_ms": 10000,
+          "end_ms": 22000,
+          "citation": "366c5280-ebda-450e-b44c-5c5fd33bb65f"
+        }
+      ],
+      "fight_windows": [
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.7215508554517203,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "5008b01a-6f85-4e62-b979-f3a7deb5b8d2"
+        },
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.720811161898236,
+          "start_ms": 10000,
+          "end_ms": 17480,
+          "citation": "5ceb7614-7859-48a7-986c-31301ae5997a"
+        }
+      ]
+    },
+    {
+      "query": "person walking on roof",
+      "video_results": [],
+      "caviar_native_top5": [
+        {
+          "title": "caviar-LeftBag__derived.mp4",
+          "score": 0.6828295370543555,
+          "start_ms": 20000,
+          "end_ms": 32000,
+          "citation": "74220483-b082-4143-bf80-77a4eee5bedc"
+        },
+        {
+          "title": "caviar-Rest_FallOnFloor__derived.mp4",
+          "score": 0.6774541331854992,
+          "start_ms": 30000,
+          "end_ms": 40560,
+          "citation": "a3dd0bb2-abba-4812-b0c7-031643cf3b12"
+        },
+        {
+          "title": "caviar-Walk1__derived.mp4",
+          "score": 0.6773506383864942,
+          "start_ms": 20000,
+          "end_ms": 24720,
+          "citation": "150b97ef-8d03-4cf2-8787-77950096e7c6"
+        },
+        {
+          "title": "caviar-Rest_InChair__derived.mp4",
+          "score": 0.672977288187905,
+          "start_ms": 30000,
+          "end_ms": 40560,
+          "citation": "276aeada-f200-4494-9c8b-b16e96fc1dff"
+        },
+        {
+          "title": "caviar-Walk1__derived.mp4",
+          "score": 0.6727653340837172,
+          "start_ms": 10000,
+          "end_ms": 22000,
+          "citation": "774f2196-fe26-4b86-a0ff-ac6df6328b89"
+        }
+      ],
+      "fight_windows": [
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.6589764167098502,
+          "start_ms": 0,
+          "end_ms": 12000,
+          "citation": "5008b01a-6f85-4e62-b979-f3a7deb5b8d2"
+        },
+        {
+          "title": "caviar-Fight_Chase__derived.mp4",
+          "score": 0.6571742108852612,
+          "start_ms": 10000,
+          "end_ms": 17480,
+          "citation": "5ceb7614-7859-48a7-986c-31301ae5997a"
+        }
+      ]
+    }
+  ],
+  "assessments": {
+    "demo_queries": "Four expected demo cases retrieved their expected evidence.",
+    "fighting": "Visual action retrieval failure: attribution document returned; known fight windows below floor and below unrelated native candidates.",
+    "roof": "No accepted results; no known rooftop fixture, not a labelled absence benchmark.",
+    "configuration_changed": false
+  }
+}

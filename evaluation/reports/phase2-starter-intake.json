@@ -1,0 +1,77 @@
+{
+  "scope": "Original intake and format checks only; no OCR/ASR/embedding/search benchmark",
+  "uploads": [
+    {
+      "filename": "chelsea.png",
+      "bytes": 240512,
+      "sha256": "596aa1e7cb875eb79f437e310381d26b338a81c2da23439704a73c4651e8c4bb",
+      "unchanged": false
+    },
+    {
+      "filename": "dog.wav",
+      "bytes": 441044,
+      "sha256": "f40a849a2375c8c63312a73dd2dd6c74007301fcc21b4be2ece29a642831e3d8",
+      "unchanged": false
+    },
+    {
+      "filename": "public-starter-ATTRIBUTION.md",
+      "bytes": 823,
+      "sha256": "f59f0f21606a5f56a6e362125bc29a53685c3ad7cd5d28aa6e35bb36ea7eb8b8",
+      "unchanged": false
+    },
+    {
+      "filename": "procedure.txt",
+      "bytes": 75,
+      "sha256": "d70c0e7eba41d26829790ca242dab08c9d717d67b3c9dd12009ed29979dc2f9a",
+      "unchanged": false
+    },
+    {
+      "filename": "scanned-page.pdf",
+      "bytes": 15435,
+      "sha256": "7a77905b1ba9dab6f3330db5b5d36e0590682087a4fe7dd87595e8d631174ff7",
+      "unchanged": false
+    },
+    {
+      "filename": "renderer-smoke.docx",
+      "bytes": 912,
+      "sha256": "bbf0d6713c0bbc141d5dc8db791062984f03e117d1a00a32ea72a5e0431d178a",
+      "unchanged": false
+    },
+    {
+      "filename": "speech.wav",
+      "bytes": 82160,
+      "sha256": "66587e5597b73de77a6a4527831ccde748098ac5c9d087967a13d2480df1cd97",
+      "unchanged": false
+    },
+    {
+      "filename": "beeps.wav",
+      "bytes": 96044,
+      "sha256": "b1515e86e68c26b3a28b9c39e1f36773cb87c8f37d29b6b2d222389bc3329025",
+      "unchanged": false
+    },
+    {
+      "filename": "silent.mp4",
+      "bytes": 2329,
+      "sha256": "505e66d571defab7868b7c39627b680629a4ff314cc0ee87858e63a9180ee64d",
+      "unchanged": false
+    },
+    {
+      "filename": "spoken.mp4",
+      "bytes": 36645,
+      "sha256": "f46c5d64b7a69e29133de988397430da27a6c7808d60e1a328f00847fdf3e911",
+      "unchanged": false
+    }
+  ],
+  "upload_assets": 10,
+  "all_original_checksums_match": true,
+  "duplicate_upload_noop": true,
+  "folder_assets": 3,
+  "folder_rescan_same_revisions": true,
+  "folder_latest_sync": {
+    "deleted": 0,
+    "unchanged": 3,
+    "files_seen": 3,
+    "searchable": false
+  },
+  "elapsed_seconds": 20.67
+}

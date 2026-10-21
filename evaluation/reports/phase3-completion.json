@@ -1,0 +1,261 @@
+{
+  "status": "complete",
+  "date": "2026-10-19",
+  "phase": 3,
+  "target": "Existing Ryzen 7 7730U laptop, CPU only",
+  "gpu_used": false,
+  "backend_suite": {
+    "command": "python3 scripts/dev.py verify",
+    "passed": 105,
+    "failed": 0,
+    "seconds": 104.18,
+    "warning": "One upstream Starlette/httpx TestClient deprecation"
+  },
+  "frontend": {
+    "strict_typescript": "passed",
+    "production_build": "passed",
+    "deployed": true
+  },
+  "database": {
+    "migration": "0010_document_heartbeat",
+    "app_tables": 27,
+    "privileged_runtime": false
+  },
+  "exit_criteria": {
+    "sections_tables_multipage": "Passed owned PDF/DOCX/Markdown fixtures, including rotated PDF boxes and DOCX structure/PDF mapping",
+    "scanned_mixed_page_ocr": "Passed real English Tesseract fixtures; OCR representations and lexical input rows retained",
+    "segment_evidence_resolution": "Passed immutable revision/page/box and Unicode-codepoint text spans, including all 107 current demo citations",
+    "original_revision_survives_replacement": "Passed integration fixture and original byte download",
+    "actionable_failures": "Corrupt/encrypted/unsafe inputs, page/text/geometry limits and extraction deadline checked; renderer failure status observed during development and corrected",
+    "sandbox": "Real IPv4/IPv6 sockets, parent environment reads and out-of-directory writes denied; Pydantic parent rejects invalid manifests",
+    "atomic_publication": "Stale lease and quota failure publish no partial set; real SIGKILL after derivative PUT recovers to one ready set; reservations reclaimed",
+    "authorization": "Runtime-role source/workspace RLS, guessed object IDs, grant revocation in existing session, deleted assets and disconnected sources",
+    "retention": "Disposable aged fixture retires derived metadata before originals; live revision history stays intact"
+  },
+  "preservation": {
+    "scope": "Authenticated original preservation and document evidence, CPU only",
+    "collections": [
+      {
+        "name": "CAVIAR - Stores and lobby",
+        "files": 16,
+        "documents_ready": 1
+      },
+      {
+        "name": "Local starter folder",
+        "files": 3,
+        "documents_ready": 1
+      },
+      {
+        "name": "Roadscapes - Day and night driving",
+        "files": 6,
+        "documents_ready": 1
+      },
+      {
+        "name": "Starter dataset",
+        "files": 10,
+        "documents_ready": 4
+      },
+      {
+        "name": "UR Fall - Falls and daily activities",
+        "files": 11,
+        "documents_ready": 1
+      }
+    ],
+    "files_verified": 46,
+    "video_pack_verified": 30,
+    "documents_ready": 8,
+    "citations_verified": 107,
+    "images_verified": 2,
+    "readiness": {
+      "ready": true,
+      "dependencies": {
+        "worker": true,
+        "postgres": true,
+        "redis": true,
+        "storage": true
+      },
+      "retrieval_ready": false
+    },
+    "storage": {
+      "bytes": 55289807,
+      "objects": 70,
+      "limit_bytes": 5368709120,
+      "limit_objects": 10000
+    },
+    "producer_runtime": {
+      "packages": {
+        "fonts-dejavu-core": "2.37-6",
+        "libreoffice-core": "4:7.4.7-1+deb12u14",
+        "libreoffice-writer": "4:7.4.7-1+deb12u14",
+        "libseccomp2:amd64": "2.5.4-1+deb12u1",
+        "poppler-utils": "22.12.0-2+deb12u3",
+        "tesseract-ocr": "5.3.0-2",
+        "tesseract-ocr-eng": "1:4.1.0-2"
+      },
+      "sha256": {
+        "tesseract_english": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+        "dejavu_sans": "abdc775b21b1bc470d50c97e790d276f2054b7504e56e5bd3e64f48d68582322",
+        "packages": "bb7a03b8f29223170d4e1c66d875a824662a5393f0ad09a06bd242163a661f12"
+      }
+    }
+  },
+  "browser": {
+    "ocr_page_and_passage_highlight": true,
+    "stable_citation_restores_same_evidence": true,
+    "docx_rendering_and_citation": true,
+    "plain_text_character_spans": true,
+    "source_errors_clear_after_recovery": true,
+    "screenshots": [
+      "evaluation/reports/phase3-document-evidence.jpg",
+      "evaluation/reports/phase3-docx-evidence.jpg"
+    ]
+  },
+  "resources": {
+    "measurement": "One post-verification Docker snapshot; not peak RSS or combined embedding inference",
+    "services": [
+      {
+        "service": "videomind-api-1",
+        "memory": "90.37MiB / 384MiB",
+        "cpu": "0.16%"
+      },
+      {
+        "service": "videomind-dispatcher-1",
+        "memory": "73.11MiB / 128MiB",
+        "cpu": "1.22%"
+      },
+      {
+        "service": "videomind-frontend-1",
+        "memory": "3.277MiB / 64MiB",
+        "cpu": "0.00%"
+      },
+      {
+        "service": "videomind-minio-1",
+        "memory": "218MiB / 512MiB",
+        "cpu": "2.19%"
+      },
+      {
+        "service": "videomind-postgres-1",
+        "memory": "94.37MiB / 512MiB",
+        "cpu": "0.79%"
+      },
+      {
+        "service": "videomind-redis-1",
+        "memory": "13.94MiB / 128MiB",
+        "cpu": "0.62%"
+      },
+      {
+        "service": "videomind-worker-1",
+        "memory": "134.9MiB / 1.5GiB",
+        "cpu": "40.54%"
+      }
+    ],
+    "worker_limit": "1536 MiB / 1 CPU / private 256 MiB scratch",
+    "model_loaded": false
+  },
+  "adopted_decisions": [
+    "50 pages and 180-second extraction deadline per document",
+    "Pinned Debian document packages replace Phase 0 local Ubuntu tool extraction for deployment",
+    "Document evidence available before embedding and retrieval",
+    "English OCR, bounded page/tile representations and exact text spans",
+    "PostgreSQL document receipts reuse outbox, fenced leases, reservations, cleanup and retries"
+  ],
+  "limitations": [
+    "OCR handwriting, multilingual quality and complex reading order are unmeasured",
+    "No representative-corpus OCR accuracy or throughput claim",
+    "Pinned DOCX producer does not promise byte-identical PDFs across platforms",
+    "Linux x86-64 sandbox and CPU deployment verified; other platforms need validation",
+    "No wall-clock retention soak or backup/restore claim",
+    "Media segmentation/ASR/playback are Phase 4; embedding/search remain Phases 5\u20136"
+  ],
+  "source_sha256": {
+    "backend/migrations/env.py": "3a77c208a2d5a0e5dcfe5358767e151476f01c667945e0c40cd9b1764735ef65",
+    "backend/migrations/sql/0001_foundation.sql": "c106d9f73ba70d9e6833d4b0ed04cce3a2d3285807aba9f3b0671f5785e95492",
+    "backend/migrations/versions/0001_foundation.py": "5760e5f5042dfc8992bb73b60af062f279516c9a977b222e4e58b3122542af42",
+    "backend/migrations/versions/0002_deferred_references.py": "5379e779540eec1c421e1a614aba8006086a2d868fbea6ef0244523df9d5b650",
+    "backend/migrations/versions/0003_citation_cleanup.py": "2bdd2af0ba22f46751fc40bea32e31cebab17e263b5b7a5faaf32c6911ded923",
+    "backend/migrations/versions/0004_intake.py": "6f5862f8f64c70a0abec289cc06a902ef87fdb5f895d8c0252066f1a7be47f82",
+    "backend/migrations/versions/0005_source_cancellation.py": "38a9d0dc6d4d7075bd93c0bd52975efb6b39a6c259131d70f22358d12f57de85",
+    "backend/migrations/versions/0006_intake_completion.py": "d3c8bd808a72916f11a5e63b5bb08fff9e27c0c09b72caa82897ead938fbb1a9",
+    "backend/migrations/versions/0007_intake_indexes.py": "6c469f78c8bb355fcb8495a5154b08a2c59682c678b816575563dd403873b9b7",
+    "backend/migrations/versions/0008_documents.py": "370fa00b4d4e5bdf0736dd273b3f4242915f5a19f145acb5555a7ae91bb7f99e",
+    "backend/migrations/versions/0009_document_retention.py": "a9a77f522a9a55fce0614dcc22fe02b7e7d02b1095beafe95bba0a3fb20cc881",
+    "backend/migrations/versions/0010_document_heartbeat.py": "7c17dd194a168157475ade1291d6172084de8abba2cf76754e56c18e5ab7adaf",
+    "backend/pyproject.toml": "c83834d9f09ddf2cf350668b5f01735c3839decb0ff5a126862f4ce59bf0c7a8",
+    "backend/src/videomind/__init__.py": "b805d62e0b02f7031b8f8297260fcf5ee0d5fc1d3bd8e507829f2688130cb5df",
+    "backend/src/videomind/assets/__init__.py": "d2536cb9c23c49922aa5fdbe38458a0e49fd82f3b2d60c019b580457174d315e",
+    "backend/src/videomind/assets/routes.py": "8535dbf3c45e3a1afd8422e5a3db919f97ffba64492da1e9516940f5cc172909",
+    "backend/src/videomind/assets/storage.py": "941ec18b6c3ff9dba439b91c1c546c2f72fdb91c785a9ea2782233d2fa57970d",
+    "backend/src/videomind/config.py": "a22eb62b58858a2c340b3b6dd4271b90d130eea185468ace2fd210848daebf91",
+    "backend/src/videomind/connectors/__init__.py": "86ec2b5f5a417efa89136567b2962eb8f6d83c63d616a4e50ac2ba1a31d2843e",
+    "backend/src/videomind/connectors/contracts.py": "ff67104e952cab3ae0b2e8f57fce49b798c11c8474fd9f94a973ae34e5aebafd",
+    "backend/src/videomind/connectors/files.py": "2f30b34014086ec15753d41f7293b2b730f632eded93a44e04fb0f50c1517ca8",
+    "backend/src/videomind/connectors/local_folder/adapter.py": "45a3a4c052e60a1e334c57df50e55f517bddc96bd9bba0b06b311904d8d0c928",
+    "backend/src/videomind/connectors/local_folder/reader.py": "8c635fbe0a5d46f76cc186c2cccbf783854dfbb9068d06be40732e7a814eb406",
+    "backend/src/videomind/connectors/routes.py": "68dcc7600bd836051189a84517ddd1139bac6d510ab36ede30a27b0754ba5a47",
+    "backend/src/videomind/connectors/upload/adapter.py": "d475ce69162953df6e46f04de23ee4dcf35335be256db7cf9e45874ddfb23877",
+    "backend/src/videomind/connectors/upload/validation.py": "4bade08d197e148d41fcbf259f24518541ea5e0f4a83ac1d8b3b62e94fcb806f",
+    "backend/src/videomind/contracts.py": "b906b1b1d2794136fae80dd75e2d58cc892122c493a0a1c41e66c2bc81a4284b",
+    "backend/src/videomind/embeddings/__init__.py": "016f48d2248f1aa409667718dabe0bb72832002b90cc17170edd28a5fe1fb465",
+    "backend/src/videomind/embeddings/budget.py": "0145db264b9dc08495ad41955bda64f8b234d043d6cefa7d44a5dff9dd7638c9",
+    "backend/src/videomind/embeddings/contracts.py": "b495e75927fabc99833d436841973586da42db34f2a7d3874751294b5a5fecab",
+    "backend/src/videomind/evidence/__init__.py": "f9065f41d11aef4c51de3d58d44386e7646a0b520b972adad4099f5dabd18bc7",
+    "backend/src/videomind/evidence/contracts.py": "06ec5ac39798931ebfb44fef62dfcfa815de289aafba1b7113780f3722bfbd2d",
+    "backend/src/videomind/evidence/routes.py": "d6e513fc0d24c8b390059d79a67ec41b67eca5e3d4ebff63f048408fdb084f43",
+    "backend/src/videomind/identity/__init__.py": "4a8e113e45e76daf7c480a09d2e1089559706ba5404e7b87c3faf30a44320b80",
+    "backend/src/videomind/identity/bootstrap.py": "832dc66ca7d9b41abbdda96ac33eb107e4cafd5c526a7b938e69974eed909f77",
+    "backend/src/videomind/identity/routes.py": "9099e0d939c9eb7b4d54b68b9388f6271d506d35ef85c1dfee423f5f63eb2e58",
+    "backend/src/videomind/identity/security.py": "17861dfbaf941d049e83a2182a8ee53a97da6f6af5b2873bdff1afdac2be76a9",
+    "backend/src/videomind/identity/service.py": "794e508d0bcdcd0583b23bde986afcf9f5186100a3f7b1c61a531ba420f0d244",
+    "backend/src/videomind/infrastructure/__init__.py": "7c5457166e78df49c2483c4a5e6ba1e0fd8095d807416e7cc99f3d7e14d088f0",
+    "backend/src/videomind/infrastructure/database.py": "61fcaedd44c8129360e29f60bd937052f973d00ed8945d32a2fb2cc9b1dc9033",
+    "backend/src/videomind/infrastructure/services.py": "ac48785fb1d49977450b0584093576f039b3188938f80f19453a2b70276cc340",
+    "backend/src/videomind/infrastructure/storage_init.py": "5aad27fbd98883f30ed2a8b7ac10b3c20b86b6202f307077d899fab9c2e98f1a",
+    "backend/src/videomind/infrastructure/telemetry.py": "3a74d0ee2a405e9e2e820a51cb5295859849cada4e487c6b39ed958b8cb520e6",
+    "backend/src/videomind/ingestion/__init__.py": "396c064b7612f0c90c24e5e38e59f7c941ebbae59c4644f66e630a96d96618ca",
+    "backend/src/videomind/ingestion/contracts.py": "1aadf3935a8c45c4eead2b77a7f25875b216ed28022b76fd6c55d0ee5a3f1a65",
+    "backend/src/videomind/ingestion/dispatcher.py": "4733356a233ff2487fe4efcd0cdf181e9c14d925e4c3cdbf0c14394f20ef368a",
+    "backend/src/videomind/ingestion/service.py": "bc9811dc204fa5371c5d0ac506429a4fd6158f273d5f8ffea5c848881339cb69",
+    "backend/src/videomind/ingestion/worker.py": "eb265e9038492d756aa744b866f18d114e6e1c4a195b6b60f920dcc000849943",
+    "backend/src/videomind/main.py": "108d5ec3cdd6c3eee9772c90d745ce6c96741b710b099b435fee789eeb7ecc89",
+    "backend/src/videomind/preprocessing/__init__.py": "85e2ed6d9a2e198f138f2dee6aefe3d50adf1316a68143bf62a6db6bb50fb78c",
+    "backend/src/videomind/preprocessing/contracts.py": "0ea8ced55efb42bb6a1445a412bbcaabbb66822a75965d8b76c2fa945c138faa",
+    "backend/src/videomind/preprocessing/documents/__init__.py": "07b0d55eb12bbd2900e2934e8d76eec81110f257d2aeed3091ccb5798991100d",
+    "backend/src/videomind/preprocessing/documents/contracts.py": "dcc7b3d9b97813dd5cafba39922adbfe9ceb01c7d4b990ed95e8d2f57302b31b",
+    "backend/src/videomind/preprocessing/documents/extract.py": "d8eb38d0d5833186c754bef0a64fbff0d48fdb73861b5fc4444c3cdf10b16716",
+    "backend/src/videomind/preprocessing/documents/profile.py": "8f147e632228097978898168c0a469f4dbbc9feaa20ee6d3a56d3793ecc2d867",
+    "backend/src/videomind/preprocessing/documents/sandbox.py": "781fd8bf606ac8c496d5d6a2d6ffca75898fe115d43a870655d3bd576a1a69e6",
+    "backend/src/videomind/preprocessing/documents/worker.py": "a71795bde08f4c7c5b2d8fe78353fb0066e777d91478613640bff3f47ff9d68a",
+    "backend/src/videomind/preprocessing/probe.py": "a89d4db670f6da35b7d06e3865a0346a2e78cea7fb2c04bf8e4ef61d99408240",
+    "backend/src/videomind/retrieval/__init__.py": "3f436b6be4764bee3f1be1c2ff77e813684daa6feb4bf898af68df19b6efd7d8",
+    "backend/src/videomind/retrieval/contracts.py": "b32cec137ce0a0217a33d05849179c2d05275baebd5fa2e219b91711417aafb9",
+    "backend/src/videomind/workers/__init__.py": "d6f3ecb57f549d41b0a3f5ce1bff3bf73ae11cb800198a8ea951bf34b7344c2d",
+    "backend/src/videomind/workers/celery_app.py": "3fe9c9ac7427e9a877712800ef86aa7695098ddfd45c53592d917726d3a83e88",
+    "backend/tests/document_fixtures.py": "e64e1e4bd8b627202dd0dc263f8c35c31465328b3f286de9d536c0c00ce170d9",
+    "backend/tests/integration/test_document_evidence.py": "7c6a0876c8e7b3cd958e794ace121ecd0c3f36a950fee7fe1f411535bed311e2",
+    "backend/tests/integration/test_foundation.py": "a110e07d6b9d15a7e2185a57abcfd7b5f5becb6747f16abb775e74cd6aaf8673",
+    "backend/tests/integration/test_phase2.py": "e344368da7db60882e296c9ee93aa66b4ac190d1ccb4e7a5c9d6cf46de1ad34c",
+    "backend/tests/test_budget.py": "1ec3e808541e65c55e9f4b452fc985b379760d685f016c2b1d2eeeaa51b50c49",
+    "backend/tests/test_connector_adapters.py": "c9ada9fd839c8a01e96aa8c3682835961ea0dcb51086b84d59e575f12aa61dd8",
+    "backend/tests/test_contracts.py": "c502a989c3688899fc6ab6dfaf2e9345b3c00210d3cf65eed642840447d29c60",
+    "backend/tests/test_documents.py": "2c67de5b9dd230eee20969e9c59f10a5429403a5b2515ec79fc2fdcbb1a1e47e",
+    "backend/tests/test_identity.py": "997059e10a3dba21aed64d96fd6329b40db195c65e1aa78ed7bab6ef30eb8c83",
+    "backend/tests/test_intake.py": "cc33bcf211de02412628fc7f921ebe3d93d3b0b3d4993f642fc26e5b29b5803f",
+    "backend/uv.lock": "c18c8004b73797edf6f915584db9d2f8f056ad7d2a2de0fdbce2769ade67a179",
+    "frontend/package.json": "2fcf1556bde82fad3c275b025d34fc69772d540f432d90ad1908d40209493210",
+    "frontend/pnpm-lock.yaml": "21174af8bb5bc6cf9096e3504b8d55d038d912d926c24d8c08bc1f948b6910ca",
+    "frontend/src/app/App.tsx": "228187a9d36e264ffc73c9d52aa914a3471ac7347aa1e24de0458a44eb60902f",
+    "frontend/src/app/styles.css": "173424b0990d01d0b2d8aa1feaaea3112417cbcce17f21aaafb826060a351411",
+    "frontend/src/features/evidence/DocumentViewer.tsx": "4871e05fa14620520f7ecc23007e62981791d2dfb18e143aa6e4fec4b405f177",
+    "frontend/src/features/identity/SignIn.tsx": "106a76583e9edf5a53010809814c32461355f61ecf3efef1bb1c19e9f03b41c3",
+    "frontend/src/features/sources/SourceList.tsx": "b1b468dd583e3eb64619a7e22c468c2e9a257ff803c97063aefb21a31a9fb948",
+    "frontend/src/lib/api.ts": "844a14550f5bdeaf3cd812c7841ae4a6cbe50cc85d2979fcf0676472a84bd99f",
+    "frontend/src/main.tsx": "a1bf5f8470d26f4cd02d36eeb850974ac028d98b2a104d49fc70ae1ec05cd01c",
+    "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "infra/compose/compose.yaml": "705f62728d20df50fd695081ee14b3f186b7974aec6c3e32cf6b19c29abd495d",
+    "infra/docker/backend.Dockerfile": "73f44f6f5c32e8a818733e389cdc32868ed700d9faefb3c4aaa4fa47c6b10fc6",
+    "infra/docker/frontend.Dockerfile": "f1e5b675f3e32eb9d2d437c5d1c9a75588113a80cdca5dc0663dceaca7d211f8",
+    "infra/docker/nginx.conf": "e2ee9f5ff056090ddfda4b097b544e88652e47e2bcf79734366e30ea86694be2",
+    "infra/docker/postgres-init.sh": "d339894b6ba75ff67fb50c6a2d40b503c1b6124cff1d30da12b976ffa8eed356",
+    "scripts/check_document_evidence.py": "f75b8d2599834944b2a3e3b30695f687701d55223fcf1b1b7b904fef18e777ad"
+  }
+}

@@ -1,0 +1,340 @@
+{
+  "phase": 5,
+  "status": "complete",
+  "completed_at": "2026-10-19T19:16:23.575347+00:00",
+  "client_completion_date": "2026-10-20",
+  "scope": "CPU native embeddings, profile-specific indexes, generation lifecycle and administrator diagnostics; user hybrid search remains Phase 6.",
+  "acceptance_document": "docs/phase5-validation.md",
+  "verification": {
+    "release_command": "python3 scripts/dev.py verify",
+    "passed": 157,
+    "failed": 0,
+    "seconds": 146.27,
+    "warnings": [
+      "Upstream Starlette/httpx TestClient deprecation"
+    ],
+    "additional_checkpoint_setup_tests": {
+      "passed": 2,
+      "seconds": 0.03
+    },
+    "frontend": "Strict TypeScript and Vite production build passed",
+    "intermediate_corrections": [
+      "Forward migration corrected heterogeneous-row tombstone trigger access",
+      "Use existing latest_revision_id as desired input and current_revision_id as published output",
+      "Authorized candidate query verified to use physical HNSW rather than a join sort",
+      "Standalone images gained native evidence before embedding",
+      "Source mutations share publication lock order with cutover; concurrent regression passed"
+    ]
+  },
+  "exit_criteria": {
+    "all_required_input_classes": "46 retained assets, including documents, silent/spoken video, standalone audio and images, have 197 provenance-linked vectors",
+    "vector_and_budget_validation": "Dimension/finiteness/unit norm and complete ordered partition checks; actual oversized query rejected; pinned checkpoint integrity checked",
+    "query_generation_pinning": "Request pins a generation/profile; fixture queries continue on their pinned profile across cutover",
+    "partial_and_errors": "Extraction partial coverage and excluded inputs are explicit; failed jobs/retries visible; expired producer attempts bounded to three",
+    "atomic_membership": "SIGKILL after vector commit leaves membership unpublished; lease reclaim reuses committed vectors and publishes once complete",
+    "revision_and_deletion_fencing": "Superseded ready segmentation rejects stale publisher; tombstones remove membership; source mutation/cutover concurrent regression passed",
+    "migration_and_rollback": "Separate profile vectors/indexes and cutover/rollback fixtures passed; two real prompt profiles encoded by pinned model; arbitrary future checkpoints require validated runtime",
+    "authorization": "Runtime-role cross-workspace/source, existing-session grant revocation and citation checks passed; every app table forced RLS",
+    "indexing": "Physical profile HNSW used in runtime-role EXPLAIN; exact/ANN overlap at 10 was 1.0 for four smoke queries; five source filters verified",
+    "original_preservation": "All 46 originals checksum intact; existing document/media evidence reverified"
+  },
+  "active_generation": {
+    "id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+    "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+    "coverage": {
+      "eligible_assets": 46,
+      "published_assets": 46,
+      "partial_extraction_assets": 0,
+      "assets_without_ready_inputs": 0,
+      "pending_extraction_assets": 0,
+      "jobs": {
+        "ready": 46
+      }
+    },
+    "vectors": 197
+  },
+  "corpus_report": "evaluation/reports/phase5-corpus.json",
+  "runtime_report": "evaluation/reports/phase5-runtime.json",
+  "preservation_reports": [
+    "evaluation/reports/phase5-documents.json",
+    "evaluation/reports/phase5-media.json"
+  ],
+  "representation_counts": [
+    {
+      "representation": "audio",
+      "vectors": 5
+    },
+    {
+      "representation": "image",
+      "vectors": 16
+    },
+    {
+      "representation": "ocr",
+      "vectors": 3
+    },
+    {
+      "representation": "text",
+      "vectors": 90
+    },
+    {
+      "representation": "transcript",
+      "vectors": 2
+    },
+    {
+      "representation": "video",
+      "vectors": 81
+    }
+  ],
+  "runtime_versions": {
+    "torch": "2.14.1+cpu",
+    "transformers": "5.20.0",
+    "sentence-transformers": "6.1.0",
+    "numpy": "2.5.4",
+    "av": "16.1.0"
+  },
+  "database": {
+    "pgvector": "0.8.7",
+    "postgres": "16.15 (Debian 16.15-1.pgdg12+2)",
+    "forced_rls_tables": 30,
+    "all_app_tables": 30,
+    "runtime_owned_app_tables": 0
+  },
+  "migration_head": "0018_embedding_invariants",
+  "model_files_sha256": {
+    "1_Pooling/config.json": "8759bdf7c77efc7df7723f64856a593c8943b71ee38baf2a88771fbaf78438f9",
+    "2_Normalize/config.json": "cdb09dfca347a56aa2d691744e38d5ad3c7cbc2834e7181272b9a15328b82524",
+    "chat_template.jinja": "4b852efc0b9960283e735363331e6f325b33bc74bdbaa076f595bc4e9b94d85e",
+    "config.json": "b8f1e9931b57fbc054acdb445c41765d55b0074c58d145fa82839941ad1b5bb3",
+    "config_sentence_transformers.json": "031e56a498d33c349ab489a21885bcfe25b4fcba841149dc99e1e90d4a7c28f5",
+    "model.safetensors": "197a32965d4b1105faf060417baa899e193fb73cd401f42ec9295234d5553d79",
+    "modules.json": "3d02572a0455b832de67fb8e63a54981bc7e8b46e337c95e917bd8122a533bfd",
+    "preprocessor_config.json": "ea2ae257e901064abdd98dceb19f2b0da06af600bed15e0f99f5c85c37ee9d78",
+    "processor_config.json": "168f6a08522f3ce5dea596d94d003af2fd691742d4f41fe1f9d8cce76bfbf69c",
+    "sentence_bert_config.json": "b1bcd9f2dce3ae863b359e87d0710b5dbc3314a59ecb4e2f97c7778fc8e4b228",
+    "tokenizer.json": "4d777ef5bdc1aa36227abdfb77c3e49e7b9c892d16e1b6bda41c393504828be4",
+    "tokenizer.model": "e594c8a90eb08d8bda498ff4747977dc827ae0c3c56b5c0d41a605a22d02ef03",
+    "tokenizer_config.json": "17bd5d6e9364ca49a534e1502076593317c298d4a663623091ed45388f004874"
+  },
+  "resources": {
+    "kind": "Post-verification idle snapshot with the CPU model loaded; not inference peak or throughput",
+    "total_mib": 4924.68,
+    "containers": [
+      {
+        "Name": "videomind-api-1",
+        "MemUsage": "93.92MiB / 384MiB",
+        "CPUPerc": "13.29%",
+        "PIDs": "8"
+      },
+      {
+        "Name": "videomind-worker-1",
+        "MemUsage": "83.85MiB / 3GiB",
+        "CPUPerc": "0.42%",
+        "PIDs": "1"
+      },
+      {
+        "Name": "videomind-dispatcher-1",
+        "MemUsage": "75.12MiB / 128MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1"
+      },
+      {
+        "Name": "videomind-indexer-1",
+        "MemUsage": "65.14MiB / 256MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "1"
+      },
+      {
+        "Name": "videomind-embedding-1",
+        "MemUsage": "4.135GiB / 6.5GiB",
+        "CPUPerc": "0.19%",
+        "PIDs": "9"
+      },
+      {
+        "Name": "videomind-postgres-1",
+        "MemUsage": "75.72MiB / 512MiB",
+        "CPUPerc": "9.55%",
+        "PIDs": "11"
+      },
+      {
+        "Name": "videomind-redis-1",
+        "MemUsage": "6.973MiB / 128MiB",
+        "CPUPerc": "0.75%",
+        "PIDs": "6"
+      },
+      {
+        "Name": "videomind-minio-1",
+        "MemUsage": "285.7MiB / 512MiB",
+        "CPUPerc": "0.00%",
+        "PIDs": "9"
+      },
+      {
+        "Name": "videomind-frontend-1",
+        "MemUsage": "4.02MiB / 64MiB",
+        "CPUPerc": "0.33%",
+        "PIDs": "2"
+      }
+    ],
+    "gpu_used": false
+  },
+  "browser": {
+    "active_index": "46 / 46 assets indexed",
+    "per_file_indexed_status": true,
+    "native_image_original_pixels": [
+      451,
+      300
+    ],
+    "native_image_citation_restores": true,
+    "screenshots": [
+      "evaluation/reports/phase5-index.jpg",
+      "evaluation/reports/phase5-image-evidence.jpg"
+    ]
+  },
+  "adopted_decisions": [
+    "One private FP32 CPU model service; pinned native text/vision/audio checkpoint",
+    "PostgreSQL durable indexing jobs, reconstructible scheduling without Redis dependency",
+    "Separate native and textual vectors with immutable profile/input manifests",
+    "One partial HNSW index per compatible profile, exact cosine baseline and authorized candidate filtering",
+    "Transactional generation membership, watermark cutover and caught-up standby rollback",
+    "Native-only PNG/JPEG image evidence from validated immutable originals; no OCR claim",
+    "Bounded CPU requests/queues, eight retained generations and 50000-vector workspace admission limit"
+  ],
+  "limits_and_unknowns": [
+    "Four-query smoke checks do not establish broad relevance, ANN recall at scale or production latency",
+    "Cold start and concurrent validation affect recorded query timings; inference-plus-stack peak remains unmeasured",
+    "Current runtime supports the pinned checkpoint and validated prompt variants; other checkpoints/precision/adapters need separate runtime validation",
+    "Native image adapter does not perform OCR; sparse video sampling can miss short events",
+    "Automatic generation retirement is not implemented; history counts toward database capacity and vector limit",
+    "GPU, large corpora and multi-worker scaling are deferred",
+    "User-facing hybrid search/filter controls and answer generation are not implemented; retrieval_ready remains false"
+  ],
+  "source_sha256": {
+    "backend/migrations/env.py": "3a77c208a2d5a0e5dcfe5358767e151476f01c667945e0c40cd9b1764735ef65",
+    "backend/migrations/sql/0001_foundation.sql": "c106d9f73ba70d9e6833d4b0ed04cce3a2d3285807aba9f3b0671f5785e95492",
+    "backend/migrations/versions/0001_foundation.py": "5760e5f5042dfc8992bb73b60af062f279516c9a977b222e4e58b3122542af42",
+    "backend/migrations/versions/0002_deferred_references.py": "5379e779540eec1c421e1a614aba8006086a2d868fbea6ef0244523df9d5b650",
+    "backend/migrations/versions/0003_citation_cleanup.py": "2bdd2af0ba22f46751fc40bea32e31cebab17e263b5b7a5faaf32c6911ded923",
+    "backend/migrations/versions/0004_intake.py": "6f5862f8f64c70a0abec289cc06a902ef87fdb5f895d8c0252066f1a7be47f82",
+    "backend/migrations/versions/0005_source_cancellation.py": "38a9d0dc6d4d7075bd93c0bd52975efb6b39a6c259131d70f22358d12f57de85",
+    "backend/migrations/versions/0006_intake_completion.py": "d3c8bd808a72916f11a5e63b5bb08fff9e27c0c09b72caa82897ead938fbb1a9",
+    "backend/migrations/versions/0007_intake_indexes.py": "6c469f78c8bb355fcb8495a5154b08a2c59682c678b816575563dd403873b9b7",
+    "backend/migrations/versions/0008_documents.py": "370fa00b4d4e5bdf0736dd273b3f4242915f5a19f145acb5555a7ae91bb7f99e",
+    "backend/migrations/versions/0009_document_retention.py": "a9a77f522a9a55fce0614dcc22fe02b7e7d02b1095beafe95bba0a3fb20cc881",
+    "backend/migrations/versions/0010_document_heartbeat.py": "7c17dd194a168157475ade1291d6172084de8abba2cf76754e56c18e5ab7adaf",
+    "backend/migrations/versions/0011_media.py": "08097d80ec8143d8680633535638a6d65d2259ca751267b7d07a3544bc3a15d2",
+    "backend/migrations/versions/0012_media_partial.py": "b211169d22b2bec59a674f2072594ae778270c2c1cef9994f1b69b4e8a8a55a6",
+    "backend/migrations/versions/0013_embeddings.py": "e789fc93614d1003f34c20f52e3cbfabd64fedeb4ac294f4cdcbd32f57c62e58",
+    "backend/migrations/versions/0014_index_change_fix.py": "9761bbc195f54bd0082021d22c3ad2feb5b94288b14300387f3981afb7f7d3d1",
+    "backend/migrations/versions/0015_index_revision_changes.py": "deffc54146cc2a7b18652e51810fae4da13bc2f58fd3940aadb33cd9af82eb5d",
+    "backend/migrations/versions/0016_published_revision.py": "d4bb67dd3abcf42295f4acd3c2c6cebd8c928f13bb347ed8fb026055c2c05425",
+    "backend/migrations/versions/0017_native_images.py": "942c5d7db1a9a540d6922d931af39b5400a34872fffa641490a8bf2eac0b26f8",
+    "backend/migrations/versions/0018_embedding_invariants.py": "c3a7d9ac13eeb1d42a11c5f48807c8435442ee48f2570a8b26c014cd14f1109a",
+    "backend/pyproject.toml": "c83834d9f09ddf2cf350668b5f01735c3839decb0ff5a126862f4ce59bf0c7a8",
+    "backend/src/videomind/__init__.py": "b805d62e0b02f7031b8f8297260fcf5ee0d5fc1d3bd8e507829f2688130cb5df",
+    "backend/src/videomind/assets/__init__.py": "d2536cb9c23c49922aa5fdbe38458a0e49fd82f3b2d60c019b580457174d315e",
+    "backend/src/videomind/assets/routes.py": "8535dbf3c45e3a1afd8422e5a3db919f97ffba64492da1e9516940f5cc172909",
+    "backend/src/videomind/assets/storage.py": "91f1e670ecbf5db796ba36e49946a8b78e115efb036015f28f6f1a6ab5dfca87",
+    "backend/src/videomind/config.py": "a22eb62b58858a2c340b3b6dd4271b90d130eea185468ace2fd210848daebf91",
+    "backend/src/videomind/connectors/__init__.py": "86ec2b5f5a417efa89136567b2962eb8f6d83c63d616a4e50ac2ba1a31d2843e",
+    "backend/src/videomind/connectors/contracts.py": "ff67104e952cab3ae0b2e8f57fce49b798c11c8474fd9f94a973ae34e5aebafd",
+    "backend/src/videomind/connectors/files.py": "2f30b34014086ec15753d41f7293b2b730f632eded93a44e04fb0f50c1517ca8",
+    "backend/src/videomind/connectors/local_folder/adapter.py": "45a3a4c052e60a1e334c57df50e55f517bddc96bd9bba0b06b311904d8d0c928",
+    "backend/src/videomind/connectors/local_folder/reader.py": "8c635fbe0a5d46f76cc186c2cccbf783854dfbb9068d06be40732e7a814eb406",
+    "backend/src/videomind/connectors/routes.py": "338a79ffa893b699d227a4b637f64fb63ba7c0d10b67e588b4dbe6ee6b609e7f",
+    "backend/src/videomind/connectors/upload/adapter.py": "d475ce69162953df6e46f04de23ee4dcf35335be256db7cf9e45874ddfb23877",
+    "backend/src/videomind/connectors/upload/validation.py": "4bade08d197e148d41fcbf259f24518541ea5e0f4a83ac1d8b3b62e94fcb806f",
+    "backend/src/videomind/contracts.py": "b906b1b1d2794136fae80dd75e2d58cc892122c493a0a1c41e66c2bc81a4284b",
+    "backend/src/videomind/embeddings/__init__.py": "016f48d2248f1aa409667718dabe0bb72832002b90cc17170edd28a5fe1fb465",
+    "backend/src/videomind/embeddings/budget.py": "0145db264b9dc08495ad41955bda64f8b234d043d6cefa7d44a5dff9dd7638c9",
+    "backend/src/videomind/embeddings/client.py": "cb43700ead828f7be67014098d5dcec968ae245fe1ac87eccfc3530c56cfaeb6",
+    "backend/src/videomind/embeddings/contracts.py": "a225f5bab20260a98b37edd0465f9a82c9b7ad6fb00cd19424fc8c1a5eb617d0",
+    "backend/src/videomind/embeddings/generations.py": "ba782e185612bfde1ada20c30b6dc36c34815d7036ef467a5c0515270c590678",
+    "backend/src/videomind/embeddings/indexer.py": "311c62452a63a398424347574ef541c24d518912243f83449c5e220d7c2fea79",
+    "backend/src/videomind/embeddings/profile.py": "07d014a02de39b67094bc977a5341df578a7f6ae14ded3d4ec68fdafa3e51a66",
+    "backend/src/videomind/embeddings/repository.py": "53e3d0826426bb4f6d4fbcea59d701e1eee0cb7b42be23cb6295fbf71b0e5f28",
+    "backend/src/videomind/embeddings/routes.py": "bb9e024489b603d306f461dbcd24637057cc4aec5626fcfe213456a768b48f9e",
+    "backend/src/videomind/embeddings/runtime.py": "3fd08be5c123f20b452417784398b0caa5a1d50ab42525cbbdd26bc53f38ff18",
+    "backend/src/videomind/embeddings/server.py": "581a1e573eaa9ec24095e6a31aff52d98eb9a9723c12505e2359f39893cdbfd9",
+    "backend/src/videomind/evidence/__init__.py": "f9065f41d11aef4c51de3d58d44386e7646a0b520b972adad4099f5dabd18bc7",
+    "backend/src/videomind/evidence/contracts.py": "06ec5ac39798931ebfb44fef62dfcfa815de289aafba1b7113780f3722bfbd2d",
+    "backend/src/videomind/evidence/media_routes.py": "b910ff7857966b8447e83e095c3061f2ed24165fc9a93e266dc911b0a68c8e39",
+    "backend/src/videomind/evidence/routes.py": "d42cbb7dcc347a4c87719c6c4e3f63857b87bd8cd4778417148c25a0df350f5e",
+    "backend/src/videomind/identity/__init__.py": "4a8e113e45e76daf7c480a09d2e1089559706ba5404e7b87c3faf30a44320b80",
+    "backend/src/videomind/identity/bootstrap.py": "832dc66ca7d9b41abbdda96ac33eb107e4cafd5c526a7b938e69974eed909f77",
+    "backend/src/videomind/identity/routes.py": "9099e0d939c9eb7b4d54b68b9388f6271d506d35ef85c1dfee423f5f63eb2e58",
+    "backend/src/videomind/identity/security.py": "17861dfbaf941d049e83a2182a8ee53a97da6f6af5b2873bdff1afdac2be76a9",
+    "backend/src/videomind/identity/service.py": "794e508d0bcdcd0583b23bde986afcf9f5186100a3f7b1c61a531ba420f0d244",
+    "backend/src/videomind/infrastructure/__init__.py": "7c5457166e78df49c2483c4a5e6ba1e0fd8095d807416e7cc99f3d7e14d088f0",
+    "backend/src/videomind/infrastructure/database.py": "61fcaedd44c8129360e29f60bd937052f973d00ed8945d32a2fb2cc9b1dc9033",
+    "backend/src/videomind/infrastructure/services.py": "ac48785fb1d49977450b0584093576f039b3188938f80f19453a2b70276cc340",
+    "backend/src/videomind/infrastructure/storage_init.py": "5aad27fbd98883f30ed2a8b7ac10b3c20b86b6202f307077d899fab9c2e98f1a",
+    "backend/src/videomind/infrastructure/telemetry.py": "3a74d0ee2a405e9e2e820a51cb5295859849cada4e487c6b39ed958b8cb520e6",
+    "backend/src/videomind/ingestion/__init__.py": "396c064b7612f0c90c24e5e38e59f7c941ebbae59c4644f66e630a96d96618ca",
+    "backend/src/videomind/ingestion/contracts.py": "1aadf3935a8c45c4eead2b77a7f25875b216ed28022b76fd6c55d0ee5a3f1a65",
+    "backend/src/videomind/ingestion/dispatcher.py": "4e59190614a63df652d86eb940f6f72845e6a918d5d35688ae8c32d3f81fb809",
+    "backend/src/videomind/ingestion/jobs.py": "0b91d1d6f9be9f29af10ba7a7b68156a0e0568c56ea484a6364a0df6a0502f7e",
+    "backend/src/videomind/ingestion/service.py": "8711c7f8c410042646326f91e533ef11789f2552043852a4d2a2860a788de099",
+    "backend/src/videomind/ingestion/worker.py": "a0f56a1976b2c3df745b77384cd9732d12c8ada2762bbef5c8bc72f368bcacfd",
+    "backend/src/videomind/main.py": "448fd5abd42b2fd661d4ff421afb30652f11d22b97819bcefba684c08f643b67",
+    "backend/src/videomind/preprocessing/__init__.py": "85e2ed6d9a2e198f138f2dee6aefe3d50adf1316a68143bf62a6db6bb50fb78c",
+    "backend/src/videomind/preprocessing/contracts.py": "0ea8ced55efb42bb6a1445a412bbcaabbb66822a75965d8b76c2fa945c138faa",
+    "backend/src/videomind/preprocessing/documents/__init__.py": "07b0d55eb12bbd2900e2934e8d76eec81110f257d2aeed3091ccb5798991100d",
+    "backend/src/videomind/preprocessing/documents/contracts.py": "dcc7b3d9b97813dd5cafba39922adbfe9ceb01c7d4b990ed95e8d2f57302b31b",
+    "backend/src/videomind/preprocessing/documents/extract.py": "d8eb38d0d5833186c754bef0a64fbff0d48fdb73861b5fc4444c3cdf10b16716",
+    "backend/src/videomind/preprocessing/documents/profile.py": "8f147e632228097978898168c0a469f4dbbc9feaa20ee6d3a56d3793ecc2d867",
+    "backend/src/videomind/preprocessing/documents/sandbox.py": "7bdfad4731f9df4b8e4a5cfd7c0806f94c1c0bc7c7a0d6b3ef21c78f286dca1d",
+    "backend/src/videomind/preprocessing/documents/worker.py": "c8cc1a0adfea0d0e2fc7aed40d580f9c618ce1c87f8663f0c7ef9461ade9170c",
+    "backend/src/videomind/preprocessing/media/__init__.py": "ff1a3cf6cd3ea29ba3e20892ec9e628c17d19427450367acd21723b4262f9d63",
+    "backend/src/videomind/preprocessing/media/contracts.py": "b75a793ccedd95d299517d69c46b64a7b9eb5d0bcbc88c0df4bba1c361ec06ef",
+    "backend/src/videomind/preprocessing/media/extract.py": "adaadc5c073e367243bd1ce4753702c4f74f565f0f520dddd9bf9bd616d698a8",
+    "backend/src/videomind/preprocessing/media/profile.py": "ec7cff3715ece7f5880a24e7f37853ac2c26497ee5e0a36fd428b036443a010e",
+    "backend/src/videomind/preprocessing/media/worker.py": "4f2e6a3afbb8969dc7ef99d4bf63c39fff41cf0224cd11b92ea98a53e8edef15",
+    "backend/src/videomind/preprocessing/probe.py": "a89d4db670f6da35b7d06e3865a0346a2e78cea7fb2c04bf8e4ef61d99408240",
+    "backend/src/videomind/preprocessing/sandbox.py": "769ab5b1356e82ee1e5ff52ef1eaf4ce1a6c89bbfc4ea1e831525a45f99734de",
+    "backend/src/videomind/retrieval/__init__.py": "3f436b6be4764bee3f1be1c2ff77e813684daa6feb4bf898af68df19b6efd7d8",
+    "backend/src/videomind/retrieval/contracts.py": "b32cec137ce0a0217a33d05849179c2d05275baebd5fa2e219b91711417aafb9",
+    "backend/src/videomind/workers/__init__.py": "d6f3ecb57f549d41b0a3f5ce1bff3bf73ae11cb800198a8ea951bf34b7344c2d",
+    "backend/src/videomind/workers/celery_app.py": "aca2e932f52b7e3a2e77a4320f69ff31dcfa7b432c093c91dd26394576ccad20",
+    "backend/tests/document_fixtures.py": "e64e1e4bd8b627202dd0dc263f8c35c31465328b3f286de9d536c0c00ce170d9",
+    "backend/tests/fixtures/README.md": "a3f853a303b8d622784a5751746de95dcf30d9ae11f526c7a617919c5d3fea44",
+    "backend/tests/fixtures/speech.wav": "66587e5597b73de77a6a4527831ccde748098ac5c9d087967a13d2480df1cd97",
+    "backend/tests/integration/test_document_evidence.py": "7c6a0876c8e7b3cd958e794ace121ecd0c3f36a950fee7fe1f411535bed311e2",
+    "backend/tests/integration/test_embedding_lifecycle.py": "306dcb12b37679b3213a127ed9f11b76cbc0bdcc403ccb5c859b4f0154c1f7a8",
+    "backend/tests/integration/test_foundation.py": "72130942e0460db02ce1e3601c3da3dedc19df5368e1de5c7bac561b2317d0e1",
+    "backend/tests/integration/test_media_evidence.py": "2b6ad5f8ca0f0722093aca40b498908e5e5a10f8deb57ac17f24875f33195519",
+    "backend/tests/integration/test_phase2.py": "e344368da7db60882e296c9ee93aa66b4ac190d1ccb4e7a5c9d6cf46de1ad34c",
+    "backend/tests/media_fixtures.py": "70f7427b26238cf8630bd7114bdbc602593a71f3223b7ac807e99fb5a5ab0bdb",
+    "backend/tests/test_budget.py": "1ec3e808541e65c55e9f4b452fc985b379760d685f016c2b1d2eeeaa51b50c49",
+    "backend/tests/test_connector_adapters.py": "c9ada9fd839c8a01e96aa8c3682835961ea0dcb51086b84d59e575f12aa61dd8",
+    "backend/tests/test_contracts.py": "c502a989c3688899fc6ab6dfaf2e9345b3c00210d3cf65eed642840447d29c60",
+    "backend/tests/test_documents.py": "2c67de5b9dd230eee20969e9c59f10a5429403a5b2515ec79fc2fdcbb1a1e47e",
+    "backend/tests/test_embedding_results.py": "6d57913137dd0fce04ad752784b9dda92ee599cee496bba1bcbabbc80883a1ad",
+    "backend/tests/test_embedding_server.py": "afea670146d483517731e307476888e2c21461626d463c429a4f0d20ab72bff4",
+    "backend/tests/test_identity.py": "997059e10a3dba21aed64d96fd6329b40db195c65e1aa78ed7bab6ef30eb8c83",
+    "backend/tests/test_intake.py": "cc33bcf211de02412628fc7f921ebe3d93d3b0b3d4993f642fc26e5b29b5803f",
+    "backend/tests/test_media.py": "4bfdba33586f04ef8e25a16668bb5b3a0be0fc777aa7802061928e1d2a55b7ce",
+    "backend/uv.lock": "c18c8004b73797edf6f915584db9d2f8f056ad7d2a2de0fdbce2769ade67a179",
+    "evaluation/manifests/embedding-files.json": "d380f1b0db8dce26a867eb4c4037129fa35a825cd3ec737e40884f10b62e8a74",
+    "evaluation/tests/test_prepare_embedding.py": "bce0900f685f33c79ac15678fe88b4344206fccb912fb41646c3ef3c02863218",
+    "frontend/package.json": "2fcf1556bde82fad3c275b025d34fc69772d540f432d90ad1908d40209493210",
+    "frontend/pnpm-lock.yaml": "21174af8bb5bc6cf9096e3504b8d55d038d912d926c24d8c08bc1f948b6910ca",
+    "frontend/src/app/App.tsx": "d62ce201b481fab5c1082eed68b01e374e6bb9c6102405b3e1f33514c0a81ee2",
+    "frontend/src/app/styles.css": "a8fbfd5e3f5d04366517c5301b5731ae00bd812ebb489680c6fbd91542933caa",
+    "frontend/src/features/evidence/CitationViewer.tsx": "011c3521f9360fb7a2c04b1f6835688d7eb8b002c18b0cdf6d596fe177b41300",
+    "frontend/src/features/evidence/DocumentViewer.tsx": "401714b5f1829c4147d052cb917d66fde45c263a880438ce56af2e6b2458a7d1",
+    "frontend/src/features/evidence/MediaViewer.tsx": "5a2efdc876ab18e618f51dbacb362946d8c526ea651d604ae9bfa4535969fd41",
+    "frontend/src/features/identity/SignIn.tsx": "106a76583e9edf5a53010809814c32461355f61ecf3efef1bb1c19e9f03b41c3",
+    "frontend/src/features/indexes/IndexStatus.tsx": "a6d89a89e4713b3ceccb9d4ee27832fe1d5fec234d5003476b300e2dd7629552",
+    "frontend/src/features/sources/SourceList.tsx": "0f50f9a1ed05bb3a5a9458b70b1a0c818d7a06a761cf60e57f63b1267bd1eed8",
+    "frontend/src/lib/api.ts": "844a14550f5bdeaf3cd812c7841ae4a6cbe50cc85d2979fcf0676472a84bd99f",
+    "frontend/src/main.tsx": "a1bf5f8470d26f4cd02d36eeb850974ac028d98b2a104d49fc70ae1ec05cd01c",
+    "frontend/src/vite-env.d.ts": "65996936fbb042915f7b74a200fcdde7e410f32a669b1ab9597cfaa4b0faddb5",
+    "infra/compose/compose.yaml": "ff78ce394958dd1d4bbe917837597bb1b5a1a278d1fd669671429b1974a8abb9",
+    "infra/docker/backend.Dockerfile": "fe0a4702ebdfbc35923f6a18d13771708e9924ae2ed3b2c1d989e9bfb60152d1",
+    "infra/docker/frontend.Dockerfile": "f1e5b675f3e32eb9d2d437c5d1c9a75588113a80cdca5dc0663dceaca7d211f8",
+    "infra/docker/nginx.conf": "e2ee9f5ff056090ddfda4b097b544e88652e47e2bcf79734366e30ea86694be2",
+    "infra/docker/postgres-init.sh": "d339894b6ba75ff67fb50c6a2d40b503c1b6124cff1d30da12b976ffa8eed356",
+    "scripts/check_embedding_evidence.py": "b8e07c4416a6e9e5df8a642feaf1e109cee9362905864dafa1aec5801ad55dd3",
+    "scripts/dev.py": "d757be3770c42733b9ced4b68efbcbec14437c0a9569399f641996df929a002e",
+    "scripts/prepare_embedding.py": "105ffd45738c03c7b1de33e82afaff40cec33f33f45c613d618d7cd387585468"
+  }
+}

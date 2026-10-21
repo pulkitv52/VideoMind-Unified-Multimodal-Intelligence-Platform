@@ -1,0 +1,403 @@
+{
+  "scope": "Small retained corpus, CPU vector/evidence checks; not a broad relevance benchmark",
+  "originals_verified": 46,
+  "citations_verified": 80,
+  "queries": [
+    {
+      "label": "safety",
+      "query": "How do I safely open the electrical panel?",
+      "runs": [
+        {
+          "ann": false,
+          "seconds": 22.88748704600016,
+          "ids": [
+            "f23fccd5-d38a-49c7-860b-6e6f29127dfa",
+            "8703cfe9-018b-445e-9fe2-5f16cbb64496",
+            "9cde12d0-96f4-46d2-8241-13548922e6e1",
+            "d54b5306-5816-4f8b-9e5f-33a9be50c03e",
+            "7fb21728-04f8-493f-b755-46869afb74ae",
+            "a00f3dfe-9be7-4d5e-94f5-947c1158b635",
+            "7f02552b-35bf-43f6-b753-6a46ae302a88",
+            "6902be94-f137-44be-a63a-a3be73457fdc",
+            "f1a3ad68-7d66-47d4-9c2e-1430b00c1e1d",
+            "b8a58af7-f321-4313-b7cb-5ca28f123f61"
+          ],
+          "titles": [
+            "scanned-page.pdf",
+            "spoken.mp4",
+            "speech.wav",
+            "spoken.mp4",
+            "procedure.txt",
+            "speech.wav",
+            "scanned-page.pdf",
+            "scanned-page.pdf",
+            "renderer-smoke.docx",
+            "scanned-page.pdf"
+          ],
+          "scores": [
+            0.8239210598492339,
+            0.8089377511813938,
+            0.7947573188091936,
+            0.754214361058811,
+            0.7435247454926537,
+            0.7331039468584105,
+            0.7198338079551586,
+            0.709987061620531,
+            0.6818709156667094,
+            0.6694491899670136
+          ]
+        },
+        {
+          "ann": true,
+          "seconds": 0.29359620999980507,
+          "ids": [
+            "f23fccd5-d38a-49c7-860b-6e6f29127dfa",
+            "8703cfe9-018b-445e-9fe2-5f16cbb64496",
+            "9cde12d0-96f4-46d2-8241-13548922e6e1",
+            "d54b5306-5816-4f8b-9e5f-33a9be50c03e",
+            "7fb21728-04f8-493f-b755-46869afb74ae",
+            "a00f3dfe-9be7-4d5e-94f5-947c1158b635",
+            "7f02552b-35bf-43f6-b753-6a46ae302a88",
+            "6902be94-f137-44be-a63a-a3be73457fdc",
+            "f1a3ad68-7d66-47d4-9c2e-1430b00c1e1d",
+            "b8a58af7-f321-4313-b7cb-5ca28f123f61"
+          ],
+          "titles": [
+            "scanned-page.pdf",
+            "spoken.mp4",
+            "speech.wav",
+            "spoken.mp4",
+            "procedure.txt",
+            "speech.wav",
+            "scanned-page.pdf",
+            "scanned-page.pdf",
+            "renderer-smoke.docx",
+            "scanned-page.pdf"
+          ],
+          "scores": [
+            0.8239210598492339,
+            0.8089377511813938,
+            0.7947573188091936,
+            0.754214361058811,
+            0.7435247454926537,
+            0.7331039468584105,
+            0.7198338079551586,
+            0.709987061620531,
+            0.6818709156667094,
+            0.6694491899670136
+          ]
+        }
+      ],
+      "ann_overlap_at_10": 1.0,
+      "expected_file_in_exact_top10": true
+    },
+    {
+      "label": "visual",
+      "query": "A red square moving across a white background",
+      "runs": [
+        {
+          "ann": false,
+          "seconds": 0.9419600889998492,
+          "ids": [
+            "10cb51e5-d8c3-4c17-b006-bd8a01096b47",
+            "2b9d2b3a-e638-409f-8412-1e075a43c15d",
+            "936732e7-75cf-428b-9414-a3d74fed746e",
+            "bbdf3f4e-4721-4b39-a8db-738ea8376a47",
+            "54b05653-51c5-4675-ba51-d6ad3dbc1ec8",
+            "f2942b57-4b57-4ec7-aba0-7e5a2a6fe40a",
+            "112b5e54-fad9-406e-ac80-f96c7469adf1",
+            "0aa63816-a13a-4990-977a-cf202ca73de1",
+            "caf00f29-e071-45a8-b2a1-9b08d4728164",
+            "df52161f-926c-4853-8e51-b2ce2c639a1c"
+          ],
+          "titles": [
+            "silent.mp4",
+            "spoken.mp4",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md"
+          ],
+          "scores": [
+            0.814496360481225,
+            0.814496360481225,
+            0.6974757078318994,
+            0.6894054783099368,
+            0.687226690384549,
+            0.6841182300974102,
+            0.6797538387995582,
+            0.6786288406099319,
+            0.6785079624047372,
+            0.6783497908682017
+          ]
+        },
+        {
+          "ann": true,
+          "seconds": 0.3012184659999093,
+          "ids": [
+            "10cb51e5-d8c3-4c17-b006-bd8a01096b47",
+            "2b9d2b3a-e638-409f-8412-1e075a43c15d",
+            "936732e7-75cf-428b-9414-a3d74fed746e",
+            "bbdf3f4e-4721-4b39-a8db-738ea8376a47",
+            "54b05653-51c5-4675-ba51-d6ad3dbc1ec8",
+            "f2942b57-4b57-4ec7-aba0-7e5a2a6fe40a",
+            "112b5e54-fad9-406e-ac80-f96c7469adf1",
+            "0aa63816-a13a-4990-977a-cf202ca73de1",
+            "caf00f29-e071-45a8-b2a1-9b08d4728164",
+            "df52161f-926c-4853-8e51-b2ce2c639a1c"
+          ],
+          "titles": [
+            "silent.mp4",
+            "spoken.mp4",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md"
+          ],
+          "scores": [
+            0.814496360481225,
+            0.814496360481225,
+            0.6974757078318994,
+            0.6894054783099368,
+            0.687226690384549,
+            0.6841182300974102,
+            0.6797538387995582,
+            0.6786288406099319,
+            0.6785079624047372,
+            0.6783497908682017
+          ]
+        }
+      ],
+      "ann_overlap_at_10": 1.0,
+      "expected_file_in_exact_top10": true
+    },
+    {
+      "label": "sound",
+      "query": "Repeated electronic beeping tones",
+      "runs": [
+        {
+          "ann": false,
+          "seconds": 1.1543042040000273,
+          "ids": [
+            "bbd9be9c-cd0b-4b22-ad89-b3f98da5bd87",
+            "c40390ad-7b58-41d1-8228-ae662704337c",
+            "88764f02-b031-4161-a445-424387ad8925",
+            "f2942b57-4b57-4ec7-aba0-7e5a2a6fe40a",
+            "f23fccd5-d38a-49c7-860b-6e6f29127dfa",
+            "54b05653-51c5-4675-ba51-d6ad3dbc1ec8",
+            "b8a58af7-f321-4313-b7cb-5ca28f123f61",
+            "636a0a1a-0fb7-4019-a827-2c559b266e5c",
+            "d0b4ed06-5c26-4a9b-ba1f-5d45eeb2b0ca",
+            "c6f54c8a-94a9-4dc6-a60d-65bc778e7bc6"
+          ],
+          "titles": [
+            "beeps.wav",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "scanned-page.pdf",
+            "video30-caviar-ATTRIBUTION.md",
+            "scanned-page.pdf",
+            "public-starter-ATTRIBUTION.md",
+            "public-starter-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md"
+          ],
+          "scores": [
+            0.724617497645767,
+            0.6593088710720032,
+            0.6567802037727724,
+            0.6531801223754929,
+            0.652806083774388,
+            0.6525140611819004,
+            0.6515703616654441,
+            0.6511163323452286,
+            0.6511163323452286,
+            0.650542956525927
+          ]
+        },
+        {
+          "ann": true,
+          "seconds": 0.28707053999983145,
+          "ids": [
+            "bbd9be9c-cd0b-4b22-ad89-b3f98da5bd87",
+            "c40390ad-7b58-41d1-8228-ae662704337c",
+            "88764f02-b031-4161-a445-424387ad8925",
+            "f2942b57-4b57-4ec7-aba0-7e5a2a6fe40a",
+            "f23fccd5-d38a-49c7-860b-6e6f29127dfa",
+            "54b05653-51c5-4675-ba51-d6ad3dbc1ec8",
+            "b8a58af7-f321-4313-b7cb-5ca28f123f61",
+            "636a0a1a-0fb7-4019-a827-2c559b266e5c",
+            "d0b4ed06-5c26-4a9b-ba1f-5d45eeb2b0ca",
+            "c6f54c8a-94a9-4dc6-a60d-65bc778e7bc6"
+          ],
+          "titles": [
+            "beeps.wav",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "scanned-page.pdf",
+            "video30-caviar-ATTRIBUTION.md",
+            "scanned-page.pdf",
+            "public-starter-ATTRIBUTION.md",
+            "public-starter-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md"
+          ],
+          "scores": [
+            0.724617497645767,
+            0.6593088710720032,
+            0.6567802037727724,
+            0.6531801223754929,
+            0.652806083774388,
+            0.6525140611819004,
+            0.6515703616654441,
+            0.6511163323452286,
+            0.6511163323452286,
+            0.650542956525927
+          ]
+        }
+      ],
+      "ann_overlap_at_10": 1.0,
+      "expected_file_in_exact_top10": true
+    },
+    {
+      "label": "image",
+      "query": "A close-up photograph of an orange cat",
+      "runs": [
+        {
+          "ann": false,
+          "seconds": 0.9161765490000562,
+          "ids": [
+            "612b4854-89ba-4867-80a9-562f5a60f9ae",
+            "bb635383-c0b1-4110-b6b5-e5cb0418202d",
+            "c847a3b9-e4b9-46ab-a5dc-a197b5389c07",
+            "85953c22-7a80-4c8e-a6a7-7148beeb5b88",
+            "2116b152-6f40-430a-9003-9a0feaee8324",
+            "30edcf27-aa3a-4b25-8cdb-1b523a543f44",
+            "ac32deee-547e-4746-8dba-537494913190",
+            "54b05653-51c5-4675-ba51-d6ad3dbc1ec8",
+            "6462eaea-7235-42dd-885f-2b08e0d8c7ea",
+            "bbdf3f4e-4721-4b39-a8db-738ea8376a47"
+          ],
+          "titles": [
+            "chelsea.png",
+            "chelsea.png",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md"
+          ],
+          "scores": [
+            0.7363389291561301,
+            0.7363389291561301,
+            0.6508365481593293,
+            0.6507542729377747,
+            0.649806460749719,
+            0.6472353935241699,
+            0.6435037851333618,
+            0.6402115821838379,
+            0.6395668006201517,
+            0.6395516395568848
+          ]
+        },
+        {
+          "ann": true,
+          "seconds": 0.42106818600018414,
+          "ids": [
+            "612b4854-89ba-4867-80a9-562f5a60f9ae",
+            "bb635383-c0b1-4110-b6b5-e5cb0418202d",
+            "c847a3b9-e4b9-46ab-a5dc-a197b5389c07",
+            "85953c22-7a80-4c8e-a6a7-7148beeb5b88",
+            "2116b152-6f40-430a-9003-9a0feaee8324",
+            "30edcf27-aa3a-4b25-8cdb-1b523a543f44",
+            "ac32deee-547e-4746-8dba-537494913190",
+            "54b05653-51c5-4675-ba51-d6ad3dbc1ec8",
+            "6462eaea-7235-42dd-885f-2b08e0d8c7ea",
+            "bbdf3f4e-4721-4b39-a8db-738ea8376a47"
+          ],
+          "titles": [
+            "chelsea.png",
+            "chelsea.png",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md",
+            "video30-ur-fall-ATTRIBUTION.md",
+            "video30-caviar-ATTRIBUTION.md"
+          ],
+          "scores": [
+            0.7363389291561301,
+            0.7363389291561301,
+            0.6508365481593293,
+            0.6507542729377747,
+            0.649806460749719,
+            0.6472353935241699,
+            0.6435037851333618,
+            0.6402115821838379,
+            0.6395668006201517,
+            0.6395516395568848
+          ]
+        }
+      ],
+      "ann_overlap_at_10": 1.0,
+      "expected_file_in_exact_top10": true
+    }
+  ],
+  "filtered_checks": [
+    {
+      "source": "CAVIAR - Stores and lobby",
+      "results": 10
+    },
+    {
+      "source": "Local starter folder",
+      "results": 6
+    },
+    {
+      "source": "Roadscapes - Day and night driving",
+      "results": 10
+    },
+    {
+      "source": "Starter dataset",
+      "results": 10
+    },
+    {
+      "source": "UR Fall - Falls and daily activities",
+      "results": 10
+    }
+  ],
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "coverage": {
+    "eligible_assets": 46,
+    "published_assets": 46,
+    "partial_extraction_assets": 0,
+    "assets_without_ready_inputs": 0,
+    "pending_extraction_assets": 0,
+    "jobs": {
+      "ready": 46
+    }
+  },
+  "readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  }
+}

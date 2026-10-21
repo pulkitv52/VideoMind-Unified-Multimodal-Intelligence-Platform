@@ -1,0 +1,654 @@
+{
+  "version": 1,
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "scope": "Provisional development qrels; no independent human adjudication; heldout families are diagnostic only",
+  "queries": [
+    {
+      "id": "caviar-fight-1",
+      "family": "caviar-fight",
+      "slice": "silent_video",
+      "query": "two person fighting",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+          "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+          "grade": 3,
+          "interval": [
+            11560,
+            16880
+          ]
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_frame_hypotheses",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "caviar-fight-2",
+      "family": "caviar-fight",
+      "slice": "silent_video",
+      "query": "Two people fighting",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+          "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+          "grade": 3,
+          "interval": [
+            11560,
+            16880
+          ]
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_frame_hypotheses",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "caviar-fight-3",
+      "family": "caviar-fight",
+      "slice": "silent_video",
+      "query": "People fighting in an indoor lobby",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+          "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+          "grade": 3,
+          "interval": [
+            11560,
+            16880
+          ]
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_frame_hypotheses",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "urfall-fall-1",
+      "family": "urfall-fall",
+      "slice": "silent_video",
+      "query": "A person falling to the floor",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+          "revision_id": "a1855590-f340-4f9b-b5b7-ebe94788688c",
+          "grade": 3
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+          "grade": 3
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+          "grade": 3
+        },
+        {
+          "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+          "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+          "grade": 3
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_class_no_temporal_label",
+      "split": "heldout_family",
+      "human_reviewed": false
+    },
+    {
+      "id": "urfall-fall-2",
+      "family": "urfall-fall",
+      "slice": "silent_video",
+      "query": "Someone loses balance and falls down",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+          "revision_id": "a1855590-f340-4f9b-b5b7-ebe94788688c",
+          "grade": 3
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+          "grade": 3
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+          "grade": 3
+        },
+        {
+          "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+          "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+          "grade": 3
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_class_no_temporal_label",
+      "split": "heldout_family",
+      "human_reviewed": false
+    },
+    {
+      "id": "urfall-fall-3",
+      "family": "urfall-fall",
+      "slice": "silent_video",
+      "query": "A person collapses indoors",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "01f920a9-c4d0-4486-b6be-7f10e7f06536",
+          "revision_id": "a1855590-f340-4f9b-b5b7-ebe94788688c",
+          "grade": 3
+        },
+        {
+          "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+          "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+          "grade": 3
+        },
+        {
+          "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+          "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+          "grade": 3
+        },
+        {
+          "asset_id": "7a8c3dd6-62b4-454a-9378-4b615fbec889",
+          "revision_id": "933306e9-e8ea-4618-bd24-d6eb07ee60d2",
+          "grade": 3
+        },
+        {
+          "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+          "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_class_no_temporal_label",
+      "split": "heldout_family",
+      "human_reviewed": false
+    },
+    {
+      "id": "caviar-walk-1",
+      "family": "caviar-walk",
+      "slice": "silent_video",
+      "query": "A person walking through a lobby",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+          "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_frame_hypotheses",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "caviar-walk-2",
+      "family": "caviar-walk",
+      "slice": "silent_video",
+      "query": "People walking in an indoor entrance hall",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+          "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_frame_hypotheses",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "roadscapes-driving-1",
+      "family": "roadscapes-driving",
+      "slice": "silent_video",
+      "query": "Driving along a road during the day",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+          "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+          "grade": 3
+        },
+        {
+          "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+          "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+          "grade": 3
+        },
+        {
+          "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+          "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "sequence_name_only_requires_review",
+      "split": "heldout_family",
+      "human_reviewed": false
+    },
+    {
+      "id": "roadscapes-driving-2",
+      "family": "roadscapes-driving",
+      "slice": "silent_video",
+      "query": "Dashcam footage of driving at night",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+          "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+          "grade": 3
+        },
+        {
+          "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+          "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "sequence_name_only_requires_review",
+      "split": "heldout_family",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-safety-1",
+      "family": "owned-safety",
+      "slice": "document",
+      "query": "How do I safely open the electrical panel?",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "6462afb0-a85e-41a7-b137-f2c3c2d5901c",
+          "revision_id": "547038ac-c8d8-4dea-a57c-e95b9b2ed7a1",
+          "grade": 3
+        },
+        {
+          "asset_id": "75f12e38-6e42-4ffd-91de-460adcc96ef9",
+          "revision_id": "0b4df431-5af3-4add-b4f2-1a06aff286da",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-safety-2",
+      "family": "owned-safety",
+      "slice": "document",
+      "query": "Switch off power before opening the safety panel",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "6462afb0-a85e-41a7-b137-f2c3c2d5901c",
+          "revision_id": "547038ac-c8d8-4dea-a57c-e95b9b2ed7a1",
+          "grade": 3
+        },
+        {
+          "asset_id": "75f12e38-6e42-4ffd-91de-460adcc96ef9",
+          "revision_id": "0b4df431-5af3-4add-b4f2-1a06aff286da",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-speech-1",
+      "family": "owned-speech",
+      "slice": "spoken_video",
+      "query": "How do I safely open the electrical panel?",
+      "filters": {
+        "modalities": [
+          "video"
+        ]
+      },
+      "qrels": [
+        {
+          "asset_id": "5d26ac15-0c21-4d92-ba69-99a1b298ed71",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-speech-2",
+      "family": "owned-speech",
+      "slice": "spoken_video",
+      "query": "Turn off the power before opening the panel",
+      "filters": {
+        "modalities": [
+          "video"
+        ]
+      },
+      "qrels": [
+        {
+          "asset_id": "5d26ac15-0c21-4d92-ba69-99a1b298ed71",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-beeps-1",
+      "family": "owned-beeps",
+      "slice": "audio",
+      "query": "Repeated electronic beeping tones",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "ee190776-cd93-48a0-84f0-dc1cba089274",
+          "revision_id": "4721dac1-2269-4743-a6e1-6643431e29ff",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-beeps-2",
+      "family": "owned-beeps",
+      "slice": "audio",
+      "query": "A series of electronic beeps",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "ee190776-cd93-48a0-84f0-dc1cba089274",
+          "revision_id": "4721dac1-2269-4743-a6e1-6643431e29ff",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "public-cat-1",
+      "family": "public-cat",
+      "slice": "image",
+      "query": "A close-up photograph of an orange cat",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "85b46705-57f0-4f53-8426-28ca7c2fae41",
+          "revision_id": "92cae5d2-80e6-4a22-bb81-90606922d173",
+          "grade": 3
+        },
+        {
+          "asset_id": "914bfe5c-6752-4d6f-9945-18b86598c120",
+          "revision_id": "a510a09d-662a-47ea-b91e-a0f877eeee3d",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "public-cat-2",
+      "family": "public-cat",
+      "slice": "image",
+      "query": "An orange cat looking at the camera",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "85b46705-57f0-4f53-8426-28ca7c2fae41",
+          "revision_id": "92cae5d2-80e6-4a22-bb81-90606922d173",
+          "grade": 3
+        },
+        {
+          "asset_id": "914bfe5c-6752-4d6f-9945-18b86598c120",
+          "revision_id": "a510a09d-662a-47ea-b91e-a0f877eeee3d",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-square-1",
+      "family": "owned-square",
+      "slice": "silent_video",
+      "query": "A red square moving across a white background",
+      "filters": {
+        "modalities": [
+          "video"
+        ],
+        "representations": [
+          "video"
+        ]
+      },
+      "qrels": [
+        {
+          "asset_id": "5d26ac15-0c21-4d92-ba69-99a1b298ed71",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "grade": 3,
+          "interval": [
+            0,
+            4000
+          ]
+        },
+        {
+          "asset_id": "71c9efc3-b819-4183-847b-5637eaa82530",
+          "revision_id": "5ef1b098-2153-44d1-af68-65ac46684318",
+          "grade": 3,
+          "interval": [
+            0,
+            4000
+          ]
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "owned-square-2",
+      "family": "owned-square",
+      "slice": "silent_video",
+      "query": "A moving red square",
+      "filters": {
+        "modalities": [
+          "video"
+        ],
+        "representations": [
+          "video"
+        ]
+      },
+      "qrels": [
+        {
+          "asset_id": "5d26ac15-0c21-4d92-ba69-99a1b298ed71",
+          "revision_id": "37fbb86c-680a-4de1-a264-33b9b7aaba29",
+          "grade": 3,
+          "interval": [
+            0,
+            4000
+          ]
+        },
+        {
+          "asset_id": "71c9efc3-b819-4183-847b-5637eaa82530",
+          "revision_id": "5ef1b098-2153-44d1-af68-65ac46684318",
+          "grade": 3,
+          "interval": [
+            0,
+            4000
+          ]
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "identifiers-1",
+      "family": "identifiers",
+      "slice": "identifier",
+      "query": "caviar-Fight_Chase__derived.mp4",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+          "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "identifiers-2",
+      "family": "identifiers",
+      "slice": "identifier",
+      "query": "procedure.txt",
+      "filters": {},
+      "qrels": [
+        {
+          "asset_id": "75f12e38-6e42-4ffd-91de-460adcc96ef9",
+          "revision_id": "0b4df431-5af3-4add-b4f2-1a06aff286da",
+          "grade": 3
+        }
+      ],
+      "answerability": "positive",
+      "label_provenance": "publisher_sequence_or_owned_fixture",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-1-1",
+      "family": "negative-1",
+      "slice": "negative",
+      "query": "A submarine beneath Arctic ice",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-2-1",
+      "family": "negative-2",
+      "slice": "negative",
+      "query": "A giraffe eating leaves in the savanna",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-3-1",
+      "family": "negative-3",
+      "slice": "negative",
+      "query": "An astronaut repairing a satellite",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-4-1",
+      "family": "negative-4",
+      "slice": "negative",
+      "query": "A violinist performing on a concert stage",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-5-1",
+      "family": "negative-5",
+      "slice": "negative",
+      "query": "A volcano erupting beside a glacier",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-6-1",
+      "family": "negative-6",
+      "slice": "negative",
+      "query": "A recipe for strawberry cheesecake",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-7-1",
+      "family": "negative-7",
+      "slice": "negative",
+      "query": "person walking on roof",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    },
+    {
+      "id": "negative-8-1",
+      "family": "negative-8",
+      "slice": "negative",
+      "query": "A helicopter rescuing a sailor",
+      "filters": {},
+      "qrels": [],
+      "answerability": "negative",
+      "label_provenance": "agent_proposed_absence_requires_human_review",
+      "split": "development",
+      "human_reviewed": false
+    }
+  ]
+}

@@ -1,0 +1,729 @@
+{
+  "scope": "Observed concurrent samples during bounded evaluation; not instantaneous true peak",
+  "sample_interval_seconds": 5,
+  "samples": [
+    {
+      "elapsed_seconds": 2.1254423499995028,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.246MiB / 64MiB",
+          "CPUPerc": "3.02%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "177.1MiB / 384MiB",
+          "CPUPerc": "0.20%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.56MiB / 3GiB",
+          "CPUPerc": "0.09%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.378GiB / 6.5GiB",
+          "CPUPerc": "200.65%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "320.1MiB / 512MiB",
+          "CPUPerc": "0.06%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.566MiB / 128MiB",
+          "CPUPerc": "0.48%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "102.8MiB / 512MiB",
+          "CPUPerc": "0.03%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4250.524
+    },
+    {
+      "elapsed_seconds": 9.243681477999417,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "2.984MiB / 64MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "177.9MiB / 384MiB",
+          "CPUPerc": "0.17%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "102.4MiB / 3GiB",
+          "CPUPerc": "79.12%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.571GiB / 6.5GiB",
+          "CPUPerc": "197.78%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.6MiB / 512MiB",
+          "CPUPerc": "0.06%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.734MiB / 128MiB",
+          "CPUPerc": "4.97%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "103.5MiB / 512MiB",
+          "CPUPerc": "13.79%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4470.902
+    },
+    {
+      "elapsed_seconds": 16.349516042999312,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "2.945MiB / 64MiB",
+          "CPUPerc": "0.74%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "178.2MiB / 384MiB",
+          "CPUPerc": "14.72%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.3MiB / 3GiB",
+          "CPUPerc": "0.06%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.83MiB / 256MiB",
+          "CPUPerc": "0.88%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.398GiB / 6.5GiB",
+          "CPUPerc": "196.07%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.6MiB / 512MiB",
+          "CPUPerc": "0.06%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.527MiB / 128MiB",
+          "CPUPerc": "0.50%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "102.8MiB / 512MiB",
+          "CPUPerc": "0.81%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4271.334
+    },
+    {
+      "elapsed_seconds": 23.464998104998813,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "2.871MiB / 64MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "177.2MiB / 384MiB",
+          "CPUPerc": "0.17%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.55MiB / 3GiB",
+          "CPUPerc": "0.17%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.83MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.147GiB / 6.5GiB",
+          "CPUPerc": "194.50%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "320.6MiB / 512MiB",
+          "CPUPerc": "2.20%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.605MiB / 128MiB",
+          "CPUPerc": "0.50%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "106.2MiB / 512MiB",
+          "CPUPerc": "4.94%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4017.964
+    },
+    {
+      "elapsed_seconds": 30.601104098999713,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "2.602MiB / 64MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "176.6MiB / 384MiB",
+          "CPUPerc": "0.18%",
+          "PIDs": "15"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.55MiB / 3GiB",
+          "CPUPerc": "0.06%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.66MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.23GiB / 6.5GiB",
+          "CPUPerc": "195.48%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.6MiB / 512MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.898MiB / 128MiB",
+          "CPUPerc": "0.50%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "105.9MiB / 512MiB",
+          "CPUPerc": "0.04%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4100.91
+    },
+    {
+      "elapsed_seconds": 37.709429577000265,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.551MiB / 64MiB",
+          "CPUPerc": "3.61%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "177.2MiB / 384MiB",
+          "CPUPerc": "0.80%",
+          "PIDs": "15"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.31MiB / 3GiB",
+          "CPUPerc": "0.19%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "34.24MiB / 256MiB",
+          "CPUPerc": "1.26%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.347GiB / 6.5GiB",
+          "CPUPerc": "199.40%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.9MiB / 512MiB",
+          "CPUPerc": "0.17%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.309MiB / 128MiB",
+          "CPUPerc": "0.62%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "107MiB / 512MiB",
+          "CPUPerc": "43.08%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4223.418
+    },
+    {
+      "elapsed_seconds": 44.81219098499969,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.07MiB / 64MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "177.6MiB / 384MiB",
+          "CPUPerc": "14.15%",
+          "PIDs": "15"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "84.25MiB / 3GiB",
+          "CPUPerc": "4.50%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.86%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.346GiB / 6.5GiB",
+          "CPUPerc": "196.80%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.6MiB / 512MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.559MiB / 128MiB",
+          "CPUPerc": "0.53%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "105.8MiB / 512MiB",
+          "CPUPerc": "38.63%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4224.263
+    },
+    {
+      "elapsed_seconds": 51.91268791999937,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.016MiB / 64MiB",
+          "CPUPerc": "0.13%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "190MiB / 384MiB",
+          "CPUPerc": "36.29%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.55MiB / 3GiB",
+          "CPUPerc": "0.38%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.83MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.578GiB / 6.5GiB",
+          "CPUPerc": "198.21%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.9MiB / 512MiB",
+          "CPUPerc": "0.07%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "6.395MiB / 128MiB",
+          "CPUPerc": "0.63%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "106.4MiB / 512MiB",
+          "CPUPerc": "18.82%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4472.463
+    },
+    {
+      "elapsed_seconds": 59.008165018998625,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "2.746MiB / 64MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "190.4MiB / 384MiB",
+          "CPUPerc": "34.40%",
+          "PIDs": "17"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.54MiB / 3GiB",
+          "CPUPerc": "0.47%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.82MiB / 128MiB",
+          "CPUPerc": "7.68%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.405GiB / 6.5GiB",
+          "CPUPerc": "197.13%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "320.4MiB / 512MiB",
+          "CPUPerc": "8.97%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "6.332MiB / 128MiB",
+          "CPUPerc": "0.82%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "107.2MiB / 512MiB",
+          "CPUPerc": "0.02%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4296.657999999999
+    },
+    {
+      "elapsed_seconds": 66.11901170700003,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.113MiB / 64MiB",
+          "CPUPerc": "0.43%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "178MiB / 384MiB",
+          "CPUPerc": "4.71%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.8MiB / 3GiB",
+          "CPUPerc": "0.31%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "34MiB / 256MiB",
+          "CPUPerc": "0.59%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "2.923GiB / 6.5GiB",
+          "CPUPerc": "193.60%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.9MiB / 512MiB",
+          "CPUPerc": "0.16%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "6.461MiB / 128MiB",
+          "CPUPerc": "4.61%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "105.9MiB / 512MiB",
+          "CPUPerc": "8.26%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 3789.906
+    },
+    {
+      "elapsed_seconds": 73.23458387400024,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.891MiB / 64MiB",
+          "CPUPerc": "3.37%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "177MiB / 384MiB",
+          "CPUPerc": "2.10%",
+          "PIDs": "15"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.79MiB / 3GiB",
+          "CPUPerc": "0.17%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "68.58MiB / 128MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.064GiB / 6.5GiB",
+          "CPUPerc": "200.30%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.7MiB / 512MiB",
+          "CPUPerc": "0.16%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.664MiB / 128MiB",
+          "CPUPerc": "0.67%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "103.5MiB / 512MiB",
+          "CPUPerc": "16.07%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 3930.161
+    },
+    {
+      "elapsed_seconds": 80.32939400699979,
+      "services": [
+        {
+          "Name": "videomind-frontend-1",
+          "MemUsage": "3.602MiB / 64MiB",
+          "CPUPerc": "0.50%",
+          "PIDs": "2"
+        },
+        {
+          "Name": "videomind-api-1",
+          "MemUsage": "178.7MiB / 384MiB",
+          "CPUPerc": "11.59%",
+          "PIDs": "16"
+        },
+        {
+          "Name": "videomind-worker-1",
+          "MemUsage": "80.55MiB / 3GiB",
+          "CPUPerc": "0.05%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-indexer-1",
+          "MemUsage": "33.5MiB / 256MiB",
+          "CPUPerc": "0.00%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-dispatcher-1",
+          "MemUsage": "69.08MiB / 128MiB",
+          "CPUPerc": "6.11%",
+          "PIDs": "1"
+        },
+        {
+          "Name": "videomind-embedding-1",
+          "MemUsage": "3.276GiB / 6.5GiB",
+          "CPUPerc": "195.70%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-minio-1",
+          "MemUsage": "319.9MiB / 512MiB",
+          "CPUPerc": "7.74%",
+          "PIDs": "10"
+        },
+        {
+          "Name": "videomind-redis-1",
+          "MemUsage": "5.32MiB / 128MiB",
+          "CPUPerc": "0.51%",
+          "PIDs": "6"
+        },
+        {
+          "Name": "videomind-postgres-1",
+          "MemUsage": "103.3MiB / 512MiB",
+          "CPUPerc": "18.67%",
+          "PIDs": "12"
+        }
+      ],
+      "total_mib": 4148.576
+    }
+  ],
+  "max_observed_total_mib": 4472.463,
+  "embedding_cgroup_memory_peak_bytes_since_container_start": 5706575872,
+  "cgroup_peak_is_run_specific": false
+}

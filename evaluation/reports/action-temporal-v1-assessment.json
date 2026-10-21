@@ -1,0 +1,4536 @@
+{
+  "verification": {
+    "passed": true,
+    "originals_verified": 46,
+    "local_protocol_assets_verified": 19,
+    "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+    "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+    "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+    "review_file_preserved": true,
+    "serving_floor": 0.7,
+    "live_policy_unchanged": true,
+    "published_experimental_vectors": 0,
+    "evaluation_tests": {
+      "passed": 21,
+      "seconds": 0.3,
+      "command": "backend/.venv/bin/python -m pytest evaluation/tests/test_action_temporal.py evaluation/tests/test_quality.py -q"
+    },
+    "cache_replay": {
+      "passed": true,
+      "checks": [
+        {
+          "recipe": "uniform12",
+          "complete_windows": 10,
+          "new_encodes": 0,
+          "raw_scores_unchanged": true,
+          "exact_input_cache_validated": true
+        },
+        {
+          "recipe": "short4",
+          "complete_windows": 19,
+          "new_encodes": 0,
+          "raw_scores_unchanged": true,
+          "exact_input_cache_validated": true
+        },
+        {
+          "recipe": "fine2",
+          "complete_windows": 44,
+          "new_encodes": 0,
+          "raw_scores_unchanged": true,
+          "exact_input_cache_validated": true
+        }
+      ]
+    },
+    "test_log_sha256": "b0c9a4a2df507052d22f8d23cbdfc680ad0fe7c1b48c2992c06f0e4abb82e30a"
+  },
+  "development_inspection": {
+    "report": "evaluation/reports/action-temporal-v1-inspection.json",
+    "provenance": "agent_observation",
+    "gold_eligible": false,
+    "scope": "Post-hoc development frame inspection and overlap sensitivity; does not complete human review or policy calibration"
+  },
+  "status": "not_ready_for_promotion",
+  "measured_at": "2026-10-20T16:58:09.366468+00:00",
+  "scope": "AT0/AT1 exploratory development pilot; no independent gold or temporal boundary result",
+  "uncertainty_note": "One fall-query family with three paraphrases and six development clips; no independent human labels or release confidence intervals. All scores/quality are diagnostic.",
+  "protocol_sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9",
+  "review_status": {
+    "independent_human_reviewers": 0,
+    "adjudicated": false,
+    "assets_needing_review": 19,
+    "gold_eligible": false,
+    "scope": "Prepared worksheet; event and absence adjudication has not been implemented as an automatic gold promotion path"
+  },
+  "complete_recipes": [
+    "uniform12",
+    "short4",
+    "fine2"
+  ],
+  "incomplete_or_unrun_recipes": [],
+  "configurations": [
+    {
+      "recipe": "current_native",
+      "floor": 0.65,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 1.0,
+      "negative_asset_acceptance_mean": 1.0,
+      "asset_ndcg_mean": 1.0,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.6912369500116219,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6830242087259429,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.6739453077316284,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+              "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+              "title": "urfall-adl-02__derived.mp4",
+              "representation": "video",
+              "score": 0.6620644330978394,
+              "interval": [
+                0,
+                6051
+              ],
+              "citation_ids": [
+                "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+              ]
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+              "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+              "title": "urfall-adl-24__derived.mp4",
+              "representation": "video",
+              "score": 0.6568508148193359,
+              "interval": [
+                0,
+                2335
+              ],
+              "citation_ids": [
+                "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+              ]
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+              "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+              "title": "urfall-adl-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6529666185379028,
+              "interval": [
+                0,
+                5031
+              ],
+              "citation_ids": [
+                "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.7194878411751016,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.713051740501977,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.7076938363222434,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+              "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+              "title": "urfall-adl-02__derived.mp4",
+              "representation": "video",
+              "score": 0.699279209949947,
+              "interval": [
+                0,
+                6051
+              ],
+              "citation_ids": [
+                "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+              ]
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+              "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+              "title": "urfall-adl-24__derived.mp4",
+              "representation": "video",
+              "score": 0.6977077930482567,
+              "interval": [
+                0,
+                2335
+              ],
+              "citation_ids": [
+                "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+              ]
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+              "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+              "title": "urfall-adl-01__derived.mp4",
+              "representation": "video",
+              "score": 0.689370056670012,
+              "interval": [
+                0,
+                5031
+              ],
+              "citation_ids": [
+                "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.7035028095838108,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.7001807689666748,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6926858838013353,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+              "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+              "title": "urfall-adl-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6836876273155212,
+              "interval": [
+                0,
+                5031
+              ],
+              "citation_ids": [
+                "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+              ]
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+              "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+              "title": "urfall-adl-24__derived.mp4",
+              "representation": "video",
+              "score": 0.6804420948028564,
+              "interval": [
+                0,
+                2335
+              ],
+              "citation_ids": [
+                "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+              ]
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+              "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+              "title": "urfall-adl-02__derived.mp4",
+              "representation": "video",
+              "score": 0.6799886226654053,
+              "interval": [
+                0,
+                6051
+              ],
+              "citation_ids": [
+                "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "current_native",
+      "floor": 0.675,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.8888888888888888,
+      "negative_asset_acceptance_mean": 0.6666666666666666,
+      "asset_ndcg_mean": 0.9217868789962073,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.6912369500116219,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6830242087259429,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.7194878411751016,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.713051740501977,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.7076938363222434,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+              "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+              "title": "urfall-adl-02__derived.mp4",
+              "representation": "video",
+              "score": 0.699279209949947,
+              "interval": [
+                0,
+                6051
+              ],
+              "citation_ids": [
+                "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+              ]
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+              "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+              "title": "urfall-adl-24__derived.mp4",
+              "representation": "video",
+              "score": 0.6977077930482567,
+              "interval": [
+                0,
+                2335
+              ],
+              "citation_ids": [
+                "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+              ]
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+              "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+              "title": "urfall-adl-01__derived.mp4",
+              "representation": "video",
+              "score": 0.689370056670012,
+              "interval": [
+                0,
+                5031
+              ],
+              "citation_ids": [
+                "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.7035028095838108,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.7001807689666748,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6926858838013353,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+              "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+              "title": "urfall-adl-01__derived.mp4",
+              "representation": "video",
+              "score": 0.6836876273155212,
+              "interval": [
+                0,
+                5031
+              ],
+              "citation_ids": [
+                "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+              ]
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+              "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+              "title": "urfall-adl-24__derived.mp4",
+              "representation": "video",
+              "score": 0.6804420948028564,
+              "interval": [
+                0,
+                2335
+              ],
+              "citation_ids": [
+                "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+              ]
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+              "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+              "title": "urfall-adl-02__derived.mp4",
+              "representation": "video",
+              "score": 0.6799886226654053,
+              "interval": [
+                0,
+                6051
+              ],
+              "citation_ids": [
+                "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "current_native",
+      "floor": 0.7,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.5555555555555556,
+      "negative_asset_acceptance_mean": 0.0,
+      "asset_ndcg_mean": 0.5884535456628739,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": null,
+          "accepted": [],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.7194878411751016,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+              "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+              "title": "urfall-fall-01__derived.mp4",
+              "representation": "video",
+              "score": 0.713051740501977,
+              "interval": [
+                0,
+                5338
+              ],
+              "citation_ids": [
+                "324cd25c-1938-4d11-beda-413c9c98c546"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.7076938363222434,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+              "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+              "title": "urfall-fall-04__derived.mp4",
+              "representation": "video",
+              "score": 0.7035028095838108,
+              "interval": [
+                0,
+                3203
+              ],
+              "citation_ids": [
+                "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+              ]
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+              "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+              "title": "urfall-fall-02__derived.mp4",
+              "representation": "video",
+              "score": 0.7001807689666748,
+              "interval": [
+                0,
+                3670
+              ],
+              "citation_ids": [
+                "4b0e495c-2050-4cbe-919f-b6be951befd9"
+              ]
+            }
+          ],
+          "unjudged_excluded": 26,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "uniform12",
+      "floor": 0.65,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 1.0,
+      "negative_asset_acceptance_mean": 1.0,
+      "asset_ndcg_mean": 1.0,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.6912369866505884
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.6830242622856368
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.6739452011722857
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                0,
+                6050
+              ],
+              "score": 0.662064429846621
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6568507867029523
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                5030
+              ],
+              "score": 0.6529665715172666
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.7130515723818496
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                0,
+                6050
+              ],
+              "score": 0.6992792291439497
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6977076906225412
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                5030
+              ],
+              "score": 0.6893699926873702
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.6926858281457011
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                5030
+              ],
+              "score": 0.6836875663072047
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6804420202189382
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                0,
+                6050
+              ],
+              "score": 0.6799886540303962
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "uniform12",
+      "floor": 0.675,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.8888888888888888,
+      "negative_asset_acceptance_mean": 0.6666666666666666,
+      "asset_ndcg_mean": 0.9217868789962073,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.6912369866505884
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.6830242622856368
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.7130515723818496
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                0,
+                6050
+              ],
+              "score": 0.6992792291439497
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6977076906225412
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                5030
+              ],
+              "score": 0.6893699926873702
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.6926858281457011
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                5030
+              ],
+              "score": 0.6836875663072047
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6804420202189382
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                0,
+                6050
+              ],
+              "score": 0.6799886540303962
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "uniform12",
+      "floor": 0.7,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.5555555555555556,
+      "negative_asset_acceptance_mean": 0.0,
+      "asset_ndcg_mean": 0.5884535456628739,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": null,
+          "accepted": [],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                5338
+              ],
+              "score": 0.7130515723818496
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "short4",
+      "floor": 0.65,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 1.0,
+      "negative_asset_acceptance_mean": 0.8888888888888888,
+      "asset_ndcg_mean": 0.9686751451782274,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.6666666666666666,
+          "accepted_precision": 0.6,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.6920423540617537
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.6912369866505884
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.6739452011722857
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.6720286739139256
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6568507867029523
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 0.9060254355346823,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7231045708800199
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.7221834751326331
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6977076906225412
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6894497810360385
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7032331511197238
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.69456308150616
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6811190603650256
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6804420202189382
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "short4",
+      "floor": 0.675,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.8888888888888888,
+      "negative_asset_acceptance_mean": 0.6666666666666666,
+      "asset_ndcg_mean": 0.8904620241744347,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.6920423540617537
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.6912369866505884
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 0.9060254355346823,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7231045708800199
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.7221834751326331
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6977076906225412
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6894497810360385
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7032331511197238
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.69456308150616
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                2000,
+                5030
+              ],
+              "score": 0.6811190603650256
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2335
+              ],
+              "score": 0.6804420202189382
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "short4",
+      "floor": 0.7,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.6666666666666666,
+      "negative_asset_acceptance_mean": 0.1111111111111111,
+      "asset_ndcg_mean": 0.6353418118448941,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": null,
+          "accepted": [],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 0.9060254355346823,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.3333333333333333,
+          "accepted_precision": 0.75,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7231045708800199
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6050
+              ],
+              "score": 0.7221834751326331
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7194879130752103
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7076936988736362
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                0,
+                3203
+              ],
+              "score": 0.7035028467804845
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                2000,
+                5338
+              ],
+              "score": 0.7032331511197238
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                0,
+                3670
+              ],
+              "score": 0.7001807228354322
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "fine2",
+      "floor": 0.65,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 1.0,
+      "negative_asset_acceptance_mean": 1.0,
+      "asset_ndcg_mean": 1.0,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.7152163496524874
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.7149014845337246
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.6950764503037666
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                1000,
+                2335
+              ],
+              "score": 0.6802852511431864
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6000
+              ],
+              "score": 0.6720286739139256
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.6550336504149221
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                4000,
+                5338
+              ],
+              "score": 0.7523953379519883
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.7499167928244993
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.7391494750368804
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                1000,
+                2335
+              ],
+              "score": 0.7252311320645158
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                5000,
+                6050
+              ],
+              "score": 0.7246280427447699
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                4000,
+                5030
+              ],
+              "score": 0.6991833480861277
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.72584276098097
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.7244853841685461
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.7147514204698744
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2000
+              ],
+              "score": 0.7035138402867004
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6000
+              ],
+              "score": 0.69456308150616
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.6910819464374958
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "fine2",
+      "floor": 0.675,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 1.0,
+      "negative_asset_acceptance_mean": 0.7777777777777778,
+      "asset_ndcg_mean": 1.0,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.3333333333333333,
+          "accepted_precision": 0.75,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.7152163496524874
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.7149014845337246
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.6950764503037666
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                1000,
+                2335
+              ],
+              "score": 0.6802852511431864
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                4000,
+                5338
+              ],
+              "score": 0.7523953379519883
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.7499167928244993
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.7391494750368804
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                1000,
+                2335
+              ],
+              "score": 0.7252311320645158
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                5000,
+                6050
+              ],
+              "score": 0.7246280427447699
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                4000,
+                5030
+              ],
+              "score": 0.6991833480861277
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 1.0,
+          "accepted_precision": 0.5,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.72584276098097
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.7244853841685461
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.7147514204698744
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2000
+              ],
+              "score": 0.7035138402867004
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                4000,
+                6000
+              ],
+              "score": 0.69456308150616
+            },
+            {
+              "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+              "asset_key": "urfall-adl-01",
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.6910819464374958
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    },
+    {
+      "recipe": "fine2",
+      "floor": 0.7,
+      "scope": "One fall-query family, three paraphrases; 3 fall/3 ADL development assets; publisher sequence labels only",
+      "positive_asset_recall_mean": 0.8888888888888888,
+      "negative_asset_acceptance_mean": 0.3333333333333333,
+      "asset_ndcg_mean": 0.9217868789962073,
+      "per_query": [
+        {
+          "query_id": "fall-1",
+          "ndcg_at_10": 0.7653606369886218,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 0.6666666666666666,
+          "negative_asset_acceptance_rate": 0.0,
+          "accepted_precision": 1.0,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.7152163496524874
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.7149014845337246
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-2",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.6666666666666666,
+          "accepted_precision": 0.6,
+          "accepted": [
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                4000,
+                5338
+              ],
+              "score": 0.7523953379519883
+            },
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.7499167928244993
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.7391494750368804
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                1000,
+                2335
+              ],
+              "score": 0.7252311320645158
+            },
+            {
+              "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+              "asset_key": "urfall-adl-02",
+              "title": "urfall-adl-02__derived.mp4",
+              "interval": [
+                5000,
+                6050
+              ],
+              "score": 0.7246280427447699
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        },
+        {
+          "query_id": "fall-3",
+          "ndcg_at_10": 1.0,
+          "scope": "Provisional publisher sequence classification; not temporal or gold retrieval",
+          "positive_assets": 3,
+          "negative_assets": 3,
+          "positive_asset_recall_at_10": 1.0,
+          "negative_asset_acceptance_rate": 0.3333333333333333,
+          "accepted_precision": 0.75,
+          "accepted": [
+            {
+              "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+              "asset_key": "urfall-fall-04",
+              "title": "urfall-fall-04__derived.mp4",
+              "interval": [
+                1000,
+                3000
+              ],
+              "score": 0.72584276098097
+            },
+            {
+              "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+              "asset_key": "urfall-fall-01",
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                3000,
+                5000
+              ],
+              "score": 0.7244853841685461
+            },
+            {
+              "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+              "asset_key": "urfall-fall-02",
+              "title": "urfall-fall-02__derived.mp4",
+              "interval": [
+                2000,
+                3670
+              ],
+              "score": 0.7147514204698744
+            },
+            {
+              "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+              "asset_key": "urfall-adl-24",
+              "title": "urfall-adl-24__derived.mp4",
+              "interval": [
+                0,
+                2000
+              ],
+              "score": 0.7035138402867004
+            }
+          ],
+          "unjudged_excluded": 0,
+          "temporal_recall": null,
+          "gold_eligible": false
+        }
+      ],
+      "proxy_gate_met_for_every_phrase": false,
+      "gold_eligible": false
+    }
+  ],
+  "demonstrated_fall04": [
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+      "title": "urfall-fall-04__derived.mp4",
+      "representation": "video",
+      "score": 0.6912369500116219,
+      "interval": [
+        0,
+        3203
+      ],
+      "citation_ids": [
+        "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+      ]
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+      "title": "urfall-fall-04__derived.mp4",
+      "representation": "video",
+      "score": 0.7194878411751016,
+      "interval": [
+        0,
+        3203
+      ],
+      "citation_ids": [
+        "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+      ]
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+      "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+      "title": "urfall-fall-04__derived.mp4",
+      "representation": "video",
+      "score": 0.7035028095838108,
+      "interval": [
+        0,
+        3203
+      ],
+      "citation_ids": [
+        "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+      ]
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "score": 0.6912369866505884
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "score": 0.7194879130752103
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "score": 0.7035028467804845
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "score": 0.6912369866505884
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "score": 0.7194879130752103
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        0,
+        3203
+      ],
+      "score": 0.7035028467804845
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        1000,
+        3000
+      ],
+      "score": 0.7149014845337246
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        1000,
+        3000
+      ],
+      "score": 0.7499167928244993
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+      "asset_key": "urfall-fall-04",
+      "title": "urfall-fall-04__derived.mp4",
+      "interval": [
+        1000,
+        3000
+      ],
+      "score": 0.72584276098097
+    }
+  ],
+  "proxy_candidates_only": [],
+  "temporal_metrics": {
+    "measured": false,
+    "reason": "No adjudicated event boundaries; publisher context intervals are not fall-onset labels"
+  },
+  "reserved_sequence_quality_evaluated": false,
+  "reserved_assets_present_in_full_index_baseline": true,
+  "reserved_limitation": "Baseline replays the existing full index, whose raw scores include these assets. They are excluded from development quality metrics and threshold selection; experimental window query scores are withheld. This is not an unseen actor/session test.",
+  "runtime": {
+    "python": "3.12.3",
+    "pyav": "16.1.0",
+    "pillow": "12.3.0",
+    "machine": "x86_64",
+    "cpu_scope": "Existing pinned private CPU FP32 model, two model CPUs; no new dependencies installed"
+  },
+  "published_vectors": 0,
+  "live_policy_changed": false,
+  "auxiliary_model_loaded": false,
+  "resource_runs": [
+    {
+      "recipe": "uniform12",
+      "seconds": 262.2599708559974,
+      "new_encodes": 10,
+      "cache_hits": 0,
+      "batch_max_new": 32,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.051MiB / 64MiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "127.2MiB / 384MiB",
+              "CPUPerc": "11.56%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "81.26MiB / 3GiB",
+              "CPUPerc": "0.14%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.14MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "1.792GiB / 6.5GiB",
+              "CPUPerc": "0.34%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "242.6MiB / 512MiB",
+              "CPUPerc": "0.10%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.715MiB / 128MiB",
+              "CPUPerc": "0.49%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "76.3MiB / 512MiB",
+              "CPUPerc": "0.07%"
+            }
+          ],
+          "total_observed_mib": 2465.634,
+          "host": {
+            "MemAvailable_kib": 3762048,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 7760
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.629MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "177.7MiB / 384MiB",
+              "CPUPerc": "0.20%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "73.32MiB / 3GiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.25MiB / 256MiB",
+              "CPUPerc": "0.68%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.37MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.75GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "206MiB / 512MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.578MiB / 128MiB",
+              "CPUPerc": "0.52%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.44MiB / 512MiB",
+              "CPUPerc": "0.44%"
+            }
+          ],
+          "total_observed_mib": 3454.287,
+          "host": {
+            "MemAvailable_kib": 2859724,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 472284
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.613MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "190.7MiB / 384MiB",
+              "CPUPerc": "2.51%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "71.99MiB / 3GiB",
+              "CPUPerc": "0.36%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.26MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.707GiB / 6.5GiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "213.3MiB / 512MiB",
+              "CPUPerc": "0.02%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.848MiB / 128MiB",
+              "CPUPerc": "3.06%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.48MiB / 512MiB",
+              "CPUPerc": "7.89%"
+            }
+          ],
+          "total_observed_mib": 3429.519,
+          "host": {
+            "MemAvailable_kib": 2917616,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 450764
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.082MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "192.1MiB / 384MiB",
+              "CPUPerc": "23.14%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "71.86MiB / 3GiB",
+              "CPUPerc": "0.29%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.728GiB / 6.5GiB",
+              "CPUPerc": "0.14%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "213.4MiB / 512MiB",
+              "CPUPerc": "0.05%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.723MiB / 128MiB",
+              "CPUPerc": "0.56%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.79MiB / 512MiB",
+              "CPUPerc": "4.65%"
+            }
+          ],
+          "total_observed_mib": 3452.8570000000004,
+          "host": {
+            "MemAvailable_kib": 2951944,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 436808
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "recipe": "uniform12",
+      "seconds": 4.087825725997391,
+      "new_encodes": 0,
+      "cache_hits": 0,
+      "batch_max_new": 1,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.117MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "128.1MiB / 384MiB",
+              "CPUPerc": "23.87%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.52MiB / 3GiB",
+              "CPUPerc": "0.36%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.81MiB / 256MiB",
+              "CPUPerc": "0.78%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.14%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.05%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.953MiB / 128MiB",
+              "CPUPerc": "0.59%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.18MiB / 512MiB",
+              "CPUPerc": "0.00%"
+            }
+          ],
+          "total_observed_mib": 3290.936,
+          "host": {
+            "MemAvailable_kib": 3137816,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206452
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.57MiB / 64MiB",
+              "CPUPerc": "0.34%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "115.5MiB / 384MiB",
+              "CPUPerc": "7.70%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.52MiB / 3GiB",
+              "CPUPerc": "0.18%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.24MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "10.22%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.19%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.1MiB / 512MiB",
+              "CPUPerc": "2.10%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "6.16MiB / 128MiB",
+              "CPUPerc": "0.65%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.45MiB / 512MiB",
+              "CPUPerc": "11.98%"
+            }
+          ],
+          "total_observed_mib": 3278.996,
+          "host": {
+            "MemAvailable_kib": 3158932,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206452
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "recipe": "short4",
+      "seconds": 273.56971337300274,
+      "new_encodes": 15,
+      "cache_hits": 4,
+      "batch_max_new": 32,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.141MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "114.7MiB / 384MiB",
+              "CPUPerc": "1.78%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.62MiB / 3GiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.22MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.703GiB / 6.5GiB",
+              "CPUPerc": "0.29%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.13%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.262MiB / 128MiB",
+              "CPUPerc": "0.60%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "77.43MiB / 512MiB",
+              "CPUPerc": "0.08%"
+            }
+          ],
+          "total_observed_mib": 3353.305,
+          "host": {
+            "MemAvailable_kib": 3142944,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 337720
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.672MiB / 64MiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.7MiB / 384MiB",
+              "CPUPerc": "26.79%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.07MiB / 3GiB",
+              "CPUPerc": "0.03%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.18%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.4MiB / 512MiB",
+              "CPUPerc": "0.01%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.488MiB / 128MiB",
+              "CPUPerc": "0.55%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "83.9MiB / 512MiB",
+              "CPUPerc": "16.07%"
+            }
+          ],
+          "total_observed_mib": 3415.0519999999997,
+          "host": {
+            "MemAvailable_kib": 2943908,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 305800
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.836MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.4MiB / 384MiB",
+              "CPUPerc": "22.93%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.32MiB / 3GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.61MiB / 128MiB",
+              "CPUPerc": "2.44%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225MiB / 512MiB",
+              "CPUPerc": "2.69%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.551MiB / 128MiB",
+              "CPUPerc": "0.58%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.7MiB / 512MiB",
+              "CPUPerc": "0.02%"
+            }
+          ],
+          "total_observed_mib": 3412.879,
+          "host": {
+            "MemAvailable_kib": 2825616,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 306272
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.078MiB / 64MiB",
+              "CPUPerc": "0.37%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "179.3MiB / 384MiB",
+              "CPUPerc": "1.82%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.32MiB / 3GiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.31MiB / 256MiB",
+              "CPUPerc": "0.01%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.12%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.602MiB / 128MiB",
+              "CPUPerc": "0.64%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.44MiB / 512MiB",
+              "CPUPerc": "0.19%"
+            }
+          ],
+          "total_observed_mib": 3399.602,
+          "host": {
+            "MemAvailable_kib": 3024144,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 306332
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.828MiB / 64MiB",
+              "CPUPerc": "2.54%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178MiB / 384MiB",
+              "CPUPerc": "7.99%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65.26MiB / 3GiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.91%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "3.46%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.683GiB / 6.5GiB",
+              "CPUPerc": "0.14%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.6MiB / 512MiB",
+              "CPUPerc": "4.26%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.023MiB / 128MiB",
+              "CPUPerc": "0.49%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.47MiB / 512MiB",
+              "CPUPerc": "0.16%"
+            }
+          ],
+          "total_observed_mib": 3397.0029999999997,
+          "host": {
+            "MemAvailable_kib": 2941104,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 306692
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.59MiB / 64MiB",
+              "CPUPerc": "2.47%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "177.6MiB / 384MiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.75MiB / 3GiB",
+              "CPUPerc": "0.23%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.5MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.27MiB / 128MiB",
+              "CPUPerc": "0.53%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.2MiB / 512MiB",
+              "CPUPerc": "20.35%"
+            }
+          ],
+          "total_observed_mib": 3376.5919999999996,
+          "host": {
+            "MemAvailable_kib": 2861272,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 268024
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "recipe": "short4",
+      "seconds": 3.365834055999585,
+      "new_encodes": 0,
+      "cache_hits": 0,
+      "batch_max_new": 1,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.348MiB / 64MiB",
+              "CPUPerc": "0.02%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "114.8MiB / 384MiB",
+              "CPUPerc": "0.72%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.5MiB / 3GiB",
+              "CPUPerc": "0.22%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.24MiB / 256MiB",
+              "CPUPerc": "0.07%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.63GiB / 6.5GiB",
+              "CPUPerc": "0.36%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.1MiB / 512MiB",
+              "CPUPerc": "0.12%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "6.453MiB / 128MiB",
+              "CPUPerc": "0.64%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.85MiB / 512MiB",
+              "CPUPerc": "5.41%"
+            }
+          ],
+          "total_observed_mib": 3281.7709999999997,
+          "host": {
+            "MemAvailable_kib": 3126360,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206452
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.539MiB / 64MiB",
+              "CPUPerc": "0.30%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "127.6MiB / 384MiB",
+              "CPUPerc": "33.86%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.75MiB / 3GiB",
+              "CPUPerc": "0.30%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.49MiB / 256MiB",
+              "CPUPerc": "0.31%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.742MiB / 128MiB",
+              "CPUPerc": "3.02%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "81.89MiB / 512MiB",
+              "CPUPerc": "12.99%"
+            }
+          ],
+          "total_observed_mib": 3294.267,
+          "host": {
+            "MemAvailable_kib": 3139476,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206456
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "recipe": "fine2",
+      "seconds": 291.93140659100027,
+      "new_encodes": 32,
+      "cache_hits": 2,
+      "batch_max_new": 32,
+      "batch_wall_seconds": 1200,
+      "stop_reason": "batch_window_budget",
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.801MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "113.9MiB / 384MiB",
+              "CPUPerc": "0.17%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.75MiB / 3GiB",
+              "CPUPerc": "0.20%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.56MiB / 256MiB",
+              "CPUPerc": "0.80%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.9MiB / 512MiB",
+              "CPUPerc": "0.07%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "4.781MiB / 128MiB",
+              "CPUPerc": "0.55%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "76.94MiB / 512MiB",
+              "CPUPerc": "7.53%"
+            }
+          ],
+          "total_observed_mib": 3309.904,
+          "host": {
+            "MemAvailable_kib": 3038452,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 268096
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.094MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178MiB / 384MiB",
+              "CPUPerc": "0.20%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.75MiB / 3GiB",
+              "CPUPerc": "0.14%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.07%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.484MiB / 128MiB",
+              "CPUPerc": "0.47%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.99MiB / 512MiB",
+              "CPUPerc": "5.18%"
+            }
+          ],
+          "total_observed_mib": 3378.3599999999997,
+          "host": {
+            "MemAvailable_kib": 2965316,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 268216
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.652MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "177.7MiB / 384MiB",
+              "CPUPerc": "0.18%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.76MiB / 3GiB",
+              "CPUPerc": "0.03%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.74MiB / 256MiB",
+              "CPUPerc": "0.79%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.61MiB / 128MiB",
+              "CPUPerc": "2.81%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.15%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.98%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "6.48MiB / 128MiB",
+              "CPUPerc": "3.35%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.21MiB / 512MiB",
+              "CPUPerc": "9.37%"
+            }
+          ],
+          "total_observed_mib": 3377.7639999999997,
+          "host": {
+            "MemAvailable_kib": 2956972,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 269368
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.883MiB / 64MiB",
+              "CPUPerc": "2.15%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178.6MiB / 384MiB",
+              "CPUPerc": "0.93%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.5MiB / 3GiB",
+              "CPUPerc": "0.05%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.9MiB / 512MiB",
+              "CPUPerc": "0.12%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.262MiB / 128MiB",
+              "CPUPerc": "0.56%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.45MiB / 512MiB",
+              "CPUPerc": "8.95%"
+            }
+          ],
+          "total_observed_mib": 3377.937,
+          "host": {
+            "MemAvailable_kib": 3006736,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 269436
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.617MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.3MiB / 384MiB",
+              "CPUPerc": "23.46%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65MiB / 3GiB",
+              "CPUPerc": "0.22%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.20%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.05%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.758MiB / 128MiB",
+              "CPUPerc": "0.61%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "83.31MiB / 512MiB",
+              "CPUPerc": "5.57%"
+            }
+          ],
+          "total_observed_mib": 3394.0269999999996,
+          "host": {
+            "MemAvailable_kib": 3050036,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 269448
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.406MiB / 64MiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178.2MiB / 384MiB",
+              "CPUPerc": "9.57%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.75MiB / 3GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.14MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.6MiB / 128MiB",
+              "CPUPerc": "5.01%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.7MiB / 512MiB",
+              "CPUPerc": "8.04%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.52MiB / 128MiB",
+              "CPUPerc": "0.56%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.75MiB / 512MiB",
+              "CPUPerc": "7.69%"
+            }
+          ],
+          "total_observed_mib": 3378.9779999999996,
+          "host": {
+            "MemAvailable_kib": 2905232,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 269564
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.605MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.1MiB / 384MiB",
+              "CPUPerc": "17.82%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "64.74MiB / 3GiB",
+              "CPUPerc": "0.24%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.663GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.363MiB / 128MiB",
+              "CPUPerc": "0.58%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "85.25MiB / 512MiB",
+              "CPUPerc": "21.47%"
+            }
+          ],
+          "total_observed_mib": 3395.1,
+          "host": {
+            "MemAvailable_kib": 3088376,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 269584
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.605MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "191.2MiB / 384MiB",
+              "CPUPerc": "23.12%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "65MiB / 3GiB",
+              "CPUPerc": "0.24%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.26MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.664GiB / 6.5GiB",
+              "CPUPerc": "0.20%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.7MiB / 512MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.562MiB / 128MiB",
+              "CPUPerc": "0.60%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "82.38MiB / 512MiB",
+              "CPUPerc": "14.01%"
+            }
+          ],
+          "total_observed_mib": 3394.003,
+          "host": {
+            "MemAvailable_kib": 3029728,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 269624
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.922MiB / 64MiB",
+              "CPUPerc": "0.35%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178.8MiB / 384MiB",
+              "CPUPerc": "7.85%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.26MiB / 3GiB",
+              "CPUPerc": "0.13%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.19%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.9MiB / 512MiB",
+              "CPUPerc": "0.06%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.031MiB / 128MiB",
+              "CPUPerc": "0.48%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.05MiB / 512MiB",
+              "CPUPerc": "12.99%"
+            }
+          ],
+          "total_observed_mib": 3340.489,
+          "host": {
+            "MemAvailable_kib": 3130272,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204108
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.23MiB / 64MiB",
+              "CPUPerc": "0.32%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "187.9MiB / 384MiB",
+              "CPUPerc": "14.91%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.27MiB / 3GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.9MiB / 512MiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.184MiB / 128MiB",
+              "CPUPerc": "0.48%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.46MiB / 512MiB",
+              "CPUPerc": "15.74%"
+            }
+          ],
+          "total_observed_mib": 3350.47,
+          "host": {
+            "MemAvailable_kib": 3096120,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204268
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "recipe": "fine2",
+      "seconds": 99.77929812100047,
+      "new_encodes": 10,
+      "cache_hits": 0,
+      "batch_max_new": 32,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.77MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "115.6MiB / 384MiB",
+              "CPUPerc": "1.98%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.52MiB / 3GiB",
+              "CPUPerc": "0.03%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.54MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.63GiB / 6.5GiB",
+              "CPUPerc": "23.71%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.3MiB / 512MiB",
+              "CPUPerc": "0.08%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.656MiB / 128MiB",
+              "CPUPerc": "0.57%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78MiB / 512MiB",
+              "CPUPerc": "19.28%"
+            }
+          ],
+          "total_observed_mib": 3278.576,
+          "host": {
+            "MemAvailable_kib": 3205772,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204364
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.312MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "177.7MiB / 384MiB",
+              "CPUPerc": "0.19%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.51MiB / 3GiB",
+              "CPUPerc": "0.11%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.23%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225MiB / 512MiB",
+              "CPUPerc": "0.05%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.75MiB / 128MiB",
+              "CPUPerc": "0.57%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.41MiB / 512MiB",
+              "CPUPerc": "7.58%"
+            }
+          ],
+          "total_observed_mib": 3340.208,
+          "host": {
+            "MemAvailable_kib": 2949124,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204732
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.379MiB / 64MiB",
+              "CPUPerc": "0.34%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178MiB / 384MiB",
+              "CPUPerc": "8.31%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "81.82MiB / 3GiB",
+              "CPUPerc": "41.37%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.30%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.10%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.531MiB / 128MiB",
+              "CPUPerc": "0.55%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "80.56MiB / 512MiB",
+              "CPUPerc": "33.24%"
+            }
+          ],
+          "total_observed_mib": 3360.616,
+          "host": {
+            "MemAvailable_kib": 3186524,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204848
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "2.867MiB / 64MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178.3MiB / 384MiB",
+              "CPUPerc": "1.65%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "243.6MiB / 3GiB",
+              "CPUPerc": "100.15%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.14MiB / 256MiB",
+              "CPUPerc": "0.80%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "68MiB / 128MiB",
+              "CPUPerc": "2.29%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.23%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.3MiB / 512MiB",
+              "CPUPerc": "2.29%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.637MiB / 128MiB",
+              "CPUPerc": "2.86%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "79.17MiB / 512MiB",
+              "CPUPerc": "11.76%"
+            }
+          ],
+          "total_observed_mib": 3522.11,
+          "host": {
+            "MemAvailable_kib": 2949048,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204896
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.867MiB / 64MiB",
+              "CPUPerc": "2.27%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "178.3MiB / 384MiB",
+              "CPUPerc": "1.21%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "139.7MiB / 3GiB",
+              "CPUPerc": "3.36%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.21%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "224.8MiB / 512MiB",
+              "CPUPerc": "0.02%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.762MiB / 128MiB",
+              "CPUPerc": "0.85%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "78.88MiB / 512MiB",
+              "CPUPerc": "3.88%"
+            }
+          ],
+          "total_observed_mib": 3417.835,
+          "host": {
+            "MemAvailable_kib": 3043956,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 204896
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    },
+    {
+      "recipe": "fine2",
+      "seconds": 3.354805289000069,
+      "new_encodes": 0,
+      "cache_hits": 0,
+      "batch_max_new": 1,
+      "batch_wall_seconds": 1200,
+      "stop_reason": null,
+      "resources": [
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "3.625MiB / 64MiB",
+              "CPUPerc": "2.32%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "114MiB / 384MiB",
+              "CPUPerc": "1.14%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.76MiB / 3GiB",
+              "CPUPerc": "0.22%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.42MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.629GiB / 6.5GiB",
+              "CPUPerc": "0.20%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.6MiB / 512MiB",
+              "CPUPerc": "0.03%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.727MiB / 128MiB",
+              "CPUPerc": "0.51%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "81.11MiB / 512MiB",
+              "CPUPerc": "4.36%"
+            }
+          ],
+          "total_observed_mib": 3280.408,
+          "host": {
+            "MemAvailable_kib": 3119100,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206460
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        },
+        {
+          "services": [
+            {
+              "Name": "videomind-frontend-1",
+              "MemUsage": "4.055MiB / 64MiB",
+              "CPUPerc": "0.34%"
+            },
+            {
+              "Name": "videomind-api-1",
+              "MemUsage": "115.7MiB / 384MiB",
+              "CPUPerc": "7.51%"
+            },
+            {
+              "Name": "videomind-worker-1",
+              "MemUsage": "63.51MiB / 3GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-indexer-1",
+              "MemUsage": "27.07MiB / 256MiB",
+              "CPUPerc": "0.68%"
+            },
+            {
+              "Name": "videomind-dispatcher-1",
+              "MemUsage": "67.36MiB / 128MiB",
+              "CPUPerc": "0.00%"
+            },
+            {
+              "Name": "videomind-embedding-1",
+              "MemUsage": "2.63GiB / 6.5GiB",
+              "CPUPerc": "0.16%"
+            },
+            {
+              "Name": "videomind-minio-1",
+              "MemUsage": "225.1MiB / 512MiB",
+              "CPUPerc": "0.04%"
+            },
+            {
+              "Name": "videomind-redis-1",
+              "MemUsage": "5.5MiB / 128MiB",
+              "CPUPerc": "0.52%"
+            },
+            {
+              "Name": "videomind-postgres-1",
+              "MemUsage": "81.52MiB / 512MiB",
+              "CPUPerc": "22.58%"
+            }
+          ],
+          "total_observed_mib": 3282.935,
+          "host": {
+            "MemAvailable_kib": 3142372,
+            "SwapTotal_kib": 4194300,
+            "SwapFree_kib": 206464
+          },
+          "scope": "Coarse samples at batch start/end and every four completed windows; not true peak RSS or swap traffic"
+        }
+      ]
+    }
+  ],
+  "next_gate": "Human interval/negative review before temporal claims or final policy selection; AT2 only after reviewing AT1 limitations",
+  "source_sha256": {
+    "evaluation/action_temporal/__init__.py": "5a6fa419e7ef2b069a4adf2ac17e0fde0697bcbc89866e50daf1de92da80f9d6",
+    "evaluation/action_temporal/assessment.py": "ffbbaf7c421a50d3a54d1e9f6d542736bc7cb3216386cf625097853b041d52f2",
+    "evaluation/action_temporal/inspection.py": "be52441b0b02da5773cc639eb7784bef911f6386c326849ca6713b3b2485f8ee",
+    "evaluation/action_temporal/prepare.py": "578a2b68b5e61b5b9c3b9ef33e7c5f62fa7a3b1f0fac0f5c17f2119d480ab474",
+    "evaluation/action_temporal/protocol.py": "bbf38960d7616b1027526de028b1f5495cc515bccc4ff31ec3627824f48a101b",
+    "evaluation/action_temporal/replay.py": "64f3df48b04bceb0f5513e43a6398fea67b07fde6901554c877aa31828b05c1a",
+    "evaluation/action_temporal/windows.py": "03fb868f80ac6721519714441f5e857e4c00e04f5d6ee1787e6649490bb2193e",
+    "evaluation/quality/bridge.py": "e91bd0d0c3647458b20f401478b925c28c7514b8eee6e632461a865258e690d6",
+    "evaluation/quality/ablation.py": "2307a56b7dc484548807a1025e32e35f12a61a938194b5baec3c2aa3a948a3b4",
+    "evaluation/quality/metrics.py": "038bc8bbd41afa67e722e846616ab369a37e282947fca4c91a02d787366d1377",
+    "evaluation/quality/labels.py": "6b30656d2e66bde5b5eff4348994a2972aacb9d93374e05add31fd41977e86be",
+    "evaluation/quality/resources.py": "dc81edc1e6d3113c3f54a34646f1cc7d8e5da3f5affdfe402b1421a01bae48e0",
+    "backend/src/videomind/embeddings/runtime.py": "3fd08be5c123f20b452417784398b0caa5a1d50ab42525cbbdd26bc53f38ff18",
+    "backend/src/videomind/embeddings/profile.py": "07d014a02de39b67094bc977a5341df578a7f6ae14ded3d4ec68fdafa3e51a66",
+    "backend/src/videomind/retrieval/repository.py": "2b741fe44e4dece324db7cc88744bb97e04fc0749dee0f71bcd1ba8d1bf8302b",
+    "backend/src/videomind/retrieval/config.py": "c4c9ec624494180f1ec39a72c4e703466b5952dba9abdf0291aededf6d8a80f7",
+    "scripts/evaluate_action_temporal.py": "fe9b0f2f81fd20d6d8ef492710ab36cee77b6db1f67428659ac0aea7b9da8a03",
+    "evaluation/tests/test_action_temporal.py": "ab24f4fbba66121a76c16a7b2cedf7c1ad9b10e8c057e203ceacb75b2e8dce56"
+  },
+  "input_sha256": {
+    "evaluation/manifests/action-temporal-v1.json": "98b15649411fa4e10fc093090aa23ec90646e1afae1a4170c05716bf3aba2511",
+    "evaluation/manifests/video30.json": "6acd9e7f3f8f695d0b31257325710968673c96173bfa3cbf27e2fdae01125364",
+    "evaluation/manifests/phase7-corpus.json": "79f1c482e73c06000adcdf38af473b57af6c72869f2c54acbc8a346a9738dae2",
+    "evaluation/annotations/action-temporal-v1-review.json": "0bf74a85363e23c33146d8b37917c694ae7795144652438ec6c49f0e49fed38a",
+    "evaluation/reports/action-temporal-v1-baseline.json": "0597d1b192a00733b04e5f4d430ac020e2fd080637353e18cd51f0038222b51d",
+    "evaluation/reports/action-temporal-v1-uniform12.json": "6d2518a33eff4fb3ac7b8f88b7104677fd64476d05d72b6cce0373cc72566b9d",
+    "evaluation/reports/action-temporal-v1-short4.json": "52bd5d224b72131929cc9b675e16e4ed2471ba86546eea2a8a9cbe5156698b68",
+    "evaluation/reports/action-temporal-v1-fine2.json": "3623ba49b5336423b2b90654bbd6d9abaa12a868d135ec709f9032094c706a99",
+    "evaluation/reports/action-temporal-v1-verification.json": "83637c62c88d0f9e3e5ea96b3583295d331b7c7c21a569a492729a4236275f3d",
+    "evaluation/reports/action-temporal-v1-inspection.json": "65269ee9c1cb9d4c1dbe7b303fb274c81623c2eda7de4c3d5450ee41a59710f1",
+    "evaluation/annotations/action-temporal-v1-agent-observations.json": "414908010d60eb52ac35502c2624958212995798d250c3ab5256fc195de9d8d2"
+  }
+}

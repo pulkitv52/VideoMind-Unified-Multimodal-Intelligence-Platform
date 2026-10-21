@@ -1,0 +1,260 @@
+{
+  "status": "not_ready",
+  "scope": "Original Phase 7 release gates retained; no scope waiver inferred",
+  "gates": {
+    "corpus_size": {
+      "passed": false,
+      "observed": 46,
+      "required": 200
+    },
+    "query_count": {
+      "passed": false,
+      "observed": 30,
+      "required": 400
+    },
+    "independent_human_adjudication": {
+      "passed": false,
+      "reviewers": 0,
+      "required_reviewers": 2
+    },
+    "per_class_coverage": {
+      "passed": false,
+      "observed_modalities": {
+        "video": 32,
+        "audio": 4,
+        "document": 8,
+        "image": 2
+      },
+      "required": "50 documents, 50 silent videos, 50 spoken videos, 50 standalone audio; video track classes require explicit review"
+    },
+    "recall_at_10": {
+      "passed": false,
+      "provisional_observed": 0.7283333333333333,
+      "target": 0.85,
+      "gold_eligible": false,
+      "numeric_target_met": false
+    },
+    "ndcg_at_10": {
+      "passed": false,
+      "provisional_observed": 0.6004720764627636,
+      "target": 0.7,
+      "gold_eligible": false,
+      "numeric_target_met": false
+    },
+    "temporal_recall_at_10": {
+      "passed": false,
+      "provisional_observed": 0.6666666666666666,
+      "target": 0.8,
+      "gold_eligible": false,
+      "numeric_target_met": false
+    },
+    "false_useful": {
+      "passed": false,
+      "provisional_observed": 0.0,
+      "target": 0.1,
+      "gold_eligible": false,
+      "numeric_target_met": true
+    },
+    "hybrid_regression_document": {
+      "passed": false,
+      "provisional_ndcg_delta": -0.034687941806716416,
+      "allowed_regression": 0.02
+    },
+    "hybrid_regression_silent_video": {
+      "passed": false,
+      "provisional_ndcg_delta": -0.0656135807160565,
+      "allowed_regression": 0.02
+    },
+    "hybrid_regression_spoken_video": {
+      "passed": false,
+      "provisional_ndcg_delta": 0.0,
+      "allowed_regression": 0.02
+    },
+    "hybrid_regression_audio": {
+      "passed": false,
+      "provisional_ndcg_delta": 0.0,
+      "allowed_regression": 0.02
+    },
+    "warm_latency": {
+      "passed": false,
+      "observed_ms": {
+        "p50": 1500.7655970002816,
+        "p95": 4428.0415944996985,
+        "p99": 5191.113991789078
+      },
+      "corpus_vectors": 197,
+      "scope": "Dedicated 60-request serialized warm run when available; small corpus, not ingestion throughput or concurrent capacity"
+    },
+    "retrieval_change_equivalence": {
+      "passed": true,
+      "comparison": {
+        "passed": true,
+        "requests_before": 240,
+        "requests_after": 240,
+        "mismatches": [],
+        "comparison": "Full ordered results, scores, citations, snippets, filters, facets and provenance; context sorted by segment ID; request ID and timings excluded; numeric tolerance 1e-7",
+        "before_latency_ms": {
+          "p50": 3417.793399000402,
+          "p95": 9136.54748735125,
+          "p99": 10091.197686580763
+        },
+        "after_latency_ms": {
+          "p50": 1610.0466369998685,
+          "p95": 3994.565567550032,
+          "p99": 4835.541623930422
+        }
+      }
+    },
+    "isolated_restore": {
+      "passed": true
+    },
+    "scheduled_rpo": {
+      "passed": false,
+      "required": "Scheduled backup policy and 24h RPO; manual drill alone insufficient"
+    },
+    "durable_tombstone_replay": {
+      "passed": false,
+      "required": "Durable post-backup deletion ledger surviving primary metadata retirement"
+    },
+    "security_and_lifecycle_regressions": {
+      "passed": true,
+      "verification": {
+        "command": "python3 scripts/dev.py verify",
+        "passed": 189,
+        "failed": 0,
+        "seconds": 148.92,
+        "warnings": [
+          "Upstream Starlette/httpx TestClient deprecation"
+        ],
+        "evaluation_tests": {
+          "command": "backend/.venv/bin/python -m pytest evaluation/tests/test_quality.py -q",
+          "passed": 12,
+          "failed": 0
+        },
+        "frontend_passed": true,
+        "frontend_command": "pnpm --dir frontend build",
+        "first_attempt": {
+          "passed": 172,
+          "failed": 17,
+          "teardown_errors": 1,
+          "reason": "Fixture cleanup deadlock and explicit CPU-busy responses; live worker processing test inputs",
+          "retained_private_log": ".local/phase7-release-first.log"
+        },
+        "test_harness_changes": {
+          "deadlock_cleanup_attempts": 3,
+          "semantic_search_cpu_busy_wait_seconds": 60,
+          "dedicated_busy_test_retries": false,
+          "real_model_benchmark_retries": false
+        },
+        "log_sha256": {
+          ".local/phase7-release-tests.log": "1e3d8a4eff6af3365a2c39259e3fca4e45d56b87da59568aa067e4abcaa25d80",
+          ".local/phase7-release-first.log": "612ab3c8fedf8780496e500ca730a272e554c226a54a8298edc48562db75caea",
+          ".local/phase7-quality-tests.log": "7a31e66378c8cfe7c15128f94cc1506ce059a413da978d80115e1e55e5e976e5",
+          ".local/phase7-frontend-build.log": "f3a169249d080889bbce00bb3e2b6e68583167acabaacca26d160dd7234b2098"
+        }
+      }
+    },
+    "gold_citation_support": {
+      "passed": false,
+      "status": "unmeasured_release_gate"
+    },
+    "filtered_ann_selectivity": {
+      "passed": false,
+      "status": "unmeasured_release_gate"
+    },
+    "cold_and_ingestion_performance": {
+      "passed": false,
+      "status": "partial_process_cold_measured_ingestion_unmeasured",
+      "process_cold": {
+        "query": "Repeated electronic beeping tones",
+        "status": 200,
+        "elapsed_ms": 32832.60455399977,
+        "timings_ms": {
+          "embedding": 31527.95,
+          "retrieval": 1291.81,
+          "total": 32819.76
+        }
+      },
+      "os_file_cache_controlled": false
+    },
+    "ingestion_throughput": {
+      "passed": false,
+      "status": "unmeasured_release_gate"
+    },
+    "complete_evidence_set": {
+      "passed": false,
+      "status": "unmeasured_release_gate"
+    },
+    "calibrated_answerable_rejection": {
+      "passed": false,
+      "status": "unmeasured_release_gate"
+    }
+  },
+  "failed_gates": [
+    "corpus_size",
+    "query_count",
+    "independent_human_adjudication",
+    "per_class_coverage",
+    "recall_at_10",
+    "ndcg_at_10",
+    "temporal_recall_at_10",
+    "false_useful",
+    "hybrid_regression_document",
+    "hybrid_regression_silent_video",
+    "hybrid_regression_spoken_video",
+    "hybrid_regression_audio",
+    "warm_latency",
+    "scheduled_rpo",
+    "durable_tombstone_replay",
+    "gold_citation_support",
+    "filtered_ann_selectivity",
+    "cold_and_ingestion_performance",
+    "ingestion_throughput",
+    "complete_evidence_set",
+    "calibrated_answerable_rejection"
+  ],
+  "phase": 7,
+  "measured_at": "2026-10-20T15:13:03.820788+00:00",
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "adopted_sampling_change": false,
+  "input_sha256": {
+    "evaluation/manifests/phase7-corpus.json": "79f1c482e73c06000adcdf38af473b57af6c72869f2c54acbc8a346a9738dae2",
+    "evaluation/manifests/phase7-rights.json": "f99a2a14cd5e29abdb7601c03d4bdc6d9866ab971d0b791397e89601b28ead11",
+    "evaluation/annotations/phase7-qrels.json": "60347d4b6c5f4a3f7a74cd69344839306793e32fbdd9ba09c724d1c7faa1e771"
+  },
+  "source_sha256": {
+    "evaluation/quality/__init__.py": "8ef8148b727c7363d077afdf1168f6b078233af4bcdece93cc516adf6e9b7200",
+    "evaluation/quality/ablation.py": "2307a56b7dc484548807a1025e32e35f12a61a938194b5baec3c2aa3a948a3b4",
+    "evaluation/quality/bridge.py": "cb41ffe6d61361b2ba7361c63628cc286f7dc52b65811603938584064c7fe345",
+    "evaluation/quality/comparison.py": "533f13bd08822c824d30afb863f015244509682629fd17e0b56c00af071c7997",
+    "evaluation/quality/corpus.py": "5917b8820a90b920701b42e173f3b8122784724bc7de78a89c71c6bf10927725",
+    "evaluation/quality/diagnose.py": "e52b07abdbc1008d24ca49f3e9ef91ba5d7036647d6ae39f2f7544258432154b",
+    "evaluation/quality/labels.py": "6b30656d2e66bde5b5eff4348994a2972aacb9d93374e05add31fd41977e86be",
+    "evaluation/quality/metrics.py": "038bc8bbd41afa67e722e846616ab369a37e282947fca4c91a02d787366d1377",
+    "evaluation/quality/performance.py": "873917d75b36d65e8ff900741dd899b9461595062176aead5616b8628a997821",
+    "evaluation/quality/recovery.py": "fb2f966436a53b5b1aadedeee01b85f9e3ea1bf583644a5280723a54382e4318",
+    "evaluation/quality/release.py": "60bb5fca04879fd4084ed6316289ac4d8339547a9ba7d068a513b686d36b839f",
+    "evaluation/quality/resources.py": "dc81edc1e6d3113c3f54a34646f1cc7d8e5da3f5affdfe402b1421a01bae48e0",
+    "evaluation/quality/search.py": "6a58310fa27f95751d732bd3530f9a3a05f2d83d19d20ee16f2077939a6a5f44",
+    "scripts/evaluate.py": "7d21f05c29699c1abd72b919fefa974218074e76f9f59c867364e616939bd45c",
+    "backend/src/videomind/retrieval/repository.py": "2b741fe44e4dece324db7cc88744bb97e04fc0749dee0f71bcd1ba8d1bf8302b",
+    "backend/src/videomind/retrieval/routes.py": "0b8805ae982f57be317cff3cfec78f73b42188796be5646672fbe931b518c6d5",
+    "backend/tests/integration/test_search.py": "36ea1ca85eac00a187aa6e51d9e2229cd669027edf6b7c9cb7d74452a0bd4397",
+    "backend/tests/integration/test_foundation.py": "48064e875922659cbf8e9c0ea79202a97eec17692efe37540064e19449dd0578"
+  },
+  "report_sha256": {
+    "evaluation/reports/phase7-ablation.json": "3ed0067d249126872e41d60ba31ce162e5712253156dba039b101e03b32fae4f",
+    "evaluation/reports/phase7-comparison.json": "37c69be75146c9fe4e45acc534ff82c7eed593e2b507a3d63574f035ae00af7e",
+    "evaluation/reports/phase7-concurrent.json": "1eacbd308f1f14af9a625848539b45ed1799abc6b7529415d5c1f5e051c674a0",
+    "evaluation/reports/phase7-latency-diagnosis.json": "86b48719de811783f40144a360b7e3294481868a52034d2d15e58cad21fcbd69",
+    "evaluation/reports/phase7-performance.json": "d212552da1fc1aaf19836e31b2281aa44cc81bc976bb11d206a7d4265792b1a5",
+    "evaluation/reports/phase7-preservation.json": "97aad6b329132f7cb8a683516a21262066fb9639fccb0e0db44f3f6745d81c91",
+    "evaluation/reports/phase7-recovery.json": "6fcaa1897e71c381daf59f06ed35faa8d091a0757e74aa3879c1e8e5b79723f0",
+    "evaluation/reports/phase7-resources.json": "bda3a8c8609e58c47c7183bdbf52649879e6e2f06c2ecbcbd6f62d5a12900efd",
+    "evaluation/reports/phase7-search-before.json": "b6998d3f8e32f99b3e6c4483fe432945157ab5076423c5f9201dfadd3e10a8fc",
+    "evaluation/reports/phase7-search.json": "1c608336a944cab4b391c73d3c5fd09442f68d2fe578a58a7ca0758f8e2e60ee",
+    "evaluation/reports/phase7-verification.json": "8822c6eb9dbd3dce05bc95cd9a7c99ce3491818b527017b5ef81de4aa802a774"
+  }
+}

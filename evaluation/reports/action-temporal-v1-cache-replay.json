@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "recipe": "uniform12",
+      "complete_windows": 10,
+      "new_encodes": 0,
+      "raw_scores_unchanged": true,
+      "exact_input_cache_validated": true
+    },
+    {
+      "recipe": "short4",
+      "complete_windows": 19,
+      "new_encodes": 0,
+      "raw_scores_unchanged": true,
+      "exact_input_cache_validated": true
+    },
+    {
+      "recipe": "fine2",
+      "complete_windows": 44,
+      "new_encodes": 0,
+      "raw_scores_unchanged": true,
+      "exact_input_cache_validated": true
+    }
+  ]
+}

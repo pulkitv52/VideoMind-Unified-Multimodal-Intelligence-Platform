@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "requests_before": 240,
+  "requests_after": 240,
+  "mismatches": [],
+  "comparison": "Full ordered results, scores, citations, snippets, filters, facets and provenance; context sorted by segment ID; request ID and timings excluded; numeric tolerance 1e-7",
+  "before_latency_ms": {
+    "p50": 3417.793399000402,
+    "p95": 9136.54748735125,
+    "p99": 10091.197686580763
+  },
+  "after_latency_ms": {
+    "p50": 1610.0466369998685,
+    "p95": 3994.565567550032,
+    "p99": 4835.541623930422
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "scope": "Retained public/synthetic corpus; local development smoke, not independent relevance evaluation",
+  "queries": [
+    {
+      "label": "document",
+      "query": "How do I safely open the electrical panel?",
+      "strategy": "unified",
+      "expected_hit_at_10": true,
+      "titles": [
+        "scanned-page.pdf",
+        "spoken.mp4",
+        "speech.wav",
+        "procedure.txt",
+        "scanned-page.pdf",
+        "scanned-page.pdf"
+      ],
+      "timings_ms": {
+        "embedding": 143.95,
+        "retrieval": 1984.64,
+        "total": 2128.6
+      },
+      "including_evidence_checks_ms": 2330.73
+    },
+    {
+      "label": "document",
+      "query": "How do I safely open the electrical panel?",
+      "strategy": "per_modality",
+      "expected_hit_at_10": true,
+      "titles": [
+        "scanned-page.pdf",
+        "spoken.mp4",
+        "speech.wav",
+        "procedure.txt",
+        "scanned-page.pdf",
+        "scanned-page.pdf"
+      ],
+      "timings_ms": {
+        "embedding": 143.55,
+        "retrieval": 2332.79,
+        "total": 2476.34
+      },
+      "including_evidence_checks_ms": 2668.74
+    },
+    {
+      "label": "visual",
+      "query": "A red square moving across a white background",
+      "strategy": "unified",
+      "expected_hit_at_10": true,
+      "titles": [
+        "spoken.mp4",
+        "silent.mp4"
+      ],
+      "timings_ms": {
+        "embedding": 148.89,
+        "retrieval": 1142.19,
+        "total": 1291.08
+      },
+      "including_evidence_checks_ms": 1343.52
+    },
+    {
+      "label": "visual",
+      "query": "A red square moving across a white background",
+      "strategy": "per_modality",
+      "expected_hit_at_10": true,
+      "titles": [
+        "spoken.mp4",
+        "silent.mp4"
+      ],
+      "timings_ms": {
+        "embedding": 143.22,
+        "retrieval": 1527.76,
+        "total": 1670.98
+      },
+      "including_evidence_checks_ms": 1729.12
+    },
+    {
+      "label": "sound",
+      "query": "Repeated electronic beeping tones",
+      "strategy": "unified",
+      "expected_hit_at_10": true,
+      "titles": [
+        "beeps.wav"
+      ],
+      "timings_ms": {
+        "embedding": 137.76,
+        "retrieval": 946.75,
+        "total": 1084.5
+      },
+      "including_evidence_checks_ms": 1113.81
+    },
+    {
+      "label": "sound",
+      "query": "Repeated electronic beeping tones",
+      "strategy": "per_modality",
+      "expected_hit_at_10": true,
+      "titles": [
+        "beeps.wav"
+      ],
+      "timings_ms": {
+        "embedding": 151.56,
+        "retrieval": 1343.05,
+        "total": 1494.61
+      },
+      "including_evidence_checks_ms": 1523.84
+    },
+    {
+      "label": "image",
+      "query": "A close-up photograph of an orange cat",
+      "strategy": "unified",
+      "expected_hit_at_10": true,
+      "titles": [
+        "chelsea.png",
+        "chelsea.png"
+      ],
+      "timings_ms": {
+        "embedding": 143.93,
+        "retrieval": 1200.16,
+        "total": 1344.09
+      },
+      "including_evidence_checks_ms": 1398.66
+    },
+    {
+      "label": "image",
+      "query": "A close-up photograph of an orange cat",
+      "strategy": "per_modality",
+      "expected_hit_at_10": true,
+      "titles": [
+        "chelsea.png",
+        "chelsea.png"
+      ],
+      "timings_ms": {
+        "embedding": 141.52,
+        "retrieval": 1544.88,
+        "total": 1686.41
+      },
+      "including_evidence_checks_ms": 1757.99
+    }
+  ],
+  "filter_checks": [
+    {
+      "source": "CAVIAR - Stores and lobby",
+      "results": 3,
+      "scope_preserved": true
+    },
+    {
+      "source": "Local starter folder",
+      "results": 0,
+      "scope_preserved": true
+    },
+    {
+      "source": "Roadscapes - Day and night driving",
+      "results": 3,
+      "scope_preserved": true
+    },
+    {
+      "source": "Starter dataset",
+      "results": 0,
+      "scope_preserved": true
+    },
+    {
+      "source": "UR Fall - Falls and daily activities",
+      "results": 0,
+      "scope_preserved": true
+    },
+    {
+      "label": "silent_native",
+      "expected_hit_at_10": true,
+      "titles": [
+        "silent.mp4",
+        "spoken.mp4"
+      ]
+    },
+    {
+      "label": "non_speech_native",
+      "expected_hit_at_10": true,
+      "titles": [
+        "beeps.wav"
+      ]
+    },
+    {
+      "label": "spoken_phrase",
+      "expected_hit_at_10": true,
+      "titles": [
+        "speech.wav",
+        "spoken.mp4"
+      ]
+    },
+    {
+      "label": "ocr",
+      "expected_hit_at_10": true,
+      "titles": [
+        "scanned-page.pdf"
+      ]
+    }
+  ],
+  "originals_verified": 46,
+  "citations_verified": 64,
+  "viewer_descriptors_verified": 34,
+  "generation_id": "ed359aa4-a6bd-4bb7-afa7-f4f31962efe1",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "retrieval_configuration": {
+    "version": "hybrid-v1",
+    "dense_candidates": 150,
+    "lexical_candidates": 150,
+    "identifier_candidates": 50,
+    "rrf_k": 60,
+    "asset_cap_first_ten": 3,
+    "neighbors": 2,
+    "minimum_dense_cosine": 0.7,
+    "group_overlap": 0.5,
+    "dense_backend": "exact_cosine",
+    "calibration": "phase6-local-development-v1",
+    "mode": "hybrid",
+    "strategy": "unified"
+  },
+  "negative_queries": [
+    {
+      "query": "The molecular sequence of a Martian microorganism",
+      "abstained": true
+    },
+    {
+      "query": "A submarine navigating under Arctic sea ice",
+      "abstained": true
+    },
+    {
+      "query": "Instructions for tuning a grand piano",
+      "abstained": true
+    },
+    {
+      "query": "An elephant painting a portrait with its trunk",
+      "abstained": true
+    },
+    {
+      "query": "A volcano erupting beside a glacier",
+      "abstained": true
+    },
+    {
+      "query": "A recipe for strawberry cheesecake",
+      "abstained": true
+    }
+  ],
+  "readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": true,
+    "retrieval_scope": "Service capability; workspace active-index readiness is authorized at /api/workspaces/{w}/search/facets"
+  }
+}

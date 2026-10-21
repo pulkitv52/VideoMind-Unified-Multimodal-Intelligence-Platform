@@ -1,0 +1,1294 @@
+{
+  "scope": "Four-asset paired diagnostic; fight window oracle-localized from publisher annotations, UR Fall first 4s with sequence labels only; not end-to-end retrieval or release gold",
+  "corpus_sha256": "34143a2de5303e5e313b9bb84b08770be67660bbe464d835499d5624e8cbb852",
+  "profile": "7b6586006056e9c07d56cebe5f3648e36f4bae1943259d9ae35cab9cff469441",
+  "configs": [
+    {
+      "configuration": {
+        "id": "paired-4s-1fps",
+        "window_ms": 4000,
+        "overlap_ms": 0,
+        "fps": 1
+      },
+      "windows": 4,
+      "frames": 16,
+      "seconds": 105.4485544979998,
+      "queries": [
+        {
+          "query_id": "caviar-fight-1",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6479682488021073
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6264604847275743
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6189430143703624
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6167914561521599
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6264604847275743
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-fight-2",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6660867623360633
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6484262609974676
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6319340297474321
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.62917732571784
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6484262609974676
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-fight-3",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.740866261264309
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7338466397750382
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6291850119057477
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6219252633339057
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.740866261264309
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-1",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7105603525886377
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6934017082716513
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6754549899498382
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6544737599705553
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6544737599705553
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-2",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6873150413868746
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6720392335109571
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6644716222686761
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6466801823188684
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6466801823188684
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-3",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6776348536301856
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6735702462222696
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6734617625491061
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6197882598660533
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6197882598660533
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-walk-1",
+          "family": "caviar-walk",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7641609930363155
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7481743736915584
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6730824456346023
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6617431756320744
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7641609930363155
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-walk-2",
+          "family": "caviar-walk",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7364015126356106
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7343620313496791
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6495732294477254
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6206019931948126
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7364015126356106
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configuration": {
+        "id": "paired-4s-2fps",
+        "window_ms": 4000,
+        "overlap_ms": 0,
+        "fps": 2
+      },
+      "windows": 4,
+      "frames": 32,
+      "seconds": 212.3654814900001,
+      "queries": [
+        {
+          "query_id": "caviar-fight-1",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6464750009250483
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.626223303305474
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6179540864874776
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6115183272369086
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.626223303305474
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-fight-2",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6596476810958294
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.644902599415089
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.629130409509685
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6178341277633584
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.644902599415089
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-fight-3",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7342616249572241
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7249552761830153
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6231567385196195
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6155749111409141
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7342616249572241
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-1",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7074910270798388
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6846452247094874
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6812891124696003
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6781297680541016
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6781297680541016
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-2",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6813769422842408
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6760842413926447
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6618804307923465
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6600749917479745
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6600749917479745
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-3",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.691630765065001
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6668388171419798
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6608617648719647
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6358068324800289
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6358068324800289
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-walk-1",
+          "family": "caviar-walk",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7620918472315201
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7405284246598756
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.666383404056009
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6464296421217196
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7620918472315201
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-walk-2",
+          "family": "caviar-walk",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7273666597717164
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7227580613265909
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6501692514313584
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6096984345839687
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7273666597717164
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "configuration": {
+        "id": "paired-4s-4fps",
+        "window_ms": 4000,
+        "overlap_ms": 0,
+        "fps": 4
+      },
+      "windows": 4,
+      "frames": 64,
+      "seconds": 438.84319240200057,
+      "queries": [
+        {
+          "query_id": "caviar-fight-1",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6479277034480033
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6292149251764553
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.613805401342713
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.613599099508218
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6292149251764553
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-fight-2",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6586552798549521
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6472618740567037
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6230119297173285
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6188674678332313
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6472618740567037
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-fight-3",
+          "family": "caviar-fight",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": true,
+          "top5": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7281816516236166
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7141981168447977
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6271352768054014
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6056190673921771
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7281816516236166
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-1",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6968454659915968
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6937476295969565
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6861571550114751
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6766198238921084
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6937476295969565
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-2",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6842705840437285
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6777194227369957
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6654964238701974
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6626042199496486
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6777194227369957
+            }
+          ]
+        },
+        {
+          "query_id": "urfall-fall-3",
+          "family": "urfall-fall",
+          "split": "heldout_family",
+          "first_relevant_asset_rank": 4,
+          "accepted_relevant_at_10": false,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6896905455656139
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6617924366072507
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.6600949308654235
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6571407155897491
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6571407155897491
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-walk-1",
+          "family": "caviar-walk",
+          "split": "development",
+          "first_relevant_asset_rank": 1,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7625047018497846
+            },
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7472765569199517
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.660937759280981
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6464588085513379
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7625047018497846
+            }
+          ]
+        },
+        {
+          "query_id": "caviar-walk-2",
+          "family": "caviar-walk",
+          "split": "development",
+          "first_relevant_asset_rank": 2,
+          "accepted_relevant_at_10": true,
+          "temporal_hit_at_10": null,
+          "top5": [
+            {
+              "title": "caviar-Fight_Chase__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7290510787250991
+            },
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7210858160555593
+            },
+            {
+              "title": "urfall-adl-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6430169303234394
+            },
+            {
+              "title": "urfall-fall-01__derived.mp4",
+              "interval": [
+                0,
+                4000
+              ],
+              "score": 0.6135865435132823
+            }
+          ],
+          "relevant_best": [
+            {
+              "title": "caviar-Walk1__derived.mp4",
+              "interval": [
+                12000,
+                16000
+              ],
+              "score": 0.7210858160555593
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

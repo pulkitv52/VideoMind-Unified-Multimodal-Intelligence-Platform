@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-10-18T17:20:55.074492+00:00",
+  "scope": "CPU-only upload/folder intake; no inference model loaded",
+  "backend_and_live_tests": 60,
+  "test_duration_seconds": 27.64,
+  "frontend_typecheck_and_build": "passed",
+  "browser_create_source_and_two_file_upload": "passed",
+  "readiness": {
+    "ready": true,
+    "dependencies": {
+      "worker": true,
+      "postgres": true,
+      "redis": true,
+      "storage": true
+    },
+    "retrieval_ready": false
+  },
+  "idle_container_stats": [
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "4.90%",
+      "Container": "ad5b86a75ea2198752b1205c568ac66fc02cb2470d04d8f7ba14aa7da5130c45",
+      "ID": "ad5b86a75ea2",
+      "MemPerc": "22.77%",
+      "MemUsage": "87.42MiB / 384MiB",
+      "Name": "videomind-api-1",
+      "NetIO": "2.32MB / 2.61MB",
+      "PIDs": "7"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.00%",
+      "Container": "3675186ddc694d94b01442345262a61c94567ead5d35b246d2580dcf0210f80d",
+      "ID": "3675186ddc69",
+      "MemPerc": "52.71%",
+      "MemUsage": "67.47MiB / 128MiB",
+      "Name": "videomind-dispatcher-1",
+      "NetIO": "28.2kB / 30.2kB",
+      "PIDs": "1"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.23%",
+      "Container": "dd506454ce185b3b9b62e389338504622d2eda8262f627003cc9c204b183ac66",
+      "ID": "dd506454ce18",
+      "MemPerc": "4.13%",
+      "MemUsage": "2.641MiB / 64MiB",
+      "Name": "videomind-frontend-1",
+      "NetIO": "516kB / 770kB",
+      "PIDs": "2"
+    },
+    {
+      "BlockIO": "15.1MB / 11.1MB",
+      "CPUPerc": "0.21%",
+      "Container": "5825fa98c0c7ab2a6ee98aa6e50370362045b6266faf1660b5bbb46eb303a111",
+      "ID": "5825fa98c0c7",
+      "MemPerc": "29.48%",
+      "MemUsage": "150.9MiB / 512MiB",
+      "Name": "videomind-minio-1",
+      "NetIO": "2.97MB / 3.99MB",
+      "PIDs": "9"
+    },
+    {
+      "BlockIO": "20MB / 23.1MB",
+      "CPUPerc": "4.43%",
+      "Container": "811701c18363a97c54505de362d45914adec91d662cf63e48f659ad7a3bb6e19",
+      "ID": "811701c18363",
+      "MemPerc": "10.60%",
+      "MemUsage": "54.28MiB / 512MiB",
+      "Name": "videomind-postgres-1",
+      "NetIO": "5.37MB / 6.17MB",
+      "PIDs": "10"
+    },
+    {
+      "BlockIO": "6.12MB / 2.27MB",
+      "CPUPerc": "0.59%",
+      "Container": "f7806f989b73f13df946ce9156cec34449f5a1cd73593025e3fac7bc18a4163c",
+      "ID": "f7806f989b73",
+      "MemPerc": "4.76%",
+      "MemUsage": "6.09MiB / 128MiB",
+      "Name": "videomind-redis-1",
+      "NetIO": "1.96MB / 1.74MB",
+      "PIDs": "6"
+    },
+    {
+      "BlockIO": "0B / 0B",
+      "CPUPerc": "0.13%",
+      "Container": "291267459ed6e9c863d446455ace0633d9997a0ee25e1433867d1853d3bcfdde",
+      "ID": "291267459ed6",
+      "MemPerc": "21.30%",
+      "MemUsage": "81.79MiB / 384MiB",
+      "Name": "videomind-worker-1",
+      "NetIO": "455kB / 326kB",
+      "PIDs": "1"
+    }
+  ],
+  "generated_secrets_found_in_current_application_logs": false
+}

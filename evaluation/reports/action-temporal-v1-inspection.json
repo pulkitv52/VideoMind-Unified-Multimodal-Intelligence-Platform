@@ -1,0 +1,5120 @@
+{
+  "protocol_sha256": "72845819ea763262d279a9790356d111c3d90b54a978fd8a6c29a392357b2ec9",
+  "provenance": "agent_observation",
+  "gold_eligible": false,
+  "policy_selected": false,
+  "live_changed": false,
+  "reserved_groups_inspected": false,
+  "scope": "Post-hoc development diagnostics only; observed ranges are not independent human event labels. Missing candidates are absent coverage, not a successful localization. Posture score differences are not calibrated classifiers.",
+  "human_worksheet_sha256": "0bf74a85363e23c33146d8b37917c694ae7795144652438ec6c49f0e49fed38a",
+  "sheets": {
+    "bda3094f-da08-423b-a752-f9684fc01ade": [
+      {
+        "path": "evaluation/reports/action-temporal-review/caviar-Fight_Chase.jpg",
+        "sha256": "c23073657693a968139e5d4aa634467eb9e1046bb0027fd535eb52a0016f9a86",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 89973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 179973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 269973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 359973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5000,
+            "pts": 449973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 6000,
+            "pts": 539973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 7000,
+            "pts": 629973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 8000,
+            "pts": 719973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 9000,
+            "pts": 809973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 10000,
+            "pts": 899973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 11000,
+            "pts": 989973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 12000,
+            "pts": 1079973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 13000,
+            "pts": 1169973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 14000,
+            "pts": 1259973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 15000,
+            "pts": 1349973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 16000,
+            "pts": 1439973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 17000,
+            "pts": 1529973,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "22d93e5f-208e-4b17-a22a-da4dad0f8934": [
+      {
+        "path": "evaluation/reports/action-temporal-review/caviar-Rest_FallOnFloor.jpg",
+        "sha256": "5835556e47fa9227b002db2a63e067f68f61c76f559725bf6a5227490e2337dd",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 89973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 179973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 269973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 359973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5000,
+            "pts": 449973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 6000,
+            "pts": 539973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 7000,
+            "pts": 629973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 8000,
+            "pts": 719973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 9000,
+            "pts": 809973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 10000,
+            "pts": 899973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 11000,
+            "pts": 989973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 12000,
+            "pts": 1079973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 13000,
+            "pts": 1169973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 14000,
+            "pts": 1259973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 15000,
+            "pts": 1349973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 16000,
+            "pts": 1439973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 17000,
+            "pts": 1529973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 18000,
+            "pts": 1619973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 19000,
+            "pts": 1709973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 20000,
+            "pts": 1799973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 21000,
+            "pts": 1889973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 22000,
+            "pts": 1979973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 23000,
+            "pts": 2069973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 24000,
+            "pts": 2159973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25000,
+            "pts": 2249973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 26000,
+            "pts": 2339973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 27000,
+            "pts": 2429973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 28000,
+            "pts": 2519973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 29000,
+            "pts": 2609973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 30000,
+            "pts": 2699973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 31000,
+            "pts": 2789973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 32000,
+            "pts": 2879973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 33000,
+            "pts": 2969973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 34000,
+            "pts": 3059973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 35000,
+            "pts": 3149973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 36000,
+            "pts": 3239973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 37000,
+            "pts": 3329973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 38000,
+            "pts": 3419973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 39000,
+            "pts": 3509973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 40000,
+            "pts": 3599973,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      },
+      {
+        "path": "evaluation/reports/action-temporal-review/caviar-fall-transition.jpg",
+        "sha256": "a4aa081ebb935ed38be6510ca6c0a2bbc71ee4975444a958c2bce645f23a969f",
+        "frames": [
+          {
+            "ms": 24000,
+            "pts": 2159973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 24280,
+            "pts": 2185173,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 24520,
+            "pts": 2206773,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 24760,
+            "pts": 2228373,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25000,
+            "pts": 2249973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25240,
+            "pts": 2271573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25480,
+            "pts": 2293173,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25720,
+            "pts": 2314774,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25960,
+            "pts": 2336374,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 26200,
+            "pts": 2357974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 26440,
+            "pts": 2379573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 26680,
+            "pts": 2401173,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 26920,
+            "pts": 2422773,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 27160,
+            "pts": 2444373,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 27400,
+            "pts": 2465973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 27640,
+            "pts": 2487573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 27880,
+            "pts": 2509173,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 28120,
+            "pts": 2530773,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 28360,
+            "pts": 2552373,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 28600,
+            "pts": 2573973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 28840,
+            "pts": 2595574,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 29080,
+            "pts": 2617174,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 29320,
+            "pts": 2638774,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 29560,
+            "pts": 2660373,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 29800,
+            "pts": 2681973,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 240
+      }
+    ],
+    "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3": [
+      {
+        "path": "evaluation/reports/action-temporal-review/caviar-Rest_InChair.jpg",
+        "sha256": "cd91ab9e0efb8439173139ad5f2c1b83acae3bae014df152cad6e7d189c209d4",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 89973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 179973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 269973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 359973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5000,
+            "pts": 449973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 6000,
+            "pts": 539973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 7000,
+            "pts": 629973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 8000,
+            "pts": 719973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 9000,
+            "pts": 809973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 10000,
+            "pts": 899973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 11000,
+            "pts": 989973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 12000,
+            "pts": 1079973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 13000,
+            "pts": 1169973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 14000,
+            "pts": 1259973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 15000,
+            "pts": 1349973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 16000,
+            "pts": 1439973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 17000,
+            "pts": 1529973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 18000,
+            "pts": 1619973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 19000,
+            "pts": 1709973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 20000,
+            "pts": 1799973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 21000,
+            "pts": 1889973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 22000,
+            "pts": 1979973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 23000,
+            "pts": 2069973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 24000,
+            "pts": 2159973,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 25040,
+            "pts": 2253573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 26040,
+            "pts": 2343573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 27040,
+            "pts": 2433573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 28040,
+            "pts": 2523573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 29040,
+            "pts": 2613573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 30040,
+            "pts": 2703573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 31040,
+            "pts": 2793573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 32040,
+            "pts": 2883573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 33040,
+            "pts": 2973573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 34040,
+            "pts": 3063573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 35040,
+            "pts": 3153573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 36040,
+            "pts": 3243573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 37040,
+            "pts": 3333573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 38040,
+            "pts": 3423573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 39040,
+            "pts": 3513573,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 40040,
+            "pts": 3603573,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "cb53d791-7ab3-4b05-b24f-33824e6966de": [
+      {
+        "path": "evaluation/reports/action-temporal-review/caviar-Walk1.jpg",
+        "sha256": "e1ff011b9029bc27103ac7d74d98d73265673a261e6b8807cfa81fb3337e5e9f",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 89974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 179974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 269974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 359974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5000,
+            "pts": 449974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 6000,
+            "pts": 539974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 7000,
+            "pts": 629974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 8000,
+            "pts": 719974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 9000,
+            "pts": 809974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 10000,
+            "pts": 899974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 11000,
+            "pts": 989974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 12000,
+            "pts": 1079974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 13000,
+            "pts": 1169974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 14000,
+            "pts": 1259974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 15000,
+            "pts": 1349974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 16000,
+            "pts": 1439974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 17000,
+            "pts": 1529974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 18000,
+            "pts": 1619974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 19000,
+            "pts": 1709974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 20000,
+            "pts": 1799974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 21000,
+            "pts": 1889974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 22000,
+            "pts": 1979974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 23000,
+            "pts": 2069974,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 24000,
+            "pts": 2159974,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "5ca77f6e-0ad6-4d53-a6fe-841a726f776c": [
+      {
+        "path": "evaluation/reports/action-temporal-review/roadscapes-day_11.jpg",
+        "sha256": "060d3cef3e80b788deb9d4b26ab449e8883c51c6a982d6a9be2c44516a8d9309",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 90000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 180000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 270000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 360000,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "689b735c-07ab-42d1-9c43-86594bd28ecd": [
+      {
+        "path": "evaluation/reports/action-temporal-review/roadscapes-day_12.jpg",
+        "sha256": "76d0f5739ae38217b6b64e456b2a2499e4d8e4a91a522104e6c9f1c2132373ba",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 90000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 180000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 270000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 360000,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "29361752-998c-4735-bf51-09b4b678d609": [
+      {
+        "path": "evaluation/reports/action-temporal-review/roadscapes-day_13.jpg",
+        "sha256": "ae83a096b3065b2d259733c51a2e26553b76776ed92a99fb8489111cb89229aa",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 90000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 180000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 270000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 360000,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "f648e9e8-4825-45fe-93bc-a1b375fa4683": [
+      {
+        "path": "evaluation/reports/action-temporal-review/roadscapes-night_12.jpg",
+        "sha256": "f00ecb7c42a24d33b5392d468bd135aebe4a06915dd1a4becb873594e62e74d9",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 90000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 180000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 270000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 360000,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "6dcdbb62-f30f-480e-a29c-303646d2215f": [
+      {
+        "path": "evaluation/reports/action-temporal-review/roadscapes-night_13.jpg",
+        "sha256": "f64df13c1a668214343f7d8a9185823a6263a22efe8bb27c1414db3e2333e9d7",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1000,
+            "pts": 90000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2000,
+            "pts": 180000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3000,
+            "pts": 270000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4000,
+            "pts": 360000,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 1000
+      }
+    ],
+    "1a072aa6-7f12-40c9-9b54-ff9c4049bad5": [
+      {
+        "path": "evaluation/reports/action-temporal-review/urfall-adl-01.jpg",
+        "sha256": "3365c06d8b9c24f0ad92867f30319cf65e86387b569b3806e407672109f1694f",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 266,
+            "pts": 23940,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 533,
+            "pts": 47970,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 800,
+            "pts": 72000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1067,
+            "pts": 96030,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1334,
+            "pts": 120060,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1601,
+            "pts": 144090,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1868,
+            "pts": 168120,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2135,
+            "pts": 192150,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2402,
+            "pts": 216180,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2669,
+            "pts": 240210,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2936,
+            "pts": 264240,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3203,
+            "pts": 288270,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3470,
+            "pts": 312300,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3739,
+            "pts": 336510,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4011,
+            "pts": 360990,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4283,
+            "pts": 385470,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4555,
+            "pts": 409950,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4827,
+            "pts": 434430,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 250
+      }
+    ],
+    "f07378a9-500f-45ea-b43c-f41b74061fac": [
+      {
+        "path": "evaluation/reports/action-temporal-review/urfall-adl-02.jpg",
+        "sha256": "ff9b15fe3bae86e76c5eebedb2c73c1fe038b974f8eaad6f3e243a661ab6629c",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 266,
+            "pts": 23940,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 533,
+            "pts": 47970,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 800,
+            "pts": 72000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1067,
+            "pts": 96030,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1334,
+            "pts": 120060,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1601,
+            "pts": 144090,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1868,
+            "pts": 168120,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2135,
+            "pts": 192150,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2402,
+            "pts": 216180,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2669,
+            "pts": 240210,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2936,
+            "pts": 264240,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3203,
+            "pts": 288270,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3470,
+            "pts": 312300,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3739,
+            "pts": 336510,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4011,
+            "pts": 360990,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4283,
+            "pts": 385470,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4555,
+            "pts": 409950,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4827,
+            "pts": 434430,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5099,
+            "pts": 458910,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5371,
+            "pts": 483390,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5643,
+            "pts": 507870,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5915,
+            "pts": 532350,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 250
+      }
+    ],
+    "b5701d0a-4e31-4e66-9b0f-0de962390ab9": [
+      {
+        "path": "evaluation/reports/action-temporal-review/urfall-adl-24.jpg",
+        "sha256": "2afa01a21fa86df3da8e6cfae3709a437b8381f1c0f07f1a3f0e36bf14a3528e",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 266,
+            "pts": 23940,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 533,
+            "pts": 47970,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 800,
+            "pts": 72000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1067,
+            "pts": 96030,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1334,
+            "pts": 120060,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1601,
+            "pts": 144090,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1868,
+            "pts": 168120,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2135,
+            "pts": 192150,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 250
+      }
+    ],
+    "6762c38f-f793-49be-9d59-b6057ac3f3c5": [
+      {
+        "path": "evaluation/reports/action-temporal-review/urfall-fall-01.jpg",
+        "sha256": "7a827e95047766b20cdd01da1d592295ce495b94a9baa8ccf383ebf6234e1c4d",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 266,
+            "pts": 23940,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 533,
+            "pts": 47970,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 800,
+            "pts": 72000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1067,
+            "pts": 96030,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1334,
+            "pts": 120060,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1601,
+            "pts": 144090,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1868,
+            "pts": 168120,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2135,
+            "pts": 192150,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2402,
+            "pts": 216180,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2669,
+            "pts": 240210,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2936,
+            "pts": 264240,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3203,
+            "pts": 288270,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3470,
+            "pts": 312300,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3737,
+            "pts": 336330,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4004,
+            "pts": 360360,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4271,
+            "pts": 384390,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4538,
+            "pts": 408420,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 4805,
+            "pts": 432450,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 5072,
+            "pts": 456480,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 250
+      }
+    ],
+    "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed": [
+      {
+        "path": "evaluation/reports/action-temporal-review/urfall-fall-02.jpg",
+        "sha256": "3694a6bddc21d37c69af6522d6eb2d20e6034f88e8d866151439c5d8cc94c71d",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 266,
+            "pts": 23940,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 533,
+            "pts": 47970,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 800,
+            "pts": 72000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1067,
+            "pts": 96030,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1334,
+            "pts": 120060,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1601,
+            "pts": 144090,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1868,
+            "pts": 168120,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2135,
+            "pts": 192150,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2402,
+            "pts": 216180,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2669,
+            "pts": 240210,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2936,
+            "pts": 264240,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3203,
+            "pts": 288270,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 3470,
+            "pts": 312300,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 250
+      }
+    ],
+    "d471f236-fdaf-40bb-85a6-e3462a278dd9": [
+      {
+        "path": "evaluation/reports/action-temporal-review/urfall-fall-04.jpg",
+        "sha256": "5da4fd7fcd32c60fe7ee4fb28759f26c629ec14fdc7907551873399254f400cc",
+        "frames": [
+          {
+            "ms": 0,
+            "pts": 0,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 266,
+            "pts": 23940,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 533,
+            "pts": 47970,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 800,
+            "pts": 72000,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1067,
+            "pts": 96030,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1334,
+            "pts": 120060,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1601,
+            "pts": 144090,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 1868,
+            "pts": 168120,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2135,
+            "pts": 192150,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2402,
+            "pts": 216180,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2669,
+            "pts": 240210,
+            "time_base": "1/90000"
+          },
+          {
+            "ms": 2936,
+            "pts": 264240,
+            "time_base": "1/90000"
+          }
+        ],
+        "sampling_step_ms": 250
+      }
+    ]
+  },
+  "temporal_rows": [
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "score": 0.7003530859947205,
+      "predicted_interval": [
+        30000,
+        40560
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          25920,
+          26400
+        ],
+        "end_range_ms": [
+          27840,
+          28320
+        ],
+        "visibility": "uncertain",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.0,
+        0.0
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "score": 0.6830242087259429,
+      "predicted_interval": [
+        0,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.15005620082427876,
+        0.25009366804046457
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "score": 0.6739453077316284,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "score": 0.6912369500116219,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "score": 0.7404968959241184,
+      "predicted_interval": [
+        30000,
+        40560
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          25920,
+          26400
+        ],
+        "end_range_ms": [
+          27840,
+          28320
+        ],
+        "visibility": "uncertain",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.0,
+        0.0
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "score": 0.713051740501977,
+      "predicted_interval": [
+        0,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.15005620082427876,
+        0.25009366804046457
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7076938363222434,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7194878411751016,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "score": 0.7003272771835327,
+      "predicted_interval": [
+        30000,
+        40560
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          25920,
+          26400
+        ],
+        "end_range_ms": [
+          27840,
+          28320
+        ],
+        "visibility": "uncertain",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.0,
+        0.0
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "score": 0.6926858838013353,
+      "predicted_interval": [
+        0,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.15005620082427876,
+        0.25009366804046457
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7001807689666748,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7035028095838108,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "score": 0.6830242622856368,
+      "predicted_interval": [
+        0,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.15005620082427876,
+        0.25009366804046457
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "score": 0.6739452011722857,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "score": 0.6912369866505884,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "score": 0.7130515723818496,
+      "predicted_interval": [
+        0,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.15005620082427876,
+        0.25009366804046457
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7076936988736362,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7194879130752103,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "score": 0.6926858281457011,
+      "predicted_interval": [
+        0,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.15005620082427876,
+        0.25009366804046457
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7001807228354322,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7035028467804845,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "score": 0.6920423540617537,
+      "predicted_interval": [
+        2000,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.23996405032953866,
+        0.3999400838825644
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "score": 0.6739452011722857,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "score": 0.6912369866505884,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "score": 0.7231045708800199,
+      "predicted_interval": [
+        2000,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.23996405032953866,
+        0.3999400838825644
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7076936988736362,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7194879130752103,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "score": 0.7032331511197238,
+      "predicted_interval": [
+        2000,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.23996405032953866,
+        0.3999400838825644
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7001807228354322,
+      "predicted_interval": [
+        0,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2991825613079019,
+        0.4365122615803815
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7035028467804845,
+      "predicted_interval": [
+        0,
+        3203
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.41679675304402125,
+        0.5835154542616298
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "score": 0.7152163496524874,
+      "predicted_interval": [
+        3000,
+        5000
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.4005,
+        0.6355
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "score": 0.6950764503037666,
+      "predicted_interval": [
+        2000,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2992294520547945,
+        0.4523924601256646
+      ],
+      "accepted_at_live_floor": false
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7149014845337246,
+      "predicted_interval": [
+        1000,
+        3000
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.3174835405998537,
+        0.4600729631130928
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "score": 0.7523953379519883,
+      "predicted_interval": [
+        4000,
+        5338
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.0016652789342214821,
+        0.1269320843091335
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7391494750368804,
+      "predicted_interval": [
+        2000,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2992294520547945,
+        0.4523924601256646
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "score": 0.7499167928244993,
+      "predicted_interval": [
+        1000,
+        3000
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.3174835405998537,
+        0.4600729631130928
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "score": 0.7244853841685461,
+      "predicted_interval": [
+        3000,
+        5000
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          2936,
+          3203
+        ],
+        "end_range_ms": [
+          4004,
+          4271
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.4005,
+        0.6355
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "score": 0.7147514204698744,
+      "predicted_interval": [
+        2000,
+        3670
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          1334,
+          1601
+        ],
+        "end_range_ms": [
+          2699,
+          2936
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.2992294520547945,
+        0.4523924601256646
+      ],
+      "accepted_at_live_floor": true
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "score": 0.72584276098097,
+      "predicted_interval": [
+        1000,
+        3000
+      ],
+      "proposal": {
+        "action": "falling",
+        "start_range_ms": [
+          266,
+          533
+        ],
+        "end_range_ms": [
+          1868,
+          2135
+        ],
+        "visibility": "clear",
+        "method": "Source-PTS contact sheets; bounding observations, not frame-exact labels"
+      },
+      "iou_sensitivity_range": [
+        0.3174835405998537,
+        0.4600729631130928
+      ],
+      "accepted_at_live_floor": true
+    }
+  ],
+  "posture_comparisons": [
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "caviar-Fight_Chase",
+      "interval": [
+        0,
+        12000
+      ],
+      "fall_score": 0.664517482249888,
+      "strongest_posture": {
+        "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+        "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+        "segment_id": "5ed930f9-d924-4358-8ff1-0874c4c2bc7f",
+        "title": "caviar-Fight_Chase__derived.mp4",
+        "representation": "video",
+        "score": 0.6609948479536278,
+        "interval": [
+          0,
+          12000
+        ],
+        "citation_ids": [
+          "5008b01a-6f85-4e62-b979-f3a7deb5b8d2"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.0035226342962602075,
+      "observation": "Two people move through lobby and approach/contact near left furniture around 11-14 s. Proximity/contact is visible; fighting intent and exact action boundaries remain unresolved."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "interval": [
+        30000,
+        40560
+      ],
+      "fall_score": 0.7003530859947205,
+      "strongest_posture": {
+        "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+        "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+        "segment_id": "bb78224c-99e9-41eb-9b6d-2e9e344f6a85",
+        "title": "caviar-Rest_FallOnFloor__derived.mp4",
+        "representation": "video",
+        "score": 0.7163773775100708,
+        "interval": [
+          30000,
+          40560
+        ],
+        "citation_ids": [
+          "a3dd0bb2-abba-4812-b0c7-031643cf3b12"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.016024291515350342,
+      "observation": "Person returns into view around 24 s, descends around 26-28 s, remains on floor until about 35 s, then rises. Current 30-40.56 s window starts after the proposed descent. Distant overhead view limits onset precision."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "caviar-Rest_InChair",
+      "interval": [
+        0,
+        12000
+      ],
+      "fall_score": 0.6735630826018415,
+      "strongest_posture": {
+        "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+        "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+        "segment_id": "040a0639-880e-45fd-8068-16f9a301b603",
+        "title": "caviar-Rest_InChair__derived.mp4",
+        "representation": "video",
+        "score": 0.6661625306412541,
+        "interval": [
+          0,
+          12000
+        ],
+        "citation_ids": [
+          "873ee1e6-ce07-4c34-a0cc-346562f8175d"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": 0.00740055196058742,
+      "observation": "Indoor lobby with walking and a person resting near the furniture. Distant people and furniture occlusion prevent reliable chair-action boundaries from this sheet."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "caviar-Walk1",
+      "interval": [
+        10000,
+        22000
+      ],
+      "fall_score": 0.6820176839828491,
+      "strongest_posture": {
+        "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+        "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+        "segment_id": "789a9e17-a445-467b-a45a-256e72f5e4c3",
+        "title": "caviar-Walk1__derived.mp4",
+        "representation": "video",
+        "score": 0.6644687652587891,
+        "interval": [
+          10000,
+          22000
+        ],
+        "citation_ids": [
+          "774f2196-fe26-4b86-a0ff-ac6df6328b89"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.01754891872406006,
+      "observation": "People traverse an indoor lobby; sampled frames support indoor walking context. No temporal walking labels assigned."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "roadscapes-day_11",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.542388824082088,
+      "strongest_posture": {
+        "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+        "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+        "segment_id": "1e1796e1-3c21-402e-ab2d-b07507aa3c40",
+        "title": "roadscapes-day_11__derived.mp4",
+        "representation": "video",
+        "score": 0.5571811131023033,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "3fafc736-667b-4ecb-9dc6-1f60a8eaf535"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.014792289020215343,
+      "observation": "Road traffic and motorcyclists. Small distant figures cannot be confidently classified as walking pedestrians at sheet resolution."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "roadscapes-day_12",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5488609075546265,
+      "strongest_posture": {
+        "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+        "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+        "segment_id": "5624f4fc-d626-485b-9f15-5665346419ed",
+        "title": "roadscapes-day_12__derived.mp4",
+        "representation": "video",
+        "score": 0.5603469014167786,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "9e949ce6-c03e-46ef-be65-5614e11e0355"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0114859938621521,
+      "observation": "Road traffic, motorcyclists and roadside buildings. Pedestrian walking remains unknown at sheet resolution."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "roadscapes-day_13",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5339638868591863,
+      "strongest_posture": {
+        "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+        "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+        "segment_id": "8abde8d5-4316-49cd-a61d-6f0f7497e19f",
+        "title": "roadscapes-day_13__derived.mp4",
+        "representation": "video",
+        "score": 0.5873822815786442,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "febc4f71-518d-4e6c-abb3-eb7cd065369d"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.05341839471945797,
+      "observation": "Stopped road traffic and people on motorcycles/bicycles. Visible people alone do not establish walking."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "roadscapes-night_12",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5498167440240608,
+      "strongest_posture": {
+        "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+        "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+        "segment_id": "b13b2f91-f97d-426f-b668-680a712b4222",
+        "title": "roadscapes-night_12__derived.mp4",
+        "representation": "video",
+        "score": 0.554304497072235,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "b01fcfb8-8ec9-4c7b-8a4c-29e99735d8c5"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.00448775304817417,
+      "observation": "Night road traffic; glare and small subjects limit pedestrian visibility. Walking status unknown."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "roadscapes-night_13",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5273808240890503,
+      "strongest_posture": {
+        "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+        "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+        "segment_id": "95ca8752-439d-474e-848e-667b9d6b6c60",
+        "title": "roadscapes-night_13__derived.mp4",
+        "representation": "video",
+        "score": 0.540454626083374,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "a1af9b40-5dc4-4479-9e98-06a9942c2a34"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.01307380199432373,
+      "observation": "Night road with truck and motorcycles; low light limits pedestrian visibility. Walking status unknown."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        0,
+        5031
+      ],
+      "fall_score": 0.6529666185379028,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+        "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+        "title": "urfall-adl-01__derived.mp4",
+        "representation": "video",
+        "score": 0.6924504041671753,
+        "interval": [
+          0,
+          5031
+        ],
+        "citation_ids": [
+          "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.03948378562927246,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        0,
+        6051
+      ],
+      "fall_score": 0.6620644330978394,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+        "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+        "title": "urfall-adl-02__derived.mp4",
+        "representation": "video",
+        "score": 0.6826278756482688,
+        "interval": [
+          0,
+          6051
+        ],
+        "citation_ids": [
+          "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.02056344255042941,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6568508148193359,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+        "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+        "title": "urfall-adl-24__derived.mp4",
+        "representation": "video",
+        "score": 0.7055898308753967,
+        "interval": [
+          0,
+          2335
+        ],
+        "citation_ids": [
+          "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.04873901605606079,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        0,
+        5338
+      ],
+      "fall_score": 0.6830242087259429,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+        "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+        "title": "urfall-fall-01__derived.mp4",
+        "representation": "video",
+        "score": 0.6801592516994043,
+        "interval": [
+          0,
+          5338
+        ],
+        "citation_ids": [
+          "324cd25c-1938-4d11-beda-413c9c98c546"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.0028649570265386615,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.6739453077316284,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+        "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+        "title": "urfall-fall-02__derived.mp4",
+        "representation": "video",
+        "score": 0.7019798159599304,
+        "interval": [
+          0,
+          3670
+        ],
+        "citation_ids": [
+          "4b0e495c-2050-4cbe-919f-b6be951befd9"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.028034508228302002,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.6912369500116219,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+        "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+        "title": "urfall-fall-04__derived.mp4",
+        "representation": "video",
+        "score": 0.6970182422377824,
+        "interval": [
+          0,
+          3203
+        ],
+        "citation_ids": [
+          "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.005781292226160528,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "caviar-Fight_Chase",
+      "interval": [
+        10000,
+        17480
+      ],
+      "fall_score": 0.7007877021793244,
+      "strongest_posture": {
+        "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+        "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+        "segment_id": "7df95feb-4ad0-4720-b98d-1bd55344655a",
+        "title": "caviar-Fight_Chase__derived.mp4",
+        "representation": "video",
+        "score": 0.6690476734013764,
+        "interval": [
+          10000,
+          17480
+        ],
+        "citation_ids": [
+          "5ceb7614-7859-48a7-986c-31301ae5997a"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.031740028777948015,
+      "observation": "Two people move through lobby and approach/contact near left furniture around 11-14 s. Proximity/contact is visible; fighting intent and exact action boundaries remain unresolved."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "interval": [
+        30000,
+        40560
+      ],
+      "fall_score": 0.7404968959241184,
+      "strongest_posture": {
+        "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+        "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+        "segment_id": "bb78224c-99e9-41eb-9b6d-2e9e344f6a85",
+        "title": "caviar-Rest_FallOnFloor__derived.mp4",
+        "representation": "video",
+        "score": 0.7163773775100708,
+        "interval": [
+          30000,
+          40560
+        ],
+        "citation_ids": [
+          "a3dd0bb2-abba-4812-b0c7-031643cf3b12"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.02411951841404758,
+      "observation": "Person returns into view around 24 s, descends around 26-28 s, remains on floor until about 35 s, then rises. Current 30-40.56 s window starts after the proposed descent. Distant overhead view limits onset precision."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "caviar-Rest_InChair",
+      "interval": [
+        30000,
+        40560
+      ],
+      "fall_score": 0.709446332140158,
+      "strongest_posture": {
+        "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+        "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+        "segment_id": "ad098f2e-d5bb-4701-8037-0b0d625816f0",
+        "title": "caviar-Rest_InChair__derived.mp4",
+        "representation": "video",
+        "score": 0.6776033639907837,
+        "interval": [
+          30000,
+          40560
+        ],
+        "citation_ids": [
+          "276aeada-f200-4494-9c8b-b16e96fc1dff"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.03184296814937426,
+      "observation": "Indoor lobby with walking and a person resting near the furniture. Distant people and furniture occlusion prevent reliable chair-action boundaries from this sheet."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "caviar-Walk1",
+      "interval": [
+        20000,
+        24720
+      ],
+      "fall_score": 0.7113452513803395,
+      "strongest_posture": {
+        "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+        "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+        "segment_id": "d6a554a4-ae72-439f-acab-ae72ebda15e9",
+        "title": "caviar-Walk1__derived.mp4",
+        "representation": "video",
+        "score": 0.6836545248443503,
+        "interval": [
+          20000,
+          24720
+        ],
+        "citation_ids": [
+          "150b97ef-8d03-4cf2-8787-77950096e7c6"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.027690726535989252,
+      "observation": "People traverse an indoor lobby; sampled frames support indoor walking context. No temporal walking labels assigned."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "roadscapes-day_11",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.518648847381807,
+      "strongest_posture": {
+        "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+        "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+        "segment_id": "1e1796e1-3c21-402e-ab2d-b07507aa3c40",
+        "title": "roadscapes-day_11__derived.mp4",
+        "representation": "video",
+        "score": 0.5571811131023033,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "3fafc736-667b-4ecb-9dc6-1f60a8eaf535"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.038532265720496284,
+      "observation": "Road traffic and motorcyclists. Small distant figures cannot be confidently classified as walking pedestrians at sheet resolution."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "roadscapes-day_12",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5217536843345669,
+      "strongest_posture": {
+        "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+        "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+        "segment_id": "5624f4fc-d626-485b-9f15-5665346419ed",
+        "title": "roadscapes-day_12__derived.mp4",
+        "representation": "video",
+        "score": 0.5603469014167786,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "9e949ce6-c03e-46ef-be65-5614e11e0355"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.03859321708221164,
+      "observation": "Road traffic, motorcyclists and roadside buildings. Pedestrian walking remains unknown at sheet resolution."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "roadscapes-day_13",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5062627641480357,
+      "strongest_posture": {
+        "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+        "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+        "segment_id": "8abde8d5-4316-49cd-a61d-6f0f7497e19f",
+        "title": "roadscapes-day_13__derived.mp4",
+        "representation": "video",
+        "score": 0.5873822815786442,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "febc4f71-518d-4e6c-abb3-eb7cd065369d"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.08111951743060852,
+      "observation": "Stopped road traffic and people on motorcycles/bicycles. Visible people alone do not establish walking."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "roadscapes-night_12",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5283596234535947,
+      "strongest_posture": {
+        "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+        "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+        "segment_id": "b13b2f91-f97d-426f-b668-680a712b4222",
+        "title": "roadscapes-night_12__derived.mp4",
+        "representation": "video",
+        "score": 0.554304497072235,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "b01fcfb8-8ec9-4c7b-8a4c-29e99735d8c5"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.025944873618640285,
+      "observation": "Night road traffic; glare and small subjects limit pedestrian visibility. Walking status unknown."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "roadscapes-night_13",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5094841274465363,
+      "strongest_posture": {
+        "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+        "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+        "segment_id": "95ca8752-439d-474e-848e-667b9d6b6c60",
+        "title": "roadscapes-night_13__derived.mp4",
+        "representation": "video",
+        "score": 0.540454626083374,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "a1af9b40-5dc4-4479-9e98-06a9942c2a34"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.030970498636837762,
+      "observation": "Night road with truck and motorcycles; low light limits pedestrian visibility. Walking status unknown."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        0,
+        5031
+      ],
+      "fall_score": 0.689370056670012,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+        "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+        "title": "urfall-adl-01__derived.mp4",
+        "representation": "video",
+        "score": 0.6924504041671753,
+        "interval": [
+          0,
+          5031
+        ],
+        "citation_ids": [
+          "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0030803474971632383,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        0,
+        6051
+      ],
+      "fall_score": 0.699279209949947,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+        "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+        "title": "urfall-adl-02__derived.mp4",
+        "representation": "video",
+        "score": 0.6826278756482688,
+        "interval": [
+          0,
+          6051
+        ],
+        "citation_ids": [
+          "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": 0.0166513343016782,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6977077930482567,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+        "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+        "title": "urfall-adl-24__derived.mp4",
+        "representation": "video",
+        "score": 0.7055898308753967,
+        "interval": [
+          0,
+          2335
+        ],
+        "citation_ids": [
+          "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.007882037827140032,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        0,
+        5338
+      ],
+      "fall_score": 0.713051740501977,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+        "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+        "title": "urfall-fall-01__derived.mp4",
+        "representation": "video",
+        "score": 0.6801592516994043,
+        "interval": [
+          0,
+          5338
+        ],
+        "citation_ids": [
+          "324cd25c-1938-4d11-beda-413c9c98c546"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.03289248880257267,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.7076938363222434,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+        "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+        "title": "urfall-fall-02__derived.mp4",
+        "representation": "video",
+        "score": 0.7019798159599304,
+        "interval": [
+          0,
+          3670
+        ],
+        "citation_ids": [
+          "4b0e495c-2050-4cbe-919f-b6be951befd9"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.005714020362312944,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.7194878411751016,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+        "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+        "title": "urfall-fall-04__derived.mp4",
+        "representation": "video",
+        "score": 0.6970182422377824,
+        "interval": [
+          0,
+          3203
+        ],
+        "citation_ids": [
+          "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.022469598937319146,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "caviar-Fight_Chase",
+      "interval": [
+        10000,
+        17480
+      ],
+      "fall_score": 0.6785244537279348,
+      "strongest_posture": {
+        "asset_id": "bda3094f-da08-423b-a752-f9684fc01ade",
+        "revision_id": "356dae80-222f-4748-a59b-d52852c4b31c",
+        "segment_id": "7df95feb-4ad0-4720-b98d-1bd55344655a",
+        "title": "caviar-Fight_Chase__derived.mp4",
+        "representation": "video",
+        "score": 0.6690476734013764,
+        "interval": [
+          10000,
+          17480
+        ],
+        "citation_ids": [
+          "5ceb7614-7859-48a7-986c-31301ae5997a"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.00947678032655841,
+      "observation": "Two people move through lobby and approach/contact near left furniture around 11-14 s. Proximity/contact is visible; fighting intent and exact action boundaries remain unresolved."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "caviar-Rest_FallOnFloor",
+      "interval": [
+        30000,
+        40560
+      ],
+      "fall_score": 0.7003272771835327,
+      "strongest_posture": {
+        "asset_id": "22d93e5f-208e-4b17-a22a-da4dad0f8934",
+        "revision_id": "2b7b6d96-6f85-4b79-8252-1f755526dedc",
+        "segment_id": "bb78224c-99e9-41eb-9b6d-2e9e344f6a85",
+        "title": "caviar-Rest_FallOnFloor__derived.mp4",
+        "representation": "video",
+        "score": 0.7163773775100708,
+        "interval": [
+          30000,
+          40560
+        ],
+        "citation_ids": [
+          "a3dd0bb2-abba-4812-b0c7-031643cf3b12"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.016050100326538086,
+      "observation": "Person returns into view around 24 s, descends around 26-28 s, remains on floor until about 35 s, then rises. Current 30-40.56 s window starts after the proposed descent. Distant overhead view limits onset precision."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "caviar-Rest_InChair",
+      "interval": [
+        0,
+        12000
+      ],
+      "fall_score": 0.6750258401020872,
+      "strongest_posture": {
+        "asset_id": "fcc705d8-8f3f-4cfc-8ead-44e01ee818f3",
+        "revision_id": "18acc274-9e60-44f6-9176-028829115355",
+        "segment_id": "040a0639-880e-45fd-8068-16f9a301b603",
+        "title": "caviar-Rest_InChair__derived.mp4",
+        "representation": "video",
+        "score": 0.6661625306412541,
+        "interval": [
+          0,
+          12000
+        ],
+        "citation_ids": [
+          "873ee1e6-ce07-4c34-a0cc-346562f8175d"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": 0.008863309460833135,
+      "observation": "Indoor lobby with walking and a person resting near the furniture. Distant people and furniture occlusion prevent reliable chair-action boundaries from this sheet."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "caviar-Walk1",
+      "interval": [
+        20000,
+        24720
+      ],
+      "fall_score": 0.6774344828803012,
+      "strongest_posture": {
+        "asset_id": "cb53d791-7ab3-4b05-b24f-33824e6966de",
+        "revision_id": "b740536a-13a4-4510-beb6-8bc93a6b9291",
+        "segment_id": "d6a554a4-ae72-439f-acab-ae72ebda15e9",
+        "title": "caviar-Walk1__derived.mp4",
+        "representation": "video",
+        "score": 0.6836545248443503,
+        "interval": [
+          20000,
+          24720
+        ],
+        "citation_ids": [
+          "150b97ef-8d03-4cf2-8787-77950096e7c6"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.006220041964049128,
+      "observation": "People traverse an indoor lobby; sampled frames support indoor walking context. No temporal walking labels assigned."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "roadscapes-day_11",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.554752078369137,
+      "strongest_posture": {
+        "asset_id": "5ca77f6e-0ad6-4d53-a6fe-841a726f776c",
+        "revision_id": "a07dac70-a109-4e3b-b7b4-d6fa72e56144",
+        "segment_id": "1e1796e1-3c21-402e-ab2d-b07507aa3c40",
+        "title": "roadscapes-day_11__derived.mp4",
+        "representation": "video",
+        "score": 0.5571811131023033,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "3fafc736-667b-4ecb-9dc6-1f60a8eaf535"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.0024290347331663575,
+      "observation": "Road traffic and motorcyclists. Small distant figures cannot be confidently classified as walking pedestrians at sheet resolution."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "roadscapes-day_12",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5632922649383545,
+      "strongest_posture": {
+        "asset_id": "689b735c-07ab-42d1-9c43-86594bd28ecd",
+        "revision_id": "0a4a5672-6c51-49bc-a2ce-4f7c3a76cb94",
+        "segment_id": "5624f4fc-d626-485b-9f15-5665346419ed",
+        "title": "roadscapes-day_12__derived.mp4",
+        "representation": "video",
+        "score": 0.5603469014167786,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "9e949ce6-c03e-46ef-be65-5614e11e0355"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.0029453635215759277,
+      "observation": "Road traffic, motorcyclists and roadside buildings. Pedestrian walking remains unknown at sheet resolution."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "roadscapes-day_13",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5723682300824992,
+      "strongest_posture": {
+        "asset_id": "29361752-998c-4735-bf51-09b4b678d609",
+        "revision_id": "e4f1d94d-7d55-4227-a50e-6b8e9bd19b16",
+        "segment_id": "8abde8d5-4316-49cd-a61d-6f0f7497e19f",
+        "title": "roadscapes-day_13__derived.mp4",
+        "representation": "video",
+        "score": 0.5873822815786442,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "febc4f71-518d-4e6c-abb3-eb7cd065369d"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.015014051496145098,
+      "observation": "Stopped road traffic and people on motorcycles/bicycles. Visible people alone do not establish walking."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "roadscapes-night_12",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5646071602287045,
+      "strongest_posture": {
+        "asset_id": "f648e9e8-4825-45fe-93bc-a1b375fa4683",
+        "revision_id": "919a682f-9a83-48a1-b0ae-8ce6806f7cbb",
+        "segment_id": "b13b2f91-f97d-426f-b668-680a712b4222",
+        "title": "roadscapes-night_12__derived.mp4",
+        "representation": "video",
+        "score": 0.554304497072235,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "b01fcfb8-8ec9-4c7b-8a4c-29e99735d8c5"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.01030266315646955,
+      "observation": "Night road traffic; glare and small subjects limit pedestrian visibility. Walking status unknown."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "roadscapes-night_13",
+      "interval": [
+        0,
+        5000
+      ],
+      "fall_score": 0.5364258289337158,
+      "strongest_posture": {
+        "asset_id": "6dcdbb62-f30f-480e-a29c-303646d2215f",
+        "revision_id": "4c655654-4d8e-4375-90e6-e797f0afa56e",
+        "segment_id": "95ca8752-439d-474e-848e-667b9d6b6c60",
+        "title": "roadscapes-night_13__derived.mp4",
+        "representation": "video",
+        "score": 0.540454626083374,
+        "interval": [
+          0,
+          5000
+        ],
+        "citation_ids": [
+          "a1af9b40-5dc4-4479-9e98-06a9942c2a34"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.004028797149658203,
+      "observation": "Night road with truck and motorcycles; low light limits pedestrian visibility. Walking status unknown."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        0,
+        5031
+      ],
+      "fall_score": 0.6836876273155212,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "revision_id": "073df384-ceb9-4872-8288-3b762224a2ae",
+        "segment_id": "1f7a46a2-d344-46e0-a1f6-4c99d67a05a8",
+        "title": "urfall-adl-01__derived.mp4",
+        "representation": "video",
+        "score": 0.6924504041671753,
+        "interval": [
+          0,
+          5031
+        ],
+        "citation_ids": [
+          "b253e319-0e2e-4483-b1cd-ecb66725fa42"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.008762776851654053,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        0,
+        6051
+      ],
+      "fall_score": 0.6799886226654053,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "revision_id": "ef2becec-8da3-4f57-b47e-22b91c1f7c5e",
+        "segment_id": "c0ffd9fa-ac69-436a-bd79-249d1ff61b0e",
+        "title": "urfall-adl-02__derived.mp4",
+        "representation": "video",
+        "score": 0.6826278756482688,
+        "interval": [
+          0,
+          6051
+        ],
+        "citation_ids": [
+          "0d11bf42-bf50-4f61-a7a1-3542e2434d0c"
+        ],
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.0026392529828634936,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6804420948028564,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "revision_id": "62f3b967-77fc-496a-a945-eaa12fe6b0a3",
+        "segment_id": "6ab3d0b5-6d86-4a25-aa39-7e231fe25114",
+        "title": "urfall-adl-24__derived.mp4",
+        "representation": "video",
+        "score": 0.7055898308753967,
+        "interval": [
+          0,
+          2335
+        ],
+        "citation_ids": [
+          "ad8f2a8f-dbde-4ccc-9045-439b13857d45"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.025147736072540283,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        0,
+        5338
+      ],
+      "fall_score": 0.6926858838013353,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "revision_id": "5388d806-d954-421e-975b-b71e76282cb5",
+        "segment_id": "017a27f6-149f-40ea-8b73-9e9bbaae75b7",
+        "title": "urfall-fall-01__derived.mp4",
+        "representation": "video",
+        "score": 0.6801592516994043,
+        "interval": [
+          0,
+          5338
+        ],
+        "citation_ids": [
+          "324cd25c-1938-4d11-beda-413c9c98c546"
+        ],
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.012526632101931057,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.7001807689666748,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "revision_id": "0108801c-949f-4735-9834-067fc24fbc57",
+        "segment_id": "68d73628-63d7-4fba-af6b-808b933ef5a6",
+        "title": "urfall-fall-02__derived.mp4",
+        "representation": "video",
+        "score": 0.7019798159599304,
+        "interval": [
+          0,
+          3670
+        ],
+        "citation_ids": [
+          "4b0e495c-2050-4cbe-919f-b6be951befd9"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0017990469932556152,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "current_native",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.7035028095838108,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "revision_id": "1aedc110-8711-44a6-916d-3f5337e9a70d",
+        "segment_id": "5e54b528-9736-495a-959a-303d30d87d13",
+        "title": "urfall-fall-04__derived.mp4",
+        "representation": "video",
+        "score": 0.6970182422377824,
+        "interval": [
+          0,
+          3203
+        ],
+        "citation_ids": [
+          "b85b353c-b7ab-45f9-a30a-e12309a4a623"
+        ],
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.006484567346028425,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        0,
+        5030
+      ],
+      "fall_score": 0.6529665715172666,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          0,
+          5030
+        ],
+        "score": 0.692450437750724,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.039483866233457454,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        0,
+        6050
+      ],
+      "fall_score": 0.662064429846621,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          0,
+          6050
+        ],
+        "score": 0.6826279306253201,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.020563500778699173,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6568507867029523,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2335
+        ],
+        "score": 0.7055898494521952,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.04873906274924289,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        0,
+        5338
+      ],
+      "fall_score": 0.6830242622856368,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          0,
+          5338
+        ],
+        "score": 0.6801593295498405,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.002864932735796355,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.6739452011722857,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          0,
+          3670
+        ],
+        "score": 0.701979920652328,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.028034719480042214,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.6912369866505884,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          0,
+          3203
+        ],
+        "score": 0.6970182663452499,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0057812796946614675,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        0,
+        5030
+      ],
+      "fall_score": 0.6893699926873702,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          0,
+          5030
+        ],
+        "score": 0.692450437750724,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0030804450633538094,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        0,
+        6050
+      ],
+      "fall_score": 0.6992792291439497,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          0,
+          6050
+        ],
+        "score": 0.6826279306253201,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": 0.016651298518629565,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6977076906225412,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2335
+        ],
+        "score": 0.7055898494521952,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.007882158829653929,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        0,
+        5338
+      ],
+      "fall_score": 0.7130515723818496,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          0,
+          5338
+        ],
+        "score": 0.6801593295498405,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.03289224283200909,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.7076936988736362,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          0,
+          3670
+        ],
+        "score": 0.701979920652328,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.005713778221308252,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.7194879130752103,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          0,
+          3203
+        ],
+        "score": 0.6970182663452499,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.022469646729960435,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        0,
+        5030
+      ],
+      "fall_score": 0.6836875663072047,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          0,
+          5030
+        ],
+        "score": 0.692450437750724,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.008762871443519282,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        0,
+        6050
+      ],
+      "fall_score": 0.6799886540303962,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          0,
+          6050
+        ],
+        "score": 0.6826279306253201,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.0026392765949239116,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6804420202189382,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2335
+        ],
+        "score": 0.7055898494521952,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.02514782923325698,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        0,
+        5338
+      ],
+      "fall_score": 0.6926858281457011,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          0,
+          5338
+        ],
+        "score": 0.6801593295498405,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.012526498595860636,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.7001807228354322,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          0,
+          3670
+        ],
+        "score": 0.701979920652328,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0017991978168957479,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "uniform12",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.7035028467804845,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          0,
+          3203
+        ],
+        "score": 0.6970182663452499,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.006484580435234588,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        2000,
+        5030
+      ],
+      "fall_score": 0.6479924105735607,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          2000,
+          5030
+        ],
+        "score": 0.6996081129334492,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.05161570235988844,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        4000,
+        6050
+      ],
+      "fall_score": 0.6720286739139256,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          4000,
+          6050
+        ],
+        "score": 0.7181123618366965,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.046083687922770844,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6568507867029523,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2335
+        ],
+        "score": 0.7055898494521952,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.04873906274924289,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        2000,
+        5338
+      ],
+      "fall_score": 0.6920423540617537,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          2000,
+          5338
+        ],
+        "score": 0.6952378084914053,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.003195454429651523,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.6739452011722857,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          0,
+          3670
+        ],
+        "score": 0.701979920652328,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.028034719480042214,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.6912369866505884,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          0,
+          3203
+        ],
+        "score": 0.6970182663452499,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0057812796946614675,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        2000,
+        5030
+      ],
+      "fall_score": 0.6894497810360385,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          2000,
+          5030
+        ],
+        "score": 0.6996081129334492,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.010158331897410666,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        4000,
+        6050
+      ],
+      "fall_score": 0.7221834751326331,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          4000,
+          6050
+        ],
+        "score": 0.7181123618366965,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": 0.004071113295936679,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6977076906225412,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2335
+        ],
+        "score": 0.7055898494521952,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.007882158829653929,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        2000,
+        5338
+      ],
+      "fall_score": 0.7231045708800199,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          2000,
+          5338
+        ],
+        "score": 0.6952378084914053,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.02786676238861463,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.7076936988736362,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          0,
+          3670
+        ],
+        "score": 0.701979920652328,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.005713778221308252,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.7194879130752103,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          0,
+          3203
+        ],
+        "score": 0.6970182663452499,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.022469646729960435,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        2000,
+        5030
+      ],
+      "fall_score": 0.6811190603650256,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          2000,
+          5030
+        ],
+        "score": 0.6996081129334492,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.018489052568423592,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        4000,
+        6050
+      ],
+      "fall_score": 0.69456308150616,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          4000,
+          6050
+        ],
+        "score": 0.7181123618366965,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.023549280330536493,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2335
+      ],
+      "fall_score": 0.6804420202189382,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2335
+        ],
+        "score": 0.7055898494521952,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.02514782923325698,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        2000,
+        5338
+      ],
+      "fall_score": 0.7032331511197238,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          2000,
+          5338
+        ],
+        "score": 0.6952378084914053,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.00799534262831858,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        0,
+        3670
+      ],
+      "fall_score": 0.7001807228354322,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          0,
+          3670
+        ],
+        "score": 0.701979920652328,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.0017991978168957479,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "short4",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        0,
+        3203
+      ],
+      "fall_score": 0.7035028467804845,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          0,
+          3203
+        ],
+        "score": 0.6970182663452499,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": 0.006484580435234588,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        3000,
+        5000
+      ],
+      "fall_score": 0.6550336504149221,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          3000,
+          5000
+        ],
+        "score": 0.7143621181192165,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.05932846770429434,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        4000,
+        6000
+      ],
+      "fall_score": 0.6720286739139256,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          4000,
+          6000
+        ],
+        "score": 0.7181123618366965,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.046083687922770844,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        1000,
+        2335
+      ],
+      "fall_score": 0.6802852511431864,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          1000,
+          2335
+        ],
+        "score": 0.7187695837497166,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.03848433260653017,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        3000,
+        5000
+      ],
+      "fall_score": 0.7152163496524874,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          3000,
+          5000
+        ],
+        "score": 0.7060525252762754,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.009163824376211993,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        2000,
+        3670
+      ],
+      "fall_score": 0.6950764503037666,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          2000,
+          3670
+        ],
+        "score": 0.7222288389560614,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.027152388652294746,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-1",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        1000,
+        3000
+      ],
+      "fall_score": 0.7149014845337246,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          1000,
+          3000
+        ],
+        "score": 0.709014997669269,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.005886486864455587,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        4000,
+        5030
+      ],
+      "fall_score": 0.6991833480861277,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          4000,
+          5030
+        ],
+        "score": 0.720774609331524,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.021591261245396343,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        5000,
+        6050
+      ],
+      "fall_score": 0.7246280427447699,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          5000,
+          6050
+        ],
+        "score": 0.7298104649096927,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.0051824221649228175,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        1000,
+        2335
+      ],
+      "fall_score": 0.7252311320645158,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          1000,
+          2335
+        ],
+        "score": 0.7187695837497166,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": 0.006461548314799281,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        4000,
+        5338
+      ],
+      "fall_score": 0.7523953379519883,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          4000,
+          5338
+        ],
+        "score": 0.7478027213341337,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.004592616617854595,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        2000,
+        3670
+      ],
+      "fall_score": 0.7391494750368804,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          2000,
+          3670
+        ],
+        "score": 0.7222288389560614,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.016920636080819063,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-2",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        1000,
+        3000
+      ],
+      "fall_score": 0.7499167928244993,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          1000,
+          3000
+        ],
+        "score": 0.709014997669269,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.04090179515523029,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-01",
+      "interval": [
+        3000,
+        5000
+      ],
+      "fall_score": 0.6910819464374958,
+      "strongest_posture": {
+        "asset_id": "1a072aa6-7f12-40c9-9b54-ff9c4049bad5",
+        "asset_key": "urfall-adl-01",
+        "title": "urfall-adl-01__derived.mp4",
+        "interval": [
+          3000,
+          5000
+        ],
+        "score": 0.7143621181192165,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.023280171681720696,
+      "observation": "Walking then lowering into a sustained crouch. Sampled frames do not establish a fall; motion between samples remains unreviewed."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-02",
+      "interval": [
+        4000,
+        6000
+      ],
+      "fall_score": 0.69456308150616,
+      "strongest_posture": {
+        "asset_id": "f07378a9-500f-45ea-b43c-f41b74061fac",
+        "asset_key": "urfall-adl-02",
+        "title": "urfall-adl-02__derived.mp4",
+        "interval": [
+          4000,
+          6000
+        ],
+        "score": 0.7181123618366965,
+        "query_id": "bend-1"
+      },
+      "fall_minus_posture": -0.023549280330536493,
+      "observation": "Walking then lowering into a sustained crouch with hand near floor. A hard negative proposal for human review, not a confirmed absence label."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-adl-24",
+      "interval": [
+        0,
+        2000
+      ],
+      "fall_score": 0.7035138402867004,
+      "strongest_posture": {
+        "asset_id": "b5701d0a-4e31-4e66-9b0f-0de962390ab9",
+        "asset_key": "urfall-adl-24",
+        "title": "urfall-adl-24__derived.mp4",
+        "interval": [
+          0,
+          2000
+        ],
+        "score": 0.7315190637434538,
+        "query_id": "sit-1"
+      },
+      "fall_minus_posture": -0.02800522345675338,
+      "observation": "Lowering toward a kneeling/crouched position and returning upright. No lateral floor posture in sampled frames; intent and fall absence are unadjudicated."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-01",
+      "interval": [
+        3000,
+        5000
+      ],
+      "fall_score": 0.7244853841685461,
+      "strongest_posture": {
+        "asset_id": "6762c38f-f793-49be-9d59-b6057ac3f3c5",
+        "asset_key": "urfall-fall-01",
+        "title": "urfall-fall-01__derived.mp4",
+        "interval": [
+          3000,
+          5000
+        ],
+        "score": 0.7060525252762754,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.018432858892270754,
+      "observation": "Standing/walking, then rapid descent, roll and floor posture. Provisional fall transition; first floor settlement is uncertain during rolling."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-02",
+      "interval": [
+        2000,
+        3670
+      ],
+      "fall_score": 0.7147514204698744,
+      "strongest_posture": {
+        "asset_id": "6ff5b9f8-f9c7-4f10-9270-3e4b4fb419ed",
+        "asset_key": "urfall-fall-02",
+        "title": "urfall-fall-02__derived.mp4",
+        "interval": [
+          2000,
+          3670
+        ],
+        "score": 0.7222288389560614,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": -0.007477418486186993,
+      "observation": "Initially seated/crouched near chair; forward descent, roll and floor posture. Onset from seated posture is ambiguous."
+    },
+    {
+      "recipe": "fine2",
+      "query_id": "fall-3",
+      "asset_key": "urfall-fall-04",
+      "interval": [
+        1000,
+        3000
+      ],
+      "fall_score": 0.72584276098097,
+      "strongest_posture": {
+        "asset_id": "d471f236-fdaf-40bb-85a6-e3462a278dd9",
+        "asset_key": "urfall-fall-04",
+        "title": "urfall-fall-04__derived.mp4",
+        "interval": [
+          1000,
+          3000
+        ],
+        "score": 0.709014997669269,
+        "query_id": "lie-1"
+      },
+      "fall_minus_posture": 0.016827763311700994,
+      "observation": "Initially seated/crouched near chair; forward descent and roll to floor. The user identified this development example as relevant. Not independent gold."
+    }
+  ],
+  "input_sha256": {
+    "evaluation/annotations/action-temporal-v1-agent-observations.json": "414908010d60eb52ac35502c2624958212995798d250c3ab5256fc195de9d8d2",
+    "evaluation/reports/action-temporal-v1-baseline.json": "0597d1b192a00733b04e5f4d430ac020e2fd080637353e18cd51f0038222b51d",
+    "evaluation/reports/action-temporal-v1-uniform12.json": "6d2518a33eff4fb3ac7b8f88b7104677fd64476d05d72b6cce0373cc72566b9d",
+    "evaluation/reports/action-temporal-v1-short4.json": "52bd5d224b72131929cc9b675e16e4ed2471ba86546eea2a8a9cbe5156698b68",
+    "evaluation/reports/action-temporal-v1-fine2.json": "3623ba49b5336423b2b90654bbd6d9abaa12a868d135ec709f9032094c706a99"
+  },
+  "source_sha256": "be52441b0b02da5773cc639eb7784bef911f6386c326849ca6713b3b2485f8ee"
+}

@@ -1,0 +1,35 @@
+{
+  "command": "python3 scripts/dev.py verify",
+  "passed": 189,
+  "failed": 0,
+  "seconds": 148.92,
+  "warnings": [
+    "Upstream Starlette/httpx TestClient deprecation"
+  ],
+  "evaluation_tests": {
+    "command": "backend/.venv/bin/python -m pytest evaluation/tests/test_quality.py -q",
+    "passed": 12,
+    "failed": 0
+  },
+  "frontend_passed": true,
+  "frontend_command": "pnpm --dir frontend build",
+  "first_attempt": {
+    "passed": 172,
+    "failed": 17,
+    "teardown_errors": 1,
+    "reason": "Fixture cleanup deadlock and explicit CPU-busy responses; live worker processing test inputs",
+    "retained_private_log": ".local/phase7-release-first.log"
+  },
+  "test_harness_changes": {
+    "deadlock_cleanup_attempts": 3,
+    "semantic_search_cpu_busy_wait_seconds": 60,
+    "dedicated_busy_test_retries": false,
+    "real_model_benchmark_retries": false
+  },
+  "log_sha256": {
+    ".local/phase7-release-tests.log": "1e3d8a4eff6af3365a2c39259e3fca4e45d56b87da59568aa067e4abcaa25d80",
+    ".local/phase7-release-first.log": "612ab3c8fedf8780496e500ca730a272e554c226a54a8298edc48562db75caea",
+    ".local/phase7-quality-tests.log": "7a31e66378c8cfe7c15128f94cc1506ce059a413da978d80115e1e55e5e976e5",
+    ".local/phase7-frontend-build.log": "f3a169249d080889bbce00bb3e2b6e68583167acabaacca26d160dd7234b2098"
+  }
+}
