@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="520" viewBox="0 0 1040 520" role="img" aria-labelledby="title description">
+<title id="title">What you can search and where results take you</title>
+<desc id="description">Documents lead to matching passages and pages. Images lead to the original picture. Video and audio results open at a matching playback interval. Matches depend on file content and processing quality.</desc>
+<rect width="1040" height="520" rx="18" fill="#f7faf9"/>
+<g font-family="DejaVu Sans, Arial, sans-serif" fill="#19392f">
+<text x="28" y="43" font-size="26" font-weight="700">From your files to the original evidence</text>
+<text x="28" y="74" font-size="17" fill="#465b54">Search in everyday language, then inspect the match.</text>
+<text x="46" y="118" font-size="16" font-weight="700">YOUR FILES</text>
+<text x="364" y="118" font-size="16" font-weight="700">WHAT YOU CAN FIND</text>
+<text x="760" y="118" font-size="16" font-weight="700">WHERE A RESULT OPENS</text>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8" fill="none" stroke="#54776b" stroke-width="1.4"/></marker></defs>
+<rect x="28" y="138" width="262" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="46" y="167" font-size="19" font-weight="700">Documents</text>
+<text x="46" y="191" font-size="15" fill="#465b54">PDF, Word and text files</text>
+<rect x="346" y="138" width="344" height="70" rx="9" fill="#ffffff" stroke="#cfddd5"/>
+<text x="364" y="167" font-size="19" font-weight="700">Written and scanned text</text>
+<text x="364" y="191" font-size="15" fill="#465b54">Passages from the document</text>
+<rect x="746" y="138" width="266" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="764" y="167" font-size="19" font-weight="700">The matching page</text>
+<text x="764" y="191" font-size="15" fill="#465b54">Read the passage in context</text>
+<path d="M302,173 H331" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M702,173 H731" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="28" y="222" width="262" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="46" y="251" font-size="19" font-weight="700">Images</text>
+<text x="46" y="275" font-size="15" fill="#465b54">Photos and other pictures</text>
+<rect x="346" y="222" width="344" height="70" rx="9" fill="#ffffff" stroke="#cfddd5"/>
+<text x="364" y="251" font-size="19" font-weight="700">Visual content</text>
+<text x="364" y="275" font-size="15" fill="#465b54">What appears in the image</text>
+<rect x="746" y="222" width="266" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="764" y="251" font-size="19" font-weight="700">The original image</text>
+<text x="764" y="275" font-size="15" fill="#465b54">Inspect the picture yourself</text>
+<path d="M302,257 H331" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M702,257 H731" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="28" y="306" width="262" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="46" y="335" font-size="19" font-weight="700">Videos</text>
+<text x="46" y="359" font-size="15" fill="#465b54">Short video files</text>
+<rect x="346" y="306" width="344" height="70" rx="9" fill="#ffffff" stroke="#cfddd5"/>
+<text x="364" y="335" font-size="19" font-weight="700">Scenes, speech and sounds</text>
+<text x="364" y="359" font-size="15" fill="#465b54">Visual and audio matches</text>
+<rect x="746" y="306" width="266" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="764" y="335" font-size="19" font-weight="700">The matching moment</text>
+<text x="764" y="359" font-size="15" fill="#465b54">Play the relevant interval</text>
+<path d="M302,341 H331" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M702,341 H731" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<rect x="28" y="390" width="262" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="46" y="419" font-size="19" font-weight="700">Audio</text>
+<text x="46" y="443" font-size="15" fill="#465b54">Speech and recordings</text>
+<rect x="346" y="390" width="344" height="70" rx="9" fill="#ffffff" stroke="#cfddd5"/>
+<text x="364" y="419" font-size="19" font-weight="700">Spoken words and sounds</text>
+<text x="364" y="443" font-size="15" fill="#465b54">Speech and audio matches</text>
+<rect x="746" y="390" width="266" height="70" rx="9" fill="#e8f1ec" stroke="#cfddd5"/>
+<text x="764" y="419" font-size="19" font-weight="700">The matching moment</text>
+<text x="764" y="443" font-size="15" fill="#465b54">Listen to the relevant interval</text>
+<path d="M302,425 H331" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<path d="M702,425 H731" fill="none" stroke="#54776b" stroke-width="2" marker-end="url(#arrow)"/>
+<text x="28" y="503" font-size="15" fill="#465b54">Results depend on your files and processing quality. Always check the original evidence.</text></g></svg>

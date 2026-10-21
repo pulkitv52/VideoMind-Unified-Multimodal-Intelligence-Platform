@@ -1,86 +1,165 @@
 # VideoMind
 
-Unified search across documents, video and audio, developed in phases for a CPU-only laptop.
+Search your documents, images, videos and audio in one place, using everyday language. Open a result to see the relevant page, image or moment in the original file.
 
-Phase 0 validated the pinned multimodal model on CPU. Phase 1 provides local infrastructure, sign-in, workspace/source authorization and persistence. Phase 2 adds upload collections, revision-checked read-only local folders, immutable originals, durable validation jobs, storage quotas, retention/orphan cleanup and paginated file lists. Phase 3 adds document extraction, scanned/mixed-page OCR, DOCX rendering and a citation viewer. Phase 4 adds native media windows, local ASR, mapped playback and temporal citations. Phase 5 adds native embeddings, profile-isolated pgvector indexes and generation management. Phase 6 adds authorized hybrid search and evidence results. Phase 7 adds local evaluation and restore rehearsal tools; the MVP release gate remains open.
+VideoMind runs on your own computer. You can upload files or import a local folder, then search across them without opening each file yourself.
 
-## Start locally
+The project is under active development. It has been tested on a Linux laptop with 16 GB of RAM, using the CPU only. Search quality and speed still need work, especially for finding actions in videos. See the [current evaluation results](docs/phase7-validation.md) for what has and has not passed.
 
-Requirements: Linux, Python 3.12+, Docker Engine with Compose v2, Internet access for the first image/package download, and free ports 8080/8000. The measured development machine has 16 GiB RAM. Docker runs the application dependencies; a host Node installation is optional.
+## What you can do
+
+- Find passages in PDFs, Word documents, text files and scanned pages.
+- Search images and video scenes by describing what you are looking for.
+- Find spoken words and sounds in audio or video.
+- Open the page or playback moment behind a result, and copy a citation that links back to it.
+- Keep files in separate collections and control who can access them.
+
+For documents, you might search for "cancellation policy". For videos, try descriptions such as "person falling", "person bending down" or "men entering an empty room". Results depend on the files you have added, and some searches may return no useful match.
+
+![Documents lead to matching pages, images to the original picture, and video or audio to the matching playback moment.](docs/images/file-guide.svg)
+
+## How it works
+
+```mermaid
+flowchart TD
+    A["Add files or import a folder"] --> B["VideoMind prepares your files"]
+    B --> C["Build and activate the search index"]
+    C --> D["Search in your own words"]
+    D --> E["Open a matching page, image or playback moment"]
+    E --> F["Check the original and copy a citation"]
+```
+
+You build and activate the first index once. Later uploads are added to the active index in the background. If a search finds no useful match, try a different description or check whether your files have finished processing.
+
+## A look inside
+
+Search for **"person bending down"**, then choose **Open evidence**. The video player opens beside the timeline, so you can inspect the returned interval and copy its citation.
+
+![Evidence opened for the query person bending down: the player shows a person bending forward, alongside the selected visual window and citation controls.](docs/images/video-evidence-bending.jpg)
+
+<details>
+<summary>More video examples: falling and entering a room</summary>
+
+**"person falling"** returns a CAVIAR clip with its evidence player open below. The selected 30–40.6-second interval starts after the descent, showing the person on the floor and recovering. This illustrates why you should inspect the video rather than assume a result pinpoints the action.
+
+![Evidence opened for person falling, showing the returned CAVIAR clip at 30 seconds and the timeline of visual windows.](docs/images/video-evidence-falling.jpg)
+
+**"men entering an empty room"** returns the research clip below. It shows one person entering a furnished room; the match does not establish the requested number of people or that the room is empty.
+
+![Evidence opened for men entering an empty room, with one person visible at a doorway in the returned research clip and its selected timeline window.](docs/images/video-evidence-room-entry.jpg)
+
+</details>
+
+Video examples use staged research footage. Credits and source terms: [UR Fall](evaluation/manifests/video30-ur-fall-ATTRIBUTION.md) and [CAVIAR](evaluation/manifests/video30-caviar-ATTRIBUTION.md). These are interface examples, not a measure of action-recognition accuracy.
+
+Opening a document result lets you compare the extracted words with the original page. Here, the selected passage is highlighted in a generated scanned document.
+
+![Document viewer with a scanned test page on the left and extracted passages on the right; the selected passage is highlighted on the page.](docs/images/document-viewer.jpg)
+
+The document screenshot uses a generated test file. All screenshots show the actual local interface; your files and results will differ.
+
+## Before you start
+
+You will need:
+
+- A Linux computer. The current setup has been validated on Linux x86-64; Windows and macOS setup has not been validated.
+- Python 3.12 or newer.
+- Docker Engine with Compose v2 installed and running. Docker runs the app and its supporting services.
+- An internet connection for the first setup, which downloads software and AI models.
+- Local ports 8080 and 8000 available. Another app using either port can prevent VideoMind from starting.
+
+A separate graphics card is not required. The tested computer has 16 GB of RAM; this is a reference machine, not a measured minimum requirement. Preparing and searching files can take time on a CPU.
+
+## Start VideoMind
+
+### 1. Start the app
+
+Open a terminal in this project folder and run:
 
 ```bash
 python3 scripts/dev.py up
 ```
 
-Open [VideoMind](http://localhost:8080). Read the generated username/password from `.local/owner.json` locally and enter them in the sign-in form. The setup creates one owner and a workspace. Choose **Add source → Upload files → Create source**, then **Upload files** to select files from your laptop. For read-only folder sync, place files under `.local/imports/<folder>` and choose that folder when creating a source. See [format limits and validation](docs/phase2-validation.md). Documents extract automatically after validation. Choose **Open document**, then select a passage to inspect its region and copy a stable citation. [Document limits and evidence behavior](docs/phase3-validation.md) cover the 50-page, three-minute laptop budget. Choose **Open media** to play a video/audio file and select timeline evidence or transcript words. Processing supports media up to five minutes; see [media limits and validation](docs/phase4-validation.md). Repeating the command preserves the account and credentials.
+The first run downloads dependencies and models, prepares storage, and creates your account. Allow time for it to finish. Running the same command again keeps your existing account and files.
 
-The **Embedding index** panel shows coverage and failed jobs. Administrators can build a generation, activate it after all eligible inputs are embedded, retry failures and restore a caught-up previous generation. **Open image** displays a standalone image and its citation. Indexing runs in the background on CPU; uploaded content is processed into both the active and building generations. Use **Search your sources** to describe a passage, visual event or sound. Source/type and advanced filters narrow results. **Open evidence** opens the cited page or original-time interval; **More from this file** searches within the matched asset. See [search behavior, limits and validation](docs/phase6-validation.md). See [Phase 5 limits and validation](docs/phase5-validation.md).
+### 2. Sign in
 
-`.env` is generated with random service passwords and mode 0600; `.local` is private and ignored. Preserve both alongside your Docker volumes. Changing an environment password alone does not rotate credentials in an existing database/storage service. The bootstrap command creates an account; it is not a password-reset command.
+Open [http://localhost:8080](http://localhost:8080) in your browser.
+
+Open `.local/owner.json` in a text editor on your computer to find your generated username and password. The `.local` folder is hidden; enable "Show hidden files" in your file manager if needed. Keep this file private.
+
+### 3. Add a few files
+
+Choose **Add source → Upload files → Create source** to create a collection. A "source" is a collection of files you want VideoMind to search. Then choose **Upload files** and select files from your computer.
+
+Start with a small document or a short recording. VideoMind prepares files in the background, and the file list shows their progress.
+
+You can also import a folder. Put your files under `.local/imports/<folder>` and select that folder when adding a source. VideoMind reads from that folder without changing its files. See [folder import details](docs/phase2-validation.md) for sync behavior and limits.
+
+### 4. Prepare files for searching
+
+In the **Embedding index** panel, choose **Start indexing**. This builds the searchable version of your prepared files. When indexing finishes and **Activate index** appears, select it to make the index available for search.
+
+If an active index already exists, new uploads are indexed in the background. The panel shows progress and lets administrators retry failed jobs.
+
+### 5. Search and inspect a result
+
+Use **Search your sources** to describe what you need. You can narrow results by collection or file type.
+
+Choose **Open evidence** on a result to view its page, image or playback moment. Use **More from this file** to explore other matches in the same file. You can also open prepared files directly from the file list.
+
+## Supported files and limits
+
+| File type | Formats |
+| --- | --- |
+| Documents | PDF, DOCX, UTF-8 TXT, Markdown |
+| Images | PNG, JPG, JPEG |
+| Video | MP4, WebM |
+| Audio | MP3, WAV, M4A, FLAC, OGG |
+
+The current upload limit is **64 MiB per file** (roughly 67 MB). Document processing supports up to **50 pages** for PDFs and rendered Word documents. Audio and video processing supports files up to **five minutes** long. Other processing limits can also cause a file to fail; its status will show an error.
+
+Speech recognition and scanned-text recognition currently use English models. Handwriting, complex page layouts and other languages may produce poor results. Search results should be checked against the original file.
+
+## Stop or restart the app
+
+To stop VideoMind and release its memory:
 
 ```bash
-python3 scripts/dev.py status
-python3 scripts/dev.py verify
 python3 scripts/dev.py down
 ```
 
-`python3 scripts/check_foundation.py` additionally checks persistence by restarting this project and briefly stopping Redis; it records sanitized memory/version/readiness measurements.
+Your saved data stays on disk. Start it again with `python3 scripts/dev.py up`.
 
-`verify` builds a separate test image and exercises real runtime-role RLS, HTTP sessions and private storage. It creates synthetic accounts/content and cleans them up. Run it after `up`. `down` preserves named volumes. Avoid `docker compose down -v` when you want to keep data. Stop the stack when it is unused to release its RAM.
+To check whether the services are running:
 
-The embedding service has no published host port and uses a generated private HTTP token. Only the frontend (127.0.0.1:8080) and API (127.0.0.1:8000) are published. PostgreSQL, Redis and MinIO remain on the Compose network. `/health/live` checks the API process; `/health/ready` checks PostgreSQL/migration/runtime role, Redis, private storage and the Celery worker. `retrieval_ready` reports search-service capability when core services and the embedding service are reachable. Workspace-specific active-index readiness and authorized facets are available from the search endpoint. A busy CPU producer returns an explicit retryable search error.
+```bash
+python3 scripts/dev.py status
+```
 
-## Modules
+If a file is still being prepared, wait for its status to update before searching. If processing fails, check the reported error and use the retry action when available. The [developer guide](docs/development.md) includes commands for deeper checks.
 
-- `backend/src/videomind/identity`: credentials, sessions, workspace identity.
-- `backend/src/videomind/assets`: authorized source metadata.
-- `backend/src/videomind/infrastructure`: database transactions, storage, telemetry.
-- `backend/src/videomind/workers`: bounded Celery configuration.
-- `backend/src/videomind/connectors`: upload/local-folder adapters and source routes.
-- `backend/src/videomind/ingestion`: original storage, durable jobs and reconciliation.
-- `backend/src/videomind/preprocessing`: isolated format probing and bounded document extraction/OCR/rendering.
-- `backend/src/videomind/evidence`: authorized document pages, artifacts, immutable revision downloads and citation resolution.
-- Phase 0 boundary contracts live in each owning module and `contracts.py`.
-- `backend/migrations`: versioned PostgreSQL/pgvector schema and access policies.
-- `frontend/src/features`: identity and source views, with shared HTTP code in `lib`.
-- `infra`: pinned Docker builds, Compose services and reverse proxy.
-- `scripts`: local lifecycle commands; `evaluation`: fixtures and measured reports.
+## Your files and backups
 
-The `embeddings` module owns CPU inference, durable indexing and generation lifecycle. The `retrieval` module owns authorized filters/candidates, evidence grouping, fusion, abstention and search response contracts.
+After the initial downloads, normal file processing runs locally. The browser interface is available only on your computer by default. Access from other computers needs a separate secure deployment setup.
 
-## Development and trust boundary
+Keep `.env`, `.local` and Docker's saved data volumes. They contain credentials and data needed by your installation. Use the normal stop command above; `docker compose down -v` deletes saved volumes.
 
-Before committing or pushing, enable the [Git publication checks](docs/git-safety.md)
-with `git config --local core.hooksPath .githooks`. Run
-`python3 scripts/check_repository.py worktree` before staging new files. The hooks
-check staged files, commit messages and committed history for common leaks.
+If you have installed the backend development environment, you can create a local backup with:
 
-The runtime PostgreSQL role is neither owner nor superuser and cannot bypass RLS. The API derives the actor from an opaque server-validated session, then sets a transaction-local actor for content queries. Database credentials and arbitrary SQL access are trusted server privileges: the custom actor setting is not an identity mechanism for untrusted SQL clients. Authentication tables are server-only and deliberately separate from content RLS.
+```bash
+backend/.venv/bin/python scripts/backup.py create
+```
 
-Workspace membership plus a source grant is required for ordinary members; workspace administrators manage their workspace's sources. Provider-specific item ACLs are deferred and unsupported modes fail closed. MinIO is private, with a bucket-scoped application identity; privileged migration/storage/bootstrap credentials are confined to their one-shot jobs. Local HTTP cookies are HttpOnly/SameSite Strict. Exposing this deployment beyond loopback requires a separate TLS/deployment design.
+Backups contain private data and stay on the same disk. They do not protect against losing that disk. Follow the [backup and recovery guide](docs/local-recovery.md) for setup, verification and recovery limits. Cloning the project does not enable automatic backups.
 
-The private embedding service loads the pinned CPU model on its first request and keeps it resident between jobs. Media jobs load the pinned English ASR model on CPU in a bounded worker subprocess, then release it when the job exits. Initial setup reuses the Phase 0 model cache or downloads the pinned public checkpoint; normal ingestion stays offline. The solo worker cannot forcibly enforce Celery's hard/soft task timeouts; format probes and document extraction use subprocess deadlines and database leases. Future long media tasks must preserve those bounds.
+## For developers
 
-Host backend tools use `uv sync --project backend`; use `--group dev` for tests. The `feasibility` extra is installed only in the embedding image; API/ingestion images keep heavy inference separate. The `transcription` extra is installed for the media worker; model files mount read-only only where needed. Frontend development uses `pnpm --dir frontend install --frozen-lockfile` and `pnpm --dir frontend dev` (the Vite server proxies the local API).
+See the [developer guide](docs/development.md) for the code layout, development commands, service behavior and research tools. The [architecture](docs/architecture-proposal.md) and [implementation plan](docs/codex-implementation-plan.md) explain the design and development phases.
 
-See the [architecture](docs/architecture-proposal.md), [implementation plan](docs/codex-implementation-plan.md), [Phase 0 measurements](docs/phase0-feasibility.md), [Phase 1 validation](docs/phase1-validation.md) and [intake validation/datasets](docs/intake-validation.md) and [Phase 2 completion](docs/phase2-validation.md), plus [document evidence](docs/phase3-validation.md) and [media evidence](docs/phase4-validation.md), plus [embedding/index validation](docs/phase5-validation.md) and [search validation](docs/phase6-validation.md) and [evaluation findings/open release gates](docs/phase7-validation.md).
+Before committing or pushing, enable the [Git safety checks](docs/git-safety.md):
 
-## Local backups
-
-The recovery journal runs with Compose and retains committed deletion/reinstatement history on a separate persistent volume. Create a verified private backup with `backend/.venv/bin/python scripts/backup.py create`; inspect it with `scripts/backup.py status` using the same interpreter. `scripts/backup.py drill` restores only disposable targets. See the [recovery runbook and limits](docs/local-recovery.md). A daily Codex backup check is installed for this chat; it depends on the laptop, Docker and Codex scheduler being available. Backups remain on the same disk and do not automatically expire.
-
-## Try the starter data
-
-The current workspace includes **Starter dataset** (ten files) and **Local starter folder** (three files). These combine two tiny licensed public samples with generated fixtures and an attribution document. They validate uploads, original preservation, evidence and native embedding paths. The small query smoke checks do not establish broad search relevance. See [dataset research](docs/research/local-mvp-datasets.md).
-
-To reproduce the public downloads, run `python3 scripts/fetch_starter_data.py`. After generating the Phase 0 fixtures, `python3 scripts/demo_intake.py` imports them through the authenticated API and checks byte hashes. `python3 scripts/check_intake_faults.py` tests disposable folder changes and service restart/lease recovery; it briefly restarts this project's worker and Redis.
-
-## Planned action-search improvements
-
-See the [action retrieval and temporal localization plan](docs/action-temporal-retrieval-plan.md) for the proposed CPU experiments, modular responsibilities and acceptance criteria. [Model options and primary sources](docs/research/action-temporal-options.md) are recorded separately. The plan starts with reviewed event intervals and calibration; it does not change the current model, relevance cutoff or index.
-
-AT0 review preparation and AT1 offline CPU experiments are now available through `scripts/evaluate_action_temporal.py`. See [validation and commands](docs/action-temporal-validation.md) and the [human review worksheet](evaluation/annotations/action-temporal-v1-review.md). These tools preserve the live search policy and index.
-
-The [development review pack](evaluation/reports/action-temporal-review/index.md) provides original-video links, timestamped frames and uncertain event proposals. Regenerate it offline with `backend/.venv/bin/python scripts/evaluate_action_temporal.py inspect`. Agent observations remain separate from independent human annotations.
-
-Offline calibration now records a [no-policy decision](evaluation/manifests/action-temporal-calibration-v1-decision.json): all tested window/cutoff settings fail the provisional development gates. Run `backend/.venv/bin/python scripts/evaluate_action_temporal.py calibrate` to reproduce; see the [calibration findings](docs/action-temporal-validation.md#offline-calibration-decision). Reserved quality remains withheld.
+```bash
+git config --local core.hooksPath .githooks
+python3 scripts/check_repository.py worktree
+```
