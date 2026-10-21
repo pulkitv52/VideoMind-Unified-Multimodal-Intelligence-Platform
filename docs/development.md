@@ -2,6 +2,8 @@
 
 For installation and everyday use, start with the [README](../README.md). This guide covers the implementation, local service behavior and research tools.
 
+The [product and UX plan](product-ux-plan.md) describes the proposed interface work, implementation sequence and scope boundaries. Its [validation record](product-ux-validation.md) records the implemented UX0–UX2 milestone and the pending acceptance checks for later work.
+
 ## Local services and verification
 
 `.env` is generated with random service passwords and mode 0600; `.local` is private and ignored. Preserve both alongside your Docker volumes. Changing an environment password alone does not rotate credentials in an existing database/storage service. The bootstrap command creates an account; it is not a password-reset command.
@@ -72,3 +74,7 @@ AT0 review preparation and AT1 offline CPU experiments are now available through
 The [development review pack](../evaluation/reports/action-temporal-review/index.md) provides original-video links, timestamped frames and uncertain event proposals. Regenerate it offline with `backend/.venv/bin/python scripts/evaluate_action_temporal.py inspect`. Agent observations remain separate from independent human annotations.
 
 Offline calibration now records a [no-policy decision](../evaluation/manifests/action-temporal-calibration-v1-decision.json): all tested window/cutoff settings fail the provisional development gates. Run `backend/.venv/bin/python scripts/evaluate_action_temporal.py calibrate` to reproduce; see the [calibration findings](action-temporal-validation.md#offline-calibration-decision). Reserved quality remains withheld.
+
+## Frontend UI checks
+
+The first product milestone uses pinned Playwright 1.62.1 and the installed Google Chrome browser. Run `pnpm --dir frontend test:ui` for isolated synthetic desktop/mobile journeys; it starts a separate loopback Vite server on port 4174. These fixtures do not contact the live application APIs. Captures stay under ignored `.local/ux-browser-tests`. Run real-model browser checks separately from `scripts/dev.py verify`, since both real search and ingestion share the CPU gate.

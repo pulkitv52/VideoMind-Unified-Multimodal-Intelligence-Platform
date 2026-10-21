@@ -55,3 +55,7 @@ evaluation/reports/**/*.jpg
 evaluation/reports/**/*.jpeg
 evaluation/reports/**/*.mp4
 evaluation/reports/**/*.wav
+
+# Browser-test artifacts can contain file content.
+playwright-report/
+test-results/

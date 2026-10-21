@@ -1,0 +1,1511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VideoMind - Multimodal Intelligence Platform Demo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --font-heading: 'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      /* Dark Palette */
+      --bg-base: #0c1015;
+      --bg-surface: #141b24;
+      --bg-surface-elevated: #1a2330;
+      --bg-surface-hover: #222d3d;
+      --bg-glass: rgba(20, 27, 36, 0.75);
+      
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --border-medium: rgba(255, 255, 255, 0.14);
+      --border-accent: rgba(36, 194, 150, 0.35);
+
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --text-faint: #64748b;
+
+      --accent-primary: #10b981;
+      --accent-primary-hover: #059669;
+      --accent-glow: rgba(16, 185, 129, 0.22);
+      --accent-subtle: rgba(16, 185, 129, 0.12);
+
+      --accent-cyan: #06b6d4;
+      --accent-cyan-subtle: rgba(6, 182, 212, 0.12);
+      
+      --accent-amber: #f59e0b;
+      --accent-amber-subtle: rgba(245, 158, 11, 0.12);
+
+      --accent-purple: #8b5cf6;
+      --accent-purple-subtle: rgba(139, 92, 246, 0.12);
+
+      --radius-sm: 6px;
+      --radius-md: 10px;
+      --radius-lg: 14px;
+      --radius-xl: 20px;
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+      --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+      --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.55);
+      --shadow-glow: 0 0 25px var(--accent-glow);
+    }
+
+    [data-theme="light"] {
+      --bg-base: #f8fafc;
+      --bg-surface: #ffffff;
+      --bg-surface-elevated: #f1f5f9;
+      --bg-surface-hover: #e2e8f0;
+      --bg-glass: rgba(255, 255, 255, 0.85);
+
+      --border-subtle: #e2e8f0;
+      --border-medium: #cbd5e1;
+      --border-accent: rgba(16, 185, 129, 0.45);
+
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --text-faint: #94a3b8;
+
+      --accent-primary: #059669;
+      --accent-primary-hover: #047857;
+      --accent-glow: rgba(5, 150, 105, 0.18);
+      --accent-subtle: #ecfdf5;
+
+      --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.05);
+      --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.07);
+      --shadow-lg: 0 12px 30px rgba(0, 0, 0, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--bg-base);
+      color: var(--text-main);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      min-height: 100vh;
+    }
+
+    /* Layout */
+    .app-layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: var(--bg-surface);
+      border-right: 1px solid var(--border-subtle);
+      display: flex;
+      flex-direction: column;
+      padding: 24px 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      z-index: 20;
+    }
+
+    .brand-section {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 0 8px 24px 8px;
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .brand-logo {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--accent-primary) 0%, var(--accent-cyan) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #ffffff;
+      font-weight: 700;
+      font-family: var(--font-heading);
+      font-size: 1.15rem;
+      box-shadow: 0 0 16px var(--accent-glow);
+    }
+
+    .brand-title {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 1.15rem;
+      letter-spacing: -0.02em;
+      color: var(--text-main);
+    }
+
+    .brand-tagline {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    .nav-group {
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .nav-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-faint);
+      padding: 0 10px 6px 10px;
+    }
+
+    .nav-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px;
+      border-radius: var(--radius-md);
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      cursor: pointer;
+      border: 1px solid transparent;
+    }
+
+    .nav-item:hover {
+      background-color: var(--bg-surface-hover);
+      color: var(--text-main);
+    }
+
+    .nav-item.active {
+      background: var(--accent-subtle);
+      color: var(--accent-primary);
+      border-color: var(--border-accent);
+      font-weight: 600;
+    }
+
+    .nav-item-left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-item-icon {
+      width: 18px;
+      height: 18px;
+      stroke-width: 2;
+    }
+
+    .nav-badge {
+      font-size: 0.7rem;
+      padding: 2px 7px;
+      border-radius: 12px;
+      background: var(--bg-surface-elevated);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .sidebar-system-card {
+      margin-top: auto;
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      font-size: 0.78rem;
+    }
+
+    .system-status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .pulse-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-primary);
+      box-shadow: 0 0 8px var(--accent-primary);
+      animation: pulse 2s infinite ease-in-out;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.85); }
+    }
+
+    /* Main Area */
+    .main-wrapper {
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+    }
+
+    /* Top Navigation Bar */
+    .topbar {
+      height: 68px;
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 32px;
+      position: sticky;
+      top: 0;
+      z-index: 15;
+    }
+
+    .workspace-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 6px 14px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text-main);
+      cursor: pointer;
+      transition: border-color 0.2s;
+    }
+
+    .workspace-pill:hover {
+      border-color: var(--border-medium);
+    }
+
+    .topbar-right {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .theme-toggle-btn {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-muted);
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .theme-toggle-btn:hover {
+      color: var(--text-main);
+      border-color: var(--border-medium);
+    }
+
+    .user-avatar-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 4px 10px 4px 4px;
+      border-radius: var(--radius-lg);
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      font-size: 0.85rem;
+    }
+
+    .avatar-circle {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+      color: white;
+      font-weight: 600;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Content Area */
+    .content-container {
+      padding: 32px;
+      max-width: 1560px;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    /* Hero / Search Section */
+    .search-hero {
+      margin-bottom: 28px;
+    }
+
+    .search-hero-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent-primary);
+      margin-bottom: 8px;
+    }
+
+    .search-hero-title {
+      font-family: var(--font-heading);
+      font-size: 1.85rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 8px;
+    }
+
+    .search-hero-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      max-width: 680px;
+    }
+
+    /* Search Box Container */
+    .search-omnibar {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      padding: 6px;
+      box-shadow: var(--shadow-md);
+      transition: all 0.25s ease;
+      margin-top: 24px;
+    }
+
+    .search-omnibar:focus-within {
+      border-color: var(--accent-primary);
+      box-shadow: var(--shadow-glow), var(--shadow-md);
+    }
+
+    .omnibar-input-row {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 6px 12px;
+    }
+
+    .omnibar-icon {
+      color: var(--text-muted);
+      flex-shrink: 0;
+    }
+
+    .omnibar-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      font-family: var(--font-body);
+      font-size: 1.05rem;
+      color: var(--text-main);
+      outline: none;
+    }
+
+    .omnibar-input::placeholder {
+      color: var(--text-faint);
+    }
+
+    .shortcut-tag {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-faint);
+      background: var(--bg-surface-elevated);
+      padding: 3px 6px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .primary-btn {
+      background: var(--accent-primary);
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .primary-btn:hover {
+      background: var(--accent-primary-hover);
+      box-shadow: 0 0 12px var(--accent-glow);
+    }
+
+    /* Omnibar Secondary Controls */
+    .omnibar-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 12px 6px 12px;
+      border-top: 1px solid var(--border-subtle);
+      margin-top: 6px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .filter-chips {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      overflow-x: auto;
+    }
+
+    .filter-chip {
+      background: var(--bg-surface-elevated);
+      color: var(--text-muted);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-sm);
+      padding: 4px 10px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s ease;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .filter-chip:hover {
+      background: var(--bg-surface-hover);
+      color: var(--text-main);
+    }
+
+    .filter-chip.active {
+      background: var(--accent-subtle);
+      color: var(--accent-primary);
+      border-color: var(--border-accent);
+    }
+
+    .mode-switch-group {
+      display: flex;
+      align-items: center;
+      background: var(--bg-surface-elevated);
+      padding: 2px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .mode-switch-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 5px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .mode-switch-btn.active {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      box-shadow: var(--shadow-sm);
+    }
+
+    /* Dual Workbench: Search Results & Evidence Inspector */
+    .workbench-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.25fr);
+      gap: 24px;
+      margin-top: 24px;
+      align-items: start;
+    }
+
+    /* Results Column */
+    .results-col-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 16px;
+    }
+
+    .results-count-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .results-sort {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .result-cards-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .result-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 18px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      position: relative;
+    }
+
+    .result-card:hover {
+      border-color: var(--border-medium);
+      transform: translateY(-1px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .result-card.active {
+      border-color: var(--accent-primary);
+      background: var(--bg-surface-elevated);
+      box-shadow: inset 3px 0 0 var(--accent-primary), var(--shadow-sm);
+    }
+
+    .card-meta-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 8px;
+    }
+
+    .badge-group {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .modality-badge {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 3px 8px;
+      border-radius: var(--radius-sm);
+    }
+
+    .badge-video {
+      background: var(--accent-cyan-subtle);
+      color: var(--accent-cyan);
+      border: 1px solid rgba(6, 182, 212, 0.3);
+    }
+
+    .badge-document {
+      background: var(--accent-amber-subtle);
+      color: var(--accent-amber);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+    }
+
+    .badge-audio {
+      background: var(--accent-purple-subtle);
+      color: var(--accent-purple);
+      border: 1px solid rgba(139, 92, 246, 0.3);
+    }
+
+    .locator-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      background: var(--bg-surface-elevated);
+      padding: 2px 7px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .confidence-score {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--accent-primary);
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-title {
+      font-weight: 600;
+      font-size: 0.98rem;
+      color: var(--text-main);
+      margin-bottom: 6px;
+    }
+
+    .card-snippet {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 12px;
+    }
+
+    .card-snippet mark {
+      background: rgba(16, 185, 129, 0.2);
+      color: var(--text-main);
+      padding: 1px 4px;
+      border-radius: 3px;
+      font-weight: 500;
+    }
+
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 0.76rem;
+      color: var(--text-faint);
+    }
+
+    .inspect-evidence-link {
+      color: var(--accent-primary);
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      text-decoration: none;
+    }
+
+    /* Evidence Inspector Panel */
+    .evidence-inspector-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      position: sticky;
+      top: 92px;
+      overflow: hidden;
+    }
+
+    .inspector-header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border-subtle);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: var(--bg-surface-elevated);
+    }
+
+    .inspector-title-area {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .inspector-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: var(--accent-primary);
+    }
+
+    .inspector-source-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .inspector-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .btn-secondary {
+      background: var(--bg-surface);
+      color: var(--text-main);
+      border: 1px solid var(--border-subtle);
+      padding: 6px 12px;
+      border-radius: var(--radius-sm);
+      font-size: 0.78rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-secondary:hover {
+      background: var(--bg-surface-hover);
+      border-color: var(--border-medium);
+    }
+
+    .inspector-content {
+      padding: 20px;
+      max-height: calc(100vh - 200px);
+      overflow-y: auto;
+    }
+
+    /* Video Player Mockup */
+    .media-player-container {
+      background: #000000;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--border-subtle);
+      position: relative;
+    }
+
+    .video-mockup-frame {
+      width: 100%;
+      height: 220px;
+      background: linear-gradient(180deg, #182230 0%, #0d131d 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    .video-center-indicator {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      color: var(--text-muted);
+    }
+
+    .video-play-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(16, 185, 129, 0.85);
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 20px var(--accent-glow);
+      cursor: pointer;
+    }
+
+    .video-controls-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.85) 100%);
+      padding: 8px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .video-timeline-rail {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .timeline-progress {
+      width: 42%;
+      height: 100%;
+      background: var(--accent-primary);
+      border-radius: 3px;
+      position: relative;
+    }
+
+    .timeline-evidence-segment {
+      position: absolute;
+      left: 38%;
+      width: 15%;
+      height: 100%;
+      background: var(--accent-cyan);
+      box-shadow: 0 0 6px var(--accent-cyan);
+      border-radius: 2px;
+    }
+
+    .video-time-row {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: #e2e8f0;
+    }
+
+    /* Synchronized Interactive Transcript */
+    .evidence-section-title {
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin: 18px 0 10px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .transcript-box {
+      background: var(--bg-surface-elevated);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      font-size: 0.88rem;
+      line-height: 1.8;
+    }
+
+    .transcript-word {
+      display: inline-block;
+      padding: 1px 3px;
+      border-radius: 3px;
+      cursor: pointer;
+      transition: background 0.15s;
+    }
+
+    .transcript-word:hover {
+      background: var(--bg-surface-hover);
+    }
+
+    .transcript-word.active-match {
+      background: var(--accent-subtle);
+      color: var(--accent-primary);
+      font-weight: 600;
+      border-bottom: 2px solid var(--accent-primary);
+    }
+
+    .citation-banner {
+      margin-top: 16px;
+      padding: 12px 14px;
+      background: var(--bg-surface-elevated);
+      border-left: 3px solid var(--accent-primary);
+      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+      font-size: 0.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Tab switcher for demo modes */
+    .demo-view-toggles {
+      display: inline-flex;
+      background: var(--bg-surface-elevated);
+      padding: 3px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      margin-bottom: 20px;
+    }
+
+    .demo-view-btn {
+      padding: 6px 14px;
+      border: none;
+      background: transparent;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+      font-weight: 600;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .demo-view-btn.active {
+      background: var(--accent-primary);
+      color: #ffffff;
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    /* Document OCR Mockup */
+    .document-preview-container {
+      background: #1e293b;
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      position: relative;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .document-page-sheet {
+      width: 75%;
+      height: 90%;
+      background: #ffffff;
+      border-radius: 4px;
+      padding: 14px;
+      box-shadow: var(--shadow-md);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .doc-skeleton-line {
+      height: 6px;
+      background: #e2e8f0;
+      border-radius: 3px;
+    }
+
+    .doc-bbox-highlight {
+      position: absolute;
+      top: 38%;
+      left: 10%;
+      right: 15%;
+      height: 24px;
+      border: 2px solid #f59e0b;
+      background: rgba(245, 158, 11, 0.18);
+      border-radius: 3px;
+      display: flex;
+      align-items: center;
+      padding-left: 6px;
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: #b45309;
+    }
+
+    /* Comparison / Suggestions Drawer */
+    .enhancements-summary-section {
+      margin-top: 48px;
+      border-top: 1px solid var(--border-subtle);
+      padding-top: 32px;
+    }
+
+    .enhancements-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .enhancement-card {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 20px;
+      transition: border-color 0.2s;
+    }
+
+    .enhancement-card:hover {
+      border-color: var(--border-medium);
+    }
+
+    .enhancement-tag {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-cyan);
+      margin-bottom: 8px;
+    }
+
+    .enhancement-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--text-main);
+      margin-bottom: 8px;
+    }
+
+    .enhancement-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 1080px) {
+      .app-layout {
+        grid-template-columns: 80px 1fr;
+      }
+      .brand-title, .brand-tagline, .nav-item span, .nav-badge, .nav-label, .sidebar-system-card {
+        display: none;
+      }
+      .sidebar {
+        padding: 20px 10px;
+        align-items: center;
+      }
+      .workbench-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .app-layout {
+        display: block;
+      }
+      .sidebar {
+        display: none;
+      }
+      .topbar {
+        padding: 0 16px;
+      }
+      .content-container {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+<body data-theme="dark">
+  <div class="app-layout">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+      <div class="brand-section">
+        <div class="brand-logo">VM</div>
+        <div>
+          <div class="brand-title">VideoMind</div>
+          <div class="brand-tagline">Multimodal Intelligence</div>
+        </div>
+      </div>
+
+      <div class="nav-group">
+        <div class="nav-label">Core Platform</div>
+        <a class="nav-item active" id="navSearch" onclick="switchNav('search')">
+          <div class="nav-item-left">
+            <svg class="nav-item-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <span>Search</span>
+          </div>
+          <span class="nav-badge">Hybrid</span>
+        </a>
+        <a class="nav-item" id="navLibrary" onclick="switchNav('library')">
+          <div class="nav-item-left">
+            <svg class="nav-item-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
+            <span>Library</span>
+          </div>
+          <span class="nav-badge">24</span>
+        </a>
+        <a class="nav-item" id="navSettings" onclick="switchNav('settings')">
+          <div class="nav-item-left">
+            <svg class="nav-item-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+            </svg>
+            <span>Settings</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="sidebar-system-card">
+        <div class="system-status-indicator">
+          <span class="pulse-dot"></span>
+          <span>Local Engine Active</span>
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.72rem; line-height: 1.4;">
+          CLIP &amp; Whisper local models ready. PostgreSQL pgvector index synced.
+        </p>
+      </div>
+    </aside>
+
+    <!-- Main Section -->
+    <div class="main-wrapper">
+      <!-- Top Bar -->
+      <header class="topbar">
+        <div class="workspace-pill">
+          <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z" />
+          </svg>
+          <span>Research Lab Workspace</span>
+          <svg width="12" height="12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
+
+        <div class="topbar-right">
+          <button class="theme-toggle-btn" onclick="toggleTheme()" title="Toggle Dark/Light Mode">
+            <svg id="themeIcon" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 9h-1m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+            </svg>
+          </button>
+          <div class="user-avatar-pill">
+            <div class="avatar-circle">PK</div>
+            <span>Pulkit</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Content -->
+      <main class="content-container">
+        <!-- Interactive Demo Toggles -->
+        <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 20px;">
+          <div class="demo-view-toggles">
+            <button class="demo-view-btn active" id="btnVideoDemo" onclick="switchEvidenceMode('video')">Video &amp; ASR Mode</button>
+            <button class="demo-view-btn" id="btnDocDemo" onclick="switchEvidenceMode('document')">Document &amp; OCR Mode</button>
+          </div>
+          <span style="font-size: 0.78rem; color: var(--accent-primary); font-weight: 500;">
+            Interactive Prototype · Click cards or words to inspect
+          </span>
+        </div>
+
+        <!-- Search Hero -->
+        <section class="search-hero">
+          <div class="search-hero-eyebrow">Multimodal Neural Retrieval</div>
+          <h1 class="search-hero-title">Find exact moments across text, video, and scans</h1>
+          <p class="search-hero-desc">
+            Natural language and cross-modal embeddings matched against verified source evidence without hallucinations.
+          </p>
+
+          <!-- Omnibar -->
+          <div class="search-omnibar">
+            <div class="omnibar-input-row">
+              <svg class="omnibar-icon" width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+              <input type="text" class="omnibar-input" id="searchBox" value="quarterly platform latency optimization" placeholder="Describe a topic, query speech transcripts, or upload an image..." />
+              <span class="shortcut-tag">Ctrl + K</span>
+              <button class="primary-btn" onclick="triggerSearch()">
+                <span>Search</span>
+                <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                </svg>
+              </button>
+            </div>
+
+            <div class="omnibar-footer">
+              <div class="filter-chips">
+                <div class="filter-chip active">All Modalities</div>
+                <div class="filter-chip">Video (14)</div>
+                <div class="filter-chip">Documents (8)</div>
+                <div class="filter-chip">Audio (6)</div>
+                <div class="filter-chip">High Confidence (&gt;90%)</div>
+              </div>
+
+              <div class="mode-switch-group">
+                <button class="mode-switch-btn active">Text Query</button>
+                <button class="mode-switch-btn">Image Match</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Workbench Grid -->
+        <div class="workbench-grid">
+          <!-- Left: Search Results -->
+          <div class="results-column">
+            <div class="results-col-header">
+              <span class="results-count-title">3 verified evidence matches</span>
+              <span class="results-sort">Sorted by Reciprocal Rank Fusion</span>
+            </div>
+
+            <div class="result-cards-list">
+              <!-- Result 1 (Video) -->
+              <div class="result-card active" id="card1" onclick="selectResult('video', this)">
+                <div class="card-meta-row">
+                  <div class="badge-group">
+                    <span class="modality-badge badge-video">Speech Transcript</span>
+                    <span class="locator-pill">04:12 - 04:38</span>
+                  </div>
+                  <span class="confidence-score">
+                    <svg width="12" height="12" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
+                    </svg>
+                    96% Match
+                  </span>
+                </div>
+                <div class="card-title">All-Hands Engineering Review Q3.mp4</div>
+                <div class="card-snippet">
+                  "...we observed a 40% reduction in <mark>platform latency optimization</mark> once the worker concurrency pool was decoupled from Redis locks..."
+                </div>
+                <div class="card-footer">
+                  <span>Source: Video Recordings / 2026</span>
+                  <span class="inspect-evidence-link">
+                    Inspect Temporal Match &rarr;
+                  </span>
+                </div>
+              </div>
+
+              <!-- Result 2 (Document OCR) -->
+              <div class="result-card" id="card2" onclick="selectResult('document', this)">
+                <div class="card-meta-row">
+                  <div class="badge-group">
+                    <span class="modality-badge badge-document">Scanned OCR</span>
+                    <span class="locator-pill">Page 14 · Sec 3.2</span>
+                  </div>
+                  <span class="confidence-score">91% Match</span>
+                </div>
+                <div class="card-title">Architecture Benchmark Whitepaper.pdf</div>
+                <div class="card-snippet">
+                  "...empirical results demonstrate that strict <mark>platform latency optimization</mark> guarantees depend on transactional generation commits..."
+                </div>
+                <div class="card-footer">
+                  <span>Source: Technical Specs / Whitepapers</span>
+                  <span class="inspect-evidence-link">
+                    Inspect Page Locator &rarr;
+                  </span>
+                </div>
+              </div>
+
+              <!-- Result 3 (Audio) -->
+              <div class="result-card" id="card3" onclick="selectResult('audio', this)">
+                <div class="card-meta-row">
+                  <div class="badge-group">
+                    <span class="modality-badge badge-audio">Audio Recording</span>
+                    <span class="locator-pill">12:05 - 12:44</span>
+                  </div>
+                  <span class="confidence-score">84% Match</span>
+                </div>
+                <div class="card-title">Weekly Architecture Standup - Oct 14.m4a</div>
+                <div class="card-snippet">
+                  "...caching embedding vectors before reranking improved client response time during high load benchmarks..."
+                </div>
+                <div class="card-footer">
+                  <span>Source: Standups Audio / Archives</span>
+                  <span class="inspect-evidence-link">
+                    Inspect Audio Interval &rarr;
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Evidence Inspector -->
+          <div class="evidence-inspector-panel">
+            <div class="inspector-header">
+              <div class="inspector-title-area">
+                <div class="inspector-label" id="inspectorKind">Temporal Evidence Inspector</div>
+                <div class="inspector-source-name" id="inspectorSource">All-Hands Engineering Review Q3.mp4</div>
+              </div>
+              <div class="inspector-actions">
+                <button class="btn-secondary" onclick="copyCitation()">
+                  <svg width="14" height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
+                  </svg>
+                  <span id="copyBtnText">Copy Citation Link</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="inspector-content">
+              <!-- Video / Audio Evidence View -->
+              <div id="videoEvidenceView">
+                <div class="media-player-container">
+                  <div class="video-mockup-frame">
+                    <div class="video-center-indicator">
+                      <div class="video-play-icon" onclick="playPauseToggle()">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z" />
+                        </svg>
+                      </div>
+                      <span style="font-size: 0.75rem; color: #94a3b8;">Click to simulate playback</span>
+                    </div>
+
+                    <div class="video-controls-bar">
+                      <div class="video-timeline-rail">
+                        <div class="timeline-progress"></div>
+                        <div class="timeline-evidence-segment" title="Matched Evidence Window: 04:12 - 04:38"></div>
+                      </div>
+                      <div class="video-time-row">
+                        <span>04:18 / 18:42</span>
+                        <span style="color: var(--accent-cyan); font-weight: 600;">Evidence Range: 04:12 – 04:38</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="evidence-section-title">
+                  <span>Interactive Speech Transcript (Whisper ASR)</span>
+                  <span style="font-size: 0.72rem; color: var(--accent-primary); font-weight: 500;">Click any word to seek</span>
+                </div>
+
+                <div class="transcript-box">
+                  <span class="transcript-word">In</span>
+                  <span class="transcript-word">our</span>
+                  <span class="transcript-word">testing,</span>
+                  <span class="transcript-word">we</span>
+                  <span class="transcript-word">observed</span>
+                  <span class="transcript-word">a</span>
+                  <span class="transcript-word">marked</span>
+                  <span class="transcript-word">improvement.</span>
+                  <span class="transcript-word active-match" title="Matched keyword">platform</span>
+                  <span class="transcript-word active-match" title="Matched keyword">latency</span>
+                  <span class="transcript-word active-match" title="Matched keyword">optimization</span>
+                  <span class="transcript-word">dropped</span>
+                  <span class="transcript-word">by</span>
+                  <span class="transcript-word">over</span>
+                  <span class="transcript-word">40%</span>
+                  <span class="transcript-word">once</span>
+                  <span class="transcript-word">the</span>
+                  <span class="transcript-word">worker</span>
+                  <span class="transcript-word">concurrency</span>
+                  <span class="transcript-word">pool</span>
+                  <span class="transcript-word">was</span>
+                  <span class="transcript-word">separated</span>
+                  <span class="transcript-word">from</span>
+                  <span class="transcript-word">Redis</span>
+                  <span class="transcript-word">lock</span>
+                  <span class="transcript-word">contention.</span>
+                </div>
+
+                <div class="citation-banner">
+                  <div>
+                    <strong style="color: var(--text-main);">Immutable Locator:</strong>
+                    <span style="font-family: var(--font-mono); margin-left: 6px;">temporal:252000-278000</span>
+                  </div>
+                  <span style="color: var(--text-muted); font-size: 0.72rem;">Model: whisper-large-v3</span>
+                </div>
+              </div>
+
+              <!-- Document / OCR Evidence View -->
+              <div id="documentEvidenceView" style="display: none;">
+                <div class="document-preview-container">
+                  <div class="document-page-sheet">
+                    <div style="font-size: 0.65rem; font-weight: 700; color: #64748b; margin-bottom: 4px;">Page 14 · System Latency Analysis</div>
+                    <div class="doc-skeleton-line" style="width: 80%;"></div>
+                    <div class="doc-skeleton-line" style="width: 95%;"></div>
+                    <div class="doc-skeleton-line" style="width: 70%;"></div>
+                    <div class="doc-bbox-highlight">
+                      <span>Exact OCR Match [x: 45, y: 120, w: 520, h: 32]</span>
+                    </div>
+                    <div class="doc-skeleton-line" style="width: 85%; margin-top: 32px;"></div>
+                    <div class="doc-skeleton-line" style="width: 60%;"></div>
+                  </div>
+                </div>
+
+                <div class="evidence-section-title">
+                  <span>Extracted OCR Passage</span>
+                  <span style="font-size: 0.72rem; color: var(--accent-amber); font-weight: 500;">Confidence: 98.4%</span>
+                </div>
+
+                <div class="transcript-box" style="border-left: 3px solid var(--accent-amber);">
+                  empirical results demonstrate that strict platform latency optimization guarantees depend on transactional generation commits and bounded queue lengths across asynchronous ingestion workers.
+                </div>
+
+                <div class="citation-banner">
+                  <div>
+                    <strong style="color: var(--text-main);">Document BBox:</strong>
+                    <span style="font-family: var(--font-mono); margin-left: 6px;">page:14#char:1420-1580</span>
+                  </div>
+                  <span style="color: var(--text-muted); font-size: 0.72rem;">Engine: Tesseract / PyMuPDF</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- UI Enhancement Recommendations Section -->
+        <section class="enhancements-summary-section">
+          <div class="search-hero-eyebrow">Architecture &amp; Design Evolution</div>
+          <h2 style="font-family: var(--font-heading); font-size: 1.4rem; font-weight: 700; margin-bottom: 8px;">
+            Suggested UI Enhancements for VideoMind
+          </h2>
+          <p style="color: var(--text-muted); font-size: 0.88rem; max-width: 800px;">
+            Key design proposals to elevate the current user interface from a prototype layout to a production-ready Multimodal AI intelligence dashboard.
+          </p>
+
+          <div class="enhancements-grid">
+            <div class="enhancement-card">
+              <span class="enhancement-tag">1. Visual Hierarchy &amp; Theme</span>
+              <div class="enhancement-title">Modern Slate Dark &amp; Light Palettes</div>
+              <p class="enhancement-desc">
+                Replace the austere flat greenish background with an executive slate/obsidian dark mode, paired with vibrant emerald and electric cyan accents for high readability during prolonged research sessions.
+              </p>
+            </div>
+
+            <div class="enhancement-card">
+              <span class="enhancement-tag">2. Unified Omnibar Search</span>
+              <div class="enhancement-title">Cross-Modal Search &amp; Filter Pills</div>
+              <p class="enhancement-desc">
+                Consolidate scattered inputs into a clean central Omnibar with inline keyboard shortcuts, instant modality chips, and visual dropzones for image-based reverse search.
+              </p>
+            </div>
+
+            <div class="enhancement-card">
+              <span class="enhancement-tag">3. Synchronized Evidence Inspector</span>
+              <div class="enhancement-title">Side-by-Side Verification Workbench</div>
+              <p class="enhancement-desc">
+                Elevate the evidence inspection pane with audio/video waveform scrubbers, interactive karaoke-style transcript word highlighting, and visual bounding boxes over scanned PDF pages.
+              </p>
+            </div>
+
+            <div class="enhancement-card">
+              <span class="enhancement-tag">4. Glassmorphic Elevation &amp; Feedback</span>
+              <div class="enhancement-title">Micro-Interactions &amp; Status Feedback</div>
+              <p class="enhancement-desc">
+                Add subtle backdrop blurs, crisp borders, pulsating status indicators for Celery/PostgreSQL vector sync, and one-click citation copying with animated toasts.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const current = body.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      body.setAttribute('data-theme', next);
+    }
+
+    function switchEvidenceMode(mode) {
+      const videoView = document.getElementById('videoEvidenceView');
+      const docView = document.getElementById('documentEvidenceView');
+      const btnVideo = document.getElementById('btnVideoDemo');
+      const btnDoc = document.getElementById('btnDocDemo');
+      const inspectorKind = document.getElementById('inspectorKind');
+      const inspectorSource = document.getElementById('inspectorSource');
+
+      if (mode === 'video') {
+        videoView.style.display = 'block';
+        docView.style.display = 'none';
+        btnVideo.classList.add('active');
+        btnDoc.classList.remove('active');
+        inspectorKind.textContent = 'Temporal Evidence Inspector';
+        inspectorSource.textContent = 'All-Hands Engineering Review Q3.mp4';
+      } else {
+        videoView.style.display = 'none';
+        docView.style.display = 'block';
+        btnDoc.classList.add('active');
+        btnVideo.classList.remove('active');
+        inspectorKind.textContent = 'Document OCR Inspector';
+        inspectorSource.textContent = 'Architecture Benchmark Whitepaper.pdf';
+      }
+    }
+
+    function selectResult(type, cardElement) {
+      document.querySelectorAll('.result-card').forEach(c => c.classList.remove('active'));
+      cardElement.classList.add('active');
+
+      if (type === 'video' || type === 'audio') {
+        switchEvidenceMode('video');
+      } else {
+        switchEvidenceMode('document');
+      }
+    }
+
+    function copyCitation() {
+      const btn = document.getElementById('copyBtnText');
+      const orig = btn.textContent;
+      btn.textContent = 'Copied to Clipboard!';
+      setTimeout(() => {
+        btn.textContent = orig;
+      }, 2000);
+    }
+
+    function playPauseToggle() {
+      const timeline = document.querySelector('.timeline-progress');
+      timeline.style.transition = 'width 4s linear';
+      timeline.style.width = '70%';
+    }
+
+    function triggerSearch() {
+      const input = document.getElementById('searchBox');
+      const title = document.querySelector('.results-count-title');
+      title.textContent = 'Searching multimodal vectors...';
+      setTimeout(() => {
+        title.textContent = '3 verified evidence matches for "' + input.value + '"';
+      }, 400);
+    }
+
+    function switchNav(nav) {
+      document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+      if (nav === 'search') document.getElementById('navSearch').classList.add('active');
+      if (nav === 'library') document.getElementById('navLibrary').classList.add('active');
+      if (nav === 'settings') document.getElementById('navSettings').classList.add('active');
+    }
+  </script>
+</body>
+</html>

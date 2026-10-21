@@ -127,7 +127,13 @@ class RepositoryGuardTests(unittest.TestCase):
         self.assertIn("credential URL", guard.findings(safe + unsafe, []))
 
     def test_private_paths_and_scanner_rules(self):
-        for path in (".local/owner.json", "backup.dump", "evaluation/reports/a.png"):
+        for path in (
+            ".local/owner.json",
+            "backup.dump",
+            "evaluation/reports/a.png",
+            "frontend/playwright-report/index.html",
+            "frontend/test-results/capture.png",
+        ):
             self.assertTrue(guard.forbidden(path))
         examples = [
             b"/" + b"home/example/private/file",

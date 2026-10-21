@@ -37,6 +37,8 @@ Scope update, 20 October 2026: AT0 action-review preparation and AT1 offline win
 
 ## 1. Requirements and acceptance criteria
 
+Planning update, 21 October 2026: the [product and UX plan](product-ux-plan.md) proposes Search, Library and Settings navigation, guided first use, a desktop evidence panel, small-screen evidence views and bounded authorised result previews. Implementation began on 21 October 2026 with UX0–UX2; later UX steps remain pending. Its [validation checklist](product-ux-validation.md) separates first-milestone results from pending checks. The current code supports text and still-image queries; the original text-first assumption above describes the initial MVP sequence. This follow-up preserves module ownership, access checks, immutable evidence, publication and processing limits. It proposes no model, ranking or release-gate change.
+
 All numerical values below are proposed release targets, not observed performance.
 
 ### Functional requirements

@@ -56,7 +56,7 @@ Opening a document result lets you compare the extracted words with the original
 
 ![Document viewer with a scanned test page on the left and extracted passages on the right; the selected passage is highlighted on the page.](docs/images/document-viewer.jpg)
 
-The document screenshot uses a generated test file. All screenshots show the actual local interface; your files and results will differ.
+The document screenshot uses a generated test file. These captures show the earlier validated interface; the current version separates Search, Library and Settings and opens search evidence beside the results on desktop. Updated captures will follow the full interface validation. Your files and results will differ.
 
 ## Before you start
 
@@ -90,7 +90,7 @@ Open `.local/owner.json` in a text editor on your computer to find your generate
 
 ### 3. Add a few files
 
-Choose **Add source → Upload files → Create source** to create a collection. A "source" is a collection of files you want VideoMind to search. Then choose **Upload files** and select files from your computer.
+Open **Library**, then choose **Add collection → Upload files → Create collection**. Give the collection a name that describes the files. In that collection, choose **Upload files** and select files from your computer.
 
 Start with a small document or a short recording. VideoMind prepares files in the background, and the file list shows their progress.
 
@@ -98,15 +98,15 @@ You can also import a folder. Put your files under `.local/imports/<folder>` and
 
 ### 4. Prepare files for searching
 
-In the **Embedding index** panel, choose **Start indexing**. This builds the searchable version of your prepared files. When indexing finishes and **Activate index** appears, select it to make the index available for search.
+Open **Settings**. In **Search preparation**, choose **Start indexing**. This builds the searchable version of your prepared files. When indexing finishes and **Make index available** appears, select it to enable search.
 
 If an active index already exists, new uploads are indexed in the background. The panel shows progress and lets administrators retry failed jobs.
 
 ### 5. Search and inspect a result
 
-Use **Search your sources** to describe what you need. You can narrow results by collection or file type.
+Open **Search** and describe what you need. You can narrow results by collection or file type.
 
-Choose **Open evidence** on a result to view its page, image or playback moment. Use **More from this file** to explore other matches in the same file. You can also open prepared files directly from the file list.
+Choose **Open evidence** on a result to view its page, image or playback moment. Use **Search within this file** to explore other matches in the same file. You can also open prepared files directly from the file list.
 
 ## Supported files and limits
 
@@ -156,6 +156,8 @@ Backups contain private data and stay on the same disk. They do not protect agai
 ## For developers
 
 See the [developer guide](docs/development.md) for the code layout, development commands, service behavior and research tools. The [architecture](docs/architecture-proposal.md) and [implementation plan](docs/codex-implementation-plan.md) explain the design and development phases.
+
+The [product and UX plan](docs/product-ux-plan.md) records the interface roadmap. Its first milestone adds Search, Library and Settings navigation and the evidence workspace; preview thumbnails and the later Library improvements are still planned.
 
 Before committing or pushing, enable the [Git safety checks](docs/git-safety.md):
 

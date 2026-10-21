@@ -39,6 +39,8 @@ def forbidden(path):
             "node_modules",
             ".venv",
             "__pycache__",
+            "playwright-report",
+            "test-results",
         }
         for p in parts
     ):

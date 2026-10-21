@@ -90,10 +90,16 @@ The user requested a documented plan on 20 October 2026. [The action/temporal pl
 
 A subsequent development inspection adds timestamped review aids for 15 clips and preliminary AT3 overlap diagnostics against uncertain agent proposals. The review pack and limitations are linked in the validation report. The evaluation suite now passes 25 tests. This does not complete human adjudication or select a serving policy; reserved sequences remain outside development inspection.
 
+## Product and UX follow-up (planned)
+
+On 21 October 2026, the user requested a documented product-level UI/UX plan. The [product and UX plan](product-ux-plan.md) defines UX0–UX6: specify layouts/contracts and baseline; introduce navigation and visual foundations; improve Search and evidence inspection; add authorised result previews; improve Library and first use; clarify Settings and operational states; then validate and update documentation. Dependencies, API boundaries and per-step exits are recorded in that plan. The [UX validation checklist](product-ux-validation.md) records the first-milestone results and pending checks.
+
+The user subsequently authorised starting implementation. Implementation began on 21 October 2026 with UX0–UX2; later UX steps remain pending. The first milestone now has a passing frontend build, 24 desktop/mobile browser checks and 199 running-stack tests; see the UX validation record for coverage and limitations. The work extends Phase 6 presentation while preserving the contracts/invariants from Phases 2–6; it does not restart deferred action-retrieval experiments or waive any Phase 7 gate. Before implementing each step, read the relevant phase validation and acceptance reports. Existing text/image query support must be preserved; audio/video query uploads remain future work.
+
 ## Later work
 
 - Provider connectors: define incremental-sync and item-ACL/revocation guarantees per provider, then pass the connector contract and isolation tests.
-- Multimodal queries: accept image/audio/video queries with bounded inputs and evaluate query-to-corpus modality pairs.
+- Additional multimodal queries: the current frontend/API already support bounded still-image queries; retain that support. Audio/video query uploads and broader query-to-corpus evaluation remain later work.
 - Generated answers: select a separate generator, add claim-level citation validation, prompt-injection resistance and groundedness/abstention evaluation.
 - GPU and scale: defer GPU runtime support, larger-corpus/multi-client benchmarks, partitions, physical index splitting and specialized models until the local MVP works and a measured bottleneck justifies them.
 
@@ -103,4 +109,4 @@ The subsequent offline calibration evaluated all 12 native/control/window and cu
 
 ## Local recovery follow-up
 
-The user authorized backup/recovery reliability work after deferring action/temporal experiments. This adds an operator-only transactional change journal with independent persistent export, coordinated snapshot-bound backup commands, saved/latest journal replay in disposable restores, a daily Codex backup check and a local recovery runbook. See [local-recovery.md](local-recovery.md) for validation and remaining limits. This is operational progress within Phase 7; it does not waive the original quality, performance, independent-review or incident-recovery criteria. Multimodal query inputs remain later work.
+The user authorized backup/recovery reliability work after deferring action/temporal experiments. This adds an operator-only transactional change journal with independent persistent export, coordinated snapshot-bound backup commands, saved/latest journal replay in disposable restores, a daily Codex backup check and a local recovery runbook. See [local-recovery.md](local-recovery.md) for validation and remaining limits. This is operational progress within Phase 7; it does not waive the original quality, performance, independent-review or incident-recovery criteria. Additional audio/video query inputs remain later work; existing image-query support is preserved.
