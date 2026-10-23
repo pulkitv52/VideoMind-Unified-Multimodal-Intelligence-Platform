@@ -6,6 +6,19 @@ The [product and UX plan](product-ux-plan.md) describes the proposed interface w
 
 ## Local services and verification
 
+The header's **Light theme / Dark theme** button changes the appearance across
+Search, Library, Settings and evidence views. It is also available on sign-in.
+On first use, the app follows the browser's light/dark preference. An explicit
+choice is saved in this browser under `videomind-theme`; if browser storage is
+blocked, switching still works until the page reloads. Original document pages
+and media retain their source colors.
+
+Theme validation (21 October 2026): `make build-frontend` passed and
+`make test-frontend` passed all 28 desktop/mobile browser checks, including
+system preference, persistence after reload, blocked storage, sign-in switching
+and 320px reflow. The browser suite uses synthetic API fixtures; it does not
+measure retrieval quality or establish full accessibility compliance.
+
 `.env` is generated with random service passwords and mode 0600; `.local` is private and ignored. Preserve both alongside your Docker volumes. Changing an environment password alone does not rotate credentials in an existing database/storage service. The bootstrap command creates an account; it is not a password-reset command.
 
 ```bash
