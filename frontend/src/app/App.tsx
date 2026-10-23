@@ -8,6 +8,7 @@ import { Search } from "../features/search/Search";
 import { SourceList } from "../features/sources/SourceList";
 import { readLocation, viewUrl } from "./navigation";
 import { useCompact } from "./useCompact";
+import { preferredTheme, saveTheme } from "./theme";
 import type { EvidenceLink, View } from "./navigation";
 
 const views: { id: View; label: string; description: string }[] = [
@@ -17,6 +18,11 @@ const views: { id: View; label: string; description: string }[] = [
 ];
 
 export function App() {
+  const [theme, setTheme] = useState(preferredTheme);
+  const themeToggle = <button className="secondary theme-toggle" type="button" aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} theme`} onClick={() => {
+    const next = theme === "dark" ? "light" : "dark";
+    saveTheme(next); setTheme(next);
+  }}><span aria-hidden="true">{theme === "dark" ? "☀" : "☾"}</span>{theme === "dark" ? "Light theme" : "Dark theme"}</button>;
   const compact = useCompact();
   const [location, setLocation] = useState(() => readLocation(window.location.pathname, window.location.search));
   const [account, setAccount] = useState<Account | null>(null);
@@ -88,8 +94,8 @@ export function App() {
     try { await api("/api/auth/logout", { method: "POST" }); expired(); }
     catch { setError("Unable to sign out. Try again."); }
   }
-  if (loading) return <main className="signin"><p role="status">Opening VideoMind…</p></main>;
-  if (!account) return <>{error && <p className="connection-error" role="alert">{error}</p>}<SignIn onSignedIn={() => { void load(); }} /></>;
+  if (loading) return <><div className="auth-theme">{themeToggle}</div><main className="signin"><p role="status">Opening VideoMind…</p></main></>;
+  if (!account) return <><div className="auth-theme">{themeToggle}</div>{error && <p className="connection-error" role="alert">{error}</p>}<SignIn onSignedIn={() => { void load(); }} /></>;
   const current = views.find(view => view.id === location.view)!;
   const canCreate = ["owner", "admin"].includes(workspaces.find(space => space.id === selected)?.role ?? "");
   const evidenceDenied = location.invalidEvidence || !!location.evidence && !workspaces.some(space => space.id === location.evidence!.workspace);
@@ -98,12 +104,12 @@ export function App() {
   return <div className="shell product-shell">
     <a inert={backgroundInert || undefined} className="skip-link" href="#main-content">Skip to content</a>
     <aside inert={backgroundInert || undefined} className="sidebar" aria-label="Workspace navigation">
-      <a className="brand" href={viewUrl("search", selected)} onClick={event => follow(event, "search")}>VideoMind<span>Your files, connected.</span></a>
+      <a className="brand" href={viewUrl("search", selected)} onClick={event => follow(event, "search")}><span className="brand-badge" aria-hidden="true">VM</span>VideoMind<span>Your files, connected.</span></a>
       <nav aria-label="Main navigation">{views.map(view => <a key={view.id} href={viewUrl(view.id, selected)} aria-current={location.view === view.id ? "page" : undefined} onClick={event => follow(event, view.id)}><span>{view.label}</span><small>{view.description}</small></a>)}</nav>
-      <div className="sidebar-footer"><span className="local-dot" aria-hidden="true" /> Runs on your computer<p>Inspect the original behind every match.</p></div>
+      <div className="sidebar-footer"><span className="local-dot" aria-hidden="true" /> {ready === false ? "Local services unavailable" : "Local engine active"}<p>Inspect the original behind every match.</p></div>
     </aside>
     <div className="app-body">
-      <header inert={backgroundInert || undefined} className="app-header"><div>{workspaces.length > 1 ? <label className="workspace-select">Workspace<select value={selected} onChange={event => navigate(location.view, event.target.value)}>{workspaces.map(space => <option key={space.id} value={space.id}>{space.name}</option>)}</select></label> : <span className="workspace-name">{workspaces[0]?.name ?? "Your workspace"}</span>}</div><div className="account"><span>{account.username}</span><button className="secondary" onClick={() => { void logout(); }}>Sign out</button></div></header>
+      <header inert={backgroundInert || undefined} className="app-header"><div>{workspaces.length > 1 ? <label className="workspace-select">Workspace<select value={selected} onChange={event => navigate(location.view, event.target.value)}>{workspaces.map(space => <option key={space.id} value={space.id}>{space.name}</option>)}</select></label> : <span className="workspace-name">{workspaces[0]?.name ?? "Your workspace"}</span>}</div><div className="account">{themeToggle}<div className="avatar-chip" aria-hidden="true">{account.username.slice(0, 2).toUpperCase()}</div><span>{account.username}</span><button className="secondary" onClick={() => { void logout(); }}>Sign out</button></div></header>
       <main id="main-content" className={`workspace product-workspace view-${location.view}`}>
         {error && <p role="alert" className="error">{error}</p>}
         {evidenceDenied && <div className="notice" role="alert">Evidence unavailable. Check the link and your workspace access. <button className="text-button" onClick={() => navigate(location.view)}>Dismiss</button></div>}

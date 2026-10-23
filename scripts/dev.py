@@ -62,6 +62,9 @@ def main():
 
         prepare_embeddings()
         compose("up", "--build", "--wait", "--wait-timeout", "180")
+        from service_logs import start as start_logs
+
+        start_logs()
         compose("run", "--rm", "--user", f"{os.getuid()}:{os.getgid()}", "bootstrap")
         print(
             "Open http://localhost:8080; sign-in credentials are in .local/owner.json"
@@ -72,6 +75,9 @@ def main():
         compose("build", "verify")
         compose("run", "--rm", "verify")
     elif args.action == "down":
+        from service_logs import stop as stop_logs
+
+        stop_logs()
         compose("down")  # Preserve named volumes.
     elif args.action == "status":
         compose("ps")

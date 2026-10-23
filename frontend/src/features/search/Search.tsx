@@ -167,7 +167,12 @@ export function Search({ workspace, active, canManage, onExpired, onLibrary, onS
         {result && <div className="search-results" aria-busy={busy}><div className="results-heading"><h2>{busy ? "Previous results" : "Results"}</h2><p>For {result.description}</p><p className="muted helper">{result.scope}</p><span className="muted" role="status">{result.data.results.length} evidence {result.data.results.length === 1 ? "match" : "matches"}{busy ? " from the previous search" : ""}</span></div>
           {result.data.no_useful_evidence && <div className="empty"><h3>No useful matches found</h3><p>Try a different description or adjust the filters. This does not establish that the event is absent from your files.</p></div>}
           {result.data.results.map(hit => <article className={`search-hit ${opened?.citation === hit.citations[0].id ? "is-selected" : ""}`} key={hit.segment_id}>
-            <div className="result-overline"><span className="file-type">{hit.modality}</span><span>{hit.source_name}</span></div><div className="search-hit-heading"><h3>{hit.title}</h3></div>
+            <div className="result-overline">
+              <span className="file-type">{hit.modality}</span>
+              <span>{hit.source_name}</span>
+              <span className="locator-pill">{location(hit.citations[0])}</span>
+            </div>
+            <div className="search-hit-heading"><h3>{hit.title}</h3></div>
             <p className="match-kind">{hit.matched_representations.map(value => labels[value] ?? value).join(" · ")} · {location(hit.citations[0])}</p>
             {hit.snippet ? <p className="search-snippet">{hit.snippet}</p> : <p className="muted">{hit.representation === "audio" ? "Listen to this interval to verify the sound match." : "Inspect the original evidence to verify this visual match."}</p>}
             <div className="search-hit-actions"><button type="button" onClick={() => onOpen({ source: hit.asset.source_id, citation: hit.citations[0].id })}>Open evidence</button>{!asset && <button type="button" className="text-button" disabled={busy} onClick={() => { setAsset(hit.asset.asset_id); void run(undefined, hit.asset.asset_id); }}>Search within this file</button>}</div>

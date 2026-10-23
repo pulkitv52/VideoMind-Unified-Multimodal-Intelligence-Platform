@@ -32,6 +32,34 @@ async function setup(page: Page, member = false) {
   return calls;
 }
 const queryBox = (page: Page) => page.getByRole("searchbox", { name: "Describe a passage, scene or sound" });
+
+test("theme follows the system initially and remembers the user's selection", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "dark" });
+  await setup(page); await page.goto("/search");
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+  await page.getByRole("button", { name: "Switch to light theme" }).click();
+  await expect(page.locator("body")).toHaveCSS("background-color", "rgb(248, 250, 252)");
+  await page.reload();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "light");
+  await page.getByRole("button", { name: "Switch to dark theme" }).click();
+  await expect(page.locator("body")).toHaveCSS("background-color", "rgb(12, 16, 21)");
+  await page.setViewportSize({ width: 320, height: 800 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test("theme switching works on sign-in when storage is blocked", async ({ page }) => {
+  await page.emulateMedia({ colorScheme: "light" });
+  await page.addInitScript(() => {
+    Object.defineProperty(Storage.prototype, "getItem", { value: () => { throw new Error("Storage blocked"); } });
+    Object.defineProperty(Storage.prototype, "setItem", { value: () => { throw new Error("Storage blocked"); } });
+  });
+  await setup(page);
+  await page.route("**/api/auth/me", route => route.fulfill({ status: 401 }));
+  await page.goto("/");
+  await expect(page.getByRole("button", { name: "Sign in", exact: true })).toBeVisible();
+  await page.getByRole("button", { name: "Switch to dark theme" }).click();
+  await expect(page.locator("html")).toHaveAttribute("data-theme", "dark");
+});
 const nav = (page: Page, name: string) => page.getByRole("navigation", { name: "Main navigation" }).getByRole("link", { name: new RegExp(`^${name}`) });
 async function search(page: Page, query = "test") { await queryBox(page).fill(query); await page.getByRole("button", { name: "Search", exact: true }).click(); await expect(page.getByRole("heading", { name: `${query}.txt`, exact: true })).toBeVisible(); }
 
