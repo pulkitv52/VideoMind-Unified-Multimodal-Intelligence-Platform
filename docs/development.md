@@ -33,6 +33,13 @@ python3 scripts/dev.py down
 
 The embedding service has no published host port and uses a generated private HTTP token. Only the frontend (127.0.0.1:8080) and API (127.0.0.1:8000) are published. PostgreSQL, Redis and MinIO remain on the Compose network. `/health/live` checks the API process; `/health/ready` checks PostgreSQL/migration/runtime role, Redis, private storage and the Celery worker. `retrieval_ready` reports search-service capability when core services and the embedding service are reachable. Workspace-specific active-index readiness and authorized facets are available from the search endpoint. A busy CPU producer returns an explicit retryable search error.
 
+## Local log files
+
+Starting VideoMind also starts a local collector that writes separate rotating
+files under `logs/backend/` and `logs/frontend/`. See the [log guide](../logs/README.md)
+for commands, retained fields, rotation and browser-console limitations. For an
+already running stack, use `python3 scripts/service_logs.py start`.
+
 ## Modules
 
 - `backend/src/videomind/identity`: credentials, sessions, workspace identity.

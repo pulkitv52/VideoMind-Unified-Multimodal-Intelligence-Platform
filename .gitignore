@@ -35,6 +35,10 @@ backups/
 *.sqlite*
 *.db
 *.log
+/logs/backend/*
+!/logs/backend/.gitkeep
+/logs/frontend/*
+!/logs/frontend/.gitkeep
 
 # Local tooling and build output
 .idea/

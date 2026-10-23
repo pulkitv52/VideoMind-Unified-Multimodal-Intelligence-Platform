@@ -1,6 +1,7 @@
 .git
 .env
 .local
+logs
 .cache
 **/.venv
 **/__pycache__
