@@ -4,6 +4,11 @@ Date: 21 October 2026. Status: implementation started with UX0–UX2. The user a
 
 ## 1. Product purpose and audience
 
+The separately requested [users, roles and workspace management plan](users-roles-plan.md)
+specifies proposed owner/admin/member screens, invitations, personal workspaces
+and grant management. It extends the original UI scope; its features are not
+implemented by the UX0–UX2 milestone.
+
 Help someone answer: **Where in my files does this happen or get mentioned?**
 
 The main journey is add files, find something, inspect the original evidence, then use its reference. The initial audience is a person reviewing a local collection of documents and recordings, with workspace members as a supported secondary audience. This audience choice is a planning assumption, not a completed user-research finding.

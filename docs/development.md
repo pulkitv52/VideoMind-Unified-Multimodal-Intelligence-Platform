@@ -60,6 +60,11 @@ The `embeddings` module owns CPU inference, durable indexing and generation life
 
 ## Development and trust boundary
 
+The proposed [users and roles plan](users-roles-plan.md) defines owner, admin and
+member capabilities, account onboarding and collection-sharing work. Existing
+owner/admin content authorization is implemented; the proposed account and
+permission management screens/APIs remain future work.
+
 Before committing or pushing, enable the [Git publication checks](git-safety.md)
 with `git config --local core.hooksPath .githooks`. Run
 `python3 scripts/check_repository.py worktree` before staging new files. The hooks

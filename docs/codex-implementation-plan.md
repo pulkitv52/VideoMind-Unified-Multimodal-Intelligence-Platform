@@ -92,6 +92,13 @@ A subsequent development inspection adds timestamped review aids for 15 clips an
 
 ## Product and UX follow-up (planned)
 
+The user also requested a complete owner/admin/member management plan on
+21 October 2026. See [users, roles and workspace management](users-roles-plan.md)
+for the proposed A1–A7 implementation sequence, permission matrix, invitation-first
+onboarding, collection grants and validation gates. This is a separate planned
+extension to account/access management; implementation has not been authorized
+by the planning request and the existing Phase 7 gates remain unchanged.
+
 On 21 October 2026, the user requested a documented product-level UI/UX plan. The [product and UX plan](product-ux-plan.md) defines UX0–UX6: specify layouts/contracts and baseline; introduce navigation and visual foundations; improve Search and evidence inspection; add authorised result previews; improve Library and first use; clarify Settings and operational states; then validate and update documentation. Dependencies, API boundaries and per-step exits are recorded in that plan. The [UX validation checklist](product-ux-validation.md) records the first-milestone results and pending checks.
 
 The user subsequently authorised starting implementation. Implementation began on 21 October 2026 with UX0–UX2; later UX steps remain pending. The first milestone now has a passing frontend build, 24 desktop/mobile browser checks and 199 running-stack tests; see the UX validation record for coverage and limitations. The work extends Phase 6 presentation while preserving the contracts/invariants from Phases 2–6; it does not restart deferred action-retrieval experiments or waive any Phase 7 gate. Before implementing each step, read the relevant phase validation and acceptance reports. Existing text/image query support must be preserved; audio/video query uploads remain future work.
