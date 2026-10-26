@@ -232,6 +232,35 @@ services:
     cpus: 0.25
     restart: unless-stopped
 
+  database-viewer:
+    image: dpage/pgadmin4@sha256:c332c5f6dfba995d9ebc4af261d93506d6876085d712eaaa3defc8dd1a3f26de
+    profiles: [tools]
+    ports: ['127.0.0.1:8081:8080']
+    env_file:
+      - path: ../../.local/pgadmin.env
+        required: false
+    environment:
+      PGADMIN_LISTEN_PORT: '8080'
+      PGADMIN_DISABLE_POSTFIX: '1'
+      PGADMIN_CONFIG_UPGRADE_CHECK_ENABLED: 'False'
+      GUNICORN_THREADS: '2'
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      - ../../.local/pgadmin-servers.json:/pgadmin4/servers.json:ro
+    depends_on:
+      postgres: {condition: service_healthy}
+    healthcheck:
+      test: [CMD, /venv/bin/python3, -c, "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/misc/ping',timeout=5)"]
+      interval: 10s
+      timeout: 6s
+      retries: 12
+      start_period: 30s
+    mem_limit: 512m
+    cpus: 0.5
+    security_opt: ['no-new-privileges:true']
+    logging: {driver: none}
+    restart: unless-stopped
+
   bootstrap:
     <<: *backend
     profiles: [tools]
@@ -264,6 +293,7 @@ services:
     cpus: 1.0
 
 volumes:
+  pgadmin-data:
   recovery-data:
   postgres-data:
   object-data:

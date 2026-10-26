@@ -40,6 +40,12 @@ files under `logs/backend/` and `logs/frontend/`. See the [log guide](../logs/RE
 for commands, retained fields, rotation and browser-console limitations. For an
 already running stack, use `python3 scripts/service_logs.py start`.
 
+## Browser database viewer (pgAdmin)
+
+For read-only workspace data in pgAdmin, run `python3 scripts/database_viewer.py`
+and open `http://localhost:8081`. See the [database viewer guide](database-viewer.md)
+for its separate login, workspace scope and stopping instructions.
+
 ## Modules
 
 - `backend/src/videomind/identity`: credentials, sessions, workspace identity.
