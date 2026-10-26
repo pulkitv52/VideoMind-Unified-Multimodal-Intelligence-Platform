@@ -1,13 +1,19 @@
 import asyncio
 from uuid import UUID
 
-from fastapi import APIRouter, Depends, HTTPException, Request, Response
+from fastapi import APIRouter, Depends, HTTPException, Query, Request, Response
 from pydantic import BaseModel, ConfigDict, Field
 from sqlalchemy import text
 from starlette.concurrency import run_in_threadpool
 
 from videomind.identity.security import token_hash
 from videomind.identity.service import COOKIE, actor, authenticate
+from videomind.identity.access import (
+    CollectionCapabilities,
+    WorkspaceCapabilities,
+    collection_capabilities,
+    workspace_capabilities,
+)
 from videomind.infrastructure.database import transaction
 
 router = APIRouter()
@@ -84,8 +90,51 @@ def workspaces(request: Request, principal: UUID = Depends(actor)):
             dict(row)
             for row in conn.execute(
                 text(
-                    "SELECT w.id,w.name,m.role FROM app.workspaces w JOIN app.memberships m ON m.workspace_id=w.id WHERE m.principal_id=:principal ORDER BY w.name,w.id"
+                    "SELECT w.id,w.name,m.role,true AS can_create_collections,app.admin_of(w.id) AS can_manage_index,app.admin_of(w.id) AS can_import_folders,app.admin_of(w.id) AS can_view_analytics FROM app.workspaces w JOIN app.memberships m ON m.workspace_id=w.id WHERE m.principal_id=:principal ORDER BY w.name,w.id"
                 ),
                 {"principal": principal},
             ).mappings()
         ]
+
+
+@router.get("/workspaces/{w}/capabilities", response_model=WorkspaceCapabilities)
+def workspace_access(w: UUID, request: Request, principal: UUID = Depends(actor)):
+    with transaction(request.app.state.db, principal) as conn:
+        return workspace_capabilities(conn, w)
+
+
+@router.get(
+    "/workspaces/{w}/sources/{s}/capabilities", response_model=CollectionCapabilities
+)
+def collection_access(
+    w: UUID, s: UUID, request: Request, principal: UUID = Depends(actor)
+):
+    with transaction(request.app.state.db, principal) as conn:
+        return collection_capabilities(conn, w, s)
+
+
+@router.get("/workspaces/{w}/people")
+def people(
+    w: UUID,
+    request: Request,
+    after: UUID | None = None,
+    limit: int = Query(default=50, ge=1, le=100),
+    principal: UUID = Depends(actor),
+):
+    with transaction(request.app.state.db, principal) as conn:
+        if not workspace_capabilities(conn, w).can_manage_members:
+            raise HTTPException(403, "Workspace administrator required")
+        rows = [
+            dict(row)
+            for row in conn.execute(
+                text("SELECT * FROM app.workspace_people(:w,:after,:limit)"),
+                {"w": w, "after": after, "limit": limit + 1},
+            ).mappings()
+        ]
+        items = rows[:limit]
+        return {
+            "items": items,
+            "next_cursor": (
+                str(items[-1]["principal_id"]) if len(rows) > limit else None
+            ),
+        }

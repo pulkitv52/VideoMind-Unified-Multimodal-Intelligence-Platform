@@ -22,7 +22,9 @@ checks other local branches/tags. A scan error blocks the operation.
 
 Checks reject private paths, generated report media, symlinks/submodules, files
 over 5 MiB, common credential/token formats, credential-bearing or signed URLs,
-and copies of this deployment's `.env`, owner password and embedding token.
+and copies of this deployment's `.env`, owner password, role-test account
+passwords, pgAdmin/database-viewer passwords and embedding token. Role-test and
+viewer credential filenames, plus `.pgpass`, are also blocked outside `.local`.
 Browser-test reports and captures are ignored and blocked even if force-added.
 Personal absolute home-directory paths are also blocked; use `<HOME>` in reports.
 Diagnostics show filenames and rule names, never matching credential values.

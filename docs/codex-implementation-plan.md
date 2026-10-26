@@ -92,12 +92,29 @@ A subsequent development inspection adds timestamped review aids for 15 clips an
 
 ## Product and UX follow-up (planned)
 
+Product direction was revised on 26 October 2026: the
+[self-service product plan](self-service-product-plan.md) defines S1–S6 for
+self-signup, member-owned upload collections, automatic preparation and
+owner/admin analytics showing joins, uploaders and indexing states. It supersedes
+invitation-first onboarding and administrator-only upload-collection creation.
+S1–S6 are implemented and validated for the local deployment; see
+[self-service validation](self-service-validation.md) for current measured results.
+Earlier validation results remain historical.
+
 The user also requested a complete owner/admin/member management plan on
 21 October 2026. See [users, roles and workspace management](users-roles-plan.md)
 for the proposed A1–A7 implementation sequence, permission matrix, invitation-first
 onboarding, collection grants and validation gates. This is a separate planned
-extension to account/access management; implementation has not been authorized
-by the planning request and the existing Phase 7 gates remain unchanged.
+extension to account/access management. Implementation was authorized on
+26 October 2026, starting with A1; see [access validation](access-validation.md).
+The existing Phase 7 gates remain unchanged.
+
+The subsequent request for an admin, two members and thoroughly tested role
+dashboards authorizes persistent operator-provisioned test accounts, isolated
+synthetic collections, role/access summaries and a read-only People directory.
+See [role dashboard validation](role-dashboards-validation.md). This is a narrow
+read-only part of A3 plus the requested operator setup, not completion of A2–A7
+or authorization to expose unfinished invitation/role-editing controls.
 
 On 21 October 2026, the user requested a documented product-level UI/UX plan. The [product and UX plan](product-ux-plan.md) defines UX0–UX6: specify layouts/contracts and baseline; introduce navigation and visual foundations; improve Search and evidence inspection; add authorised result previews; improve Library and first use; clarify Settings and operational states; then validate and update documentation. Dependencies, API boundaries and per-step exits are recorded in that plan. The [UX validation checklist](product-ux-validation.md) records the first-milestone results and pending checks.
 

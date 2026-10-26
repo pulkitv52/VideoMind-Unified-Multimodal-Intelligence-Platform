@@ -249,6 +249,12 @@ def ingest(
         )
         conn.execute(
             text(
+                "INSERT INTO app.upload_attribution(workspace_id,source_id,revision_id,uploaded_by) VALUES(:w,:s,:rev,:actor)"
+            ),
+            values,
+        )
+        conn.execute(
+            text(
                 "UPDATE app.assets SET latest_revision_id=:rev,mime_type=:mime,modality=:modality,source_created_at=coalesce(source_created_at,:created),source_modified_at=:modified,deleted=false WHERE workspace_id=:w AND source_id=:s AND id=:a"
             ),
             dict(

@@ -16,9 +16,14 @@ async function setup(page: Page, member = false) {
   await page.route("**/api/**", async route => {
     const url = new URL(route.request().url()); const path = url.pathname;
     calls.push(path);
+    if (path === "/api/auth/signup-info") return route.fulfill({ json: { enabled: true } });
     if (path === "/api/auth/me") return route.fulfill({ json: { id: "account", username: "example" } });
     if (path === "/api/auth/logout") return route.fulfill({ status: 204 });
-    if (path === "/api/workspaces") return route.fulfill({ json: member ? [{ id: other, name: "Other workspace", role: "member" }, { id: workspace, name: "Example workspace", role: "member" }] : [{ id: workspace, name: "Example workspace", role: "owner" }] });
+    if (path === "/api/workspaces") return route.fulfill({ json: member ? [{ id: other, name: "Other workspace", role: "member", can_create_collections: false, can_import_folders: false, can_manage_index: false, can_view_analytics: false }, { id: workspace, name: "Example workspace", role: "member", can_create_collections: false, can_import_folders: false, can_manage_index: false, can_view_analytics: false }] : [{ id: workspace, name: "Example workspace", role: "owner", can_create_collections: true, can_import_folders: true, can_manage_index: true, can_view_analytics: true }] });
+    if (path.endsWith("/capabilities")) return route.fulfill({ json: { role: member ? "member" : "owner", can_manage_members: !member } });
+    if (path.endsWith("/people")) return route.fulfill({ json: { items: [{ principal_id: "account", username: "example", role: "owner", disabled: false }], next_cursor: null } });
+    if (path.endsWith("/registration")) return route.fulfill({ json: { configured: true, enabled: true, can_change: !member } });
+    if (path.endsWith("/analytics")) return route.fulfill({ json: { can_manage_roles: true, summary: { members: 1, files: 1, ready: 1, preparing: 0, failed: 0, recent_members: 0, recent_uploads: 1 }, people: [{ principal_id: "account", username: "example", role: "owner", disabled: false, joined_at: null, version: 1, files: 1, ready: 1 }], recent_members: [], uploads: [{ id: "asset", title: "example.txt", modality: "document", source_id: source, revision_id: revision, collection: "Example collection", uploader: "example", received_at: "2026-10-26T09:00:00Z", status: "ready", has_warnings: false }], trend: [{ day: "2026-10-26", uploads: 1 }], next_cursor: null, directory_limited: false } });
     if (path.endsWith("/search/facets")) return route.fulfill({ json: { ready: true, items: [{ source_id: source, source_name: "Example collection", modality: "document", assets: 1 }] } });
     if (path.endsWith("/search")) return route.fulfill({ json: response(route.request().postDataJSON().query) });
     if (path.endsWith("/sources")) return route.fulfill({ json: [] });
@@ -32,6 +37,92 @@ async function setup(page: Page, member = false) {
   return calls;
 }
 const queryBox = (page: Page) => page.getByRole("searchbox", { name: "Describe a passage, scene or sound" });
+
+test("owner dashboard shows real activity fields and member route has no analytics", async ({ page }) => {
+  const calls = await setup(page);
+  await page.goto("/dashboard");
+  await expect(page.getByRole("heading", { name: "Dashboard", exact: true })).toBeVisible();
+  await expect(page.getByLabel("Workspace totals")).toContainText("Ready to search");
+  await expect(page.getByLabel("Upload activity")).toContainText("example.txt");
+  await expect(page.getByRole("button", { name: "Close registration", exact: true })).toBeVisible();
+  await page.getByLabel("Uploader", { exact: true }).selectOption("account");
+  await expect(page.getByLabel("Upload activity")).toContainText("example.txt");
+  expect(calls.some(path => path.endsWith("/analytics"))).toBe(true);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test("member cannot open analytics by changing the URL", async ({ page }) => {
+  const calls = await setup(page, true); await page.goto("/dashboard");
+  await expect(page.getByRole("alert")).toContainText("available to workspace owners and admins");
+  expect(calls.some(path => path.endsWith("/analytics"))).toBe(false);
+  await expect(page.getByRole("navigation", { name: "Main navigation" }).getByRole("link", { name: /^Dashboard/ })).toHaveCount(0);
+});
+
+test("signup confirms privacy and opens the member Library after creation", async ({ page }) => {
+  await setup(page, true);
+  let signedUp = false;
+  await page.route("**/api/auth/me", route => signedUp ? route.fulfill({ json: { id: "new-member", username: "new_member" } }) : route.fulfill({ status: 401 }));
+  await page.route("**/api/auth/signup", route => {
+    const body = route.request().postDataJSON();
+    expect(body.accept_workspace_access).toBe(true);
+    expect(body.password_confirmation).toBe(body.password);
+    expect(body.role).toBeUndefined();
+    signedUp = true;
+    return route.fulfill({ status: 201, json: { authenticated: true, role: "member" } });
+  });
+  await page.goto("/");
+  await page.getByRole("button", { name: "New here? Create an account", exact: true }).click();
+  await page.getByLabel("Username", { exact: true }).fill("new_member");
+  await page.getByLabel("Password", { exact: true }).fill("synthetic-password-for-ui");
+  await page.getByLabel("Confirm password", { exact: true }).fill("synthetic-password-for-ui");
+  await page.getByRole("checkbox").check();
+  await page.getByRole("button", { name: "Create account", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Files worth finding again." })).toBeVisible();
+  await expect(page).toHaveURL(/\/library/);
+});
+
+test("collection creation uses server capabilities rather than the displayed role", async ({ page }) => {
+  await setup(page);
+  await page.route("**/api/workspaces", route => route.fulfill({ json: [{ id: workspace, name: "Example workspace", role: "owner", can_create_collections: false, can_import_folders: false, can_manage_index: false, can_view_analytics: false }] }));
+  await page.goto("/library");
+  await expect(page.getByRole("heading", { name: "Files worth finding again." })).toBeVisible();
+  await expect(page.getByRole("button", { name: "Add collection", exact: true })).toHaveCount(0);
+});
+
+test("admin sees an operational dashboard and a read-only People directory", async ({ page }) => {
+  await setup(page);
+  await page.route("**/api/workspaces", route => route.fulfill({ json: [{ id: workspace, name: "Example workspace", role: "admin", can_create_collections: true, can_import_folders: true, can_manage_index: true, can_view_analytics: true }] }));
+  await page.route(`**/workspaces/${workspace}/capabilities`, route => route.fulfill({ json: { role: "admin", can_manage_members: true } }));
+  await page.goto("/settings");
+  await expect(page.getByLabel("Your workspace access")).toContainText("Workspace role: Admin");
+  await expect(page.getByLabel("People", { exact: true })).toContainText("example");
+  await expect(page.getByRole("button", { name: "Start indexing", exact: true })).toBeVisible();
+  await expect(page.getByRole("button", { name: /transfer|promote|invite/i })).toHaveCount(0);
+});
+
+test("member dashboard lists only granted collections and requests no directory or storage", async ({ page }) => {
+  const calls = await setup(page, true);
+  await page.route(`**/workspaces/${other}/sources`, route => route.fulfill({ json: [{ id: source, name: "Member collection", connector_kind: "upload", status: "connected", can_ingest: true, can_admin: false }] }));
+  await page.goto("/settings");
+  await expect(page.getByLabel("Your workspace access")).toContainText("Workspace role: Member");
+  await expect(page.getByLabel("Your workspace access")).toContainText("Contributor · can upload");
+  await expect(page.getByLabel("People", { exact: true })).toHaveCount(0);
+  await expect(page.getByRole("button", { name: /indexing|rebuild|activate|restore/i })).toHaveCount(0);
+  expect(calls.some(path => path.endsWith("/people") || path.endsWith("/storage"))).toBe(false);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test("directory failure clears previously displayed account and collection details", async ({ page }) => {
+  await setup(page);
+  await page.route(`**/workspaces/${workspace}/sources`, route => route.fulfill({ json: [{ id: source, name: "Restricted example collection", connector_kind: "upload", status: "connected", can_ingest: true, can_admin: true }] }));
+  await page.route(`**/workspaces/${workspace}/people*`, route => route.request().url().includes("after=") ? route.fulfill({ status: 403 }) : route.fulfill({ json: { items: [{ principal_id: "person", username: "restricted-person", role: "member", disabled: false }], next_cursor: source } }));
+  await page.goto("/settings");
+  await expect(page.getByLabel("People", { exact: true })).toContainText("restricted-person");
+  await page.getByRole("button", { name: "More people", exact: true }).click();
+  await expect(page.getByRole("alert")).toContainText("Unable to load people");
+  await expect(page.getByLabel("People", { exact: true })).toHaveCount(0);
+  await expect(page.getByLabel("Your workspace access")).not.toContainText("Restricted example collection");
+});
 
 test("theme follows the system initially and remembers the user's selection", async ({ page }) => {
   await page.emulateMedia({ colorScheme: "dark" });
@@ -205,4 +296,29 @@ test("browser Back closes a Library dialog before returning to Search", async ({
   await page.goBack();
   await expect(page.getByRole("dialog")).toHaveCount(0);
   await expect(queryBox(page)).toBeVisible();
+});
+
+
+test("older dashboard uploads remain visible across the automatic refresh interval", async ({ page }) => {
+  await setup(page);
+  await page.clock.install();
+  let requests = 0;
+  await page.route("**/analytics?**", route => {
+    requests++;
+    const older = new URL(route.request().url()).searchParams.has("after");
+    return route.fulfill({ json: { can_manage_roles: true, summary: { members: 1, files: 2, ready: 2, preparing: 0, failed: 0, recent_members: 0, recent_uploads: 2 }, people: [], recent_members: [], uploads: [{ id: older ? "older" : "latest", title: older ? "older.txt" : "latest.txt", modality: "document", source_id: source, revision_id: revision, collection: "Example collection", uploader: "example", received_at: "2026-10-26T09:00:00Z", status: "ready", has_warnings: false }], trend: [], next_cursor: older ? null : "next-page", directory_limited: false } });
+  });
+  await page.goto("/dashboard");
+  await expect(page.getByLabel("Upload activity")).toContainText("latest.txt");
+  await page.getByRole("button", { name: "More uploads", exact: true }).click();
+  await expect(page.getByLabel("Upload activity")).toContainText("older.txt");
+  const pagedRequests = requests;
+  await page.clock.runFor(16000);
+  await expect(page.getByLabel("Upload activity")).toContainText("older.txt");
+  expect(requests).toBe(pagedRequests);
+  await page.getByRole("button", { name: "Return to latest activity", exact: true }).click();
+  await expect(page.getByLabel("Upload activity")).not.toContainText("older.txt");
+  const refreshedRequests = requests;
+  await page.clock.runFor(16000);
+  await expect.poll(() => requests).toBeGreaterThan(refreshedRequests);
 });

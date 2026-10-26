@@ -328,6 +328,13 @@ def process(engine, objects, settings, actor, j, client):
 
 
 def tick(engine, objects, settings, client):
+    from videomind.embeddings.initial import initialize
+
+    try:
+        initialize(engine, client)
+    except Exception:
+        # A failed first-index setup must not starve already registered work.
+        pass
     with engine.connect() as conn:
         inventory = (
             conn.execute(text("SELECT * FROM app.index_pending()")).mappings().all()

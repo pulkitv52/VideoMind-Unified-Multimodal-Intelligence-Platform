@@ -86,6 +86,40 @@ class RepositoryGuardTests(unittest.TestCase):
         self.git("add", "link")
         self.assertNotEqual(self.scan("staged").returncode, 0)
 
+    def test_nested_role_account_password_copy_is_blocked_without_echo(self):
+        import json
+
+        secret = "role-password-" + "q" * 28
+        self.write(
+            ".local/role-test-accounts.json",
+            json.dumps({"accounts": [{"password": secret}]}),
+        )
+        self.write("notes.md", "Copy: " + secret)
+        self.git("add", "notes.md")
+        result = self.scan("staged")
+        self.assertNotEqual(result.returncode, 0)
+        self.assertNotIn(secret.encode(), result.stderr + result.stdout)
+        self.assertTrue(guard.forbidden("role-test-accounts.json"))
+
+    def test_viewer_password_copies_and_private_filenames_are_blocked(self):
+        import json
+
+        for filename in ("pgadmin.json", "database-viewer.json"):
+            with self.subTest(filename=filename):
+                secret = "viewer-" + filename + "-" + "q" * 28
+                self.write(".local/" + filename, json.dumps({"password": secret}))
+                self.write("notes.md", "Copied value: " + secret)
+                self.git("add", "notes.md")
+                result = self.scan("staged")
+                self.assertNotEqual(result.returncode, 0)
+                self.assertNotIn(secret.encode(), result.stderr + result.stdout)
+                self.assertTrue(guard.forbidden("export/" + filename))
+                self.write(filename, "redacted")
+                self.git("add", filename)
+                self.assertNotEqual(self.scan("staged").returncode, 0)
+                self.git("rm", "--cached", filename)
+        self.assertTrue(guard.forbidden("export/.pgpass"))
+
     def test_commit_message(self):
         self.write("message", "token=" + "gh" + "p_" + "A" * 36)
         self.assertNotEqual(self.scan("message", "message").returncode, 0)

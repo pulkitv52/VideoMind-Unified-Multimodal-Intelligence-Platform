@@ -950,8 +950,9 @@ progress {
   }
   .sidebar > .brand { display: inline-block; margin: 0 0 16px; font-size: 1.3rem; }
   .brand span { display: none; }
-  .sidebar nav { display: flex; gap: 6px; }
-  .sidebar nav a { flex: 1; padding: 9px 10px; text-align: center; }
+  .sidebar nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+  .sidebar nav:has(a:nth-child(4)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sidebar nav a { min-width: 0; padding: 9px 8px; text-align: center; }
   .sidebar nav a small, .sidebar-footer { display: none; }
   .app-header { min-height: 64px; padding: 12px 18px; gap: 12px; flex-wrap: wrap; }
   .account { gap: 10px; flex-wrap: wrap; }
@@ -981,3 +982,30 @@ progress {
 @media (prefers-reduced-motion: reduce) {
   * { scroll-behavior: auto !important; animation: none !important; transition: none !important; }
 }
+
+/* Workspace permissions and the read-only directory */
+.workspace-role { color: var(--muted); font-size: .78rem; }
+.access-collections { list-style: none; padding: 0; }
+.access-collections li, .people-list [role="listitem"] { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding: 12px 0; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; }
+.access-collections span, .people-list span { color: var(--muted); }
+.people-list { margin: 12px 0; }
+
+/* Administrative activity, with scoped member onboarding. */
+.signup-access { display: flex; align-items: start; gap: 10px; margin: 20px 0; font-weight: 400; }
+.signup-access input { width: auto; min-height: 0; margin-top: 5px; flex: none; }
+.metric-grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(150px,1fr)); gap: 14px; margin: 24px 0; }
+.metric { padding: 20px; background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-md); }
+.metric span { display: block; color: var(--muted); font-size: .85rem; }
+.metric strong { display: block; font-size: 2rem; color: var(--ink); }
+.dashboard-filters { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin: 20px 0; }
+.dashboard-filters label { min-width: 0; }
+.dashboard-table-wrap { overflow-x: auto; max-width: 100%; }
+.dashboard-table { width: 100%; border-collapse: collapse; text-align: left; font-size: .88rem; }
+.dashboard-table th, .dashboard-table td { padding: 14px 10px; vertical-align: top; border-bottom: 1px solid var(--border); overflow-wrap: anywhere; min-width: 105px; }
+.dashboard-table th { color: var(--muted); font-weight: 600; }
+.dashboard-table td .text-button { display: block; text-align: left; }
+.registration-setting { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.activity-chart { list-style: none; padding: 0; }
+.activity-chart li { display: grid; grid-template-columns: 100px minmax(0,1fr) 40px; align-items: center; gap: 12px; margin: 12px 0; font-size: .8rem; }
+.activity-bar { display: block; min-height: 12px; background: var(--accent); border-radius: 3px; }
+@media (max-width: 700px) { .dashboard-filters { grid-template-columns: 1fr; } .metric-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } .metric { padding: 14px; } }

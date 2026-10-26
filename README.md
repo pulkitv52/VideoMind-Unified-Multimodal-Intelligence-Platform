@@ -23,13 +23,13 @@ For documents, you might search for "cancellation policy". For videos, try descr
 ```mermaid
 flowchart TD
     A["Add files or import a folder"] --> B["VideoMind prepares your files"]
-    B --> C["Build and activate the search index"]
+    B --> C["Files are indexed for searching"]
     C --> D["Search in your own words"]
     D --> E["Open a matching page, image or playback moment"]
     E --> F["Check the original and copy a citation"]
 ```
 
-You build and activate the first index once. Later uploads are added to the active index in the background. If a search finds no useful match, try a different description or check whether your files have finished processing.
+In a workspace with self-service registration configured, the first index and later uploads are prepared automatically. In other workspaces, an administrator sets up the first index in Settings. If a search finds no useful match, try a different description or check whether your files have finished processing.
 
 ## A look inside
 
@@ -88,19 +88,23 @@ Open [http://localhost:8080](http://localhost:8080) in your browser.
 
 Open `.local/owner.json` in a text editor on your computer to find your generated username and password. The `.local` folder is hidden; enable "Show hidden files" in your file manager if needed. Keep this file private.
 
+If **Create account** appears, a new user can register with a username and a password of at least 12 characters, confirm the password and accept the workspace access notice. New accounts are members and open directly in Library. Their own collections are hidden from other members; workspace owners and admins can access them. Existing collections are shared only through explicit access grants.
+
+Owners and admins have a **Dashboard** for member joins, uploads, file readiness, storage and membership management. Members use **Library**, **Search** and **Settings**. Owners can open or close registration from Dashboard; admins cannot grant administrator roles.
+
 ### 3. Add a few files
 
 Open **Library**, then choose **Add collection → Upload files → Create collection**. Give the collection a name that describes the files. In that collection, choose **Upload files** and select files from your computer.
 
 Start with a small document or a short recording. VideoMind prepares files in the background, and the file list shows their progress.
 
-You can also import a folder. Put your files under `.local/imports/<folder>` and select that folder when adding a source. VideoMind reads from that folder without changing its files. See [folder import details](docs/phase2-validation.md) for sync behavior and limits.
+Owners and admins can also import a folder. Put your files under `.local/imports/<folder>` and select that folder when adding a source. VideoMind reads from that folder without changing its files. See [folder import details](docs/phase2-validation.md) for sync behavior and limits.
 
 ### 4. Prepare files for searching
 
-Open **Settings**. In **Search preparation**, choose **Start indexing**. This builds the searchable version of your prepared files. When indexing finishes and **Make index available** appears, select it to enable search.
+When registration is configured, the first search index is created and published automatically after files are prepared. Later uploads are added in the background. Wait for **Ready to search** in Library; a successful upload alone does not mean indexing is finished.
 
-If an active index already exists, new uploads are indexed in the background. The panel shows progress and lets administrators retry failed jobs.
+In a workspace without self-service registration, an administrator opens **Settings → Search preparation → Start indexing**, then selects **Make index available** when the build finishes. Global rebuild and activation controls are limited to owners and admins. Members can retry preparation or indexing of their writable files from Library.
 
 ### 5. Search and inspect a result
 
@@ -156,6 +160,8 @@ Backups contain private data and stay on the same disk. They do not protect agai
 ## For developers
 
 See the [developer guide](docs/development.md) for the code layout, development commands, service behavior and research tools. The [architecture](docs/architecture-proposal.md) and [implementation plan](docs/codex-implementation-plan.md) explain the design and development phases.
+
+For registration setup, role boundaries and measured checks, see the [self-service guide](docs/self-service-validation.md).
 
 The [product and UX plan](docs/product-ux-plan.md) records the interface roadmap. Its first milestone adds Search, Library and Settings navigation and the evidence workspace; preview thumbnails and the later Library improvements are still planned.
 

@@ -97,6 +97,25 @@ def create_source(
         raise HTTPException(422, "Source name is required")
     config = {}
     with transaction(request.app.state.db, principal) as conn:
+        if body.connector_kind == "upload":
+            if body.folder:
+                raise HTTPException(422, "Upload collections do not take a folder path")
+            from videomind.identity.self_service import database_error
+            from sqlalchemy.exc import DBAPIError
+
+            try:
+                source_id = conn.execute(
+                    text("SELECT app.create_upload_collection(:w,:name)"),
+                    {"w": w, "name": name},
+                ).scalar_one()
+            except DBAPIError as exc:
+                raise database_error(exc) from None
+            return {
+                "id": source_id,
+                "name": name,
+                "connector_kind": "upload",
+                "status": "connected",
+            }
         workspace_admin(conn, w)
         if body.connector_kind == "local_folder":
             try:
@@ -457,6 +476,25 @@ def original(
             "X-Content-Type-Options": "nosniff",
         },
     )
+
+
+@router.post("/workspaces/{w}/sources/{s}/assets/{a}/retry-index")
+def retry_file_index(
+    w: UUID, s: UUID, a: UUID, request: Request, principal: UUID = Depends(actor)
+):
+    with transaction(request.app.state.db, principal) as conn:
+        source_scope(conn, w, s, write=True, lock=True)
+        result = conn.execute(
+            text(
+                """UPDATE app.embedding_jobs j SET status='queued',attempt=0,error_code=NULL
+          FROM app.index_generations g,app.assets a
+          WHERE (g.workspace_id,g.id)=(j.workspace_id,j.generation_id) AND g.status IN ('active','building')
+          AND (a.workspace_id,a.source_id,a.id,a.latest_revision_id)=(j.workspace_id,j.source_id,j.asset_id,j.revision_id)
+          AND j.workspace_id=:w AND j.source_id=:s AND j.asset_id=:a AND NOT a.deleted AND j.status='failed'"""
+            ),
+            {"w": w, "s": s, "a": a},
+        )
+        return {"queued": result.rowcount}
 
 
 @router.get("/workspaces/{w}/storage")

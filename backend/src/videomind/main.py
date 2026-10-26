@@ -19,6 +19,8 @@ from videomind.assets.routes import router as assets
 from videomind.connectors.routes import router as connectors
 from videomind.config import Settings, get_settings
 from videomind.identity.routes import router as identity
+from videomind.identity.self_service import router as self_service
+from videomind.identity.analytics import router as analytics
 from videomind.infrastructure.database import database
 from videomind.infrastructure.services import object_client, redis_client
 
@@ -150,6 +152,8 @@ def create_app(settings: Settings | None = None):
         )
 
     app.include_router(identity, prefix="/api")
+    app.include_router(self_service, prefix="/api")
+    app.include_router(analytics, prefix="/api")
     app.include_router(assets, prefix="/api")
     app.include_router(connectors, prefix="/api")
     app.include_router(evidence, prefix="/api")

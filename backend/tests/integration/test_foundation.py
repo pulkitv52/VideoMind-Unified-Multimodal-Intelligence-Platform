@@ -568,7 +568,7 @@ def test_workspace_metadata_and_all_app_tables_are_protected(foundation):
                 "SELECT relrowsecurity,relforcerowsecurity FROM pg_class JOIN pg_namespace n ON n.oid=relnamespace WHERE n.nspname='app' AND relkind='r'"
             )
         ).all()
-        assert len(rows) == 30
+        assert len(rows) == 32
         assert all(enabled and forced for enabled, forced in rows)
         for table in (
             "workspaces",
@@ -643,13 +643,13 @@ def test_migrations_upgrade_an_empty_database():
                     conn.execute(
                         text("SELECT version_num FROM public.alembic_version")
                     ).scalar_one()
-                    == "0019_recovery_journal"
+                    == "0022_self_service"
                 )
                 assert (
                     conn.execute(
                         text("SELECT count(*) FROM pg_tables WHERE schemaname='app'")
                     ).scalar_one()
-                    == 30
+                    == 32
                 )
         finally:
             fresh.dispose()
@@ -684,7 +684,8 @@ def test_upload_ui_api_preserves_originals_and_revisions_without_duplicates(foun
     base = f"/api/workspaces/{ids['workspace']}/sources/{source}"
     assert (
         bob.post(
-            f"/api/workspaces/{ids['workspace']}/sources", json={"name": "Denied"}
+            f"/api/workspaces/{ids['workspace']}/sources",
+            json={"name": "Denied", "connector_kind": "local_folder"},
         ).status_code
         == 403
     )

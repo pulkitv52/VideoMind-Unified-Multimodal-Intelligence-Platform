@@ -1,11 +1,11 @@
-export type View = "search" | "library" | "settings";
+export type View = "dashboard" | "search" | "library" | "settings";
 export type EvidenceLink = { workspace: string; source: string; citation: string };
 export type LocationState = { view: View; workspace: string; evidence: EvidenceLink | null; invalidEvidence: boolean };
 const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 export function readLocation(pathname: string, search: string): LocationState {
   const candidate = pathname.replace(/^\//, "");
-  const view: View = candidate === "library" || candidate === "settings" ? candidate : "search";
+  const view: View = candidate === "dashboard" || candidate === "library" || candidate === "settings" ? candidate : "search";
   const params = new URLSearchParams(search);
   const workspace = params.get("workspace") ?? "";
   const source = params.get("source") ?? "";

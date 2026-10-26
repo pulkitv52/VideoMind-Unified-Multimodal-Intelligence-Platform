@@ -62,8 +62,19 @@ The `embeddings` module owns CPU inference, durable indexing and generation life
 
 The proposed [users and roles plan](users-roles-plan.md) defines owner, admin and
 member capabilities, account onboarding and collection-sharing work. Existing
-owner/admin content authorization is implemented; the proposed account and
-permission management screens/APIs remain future work.
+owner/admin content authorization is implemented. The A1
+[access foundation](access-validation.md) adds owner-specific checks, capability
+APIs and ownership constraints. Self-service signup, member collection creation,
+Dashboard analytics and versioned member/admin role management are now implemented;
+see [self-service validation](self-service-validation.md).
+
+For the persistent admin/two-member test setup, role-specific screens, safe
+credential location and live checks, see [role dashboard validation](role-dashboards-validation.md).
+
+The subsequent [self-service product plan](self-service-product-plan.md) changes
+the requested product direction to signup, member-owned upload collections and
+owner/admin activity analytics. The Dashboard supplies management operations;
+Settings People remains a read-only directory.
 
 Before committing or pushing, enable the [Git publication checks](git-safety.md)
 with `git config --local core.hooksPath .githooks`. Run

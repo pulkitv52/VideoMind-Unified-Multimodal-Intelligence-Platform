@@ -47,7 +47,16 @@ def forbidden(path):
         return True
     if name == ".env" or (name.startswith(".env.") and not name.endswith(".example")):
         return True
-    if name.endswith(".env") or name in {"owner.json", ".npmrc", ".netrc", ".pypirc"}:
+    if name.endswith(".env") or name in {
+        "owner.json",
+        "role-test-accounts.json",
+        "pgadmin.json",
+        "database-viewer.json",
+        ".pgpass",
+        ".npmrc",
+        ".netrc",
+        ".pypirc",
+    }:
         return True
     if "credentials" in name and name.endswith(".json"):
         return True
@@ -82,14 +91,29 @@ def local_secrets(root):
                 word in key.upper() for word in ("PASSWORD", "SECRET", "TOKEN", "KEY")
             ):
                 values.append(value.strip().strip("\"'"))
-    owner = root / ".local/owner.json"
-    if owner.is_file():
-        data = json.loads(owner.read_text())
-        values.extend(
-            str(v)
-            for k, v in data.items()
-            if any(w in k.lower() for w in ("password", "token", "secret"))
-        )
+
+    def collect(data):
+        if isinstance(data, dict):
+            for key, value in data.items():
+                if any(
+                    word in key.lower() for word in ("password", "token", "secret")
+                ) and isinstance(value, str):
+                    values.append(value)
+                else:
+                    collect(value)
+        elif isinstance(data, list):
+            for value in data:
+                collect(value)
+
+    for name in (
+        "owner.json",
+        "role-test-accounts.json",
+        "pgadmin.json",
+        "database-viewer.json",
+    ):
+        credential_file = root / ".local" / name
+        if credential_file.is_file():
+            collect(json.loads(credential_file.read_text()))
     token = root / ".local/embedding_token"
     if token.is_file():
         values.append(token.read_text().strip())

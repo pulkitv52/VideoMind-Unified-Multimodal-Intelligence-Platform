@@ -14,7 +14,7 @@ export async function api<T>(path: string, options?: RequestInit): Promise<T> {
 }
 
 export type Account = { id: string; username: string };
-export type Workspace = { id: string; name: string; role: string };
+export type Workspace = { id: string; name: string; role: string; can_create_collections: boolean; can_import_folders: boolean; can_manage_index: boolean; can_view_analytics: boolean };
 export type Source = { id: string; name: string; connector_kind: string; status: string; can_ingest: boolean; can_admin: boolean };
 
 export async function apiPage<T>(path: string): Promise<{items:T[]; next:string; total:number}> {

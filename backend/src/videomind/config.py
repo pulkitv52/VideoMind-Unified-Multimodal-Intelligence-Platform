@@ -16,6 +16,7 @@ class Settings(BaseSettings):
     workspace_storage_bytes: int = Field(default=5 * 1024**3, gt=0)
     workspace_storage_objects: int = Field(default=10000, gt=0)
     import_root: str = "/imports"
+    signup_workspace_id: str = ""
     cookie_secure: bool = False  # Loopback HTTP only; TLS deployments set true.
     allowed_origins: tuple[str, ...] = (
         "http://localhost:8080",

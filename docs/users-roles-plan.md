@@ -1,10 +1,25 @@
 # Users, roles and workspace management
 
 Date: 21 October 2026. Status: proposed implementation plan, requested by the
-user. No account, permission, schema or signup behavior changes are implemented
-by this document. This extends the product UX plan's scope to account and grant
+user. Implementation was authorized on 26 October 2026. A1 is implemented and validated;
+see [access implementation validation](access-validation.md) for measured results
+and pending work. This document describes the complete proposed target, not a
+claim that all account, permission or signup features exist. It extends the product UX plan's scope to account and grant
 management; those screens were excluded from its original UX0–UX6 milestone.
 Existing processing, retrieval and Phase 7 release gates remain unchanged.
+
+**Product-direction update, 26 October 2026:** the user requested self-signup,
+member upload/index/search workflows and administrative analytics. The
+[self-service product plan](self-service-product-plan.md) supersedes this
+document's invitation-first/no-public-signup rule and the restriction on member
+upload-collection creation. The older details below remain the original A1–A7
+design history where they conflict; the self-service plan is authoritative for
+new implementation. Signup and analytics have not yet been implemented.
+
+The user subsequently requested persistent admin/two-member accounts and tested
+role dashboards. See [role dashboards and validation](role-dashboards-validation.md)
+for the implemented local accounts, access summaries and read-only People
+directory. This does not complete invitation or permission-mutation features.
 
 ## 1. Current behavior and planned changes
 
@@ -46,8 +61,10 @@ these boundaries.
 - Prefer one owner per workspace. Preserve existing data during migration;
   detect any existing zero/multiple-owner memberships and require operator
   reconciliation before enforcing this invariant. Never silently demote users.
-- No public self-registration in the first release. Creating an account must
-  not grant access to existing workspaces or start unlimited indexing work.
+- Self-registration is now required for the configured installation workspace,
+  with a member's own initial collection and bounded resource admission. It must
+  not grant access to other members' collections or other workspaces. See the
+  superseding self-service plan for the updated onboarding contract.
 
 ## 3. Who sees and does what
 
@@ -61,7 +78,7 @@ role changes after a screen was opened.
 | Download originals | All | All | Granted collections; read access includes download |
 | See Library and processing status | All | All | Granted collections only |
 | Upload files | Any collection | Any collection | Contributor/manager grant only |
-| Create a shared collection | Yes | Yes | No in first release |
+| Create an upload collection | Yes | Yes | Own scoped collection, under the superseding self-service plan |
 | Sync an allowlisted local folder | Yes | Yes | No; host-folder discovery stays administrative |
 | Retry file processing | Yes | Yes | Contributor/manager on that collection, within supported retry APIs |
 | Remove a file/disconnect a collection | Yes | Yes | Collection manager only |
@@ -87,7 +104,7 @@ management. Do not broaden existing endpoints incidentally.
 | UI name | Existing grant | Allowed actions |
 | --- | --- | --- |
 | Viewer | `read` | Search, view evidence, inspect and download originals |
-| Contributor | `write` | Viewer actions plus upload and supported processing retry |
+| Contributor | `ingest` | Viewer actions plus upload and supported processing retry |
 | Collection manager | `admin` | Contributor actions plus supported file removal/disconnect and sharing |
 
 Collection management is not a workspace role. Managers can share only with
@@ -160,7 +177,11 @@ Do not reveal titles or counts belonging to inaccessible collections.
 
 ## 5. Joining and personal versus shared workspaces
 
-### Invitation-first account creation
+### Original invitation-first account creation (superseded)
+
+The sequence below records the earlier design. Normal onboarding is now
+self-service signup under the [revised product plan](self-service-product-plan.md);
+invitations are optional future sharing functionality.
 
 1. Owner/admin enters a username for the invite and permitted workspace role.
    First release uses a manually shared activation link; it sends no email.
@@ -278,6 +299,14 @@ change evidence locators or erase original revisions.
 | A5 | Ownership transfer, leave/removal, access audit | Recent-auth/acceptance, one-owner races, pending-invite authority changes, session/worker access recheck, uploaded content retention |
 | A6 | Controlled personal-workspace provisioning and onboarding | Quota/workspace limits, separate workspaces isolated, no inherited team-admin access, no unexpected automatic index jobs |
 | A7 | Whole-product validation and documentation | Three-role desktop/mobile journeys, access changes during search/playback, keyboard/focus/error checks, running-stack verification and publication leak checks |
+
+A1 is complete; A2–A7 remain pending. Its capability flags describe authorization
+policy, not availability of the later account/People/sharing features. Validation
+results and the migration's ownership preflight are recorded in
+[access validation](access-validation.md).
+
+The persisted grant values stay `read`, `ingest` and `admin`; “Contributor” is
+the user-facing name for `ingest`. No grant-data conversion is necessary.
 
 Do not ship a signup button before its backend activation/access behavior is
 complete. Prefer invitation-first onboarding, then expand provisioning once

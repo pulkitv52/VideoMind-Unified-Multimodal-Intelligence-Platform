@@ -35,7 +35,25 @@ Scope update, 20 October 2026: Phase 7 freezes the 46-asset/197-vector corpus an
 
 Scope update, 20 October 2026: AT0 action-review preparation and AT1 offline window/acceptance comparisons are implemented. Two-second windows improve a demonstrated fall score, with increased ADL admission in the small development pilot. No new producer, model or threshold is adopted for serving; human temporal labels and promotion criteria remain open. See [action/temporal validation](action-temporal-validation.md).
 
+Scope update, 26 October 2026: the authorized [self-service product plan](self-service-product-plan.md)
+supersedes invitation-first onboarding. Migration 0022 adds atomic member signup,
+creator-scoped upload collections, reliable uploader attribution, future join
+timestamps and audited/versioned membership changes. Owner/admin Dashboard reads
+workspace-scoped current-file analytics; members cannot access aggregates or the
+People directory. Initial indexing runs under the current live owner for configured
+self-service workspaces, using the existing profile/publication locks and coverage
+gates. Global rebuild/profile/activation stays administrative. Enrollment control
+is owner-only; transfer and password recovery remain outside this implementation.
+See [self-service validation](self-service-validation.md).
+
 ## 1. Requirements and acceptance criteria
+
+Scope update, 26 October 2026: access-management implementation starts with A1
+of the [users and roles plan](users-roles-plan.md). It adds a separate workspace
+owner predicate, authenticated capability descriptors and exactly-one-owner
+database invariants. Existing owner/admin content powers remain intact;
+invitation, role editing, transfer and collection-sharing management remain
+later milestones. See [access validation](access-validation.md).
 
 Planning update, 21 October 2026: the [product and UX plan](product-ux-plan.md) proposes Search, Library and Settings navigation, guided first use, a desktop evidence panel, small-screen evidence views and bounded authorised result previews. Implementation began on 21 October 2026 with UX0–UX2; later UX steps remain pending. Its [validation checklist](product-ux-validation.md) separates first-milestone results from pending checks. The current code supports text and still-image queries; the original text-first assumption above describes the initial MVP sequence. This follow-up preserves module ownership, access checks, immutable evidence, publication and processing limits. It proposes no model, ranking or release-gate change.
 

@@ -18,7 +18,7 @@ def authenticate(engine, username: str, password: str, old_token: str | None):
         principal = (
             conn.execute(
                 text(
-                    "SELECT id, password_hash FROM auth.principals WHERE username=:name AND NOT disabled"
+                    "SELECT id, password_hash FROM auth.principals WHERE lower(username)=lower(:name) AND NOT disabled"
                 ),
                 {"name": username},
             )
