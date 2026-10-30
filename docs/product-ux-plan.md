@@ -1,6 +1,6 @@
 # VideoMind product and UX plan
 
-Date: 21 October 2026. Status: implementation started with UX0–UX2. The user authorised implementation after reviewing the product plan. The first milestone adds navigation, shared visual foundations and the search/evidence journey. UX3–UX6 remain pending; planned APIs and later screens below are not claims of completed behavior. This follow-up extends the usable-evidence work in Phase 6; the original Phase 7 release gate stays open.
+Date: 21 October 2026. Updated: 26 October 2026. Status: UX0–UX2 and the core preview/Library follow-up are implemented. Current behavior and validation are recorded in [the follow-up report](ux-improvements-validation.md). Remaining UX5/UX6 work includes broader operational help and independent usability/accessibility checks. The original Phase 7 release gate stays open. Screen designs below remain proposals where the report does not record implementation.
 
 ## 1. Product purpose and audience
 
@@ -304,3 +304,15 @@ Revisit audience-specific workflows, saved references, advanced organisation, da
 - [Phase 7 findings](phase7-validation.md) and [historical assessment](../evaluation/reports/phase7-assessment.json)
 - [Action/temporal limits](action-temporal-validation.md)
 - [Local recovery](local-recovery.md)
+
+## Adopted follow-up, 26 October 2026
+
+The user authorized the proposed core-journey improvements. The implementation
+adds the UX3 preview descriptor/batch, UX4 file intake/status/collection selection,
+and search/evidence refinements. Search becomes the default home; signup still
+opens Library. First-use instructions now reflect the implemented self-service
+policy rather than assuming every workspace needs manual initial activation.
+Preview images reuse existing PNG/JPEG evidence objects up to 4 MiB, with three
+concurrent visible/proximate requests. No new derivative producer is adopted.
+See [current behavior and validation](ux-improvements-validation.md); full UX6
+acceptance and independent user sessions are not declared complete.

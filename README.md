@@ -94,7 +94,7 @@ Owners and admins have a **Dashboard** for member joins, uploads, file readiness
 
 ### 3. Add a few files
 
-Open **Library**, then choose **Add collection → Upload files → Create collection**. Give the collection a name that describes the files. In that collection, choose **Upload files** and select files from your computer.
+Open **Library → Add files**. Choose an existing writable collection or create a new one, then choose files or drop them into the upload area. Each file shows whether it was received; failed submissions can be retried without resending successful ones.
 
 Start with a small document or a short recording. VideoMind prepares files in the background, and the file list shows their progress.
 
@@ -163,7 +163,7 @@ See the [developer guide](docs/development.md) for the code layout, development 
 
 For registration setup, role boundaries and measured checks, see the [self-service guide](docs/self-service-validation.md).
 
-The [product and UX plan](docs/product-ux-plan.md) records the interface roadmap. Its first milestone adds Search, Library and Settings navigation and the evidence workspace; preview thumbnails and the later Library improvements are still planned.
+The [product and UX plan](docs/product-ux-plan.md) records the interface roadmap. The current interface includes direct file intake, preparation status, protected result previews and a resizable evidence workspace. See the [UI/UX validation record](docs/ux-improvements-validation.md) for tested behavior and remaining checks.
 
 Before committing or pushing, enable the [Git safety checks](docs/git-safety.md):
 

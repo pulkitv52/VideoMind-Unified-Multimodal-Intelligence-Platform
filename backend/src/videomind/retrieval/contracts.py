@@ -4,7 +4,7 @@ from uuid import UUID
 from pydantic import AwareDatetime, Field, model_validator
 
 from videomind.contracts import AssetRef, Contract, NonEmpty, Sha256
-from videomind.evidence.contracts import Citation
+from videomind.evidence.contracts import Citation, Preview
 from videomind.preprocessing.contracts import Representation
 
 
@@ -79,6 +79,7 @@ class BranchTrace(Contract):
 
 
 class EvidenceResult(Contract):
+    preview: Preview | None = None
     title: str = ""
     source_name: str = ""
     modality: str = ""

@@ -1,5 +1,7 @@
 import { expect, test } from "@playwright/test";
 import type { Page, Route } from "@playwright/test";
+import { fileState, hasLimitations } from "../src/features/sources/fileState";
+import type { Asset } from "../src/features/sources/fileState";
 import { readLocation, viewUrl } from "../src/app/navigation";
 const workspace = "00000000-0000-4000-8000-000000000001";
 const other = "00000000-0000-4000-8000-000000000002";
@@ -77,7 +79,7 @@ test("signup confirms privacy and opens the member Library after creation", asyn
   await page.getByLabel("Confirm password", { exact: true }).fill("synthetic-password-for-ui");
   await page.getByRole("checkbox").check();
   await page.getByRole("button", { name: "Create account", exact: true }).click();
-  await expect(page.getByRole("heading", { name: "Files worth finding again." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Your files, ready to explore." })).toBeVisible();
   await expect(page).toHaveURL(/\/library/);
 });
 
@@ -85,7 +87,7 @@ test("collection creation uses server capabilities rather than the displayed rol
   await setup(page);
   await page.route("**/api/workspaces", route => route.fulfill({ json: [{ id: workspace, name: "Example workspace", role: "owner", can_create_collections: false, can_import_folders: false, can_manage_index: false, can_view_analytics: false }] }));
   await page.goto("/library");
-  await expect(page.getByRole("heading", { name: "Files worth finding again." })).toBeVisible();
+  await expect(page.getByRole("heading", { name: "Your files, ready to explore." })).toBeVisible();
   await expect(page.getByRole("button", { name: "Add collection", exact: true })).toHaveCount(0);
 });
 
@@ -164,10 +166,10 @@ test("navigation preserves search state and mounts Library only on demand", asyn
   const calls = await setup(page); await page.goto("/search");
   await search(page, "cancellation policy");
   expect(calls.some(path => path.endsWith("/sources"))).toBe(false);
-  await nav(page, "Library").click(); await expect(page.getByRole("heading", { name: "Files worth finding again." })).toBeVisible();
+  await nav(page, "Library").click(); await expect(page.getByRole("heading", { name: "Your files, ready to explore." })).toBeVisible();
   await nav(page, "Settings").click(); await expect(page.getByRole("heading", { name: "Settings", exact: true })).toBeVisible();
   await expect(page.getByRole("button", { name: "Start indexing" })).toBeVisible();
-  await page.goBack(); await expect(page.getByRole("heading", { name: "Files worth finding again." })).toBeVisible();
+  await page.goBack(); await expect(page.getByRole("heading", { name: "Your files, ready to explore." })).toBeVisible();
   await nav(page, "Search").click(); await expect(queryBox(page)).toHaveValue("cancellation policy");
   await expect(page.getByRole("heading", { name: "cancellation policy.txt" })).toBeVisible();
   expect(page.url()).not.toContain("cancellation");
@@ -248,7 +250,7 @@ test("image query stays transient and preserves endpoint and payload", async ({ 
 test("no-index guidance is permission aware and no-results differs from failure", async ({ page }) => {
   await setup(page, true);
   await page.route("**/search/facets", route => route.fulfill({ json: { ready: false, items: [] } }));
-  await page.goto(`/search?workspace=${workspace}`); await expect(page.getByText("Your workspace administrator needs", { exact: false })).toBeVisible();
+  await page.goto(`/search?workspace=${workspace}`); await expect(page.getByText("Your files are not searchable yet", { exact: false })).toBeVisible();
   await expect(page.getByRole("button", { name: "Set up search" })).toHaveCount(0);
   await page.unroute("**/search/facets"); await page.reload();
   await page.route(`**/workspaces/${workspace}/search`, route => route.fulfill({ json: { ...response(), results: [], no_useful_evidence: true } }));
@@ -280,8 +282,8 @@ test("Library distinguishes loading from an empty collection", async ({ page }) 
   await expect(page.getByText("Choose files above to add your first originals.", { exact: true })).toHaveCount(0);
   await expect.poll(() => !!pending).toBe(true);
   await pending!.fulfill({ json: [{ id: "asset", title: "example.txt", modality: "document", size_bytes: 512, status: "stored", error_code: null, embedding_status: "indexed", document: null, media: null }], headers: { "X-Total-Count": "1" } });
-  await expect(page.getByRole("link", { name: "example.txt", exact: true })).toBeVisible();
-  await expect(page.getByText("Upload collection · 1 files", { exact: false })).toBeVisible();
+  await expect(page.getByText("example.txt", { exact: true })).toBeVisible();
+  await expect(page.getByText("Upload collection · 1 file", { exact: false })).toBeVisible();
 });
 
 
@@ -321,4 +323,214 @@ test("older dashboard uploads remain visible across the automatic refresh interv
   const refreshedRequests = requests;
   await page.clock.runFor(16000);
   await expect.poll(() => requests).toBeGreaterThan(refreshedRequests);
+});
+
+
+const librarySource = { id: source, name: "Example collection", connector_kind: "upload", status: "connected", can_ingest: true, can_admin: true };
+const libraryFile = { id: "asset", title: "example.txt", modality: "document", revision_id: revision, size_bytes: 512, status: "stored", error_code: null, job_id: "validate", embedding_status: "indexed", media: null, document: { job_id: "extract", status: "stored", error_code: null, manifest: { page_count: 1 } } };
+async function library(page: Page, files = [libraryFile]) {
+  await setup(page);
+  await page.route(`**/workspaces/${workspace}/sources`, route => route.fulfill({ json: [librarySource] }));
+  await page.route(`**/sources/${source}/assets?*`, route => route.fulfill({ json: files, headers: { "X-Total-Count": String(files.length) } }));
+  await page.route(`**/sources/${source}/jobs?*`, route => route.fulfill({ json: [] }));
+}
+
+test("file readiness requires active membership and retains partial warnings", () => {
+  const file: Asset = libraryFile;
+  expect(fileState({ ...file, embedding_status: "ready" }).label).toBe("Waiting for publication");
+  expect(fileState({ ...file, embedding_status: null }).label).toBe("Preparing search");
+  expect(fileState({ ...file, embedding_status: "queued" }).label).toBe("Preparing search");
+  expect(fileState({ ...file, embedding_status: "indexed", document: { ...file.document!, status: "failed" } }).label).toBe("Needs attention");
+  expect(fileState({ ...file, embedding_status: "cancelled" }).label).toBe("Preparation stopped");
+  expect(fileState({ ...file, embedding_status: null, document: { ...file.document!, status: "running" } }).label).toBe("Processing content");
+  expect(hasLimitations({ ...file, document: { ...file.document!, manifest: { warnings: ["ocr_partial"] } } })).toBe(true);
+});
+
+test("home opens Search for administrators while Dashboard remains available", async ({ page }) => {
+  const calls = await setup(page); await page.goto("/");
+  await expect(queryBox(page)).toBeVisible();
+  expect(calls.some(path => path.endsWith("/analytics"))).toBe(false);
+  await nav(page, "Dashboard").click();
+  await expect(page.getByRole("heading", { name: "Dashboard", exact: true })).toBeVisible();
+});
+
+test("upload batches preserve successes and retry only failed submissions", async ({ page }) => {
+  await library(page, []);
+  const uploaded: string[] = [];
+  let failed = false;
+  await page.route(`**/sources/${source}/files?*`, route => {
+    const filename = new URL(route.request().url()).searchParams.get("filename_value")!;
+    uploaded.push(filename);
+    if (filename === "middle.txt" && !failed) { failed = true; return route.fulfill({ status: 503, json: { detail: "Temporarily unavailable" } }); }
+    return route.fulfill({ status: 201, json: {} });
+  });
+  await page.goto("/library");
+  await page.getByLabel("Upload files", { exact: true }).setInputFiles(["first.txt", "middle.txt", "last.txt"].map(name => ({ name, mimeType: "text/plain", buffer: Buffer.from("Synthetic upload") })));
+  await expect(page.locator(".upload-receipts").getByRole("status")).toContainText("2 of 3 files received");
+  expect(uploaded).toEqual(["first.txt", "middle.txt", "last.txt"]);
+  await page.getByRole("button", { name: "Retry failed or unsent files" }).click();
+  await expect(page.locator(".upload-receipts").getByRole("status")).toContainText("3 of 3 files received");
+  expect(uploaded).toEqual(["first.txt", "middle.txt", "last.txt", "middle.txt"]);
+});
+
+test("Add files creates a destination only when valid files are chosen", async ({ page }) => {
+  await setup(page);
+  let created = false; let uploads = 0;
+  await page.route(`**/workspaces/${workspace}/sources`, route => {
+    if (route.request().method() === "POST") { created = true; expect(route.request().postDataJSON().name).toBe("Project notes"); return route.fulfill({ status: 201, json: librarySource }); }
+    return route.fulfill({ json: created ? [librarySource] : [] });
+  });
+  await page.route(`**/sources/${source}/files?*`, route => { uploads++; return route.fulfill({ status: 201, json: {} }); });
+  await page.route(`**/sources/${source}/assets?*`, route => route.fulfill({ json: [], headers: { "X-Total-Count": "0" } }));
+  await page.route(`**/sources/${source}/jobs?*`, route => route.fulfill({ json: [] }));
+  await page.goto("/library"); await page.getByRole("button", { name: "Add files", exact: true }).click();
+  const intake = page.getByRole("region", { name: "Add files", exact: true });
+  await intake.getByLabel("New collection name").fill("Project notes");
+  await intake.getByLabel("Upload files", { exact: true }).setInputFiles({ name: "bad.exe", mimeType: "application/octet-stream", buffer: Buffer.from("Invalid format") });
+  await expect(intake).toContainText("Unsupported file type"); expect(created).toBe(false);
+  await intake.getByLabel("Upload files", { exact: true }).setInputFiles({ name: "notes.txt", mimeType: "text/plain", buffer: Buffer.from("Synthetic notes") });
+  await expect(intake).toContainText("1 of 1 files received"); expect(uploads).toBe(1);
+  await expect(page.getByRole("heading", { name: "Example collection", exact: true })).toBeVisible();
+});
+
+test("Library shows primary readiness and keeps retries with processing details", async ({ page }) => {
+  await library(page, [{ ...libraryFile, embedding_status: "ready" }]); await page.goto("/library");
+  await expect(page.getByText("Waiting for publication", { exact: true })).toBeVisible();
+  await expect(page.getByText("Ready to search", { exact: true })).toHaveCount(0);
+  await page.getByText("Processing details", { exact: true }).click();
+  await expect(page.getByRole("button", { name: "Review search preparation" })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Download original", exact: true })).toBeVisible();
+});
+
+test("filters can be removed individually without clearing the remaining scope", async ({ page }) => {
+  await setup(page); await page.goto("/search");
+  await page.getByRole("combobox", { name: "Collection", exact: true }).selectOption(source);
+  await page.getByRole("combobox", { name: "File type", exact: true }).selectOption("video");
+  await page.getByRole("button", { name: "Remove Type: video filter" }).click();
+  await expect(page.getByRole("combobox", { name: "Collection", exact: true })).toHaveValue(source);
+  await expect(page.getByRole("combobox", { name: "File type", exact: true })).toHaveValue("");
+  await page.getByRole("button", { name: "Clear filters", exact: true }).click();
+  await expect(page.getByRole("combobox", { name: "Collection", exact: true })).toHaveValue("");
+});
+
+test("evidence navigation follows result order and the divider works with a keyboard", async ({ page }) => {
+  await setup(page);
+  await page.route(`**/workspaces/${workspace}/search`, route => {
+    const data = response();
+    return route.fulfill({ json: { ...data, results: [data.results[0], { ...data.results[0], segment_id: "second", title: "second.txt", citations: [{ ...data.results[0].citations[0], id: other }] }] } });
+  });
+  await page.route(`**/citations/${other}`, route => route.fulfill({ json: { locator_kind: "text", revision_id: revision, page: 1, segment_id: "segment", segment_set_id: set } }));
+  await page.goto("/search"); await search(page);
+  await page.getByRole("button", { name: "test.txt", exact: true }).click();
+  await expect(page.getByRole("button", { name: "Previous match" })).toBeDisabled();
+  await page.getByRole("button", { name: "Next match" }).click();
+  await expect(page).toHaveURL(new RegExp(`citation=${other}`));
+  await expect(page.getByRole("button", { name: "Next match" })).toBeDisabled();
+  if (page.viewportSize()!.width > 1100) {
+    const divider = page.getByRole("separator", { name: "Resize evidence panes" });
+    await divider.focus(); await page.keyboard.press("ArrowRight");
+    await expect(divider).toHaveAttribute("aria-valuenow", "42");
+  }
+  await page.getByRole("button", { name: "Back to results" }).click();
+  await expect(queryBox(page)).toHaveValue("test");
+});
+
+test("missing protected preview retains a usable evidence result", async ({ page }) => {
+  await setup(page); let previewCalls = 0;
+  await page.route(`**/workspaces/${workspace}/search`, route => {
+    const data = response();
+    return route.fulfill({ json: { ...data, results: [{ ...data.results[0], preview: { route: "document", kind: "page", object_id: other, segment_set_id: set } }] } });
+  });
+  await page.route(`**/document/objects/${other}?*`, route => { previewCalls++; return route.fulfill({ status: 404 }); });
+  await page.goto("/search"); await search(page);
+  await page.locator(".result-preview").scrollIntoViewIfNeeded();
+  await expect.poll(() => previewCalls).toBe(1);
+  await page.getByRole("button", { name: "Open evidence", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Example document" })).toBeVisible();
+});
+
+
+test("drop uploads remain active when navigating away and collections load on selection", async ({ page }) => {
+  await library(page, []);
+  const otherSource = { ...librarySource, id: other, name: "Second collection" };
+  await page.route(`**/workspaces/${workspace}/sources`, route => route.fulfill({ json: [librarySource, otherSource] }));
+  let otherLoads = 0; let pending: Route | undefined;
+  await page.route(`**/sources/${other}/assets?*`, route => { otherLoads++; return route.fulfill({ json: [], headers: { "X-Total-Count": "0" } }); });
+  await page.route(`**/sources/${other}/jobs?*`, route => route.fulfill({ json: [] }));
+  await page.route(`**/sources/${source}/files?*`, route => { pending = route; });
+  await page.goto("/library");
+  await expect(page.getByRole("heading", { name: "Example collection", exact: true })).toBeVisible();
+  expect(otherLoads).toBe(0);
+  const files = await page.evaluateHandle(() => { const data = new DataTransfer(); data.items.add(new File(["Synthetic dropped text"], "dropped.txt", { type: "text/plain" })); return data; });
+  await page.locator(".upload-drop").first().dispatchEvent("drop", { dataTransfer: files });
+  await expect.poll(() => !!pending).toBe(true);
+  await nav(page, "Search").click();
+  await pending!.fulfill({ status: 201, json: {} });
+  await nav(page, "Library").click();
+  await expect(page.getByRole("status")).toContainText("1 of 1 files received");
+  await page.getByRole("combobox", { name: "Collection", exact: true }).selectOption(other);
+  await expect.poll(() => otherLoads).toBe(1);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test("Library and evidence layouts remain readable in both themes", async ({ page }, info) => {
+  await library(page); await page.goto("/library");
+  await expect(page.getByText("Ready to search", { exact: true }).first()).toBeVisible();
+  await page.screenshot({ path: info.outputPath("library-light.png"), fullPage: true });
+  await page.getByRole("button", { name: "Switch to dark theme" }).click();
+  await page.screenshot({ path: info.outputPath("library-dark.png"), fullPage: true });
+  await nav(page, "Search").click(); await search(page);
+  await page.getByRole("button", { name: "Open evidence", exact: true }).click();
+  await expect(page.getByRole("heading", { name: "Example document" })).toBeVisible();
+  await page.screenshot({ path: info.outputPath("evidence-dark.png"), fullPage: false });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+});
+
+test("retry keeps the original upload destination after selection changes", async ({ page }) => {
+  await library(page, []);
+  await page.route(`**/workspaces/${workspace}/sources`, route => route.fulfill({ json: [librarySource, { ...librarySource, id: other, name: "Second collection" }] }));
+  const submissions: string[] = [];
+  await page.route("**/sources/*/files?*", route => {
+    submissions.push(new URL(route.request().url()).pathname);
+    return route.fulfill(submissions.length === 1 ? { status: 503, json: { detail: "Try again" } } : { status: 201, json: {} });
+  });
+  await page.goto("/library"); await page.getByRole("button", { name: "Add files", exact: true }).click();
+  const intake = page.getByRole("region", { name: "Add files", exact: true });
+  await intake.getByLabel("Upload files", { exact: true }).setInputFiles({ name: "notes.txt", mimeType: "text/plain", buffer: Buffer.from("Synthetic notes") });
+  await expect(intake).toContainText("0 of 1 files received");
+  await intake.getByRole("combobox", { name: "Destination collection", exact: true }).selectOption(other);
+  await intake.getByRole("button", { name: "Retry failed or unsent files" }).click();
+  await expect(intake).toContainText("1 of 1 files received");
+  expect(submissions).toEqual([`/api/workspaces/${workspace}/sources/${source}/files`, `/api/workspaces/${workspace}/sources/${source}/files`]);
+});
+
+test("protected image previews load with at most three simultaneous requests", async ({ page }) => {
+  await setup(page); await page.setViewportSize({ width: 1440, height: 4000 });
+  await page.route(`**/workspaces/${workspace}/search`, route => {
+    const data = response(); const hit = data.results[0];
+    return route.fulfill({ json: { ...data, results: Array.from({ length: 10 }, (_, index) => ({ ...hit, segment_id: `segment-${index}`, title: index ? `result-${index}.txt` : "test.txt", preview: { kind: "page", route: "document", object_id: other, segment_set_id: set } })) } });
+  });
+  const pending: Route[] = []; let calls = 0;
+  await page.route(`**/document/objects/${other}?*`, route => { calls++; pending.push(route); });
+  await page.goto("/search"); await search(page);
+  await expect.poll(() => pending.length).toBe(3);
+  await expect(page.locator(".result-preview").nth(4)).toBeInViewport();
+  expect(calls).toBe(3);
+  const image = Buffer.from("iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mP8/x8AAwMCAO+aG1sAAAAASUVORK5CYII=", "base64");
+  const first = pending.shift()!;
+  await first.fulfill({ contentType: "image/png", body: image });
+  await expect.poll(() => calls).toBe(4);
+  await expect(page.locator(".result-preview img").first()).toBeVisible();
+  await expect.poll(() => page.locator(".result-preview img").first().evaluate((element: HTMLImageElement) => element.naturalWidth)).toBe(1);
+});
+
+test("opening a cited passage keeps the results page at its current scroll position", async ({ page }) => {
+  await setup(page); await page.goto("/search"); await search(page);
+  if (page.viewportSize()!.width <= 1100) return;
+  const open = page.getByRole("button", { name: "Open evidence", exact: true });
+  await open.scrollIntoViewIfNeeded();
+  const previous = await page.evaluate(() => window.scrollY);
+  await open.click();
+  await expect(page.getByText("Cited passage", { exact: false })).toBeVisible();
+  expect(await page.evaluate(() => window.scrollY)).toBe(previous);
 });

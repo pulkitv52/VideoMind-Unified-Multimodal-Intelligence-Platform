@@ -57,6 +57,14 @@ later milestones. See [access validation](access-validation.md).
 
 Planning update, 21 October 2026: the [product and UX plan](product-ux-plan.md) proposes Search, Library and Settings navigation, guided first use, a desktop evidence panel, small-screen evidence views and bounded authorised result previews. Implementation began on 21 October 2026 with UX0–UX2; later UX steps remain pending. Its [validation checklist](product-ux-validation.md) separates first-milestone results from pending checks. The current code supports text and still-image queries; the original text-first assumption above describes the initial MVP sequence. This follow-up preserves module ownership, access checks, immutable evidence, publication and processing limits. It proposes no model, ranking or release-gate change.
 
+Scope update, 26 October 2026: the authorized [UI/UX follow-up](ux-improvements-validation.md)
+adds direct Library intake, primary preparation status, selected-collection browsing,
+removable search filters and evidence navigation/resizing. Search is the returning
+account home; signup still opens Library. Optional preview metadata is resolved by
+the evidence module in one bounded authorized batch and points to existing protected
+revision/set byte endpoints. No model, producer, ranking or publication change is adopted.
+Full UX6 acceptance remains open.
+
 All numerical values below are proposed release targets, not observed performance.
 
 ### Functional requirements

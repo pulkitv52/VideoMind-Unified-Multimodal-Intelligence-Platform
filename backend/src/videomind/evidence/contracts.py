@@ -82,3 +82,12 @@ class ViewerDescriptor(Contract):
         if self.is_derivative and self.transform_id is None:
             raise ValueError("derivative viewers require an original mapping")
         return self
+
+
+class Preview(Contract):
+    """Metadata for an existing protected image, never a storage capability."""
+
+    kind: Literal["page", "image", "frame"]
+    object_id: UUID
+    segment_set_id: UUID
+    route: Literal["document", "media"]

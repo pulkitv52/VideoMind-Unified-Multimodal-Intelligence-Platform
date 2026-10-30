@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import type { FormEvent } from "react";
+import type { CSSProperties, FormEvent } from "react";
 import { api, ApiError } from "../../lib/api";
 import { useCompact } from "../../app/useCompact";
 import { CitationViewer } from "../evidence/CitationViewer";
+import { ResultPreview } from "./ResultPreview";
 import { CitationCopy } from "../../components/ui/CitationCopy";
 import type { EvidenceLink } from "../../app/navigation";
 import type { Citation, Facet, SearchResponse } from "./types";
@@ -20,6 +21,7 @@ type Props = {
 };
 
 export function Search({ workspace, active, canManage, onExpired, onLibrary, onSettings, opened, onOpen, onClose }: Props) {
+  const [split, setSplit] = useState(40);
   const [kind, setKind] = useState<"text" | "image">("text");
   const [image, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState("");
@@ -57,9 +59,6 @@ export function Search({ workspace, active, canManage, onExpired, onLibrary, onS
     window.addEventListener("keydown", escape);
     return () => window.removeEventListener("keydown", escape);
   }, [opened, onClose]);
-  useEffect(() => {
-    if (opened && !compact) list.current?.scrollIntoView({ block: "start" });
-  }, [opened?.citation, compact]);
   useEffect(() => {
     if (!opened || !compact || !active) return;
     const previous = document.body.style.overflow;
@@ -132,6 +131,21 @@ export function Search({ workspace, active, canManage, onExpired, onLibrary, onS
   const hasFilters = !!(source || modality || representation || language || tags || after || before || start || end || asset);
   function resetFilters() { setSource(""); setModality(""); setRepresentation(""); setLanguage(""); setTags(""); setAfter(""); setBefore(""); setStart(""); setEnd(""); setAsset(""); }
   function changeKind(value: "text" | "image") { serial.current++; setBusy(false); setKind(value); setImage(null); setError(""); setAsset(""); }
+  const filterChips = [
+    ...(source ? [{ label: `Collection: ${sources.find(value => value.source_id === source)?.source_name ?? "Selected"}`, clear: () => { setSource(""); setAsset(""); } }] : []),
+    ...(modality ? [{ label: `Type: ${modality}`, clear: () => setModality("") }] : []),
+    ...(representation ? [{ label: labels[representation], clear: () => setRepresentation("") }] : []),
+    ...(language ? [{ label: `Language: ${language}`, clear: () => setLanguage("") }] : []),
+    ...(tags ? [{ label: `Tags: ${tags}`, clear: () => setTags("") }] : []),
+    ...(after || before ? [{ label: `Date: ${after || "Any"} → ${before || "Any"}`, clear: () => { setAfter(""); setBefore(""); } }] : []),
+    ...(start || end ? [{ label: `Media: ${start || "0"}–${end} s`, clear: () => { setStart(""); setEnd(""); } }] : []),
+    ...(asset ? [{ label: "Within one file", clear: () => setAsset("") }] : []),
+  ];
+  const selectedIndex = result?.data.results.findIndex(hit => hit.asset.source_id === opened?.source && hit.citations.some(citation => citation.id === opened?.citation)) ?? -1;
+  function adjacent(offset: number) {
+    const hit = result?.data.results[selectedIndex + offset];
+    if (hit) onOpen({ source: hit.asset.source_id, citation: hit.citations[0].id });
+  }
   const resultInert = !!opened && compact;
   return <section className="search-section" aria-labelledby="search-heading">
     <div inert={resultInert || undefined}>
@@ -153,29 +167,29 @@ export function Search({ workspace, active, canManage, onExpired, onLibrary, onS
           <label>On or after (UTC)<input type="date" value={after} onChange={event => setAfter(event.target.value)} /></label><label>Before (UTC, exclusive)<input type="date" value={before} onChange={event => setBefore(event.target.value)} /></label>
           <label>Media from (seconds)<input type="number" min="0" step="0.001" value={start} onChange={event => setStart(event.target.value)} /></label><label>Media until (seconds)<input type="number" min="0.001" step="0.001" value={end} onChange={event => setEnd(event.target.value)} required={!!start} /></label>
         </div><p className="muted helper">Filters combine to narrow your results. Unknown dates do not match a date range. Language is recorded for recognised text/speech; other inputs usually have unknown language. Tags come from stored metadata.</p></details>
-        {hasFilters && <div className="filter-summary"><span>Filters selected{asset ? " · searching within one file" : ""}</span><button type="button" className="text-button" onClick={resetFilters}>Clear filters</button></div>}
+        {hasFilters && <div className="filter-summary">{filterChips.map(chip => <button key={chip.label} type="button" className="filter-chip secondary" aria-label={`Remove ${chip.label} filter`} onClick={chip.clear}>{chip.label} <span aria-hidden="true">×</span></button>)}<button type="button" className="text-button" onClick={resetFilters}>Clear filters</button></div>}
         {asset && <button type="button" className="text-button" disabled={busy} onClick={() => { setAsset(""); void run(undefined, ""); }}>Search all files again</button>}
       </form>
-      {indexReady === false && !facetError && <div className="notice"><h2>Prepare your files for search</h2><p>{canManage ? "Add files in Library, then start and activate your first search index in Settings." : "Your workspace administrator needs to prepare and activate a search index before you can search."}</p><button className="secondary" onClick={onLibrary}>Open Library</button>{canManage && <button className="secondary" onClick={onSettings}>Set up search</button>}</div>}
+      {indexReady === false && !facetError && <div className="notice"><h2>Prepare your files for search</h2><p>{canManage ? "Add files in Library and follow their preparation. Configured workspaces prepare search automatically; manual setup is available in Settings." : "Your files are not searchable yet. Follow preparation in Library; your administrator can help if search setup is needed."}</p><button className="secondary" onClick={onLibrary}>Open Library</button>{canManage && <button className="secondary" onClick={onSettings}>Set up search</button>}</div>}
       {facetError && <p role="alert" className="error">{facetError}</p>}
-      {busy && <p role="status">Searching for {pendingDescription}. The first search may take longer while the CPU model loads.</p>}
+      {busy && <div className="search-loading" role="status"><span className="loading-indicator" aria-hidden="true" /><span>Searching for {pendingDescription}. CPU preparation may take a moment.</span></div>}
       {error && <p role="alert" className="error">{error}</p>}
     </div>
-    <div className={`search-workbench ${opened ? "has-evidence" : ""}`}>
+    <div className={`search-workbench ${opened ? "has-evidence" : ""}`} style={{ "--results-share": `${split}fr`, "--evidence-share": `${100 - split}fr` } as CSSProperties}>
       <div className="results-column" ref={list} inert={resultInert || undefined}>
         {!result && !busy && !error && indexReady !== false && <div className="search-welcome"><h2>A page, a moment, a sound.</h2><p>Describe what you need. Every match leads back to the original file.</p><p className="muted">Try “person falling”, “person bending down” or “men entering an empty room”. These are example descriptions; matches depend on your files.</p><button className="secondary" onClick={onLibrary}>Browse your Library</button></div>}
         {result && <div className="search-results" aria-busy={busy}><div className="results-heading"><h2>{busy ? "Previous results" : "Results"}</h2><p>For {result.description}</p><p className="muted helper">{result.scope}</p><span className="muted" role="status">{result.data.results.length} evidence {result.data.results.length === 1 ? "match" : "matches"}{busy ? " from the previous search" : ""}</span></div>
           {result.data.no_useful_evidence && <div className="empty"><h3>No useful matches found</h3><p>Try a different description or adjust the filters. This does not establish that the event is absent from your files.</p></div>}
-          {result.data.results.map(hit => <article className={`search-hit ${opened?.citation === hit.citations[0].id ? "is-selected" : ""}`} key={hit.segment_id}>
-            <div className="result-overline">
+          {result.data.results.map(hit => <article className={`search-hit ${opened?.source === hit.asset.source_id && hit.citations.some(citation => citation.id === opened?.citation) ? "is-selected" : ""}`} key={hit.segment_id}>
+            <div className="result-body"><ResultPreview hit={hit} workspace={workspace} onExpired={onExpired} /><div className="result-content"><div className="result-overline">
               <span className="file-type">{hit.modality}</span>
               <span>{hit.source_name}</span>
               <span className="locator-pill">{location(hit.citations[0])}</span>
             </div>
-            <div className="search-hit-heading"><h3>{hit.title}</h3></div>
+            <div className="search-hit-heading"><h3><button className="result-title" type="button" onClick={() => onOpen({ source: hit.asset.source_id, citation: hit.citations[0].id })}>{hit.title}</button></h3></div>
             <p className="match-kind">{hit.matched_representations.map(value => labels[value] ?? value).join(" · ")} · {location(hit.citations[0])}</p>
             {hit.snippet ? <p className="search-snippet">{hit.snippet}</p> : <p className="muted">{hit.representation === "audio" ? "Listen to this interval to verify the sound match." : "Inspect the original evidence to verify this visual match."}</p>}
-            <div className="search-hit-actions"><button type="button" onClick={() => onOpen({ source: hit.asset.source_id, citation: hit.citations[0].id })}>Open evidence</button>{!asset && <button type="button" className="text-button" disabled={busy} onClick={() => { setAsset(hit.asset.asset_id); void run(undefined, hit.asset.asset_id); }}>Search within this file</button>}</div>
+            </div></div><div className="search-hit-actions"><button type="button" onClick={() => onOpen({ source: hit.asset.source_id, citation: hit.citations[0].id })}>Open evidence</button>{!asset && <button type="button" className="text-button" disabled={busy} onClick={() => { setAsset(hit.asset.asset_id); void run(undefined, hit.asset.asset_id); }}>Search within this file</button>}</div>
             {hit.warnings.map(warning => <p className="notice helper" key={warning}>{warning}</p>)}
             <details><summary>Match details and nearby evidence</summary><CitationCopy href={`${window.location.origin}/?workspace=${workspace}&source=${hit.asset.source_id}&citation=${hit.citations[0].id}`} /><p className="muted">{Object.entries(hit.branches).map(([branch, trace]) => `${branch}: rank ${trace.rank}, score ${trace.score.toFixed(4)}`).join(" · ")} · Fusion {hit.fusion_score.toFixed(5)}. Scores are ranking signals, not confidence.</p>
               {hit.citations.slice(1).map(citation => <button className="text-button" key={citation.id} onClick={() => onOpen({ source: hit.asset.source_id, citation: citation.id })}>Matched evidence · {location(citation)}</button>)}
@@ -185,7 +199,14 @@ export function Search({ workspace, active, canManage, onExpired, onLibrary, onS
           <details className="search-trace"><summary>Search details and limits</summary>{result.data.warnings.map(warning => <p key={warning}>{warning}</p>)}<p>Search time {(result.data.timings_ms.total / 1000).toFixed(2)} s<br />Request {result.data.request_id}<br />Index {result.data.generation_id}<br />Retrieval configuration {result.data.retrieval_config_sha256}</p></details>
         </div>}
       </div>
-      {opened && <aside className="evidence-pane" aria-label="Selected evidence"><CitationViewer key={`${opened.source}:${opened.citation}`} workspace={workspace} source={opened.source} citation={opened.citation} mode="panel" onClose={onClose} onExpired={onExpired} /></aside>}
+      {opened && !compact && <div className="pane-resizer" role="separator" aria-label="Resize evidence panes" aria-orientation="vertical" aria-valuemin={30} aria-valuemax={60} aria-valuenow={split} tabIndex={0} onKeyDown={event => {
+        if (["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) { event.preventDefault(); setSplit(value => event.key === "Home" ? 30 : event.key === "End" ? 60 : Math.max(30, Math.min(60, value + (event.key === "ArrowLeft" ? -2 : 2)))); }
+      }} onPointerDown={event => { event.currentTarget.setPointerCapture(event.pointerId); event.preventDefault(); }} onPointerMove={event => {
+        if (!event.currentTarget.hasPointerCapture(event.pointerId)) return;
+        const bounds = event.currentTarget.parentElement!.getBoundingClientRect();
+        setSplit(Math.max(30, Math.min(60, Math.round((event.clientX - bounds.left) / bounds.width * 100))));
+      }} onPointerUp={event => { if (event.currentTarget.hasPointerCapture(event.pointerId)) event.currentTarget.releasePointerCapture(event.pointerId); }} />}
+      {opened && <aside className="evidence-pane" aria-label="Selected evidence">{selectedIndex >= 0 && result!.data.results.length > 1 && <nav className="evidence-pagination" aria-label="Evidence matches"><button className="secondary" disabled={selectedIndex === 0} onClick={() => adjacent(-1)}>Previous match</button><span role="status">{selectedIndex + 1} of {result!.data.results.length}</span><button className="secondary" disabled={selectedIndex === result!.data.results.length - 1} onClick={() => adjacent(1)}>Next match</button></nav>}<CitationViewer key={`${opened.source}:${opened.citation}`} workspace={workspace} source={opened.source} citation={opened.citation} mode="panel" onClose={onClose} onExpired={onExpired} /></aside>}
     </div>
   </section>;
 }

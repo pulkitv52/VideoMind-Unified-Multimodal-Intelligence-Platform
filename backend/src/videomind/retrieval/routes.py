@@ -9,6 +9,7 @@ from starlette.concurrency import run_in_threadpool
 from pydantic import ValidationError
 from sqlalchemy import text
 from videomind.contracts import AssetRef
+from videomind.evidence.previews import resolve_batch
 from videomind.identity.service import actor
 from videomind.infrastructure.database import transaction
 from videomind.infrastructure.telemetry import trace_id
@@ -227,6 +228,11 @@ def execute_search(w, body, request, principal, image_content=None):
                     ),
                 )
             )
+        previews = resolve_batch(conn, w, results)
+        results = [
+            hit.model_copy(update={"preview": previews.get(hit.segment_id)})
+            for hit in results
+        ]
         counts = repository.facets(conn, w, pinned, body.filters)
         progress = repository.progress(conn, w, pinned, body.filters)
     ended = time.perf_counter()

@@ -39,7 +39,16 @@ export function DocumentViewer({workspace,source,revision,citation,mode,onClose,
     return()=>{current=false;};
   },[base,doc,page,onExpired]);
   useEffect(()=>{
-    if(content&&selected)selectedPassage.current?.scrollIntoView({block:"center",inline:"nearest",behavior:"auto"});
+    if (!content || !selected || !selectedPassage.current) return;
+    const passage = selectedPassage.current;
+    const pane = passage.closest(".evidence-pane");
+    if (pane instanceof HTMLElement) {
+      const bounds = pane.getBoundingClientRect();
+      const target = passage.getBoundingClientRect();
+      // Reveal inside the inspector without scrolling the query/results page.
+      if (target.top < bounds.top + 130) pane.scrollTop += target.top - bounds.top - 130;
+      else if (target.bottom > bounds.bottom) pane.scrollTop += target.bottom - bounds.bottom + 20;
+    } else passage.scrollIntoView({ block: "center", inline: "nearest", behavior: "auto" });
   },[content,selected]);
   const active=content?.segments.find(s=>s.id===selected);
   const box=active?.transform.box;

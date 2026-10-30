@@ -457,8 +457,11 @@ def test_many_result_context_keeps_bounded_queries_and_same_nearest_evidence(
             )
     engine = f["clients"]["alice"].app.state.db
     calls = []
+    preview_calls = []
 
     def observed(conn, cursor, statement, parameters, context, executemany):
+        if "preview_candidates" in statement:
+            preview_calls.append(statement)
         if "abs(ordinal" in statement or "abs(s.ordinal" in statement:
             calls.append(statement)
 
@@ -496,6 +499,9 @@ def test_many_result_context_keeps_bounded_queries_and_same_nearest_evidence(
             for row in hit["context"]
             for cite in row["citations"]
         )
+    assert (
+        len(preview_calls) == 1
+    ), "Preview metadata must use one batch for ten results"
     assert (
         len(calls) <= 2
     ), "Context expansion must not repeat the scope query for every result"
@@ -605,3 +611,193 @@ def test_image_query_rechecks_revocation_during_embedding(searchable, monkeypatc
     response = image_request(f, client="bob")
     assert response.status_code == 200, response.text
     assert response.json()["results"] == [] and response.json()["facets"] == []
+
+
+@pytest.mark.parametrize("kind", ["page", "image", "frame"])
+def test_preview_provenance_bounds_and_live_access(searchable, kind):
+    """Use the restricted role for metadata and bytes, including old revisions."""
+    import io
+    from PIL import Image
+    from videomind.evidence.previews import resolve_batch
+    from videomind.retrieval.contracts import EvidenceResult
+
+    f = searchable
+    scope = {"workspace_id": f["w"], "source_id": f["s"]}
+    oid = uuid4()
+    raw = io.BytesIO()
+    Image.new("RGB", (12, 12), "green").save(raw, format="PNG")
+    content = raw.getvalue()
+    objects = f["clients"]["alice"].app.state.objects
+    bucket = f["clients"]["alice"].app.state.settings.minio_bucket
+    key = f"fixtures/previews/{oid}"
+    objects.put_object(bucket, key, io.BytesIO(content), len(content))
+    try:
+        with f["owner"].begin() as c:
+            insert(
+                c,
+                "app.objects",
+                **scope,
+                id=oid,
+                bucket=bucket,
+                object_key=key,
+                sha256="d" * 64,
+                size_bytes=len(content),
+                mime_type="image/png",
+                role="derivative",
+            )
+            insert(
+                c,
+                "app.document_pages",
+                **scope,
+                segment_set_id=f["ss"],
+                page=1,
+                revision_id=f["r"],
+                text_object_id=oid,
+                manifest="{}",
+                image_object_id=oid,
+                width=12,
+                height=12,
+            )
+        route = "media" if kind == "frame" else "document"
+        with f["owner"].begin() as c:
+            if kind == "image":
+                c.execute(
+                    text("UPDATE app.assets SET modality='image' WHERE id=:a"),
+                    {"a": f["a"]},
+                )
+            if kind == "frame":
+                c.execute(
+                    text("UPDATE app.assets SET modality='video' WHERE id=:a"),
+                    {"a": f["a"]},
+                )
+                c.execute(text("SET LOCAL session_replication_role='replica'"))
+                c.execute(
+                    text(
+                        "UPDATE app.segment_sets SET manifest=CAST(:manifest AS jsonb) WHERE id=:ss"
+                    ),
+                    {"ss": f["ss"], "manifest": json.dumps({"kind": "media"})},
+                )
+                c.execute(
+                    text(
+                        "UPDATE app.segments SET representation='video' WHERE id=:seg"
+                    ),
+                    {"seg": f["seg"]},
+                )
+                c.execute(
+                    text(
+                        "UPDATE app.evidence_anchors SET locator_kind='temporal',page=NULL,start_ms=0,end_ms=1000,track='video:0',transform=CAST(:mapping AS jsonb) WHERE revision_id=:r"
+                    ),
+                    {
+                        "r": f["r"],
+                        "mapping": json.dumps(
+                            {"frames": [{"object_id": str(oid), "original_ms": 0}]}
+                        ),
+                    },
+                )
+                insert(
+                    c,
+                    "app.media_presentations",
+                    **scope,
+                    segment_set_id=f["ss"],
+                    revision_id=f["r"],
+                    playback_object_id=oid,
+                    mapping_object_id=oid,
+                    manifest="{}",
+                )
+                insert(
+                    c,
+                    "app.media_artifacts",
+                    **scope,
+                    segment_set_id=f["ss"],
+                    object_id=oid,
+                )
+        baseline = request(f, mode="lexical").json()["results"][0]
+        assert baseline["preview"] == {
+            "kind": kind,
+            "object_id": str(oid),
+            "segment_set_id": str(f["ss"]),
+            "route": route,
+        }
+        path = (
+            f"/api/workspaces/{f['w']}/sources/{f['s']}/revisions/{f['r']}"
+            f"/{route}/objects/{oid}?segment_set_id={f['ss']}"
+        )
+        assert f["clients"]["alice"].get(path).content == content
+        assert f["clients"]["bob"].get(path).status_code == 404
+        # Bounded metadata, with unchanged ordered retrieval facts.
+        with f["owner"].begin() as c:
+            c.execute(
+                text("UPDATE app.objects SET size_bytes=4194305 WHERE id=:id"),
+                {"id": oid},
+            )
+        oversized = request(f, mode="lexical").json()["results"][0]
+        assert oversized["preview"] is None
+        assert {k: v for k, v in oversized.items() if k != "preview"} == {
+            k: v for k, v in baseline.items() if k != "preview"
+        }
+        with f["owner"].begin() as c:
+            c.execute(
+                text("UPDATE app.objects SET size_bytes=:n WHERE id=:id"),
+                {"id": oid, "n": len(content)},
+            )
+            insert(
+                c,
+                "app.source_grants",
+                **scope,
+                principal_id=f["bob"],
+                permission="read",
+            )
+        hit = EvidenceResult.model_validate(
+            request(f, client="bob", mode="lexical").json()["results"][0]
+        )
+        assert f["clients"]["bob"].get(path).status_code == 200
+        with f["owner"].begin() as c:
+            c.execute(
+                text("DELETE FROM app.source_grants WHERE source_id=:s"), {"s": f["s"]}
+            )
+        with transaction(f["runtime"], f["bob"]) as c:
+            assert resolve_batch(c, f["w"], [hit]) == {}
+        assert f["clients"]["bob"].get(path).status_code == 404
+        assert (
+            f["clients"]["alice"].get(path.replace(str(oid), str(uuid4()))).status_code
+            == 404
+        )
+        assert (
+            f["clients"]["alice"]
+            .get(path.replace(str(f["ss"]), str(uuid4())))
+            .status_code
+            == 404
+        )
+        with f["owner"].begin() as c:
+            # A later pending revision must not redirect an existing preview.
+            newer = uuid4()
+            original = c.execute(
+                text("SELECT original_object_id FROM app.asset_revisions WHERE id=:r"),
+                {"r": f["r"]},
+            ).scalar_one()
+            insert(
+                c,
+                "app.asset_revisions",
+                **scope,
+                id=newer,
+                asset_id=f["a"],
+                external_revision="v2",
+                sha256="a" * 64,
+                original_object_id=original,
+            )
+            c.execute(
+                text("UPDATE app.assets SET latest_revision_id=:r WHERE id=:a"),
+                {"r": newer, "a": f["a"]},
+            )
+        historical = request(f, mode="lexical").json()["results"][0]
+        assert historical["asset"]["revision_id"] == str(f["r"])
+        assert historical["preview"] == baseline["preview"]
+        assert f["clients"]["alice"].get(path).content == content
+        with f["owner"].begin() as c:
+            c.execute(
+                text("UPDATE app.assets SET deleted=true WHERE id=:a"), {"a": f["a"]}
+            )
+        assert f["clients"]["alice"].get(path).status_code == 404
+        assert not request(f, mode="lexical").json()["results"]
+    finally:
+        objects.remove_object(bucket, key)

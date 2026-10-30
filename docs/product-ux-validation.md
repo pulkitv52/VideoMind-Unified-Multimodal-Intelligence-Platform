@@ -1,6 +1,6 @@
 # Product and UX validation checklist
 
-Date: 21 October 2026. Status: **UX0–UX2 implemented; first-milestone checks passed within the scope recorded below. UX3–UX6 pending.**
+Date: 21 October 2026. Updated: 26 October 2026. **The original UX0–UX2 record is preserved below; current preview/Library results are in [the follow-up report](ux-improvements-validation.md). Complete UX5/UX6 acceptance remains open.**
 
 This checklist accompanies the [product and UX plan](product-ux-plan.md). It separates executed first-milestone checks from the remaining full-interface matrix. Historical platform tests and README screenshot captures do not count as validation of the new interface.
 
@@ -13,10 +13,10 @@ Complete this table during each implementation step. Link to sanitised evidence;
 | UX0 | Working tree, 21 October 2026 | Source/API review and typed route design | Decisions recorded | Preview descriptor selected for UX3; current contracts unchanged |
 | UX1 | Working tree, 21 October 2026 | `pnpm --dir frontend build`; `pnpm --dir frontend test:ui` | Build and browser checks passed | Search/Library/Settings shell, workspace handling and shared styles |
 | UX2 | Working tree, 21 October 2026 | Expanded browser suite, 24 checks in 17.4 s | Passed for synthetic journeys | Live evidence checks and broader acceptance recorded below |
-| UX3 | Not started | Not run | Pending | Preview contract and access checks pending |
-| UX4 | Not started | Not run | Pending | Library and onboarding pending |
-| UX5 | Not started | Not run | Pending | Settings and operational states pending |
-| UX6 | Not started | Not run | Pending | Complete regression and usability checks pending |
+| UX3 | Working tree, 26 October 2026 | Runtime-role preview and browser checks | Implemented | Existing page/image/frame objects, one metadata batch, three concurrent byte requests |
+| UX4 | Working tree, 26 October 2026 | Upload/status/selection browser checks | Core journey implemented | First use, file chooser/drop, batch receipts, retries and primary file state |
+| UX5 | Working tree, 26 October 2026 | Permission-aware guidance and existing Settings regressions | Partial | Self-service guidance updated; broader operational help remains pending |
+| UX6 | Working tree, 26 October 2026 | Automated regression and visual checks in follow-up report | Partial | Independent usability and full accessibility/live-media matrix remain pending |
 
 ## Journey checks
 
@@ -149,3 +149,12 @@ All 12 repository-guard regression tests passed. Browser report/capture director
 Final local desktop/mobile visual checks used the rebuilt production frontend. The original citation opened the mobile evidence view; its page background is inert and scroll-locked, and closing evidence restores normal scrolling. Desktop and mobile captures are private under `.local`, outside Git. These screenshots are review aids for this milestone; published README captures remain labelled as the earlier validated interface until the complete UX6 refresh.
 
 The original Phase 7 assessment is unchanged. This milestone neither adds result thumbnails nor completes selected-collection browsing, drag-and-drop uploads, the unified file-state mapper, full onboarding, exhaustive accessibility or independent usability sessions. Those remain UX3–UX6 work.
+
+## Library and preview follow-up, 26 October 2026
+
+The subsequent UI/UX implementation extends this historical first-milestone
+record with direct file intake, per-file receipts, selected-collection browsing,
+primary preparation status, bounded authorized previews, removable filters and
+improved evidence navigation. See [the follow-up validation record](ux-improvements-validation.md)
+for adopted behavior, current checks and remaining UX6 limitations. Self-service
+preparation supersedes the earlier invitation/manual-first onboarding assumptions.

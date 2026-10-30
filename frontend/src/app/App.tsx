@@ -14,9 +14,9 @@ import { preferredTheme, saveTheme } from "./theme";
 import type { EvidenceLink, View } from "./navigation";
 
 const views: { id: View; label: string; description: string }[] = [
-  { id: "dashboard", label: "Dashboard", description: "Members, uploads and indexing" },
   { id: "search", label: "Search", description: "Find and inspect evidence" },
   { id: "library", label: "Library", description: "Your files and collections" },
+  { id: "dashboard", label: "Dashboard", description: "Members, uploads and indexing" },
   { id: "settings", label: "Settings", description: "Local services and search setup" },
 ];
 
@@ -50,10 +50,7 @@ export function App() {
       setAccount(identity); setWorkspaces(spaces);
       const space = spaces.find(space => space.id === requested) ?? spaces[0];
       setSelected(space?.id ?? "");
-      if (window.location.pathname === "/" && !new URLSearchParams(window.location.search).has("citation") && space?.can_view_analytics) {
-        window.history.replaceState(null, "", viewUrl("dashboard", space.id));
-        setLocation(readLocation(window.location.pathname, window.location.search));
-      }
+
     } catch (cause) {
       if (cause instanceof ApiError && cause.status === 401) expired();
       else setError("Unable to connect. Check that the local services are running.");
@@ -133,7 +130,7 @@ export function App() {
     <aside inert={backgroundInert || undefined} className="sidebar" aria-label="Workspace navigation">
       <a className="brand" href={viewUrl("search", selected)} onClick={event => follow(event, "search")}><span className="brand-badge" aria-hidden="true">VM</span>VideoMind<span>Your files, connected.</span></a>
       <nav aria-label="Main navigation">{views.filter(view => view.id !== "dashboard" || canAnalytics).map(view => <a key={view.id} href={viewUrl(view.id, selected)} aria-current={location.view === view.id ? "page" : undefined} onClick={event => follow(event, view.id)}><span>{view.label}</span><small>{view.description}</small></a>)}</nav>
-      <div className="sidebar-footer"><span className="local-dot" aria-hidden="true" /> {ready === false ? "Local services unavailable" : "Local engine active"}<p>Inspect the original behind every match.</p></div>
+      <div className="sidebar-footer"><span className="local-dot" aria-hidden="true" /> {ready === null ? "Checking local services…" : ready === false ? "Local services unavailable" : "Local services ready"}<p>Inspect the original behind every match.</p></div>
     </aside>
     <div className="app-body">
       <header inert={backgroundInert || undefined} className="app-header"><div>{workspaces.length > 1 ? <label className="workspace-select">Workspace<select value={selected} onChange={event => navigate(location.view, event.target.value)}>{workspaces.map(space => <option key={space.id} value={space.id}>{space.name}</option>)}</select></label> : <span className="workspace-name">{workspaces[0]?.name ?? "Your workspace"}</span>}</div><div className="account">{themeToggle}<div className="avatar-chip" aria-hidden="true">{account.username.slice(0, 2).toUpperCase()}</div><span>{account.username}</span><span className="workspace-role" aria-label="Workspace role">{({owner: "Owner", admin: "Admin", member: "Member"} as Record<string, string>)[workspaces.find(space => space.id === selected)?.role ?? ""] ?? ""}</span><button className="secondary" onClick={() => { void logout(); }}>Sign out</button></div></header>
@@ -143,7 +140,7 @@ export function App() {
         {!selected ? <div className="empty"><h1>No workspace assigned</h1><p>Contact your local administrator to get access.</p></div> : <>
           {location.view === "dashboard" && (canAnalytics ? <Dashboard key={selected} workspace={selected} account={account.id} onExpired={expired} onLibrary={() => navigate("library")} /> : <div className="notice" role="alert">This dashboard is available to workspace owners and admins. Use Search and Library for your files.</div>)}
           <section hidden={location.view !== "search"} aria-label="Search workspace"><Search key={selected} workspace={selected} active={location.view === "search"} canManage={canManageIndex} onLibrary={() => navigate("library")} onSettings={() => navigate("settings")} opened={location.view === "search" && evidence?.workspace === selected ? evidence : null} onOpen={value => navigate("search", selected, { ...value, workspace: selected })} onClose={() => navigate("search")} onExpired={expired} /></section>
-          {libraryVisited && <section hidden={location.view !== "library"} aria-label="Library"><div className="page-heading"><p className="eyebrow">YOUR LIBRARY</p><h1>Files worth finding again.</h1><p className="muted">Keep related files in collections. Add originals here, then find their pages and moments in Search.</p></div><SourceList key={selected} workspace={selected} active={location.view === "library"} onExpired={expired} canCreate={canCreate} canImportFolders={space?.can_import_folders === true} /></section>}
+          {libraryVisited && <section hidden={location.view !== "library"} aria-label="Library"><div className="page-heading"><p className="eyebrow">YOUR LIBRARY</p><h1>Your files, ready to explore.</h1><p className="muted">Add originals, follow preparation, then find their pages and moments in Search.</p></div><SourceList key={selected} workspace={selected} active={location.view === "library"} onExpired={expired} canCreate={canCreate} canImportFolders={space?.can_import_folders === true} canManage={canManageIndex} onSearch={() => navigate("search")} onSettings={() => navigate("settings")} /></section>}
           {location.view === "settings" && <section key={selected} aria-label="Settings"><div className="page-heading"><p className="eyebrow">YOUR INSTALLATION</p><h1>Settings</h1><p className="muted">Local service health and controls for preparing searchable files.</p></div><WorkspaceAccess workspace={selected} onExpired={expired} /><section className="source-card"><h2>Local services</h2><p role="status" className={ready === false ? "error" : "muted"}>{ready === null ? "Checking services…" : ready ? "Local services are ready" : "Some local services are unavailable"}</p><p>VideoMind processes files on this computer. Initial software and model downloads require internet access.</p>{ready === false && <p>Check Docker and run <code>python3 scripts/dev.py status</code> in the project folder.</p>}</section><IndexStatus workspace={selected} onExpired={expired} /><section className="source-card"><h2>About your data</h2><p>Original files and citations stay tied to their revisions. Sharing a citation does not grant access to its content.</p><p>Backups contain private data. Follow the project's local recovery guide; copying this app does not enable scheduled backups.</p></section></section>}
         </>}
         <footer inert={backgroundInert || undefined} className="workspace-footer">{current.label} <span>·</span> Local multimodal search <span>·</span> Verify matches against the original</footer>
